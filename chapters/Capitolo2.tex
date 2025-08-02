@@ -6,10 +6,48 @@ The "static case" just depicted, though, treats the curvature as if it had alway
 In truth, after a change in the mass-energy distribution, the corresponding curvature variation requires its time to reach far distances, and a fascinating prediction of General Relativity is that it propagates in the form of a wave, that travels at the speed of light.
 
 
-
-\section{The Flat Spacetime}
-
 \section{Gravitational Waves as Perturbations}
+The tipical approach to the study of gravitational waves is to derive them as small perturbations of the background from the Einstein's equations: 
+\begin{equation}
+    G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R,
+\end{equation}
+which can be conveniently written as 
+\begin{equation}
+    R_{\mu\nu}=\frac{8\pi G}{c^4}\left(T_{\mu\nu} - \frac{1}{2}g_{\mu\nu}T\right),
+    \label{eq: Einstein equations rewritten}
+\end{equation}
+where $G_{\mu\nu}$ is the Einstein tensor, $R_{\mu\nu}$ is the Ricci tensor, $R$ is the Ricci scalar, $g_{\mu\nu}$ is the metric of spacetime, and $T_{\mu\nu}$ is the stress-energy tensor.
+As a background solution we can consider the flat spacetime described by the metric $\eta_{\mu\nu}$, to which the perturbation term appears as a fluctuation in the metric $|h_{\mu\nu}|\ll|\eta_{\mu\nu}|$, known as \textit{weak field} approximation. Thus, the perturbed spacetime can be written as:
+\[
+    g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \hspace{5mm}  |h_{\mu\nu}|\ll|\eta_{\mu\nu}|.
+\] 
+With this metric, the equations \ref{eq: Einstein equations rewritten} becomes
+\[
+    \{\Box_F h_{\mu\nu} - \left[\frac{\partial^2}{\partial x^\lambda\partial x^\mu}h^\lambda_\nu + \frac{\partial^2}{\partial x^\lambda\partial x^\nu}h^\lambda_\mu + \frac{\partial^2}{\partial x^\nu\partial x^\mu}h^\lambda_\lambda\right]\} = -\frac{16\pi G}{c^4}\left(T_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}T\right).
+\]
+Now, by requiring that the \textit{weak-field} approximation remains satisfied for infinitesimal diffeomorphisms, and by choosing a coordynate system in which the \textit{harmonic gauge condition}\footnote{It is an arbitrary coordinate condition which makes it possible to solve the Einstein field equations. It can be found by requiring that the linearized Einstein equations satisfy the D'Alambert equation.} is satisfied, we can find that, up to first order in $h_{\mu\nu}$, the harmonic gauge condition is equivalent to 
+\begin{equation}
+    \frac{\partial}{\partial x^\mu}h^\mu_\rho = \frac{1}{2}\frac
+    {\partial}{\partial x^\rho}h, \hspace{5mm} h=\eta^{\mu\nu}h_{\mu\nu}\equiv h^\nu_\nu,
+\end{equation}
+and after defining the tensor\footnote{Also known as \textit{trace-reversed} perturbation tensor, since $\bar{h}=\eta^{\mu\nu}\bar{h}_{\mu\nu} = -h$.}
+\[
+    \bar{h}_{\mu\nu} \equiv h_{\nu\mu} - \frac{1}{2}\eta_{\mu\nu}h,
+\]
+we can finally write the linearized Einstein equations as
+
+\[
+    \left\{
+\begin{aligned}
+    \Box\, \bar{h}_{\mu\nu} &= -\frac{16\pi G}{c^4} T_{\mu\nu}, 
+    \notag\\
+    \partial^\mu \bar{h}_{\mu\nu} &= 0.
+\end{aligned}
+\right.
+\]
+This form, and its twin with $T_{\mu\nu}=0$, where the first equation becomes the D'Alambert equation, are relevant because they show that \textit{a perturbation of a flat spacetime propagates as a wave travelling at the speed of light}.
+
+
 \subsection{Harmonic gauge}
 \subsection{The TT gauge}
 

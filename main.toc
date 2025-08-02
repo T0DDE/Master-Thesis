@@ -1,29 +1,28 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Gravitational Waves Theory}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}The Flat Spacetime}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Gravitational Waves as Perturbations}{8}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Harmonic gauge}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}The TT gauge}{8}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Motion and geodesics}{8}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}The motion deviation}{8}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}The geodesic deviation}{8}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}The Quadrupole Approximation}{8}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}The weak-field, slow-motion approximation}{8}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}The quadrupole formula}{8}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Transform to the TT gauge}{8}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Gravitational waves from a binary system}{8}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}General solution for circular orbits}{8}{subsection.1.5.1}%
-\contentsline {section}{\numberline {1.6}Energy carried by a gravitational wave}{8}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Stress-energy pseudo-tensor}{8}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Gravitational wave luminosity}{8}{subsection.1.6.2}%
-\contentsline {section}{\numberline {1.7}Evolution of a compact binary system}{8}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Signal from inspiralling compact objects}{8}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}ASD and multiple sources}{8}{subsection.1.7.2}%
-\contentsline {chapter}{\numberline {2}LISA}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}interferometers}{9}{section.2.1}%
-\contentsline {chapter}{\numberline {3}COSMIC and Stellar Populations Synthesis}{11}{chapter.3}%
-\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properies}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Total Gravitational Wave Signal}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Results}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Perspectives}{19}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{21}{appendix.A}%
+\contentsline {section}{\numberline {1.1}Gravitational Waves as Perturbations}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Harmonic gauge}{9}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}The TT gauge}{9}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Motion and geodesics}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}The motion deviation}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}The geodesic deviation}{9}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}The Quadrupole Approximation}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}The weak-field, slow-motion approximation}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}The quadrupole formula}{9}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Transform to the TT gauge}{9}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Gravitational waves from a binary system}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}General solution for circular orbits}{9}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Energy carried by a gravitational wave}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Stress-energy pseudo-tensor}{9}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Gravitational wave luminosity}{9}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Evolution of a compact binary system}{9}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Signal from inspiralling compact objects}{9}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}ASD and multiple sources}{9}{subsection.1.6.2}%
+\contentsline {chapter}{\numberline {2}LISA}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}interferometers}{11}{section.2.1}%
+\contentsline {chapter}{\numberline {3}COSMIC and Stellar Populations Synthesis}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properies}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Total Gravitational Wave Signal}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Results}{19}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Perspectives}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendix}{23}{appendix.A}%
