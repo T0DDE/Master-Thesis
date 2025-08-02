@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapters/Frontespizio.aux
+A level-1 auxiliary file: chapters/Abstract.aux
+A level-1 auxiliary file: chapters/Capitolo1.aux
+A level-1 auxiliary file: chapters/Capitolo2.aux
+A level-1 auxiliary file: chapters/Capitolo3.aux
+A level-1 auxiliary file: chapters/Capitolo4.aux
+A level-1 auxiliary file: chapters/Capitolo5.aux
+A level-1 auxiliary file: chapters/Capitolo6.aux
+A level-1 auxiliary file: chapters/Capitolo7.aux
+A level-1 auxiliary file: chapters/Capitolo8.aux
+A level-1 auxiliary file: chapters/AppendiceA.aux
+The style file: plainnat.bst
+Database file #1: chapters/Bibliografia.bib
+You've used 54 entries,
+            2773 wiz_defined-function locations,
+            980 strings with 19166 characters,
+and the built_in function-call counts, 33461 in all, are:
+= -- 2692
+> -- 3006
+< -- 22
++ -- 1014
+- -- 956
+* -- 3293
+:= -- 5428
+add.period$ -- 194
+call.type$ -- 54
+change.case$ -- 480
+chr.to.int$ -- 50
+cite$ -- 108
+duplicate$ -- 1090
+empty$ -- 2030
+format.name$ -- 1022
+if$ -- 6721
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 47
+newline$ -- 310
+num.names$ -- 218
+pop$ -- 876
+preamble$ -- 1
+purify$ -- 426
+quote$ -- 0
+skip$ -- 935
+stack$ -- 0
+substring$ -- 799
+swap$ -- 116
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 594
+warning$ -- 0
+while$ -- 203
+width$ -- 0
+write$ -- 767

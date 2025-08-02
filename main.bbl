@@ -1,0 +1,452 @@
+\begin{thebibliography}{54}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Arnaud}(1996)]{1996ASPC..101...17A}
+K.~A. {Arnaud}.
+\newblock {XSPEC: The First Ten Years}.
+\newblock In George~H. {Jacoby} and Jeannette {Barnes}, editors,
+  \emph{Astronomical Data Analysis Software and Systems V}, volume 101 of
+  \emph{Astronomical Society of the Pacific Conference Series}, page~17,
+  January 1996.
+
+\bibitem[{Beauchamp} et~al.(2022){Beauchamp}, {Belvedere}, {Hernandez},
+  {Himes}, {McCaffrey}, {Sanderson }, and {Wolfe}]{2022ATel15481....1B}
+Isaiah {Beauchamp}, Stefania {Belvedere}, Mitchell {Hernandez}, Morgan {Himes},
+  Trevor {McCaffrey}, Kelly {Sanderson }, and Bailee {Wolfe}.
+\newblock {VLA Radio Detection of MAXI J1816-195}.
+\newblock \emph{The Astronomer's Telegram}, 15481:\penalty0 1, June 2022.
+
+\bibitem[{Bildsten}(1998)]{1998ApJ...501L..89B}
+Lars {Bildsten}.
+\newblock {Gravitational Radiation and Rotation of Accreting Neutron Stars}.
+\newblock \emph{\apjl}, 501\penalty0 (1):\penalty0 L89--L93, July 1998.
+\newblock \doi{10.1086/311440}.
+
+\bibitem[{Bright} et~al.(2022){Bright}, {Russell}, {Tremou}, { Fender},
+  {Woudt}, {Miller-Jones}, { Del Santo}, and {Marino}]{2022ATel15484....1B}
+Joe {Bright}, Tom {Russell}, Evangelia {Tremou}, Rob { Fender}, Patrick
+  {Woudt}, James {Miller-Jones}, Melania { Del Santo}, and Alessio {Marino}.
+\newblock {Further radio detections of the AMXP MAXI J1816-195 from MeerKAT and
+  ATCA}.
+\newblock \emph{The Astronomer's Telegram}, 15484:\penalty0 1, June 2022.
+
+\bibitem[{Buccheri} et~al.(1983){Buccheri}, {Bennett}, {Bignami}, {Bloemen },
+  {Boriakoff}, {Caraveo}, { Hermsen}, {Kanbach}, {Manchester}, {Masnou},
+  {Mayer-Hasselwander}, {{\"O}zel}, { Paul}, {Sacco}, {Scarsi}, and
+  {Strong}]{1983A&A...128..245B}
+R.~{Buccheri}, K.~{Bennett}, G.~F. {Bignami}, J.~B.~G.~M. {Bloemen },
+  V.~{Boriakoff}, P.~A. {Caraveo}, W.~{ Hermsen}, G.~{Kanbach}, R.~N.
+  {Manchester}, J.~L. {Masnou}, H.~A. {Mayer-Hasselwander}, M.~E. {{\"O}zel},
+  J.~A. { Paul}, B.~{Sacco}, L.~{Scarsi}, and A.~W. {Strong}.
+\newblock {Search for pulsed {\ensuremath{\gamma}}-ray emission from radio
+  pulsars in the COS-B data.}
+\newblock \emph{\aap}, 128:\penalty0 245--251, December 1983.
+
+\bibitem[{Bult} et~al.(2022{\natexlab{a}}){Bult}, {Ng}, {Iwakiri},
+  {Altamirano}, {Chakrabarty}, {Gendreau}, {Strohmayer}, {Arzoumanian},
+  {Sanna}, {Guillot}, {Ray}, {Mihara}, {Enoto}, {Homan}, and {Ferrara
+  }]{2022ATel15425....1B}
+P.~M. {Bult}, M.~{Ng}, W.~{Iwakiri}, D.~{Altamirano}, D.~{Chakrabarty}, K.~C.
+  {Gendreau}, T.~E. {Strohmayer}, Z.~{Arzoumanian}, A.~{Sanna}, S.~{Guillot},
+  P.~S. {Ray}, T.~{Mihara}, T.~{Enoto}, J.~{Homan}, and E.~C. {Ferrara }.
+\newblock {NICER detects 528 Hz pulsations and a thermonuclear X-ray burst from
+  MAXI J1816-195}.
+\newblock \emph{The Astronomer's Telegram}, 15425:\penalty0 1, June
+  2022{\natexlab{a}}.
+
+\bibitem[{Bult} et~al.(2022{\natexlab{b}}){Bult}, {Sanna}, {Ng}, {Chakrabarty},
+  {Guillot}, {Gendreau}, {Arzoumanian}, { Strohmayer}, {Chenevez},
+  {Altamirano}, { Jaisawal}, and {Ferrara}]{2022ATel15431....1B}
+P.~M. {Bult}, A.~{Sanna}, M.~{Ng}, D.~{Chakrabarty}, S.~{Guillot}, K.~C.
+  {Gendreau}, Z.~{Arzoumanian}, T.~E. { Strohmayer}, J.~{Chenevez},
+  D.~{Altamirano}, G.~K. { Jaisawal}, and E.~C. {Ferrara}.
+\newblock {NICER measures the binary orbit of MAXI J1816-195}.
+\newblock \emph{The Astronomer's Telegram}, 15431:\penalty0 1, June
+  2022{\natexlab{b}}.
+
+\bibitem[{Bult} et~al.(2020){Bult}, {Chakrabarty}, {Arzoumanian}, {Gendreau},
+  {Guillot}, {Malacaria}, {Ray}, and {Strohmayer}]{2020ApJ...898...38B}
+Peter {Bult}, Deepto {Chakrabarty}, Zaven {Arzoumanian}, Keith~C. {Gendreau},
+  Sebastien {Guillot}, Christian {Malacaria}, Paul.~S. {Ray}, and Tod~E.
+  {Strohmayer}.
+\newblock {Timing the Pulsations of the Accreting Millisecond Pulsar SAX
+  J1808.4-3658 during Its 2019 Outburst}.
+\newblock \emph{\apj}, 898\penalty0 (1):\penalty0 38, July 2020.
+\newblock \doi{10.3847/1538-4357/ab9827}.
+
+\bibitem[{Bult} et~al.(2022{\natexlab{c}}){Bult}, {Altamirano}, {Arzoumanian},
+  {Chakrabarty}, {Chenevez}, {Ferrara}, {Gendreau}, {Guillot}, {G{\"u}ver},
+  {Iwakiri}, {Jaisawal}, {Mancuso}, {Malacaria}, {Ng}, {Sanna}, {Strohmayer},
+  {Wadiasingh}, and {Wolff}]{Articolo_di_riferimento}
+Peter {Bult}, Diego {Altamirano}, Zaven {Arzoumanian}, Deepto {Chakrabarty},
+  J{\'e}r{\^o}me {Chenevez}, Elizabeth~C. {Ferrara}, Keith~C. {Gendreau},
+  Sebastien {Guillot}, Tolga {G{\"u}ver}, Wataru {Iwakiri}, Gaurava~K.
+  {Jaisawal}, Giulio~C. {Mancuso}, Christian {Malacaria}, Mason {Ng}, Andrea
+  {Sanna}, Tod~E. {Strohmayer}, Zorawar {Wadiasingh}, and Michael~T. {Wolff}.
+\newblock {The Discovery of the 528.6 Hz Accreting Millisecond X-Ray Pulsar
+  MAXI J1816-195}.
+\newblock \emph{\apjl}, 935\penalty0 (2):\penalty0 L32, August
+  2022{\natexlab{c}}.
+\newblock \doi{10.3847/2041-8213/ac87f9}.
+
+\bibitem[{Burderi} et~al.(2006){Burderi}, {Di Salvo}, {Menna}, {Riggio}, and
+  {Papitto}]{2006ApJ...653L.133B}
+L.~{Burderi}, T.~{Di Salvo}, M.~T. {Menna}, A.~{Riggio}, and A.~{Papitto}.
+\newblock {Order in the Chaos: Spin-up and Spin-down during the 2002 Outburst
+  of SAX J1808.4-3658}.
+\newblock \emph{\apjl}, 653\penalty0 (2):\penalty0 L133--L136, December 2006.
+\newblock \doi{10.1086/510666}.
+
+\bibitem[{Burderi} et~al.(2007){Burderi}, {Di Salvo}, {Lavagetto}, {Menna},
+  {Papitto}, {Riggio}, {Iaria}, { D'Antona}, {Robba}, and
+  {Stella}]{2007ApJ...657..961B}
+L.~{Burderi}, T.~{Di Salvo}, G.~{Lavagetto}, M.~T. {Menna}, A.~{Papitto},
+  A.~{Riggio}, R.~{Iaria}, F.~{ D'Antona}, N.~R. {Robba}, and L.~{Stella}.
+\newblock {Timing an Accreting Millisecond Pulsar: Measuring the Accretion
+  Torque in IGR J00291+5934}.
+\newblock \emph{\apj}, 657\penalty0 (2):\penalty0 961--966, March 2007.
+\newblock \doi{10.1086/510659}.
+
+\bibitem[{Cavecchi} et~al.(2020){Cavecchi}, {Galloway}, {Goodwin}, { Johnston},
+  and {Heger}]{2020MNRAS.499.2148C}
+Y.~{Cavecchi}, D.~K. {Galloway}, A.~J. {Goodwin}, Z.~{ Johnston}, and
+  A.~{Heger}.
+\newblock {The efficiency of nuclear burning during thermonuclear (Type I)
+  bursts as a function of accretion rate}.
+\newblock \emph{\mnras}, 499\penalty0 (2):\penalty0 2148--2156, December 2020.
+\newblock \doi{10.1093/mnras/staa2858}.
+
+\bibitem[{Chauhan} et~al.(2022){Chauhan}, {Lohfink}, {Bharali}, {Mandal},
+  {Draghis}, {Pal}, and { Sanna}]{2022ATel15470....1C}
+Jaiverdhan {Chauhan}, Anne {Lohfink}, Priya {Bharali}, Manoj {Mandal}, Paul
+  {Draghis}, Sabyasachi {Pal}, and Andrea { Sanna}.
+\newblock {Detection of X-ray reflection in MAXI J1816-195 with the NuSTAR}.
+\newblock \emph{The Astronomer's Telegram}, 15470:\penalty0 1, June 2022.
+
+\bibitem[{Chenevez} et~al.(2011){Chenevez}, {Altamirano}, {Galloway}, { in't
+  Zand}, {Kuulkers}, {Degenaar}, { Falanga}, {Del Monte}, {Evangelista},
+  {Feroci}, and {Costa}]{2011MNRAS.410..179C}
+J.~{Chenevez}, D.~{Altamirano}, D.~K. {Galloway}, J.~J.~M. { in't Zand},
+  E.~{Kuulkers}, N.~{Degenaar}, M.~{ Falanga}, E.~{Del Monte},
+  Y.~{Evangelista}, M.~{Feroci}, and E.~{Costa}.
+\newblock {Puzzling thermonuclear burst behaviour from the transient low-mass
+  X-ray binary IGR J17473-2721}.
+\newblock \emph{\mnras}, 410\penalty0 (1):\penalty0 179--189, January 2011.
+\newblock \doi{10.1111/j.1365-2966.2010.17433.x}.
+
+\bibitem[{de Martino} et~al.(2022){de Martino}, {D'Avanzo}, {Ambrosino}, {
+  Miraval Zanon}, {Papitto}, {Campana}, {Baglio}, and
+  {Sanna}]{2022ATel15479....1D}
+D.~{de Martino}, P.~{D'Avanzo}, F.~{Ambrosino}, A.~{ Miraval Zanon},
+  A.~{Papitto}, S.~{Campana}, M.~C. {Baglio}, and A.~{Sanna}.
+\newblock {New optical and IR counterpart of MAXIJ1816-195}.
+\newblock \emph{The Astronomer's Telegram}, 15479:\penalty0 1, June 2022.
+
+\bibitem[{Di Salvo} and {Sanna}(2020)]{DiSalvo_Sanna_2020}
+Tiziana {Di Salvo} and Andrea {Sanna}.
+\newblock {Accretion powered X-ray millisecond pulsars}.
+\newblock \emph{arXiv e-prints}, art. arXiv:2010.09005, October 2020.
+\newblock \doi{10.48550/arXiv.2010.09005}.
+
+\bibitem[{Eggleton}(1983)]{1983ApJ...268..368E}
+P.~P. {Eggleton}.
+\newblock {Aproximations to the radii of Roche lobes.}
+\newblock \emph{\apj}, 268:\penalty0 368--369, May 1983.
+\newblock \doi{10.1086/160960}.
+
+\bibitem[{Fujimoto}(1988)]{1988ApJ...324..995F}
+Masayuki~Y. {Fujimoto}.
+\newblock {Angular Distribution of Radiation from Low-Mass X-Ray Binaries}.
+\newblock \emph{\apj}, 324:\penalty0 995, January 1988.
+\newblock \doi{10.1086/165955}.
+
+\bibitem[{Galloway} et~al.(2004){Galloway}, {Cumming}, {Kuulkers}, {Bildsten},
+  {Chakrabarty}, and {Rothschild}]{2004ApJ...601..466G}
+Duncan~K. {Galloway}, Andrew {Cumming}, Erik {Kuulkers}, Lars {Bildsten},
+  Deepto {Chakrabarty}, and Richard~E. {Rothschild}.
+\newblock {Periodic Thermonuclear X-Ray Bursts from GS 1826-24 and the Fuel
+  Composition as a Function of Accretion Rate}.
+\newblock \emph{\apj}, 601\penalty0 (1):\penalty0 466--473, January 2004.
+\newblock \doi{10.1086/380445}.
+
+\bibitem[{Galloway} et~al.(2020){Galloway}, {in't Zand}, {Chenevez},
+  {W{\"o}rpel}, {Keek}, {Ootes}, {Watts}, {Gisler}, { Sanchez-Fernandez}, and
+  {Kuulkers}]{2020ApJS..249...32G}
+Duncan~K. {Galloway}, Jean {in't Zand}, J{\'e}~r{\^o}me {Chenevez}, Hauke
+  {W{\"o}rpel}, Laurens {Keek}, Laura {Ootes}, Anna~L. {Watts}, Luis {Gisler},
+  Celia { Sanchez-Fernandez}, and Erik {Kuulkers}.
+\newblock {The Multi-INstrument Burst ARchive (MINBAR)}.
+\newblock \emph{\apjs}, 249\penalty0 (2):\penalty0 32, August 2020.
+\newblock \doi{10.3847/1538-4365/ab9f2e}.
+
+\bibitem[{Giusti}(2015/16)]{Tesi_Giusti_Francesca}
+Francesca {Giusti}.
+\newblock {Fisica dell'accrescimento}, 2015/16.
+
+\bibitem[{Goodwin} et~al.(2019){Goodwin}, {Heger}, and
+  {Galloway}]{2019ApJ...870...64G}
+A.~J. {Goodwin}, A.~{Heger}, and D.~K. {Galloway}.
+\newblock {Neutrino Losses in Type I Thermonuclear X-Ray Bursts: An Improved
+  Nuclear Energy Generation Approximation}.
+\newblock \emph{\apj}, 870\penalty0 (2):\penalty0 64, January 2019.
+\newblock \doi{10.3847/1538-4357/aaeed2}.
+
+\bibitem[{Hameury}(2020)]{2020AdSpR..66.1004H}
+J.~M. {Hameury}.
+\newblock {A review of the disc instability model for dwarf novae, soft X-ray
+  transients and related objects}.
+\newblock \emph{Advances in Space Research}, 66\penalty0 (5):\penalty0
+  1004--1024, September 2020.
+\newblock \doi{10.1016/j.asr.2019.10.022}.
+
+\bibitem[{Hartman} et~al.(2008){Hartman}, {Patruno}, {Chakrabarty}, {Kaplan},
+  {Markwardt}, {Morgan }, {Ray}, {van der Klis}, and {
+  Wijnands}]{2008ApJ...675.1468H}
+Jacob~M. {Hartman}, Alessandro {Patruno}, Deepto {Chakrabarty}, David~L.
+  {Kaplan}, Craig~B. {Markwardt}, Edward~H. {Morgan }, Paul~S. {Ray}, Michiel
+  {van der Klis}, and Rudy { Wijnands}.
+\newblock {The Long-Term Evolution of the Spin, Pulse Shape, and Orbit of the
+  Accretion-powered Millisecond Pulsar SAX J1808.4-3658}.
+\newblock \emph{\apj}, 675\penalty0 (2):\penalty0 1468--1486, March 2008.
+\newblock \doi{10.1086/527461}.
+
+\bibitem[{Hobbs} et~al.(2006){Hobbs}, {Edwards}, and
+  {Manchester}]{2006MNRAS.369..655H}
+G.~B. {Hobbs}, R.~T. {Edwards}, and R.~N. {Manchester}.
+\newblock {TEMPO2, a new pulsar-timing package - I. An overview}.
+\newblock \emph{\mnras}, 369\penalty0 (2):\penalty0 655--672, June 2006.
+\newblock \doi{10.1111/j.1365-2966.2006.10302.x}.
+
+\bibitem[{Ibragimov} and {Poutanen}(2009)]{2009MNRAS.400..492I}
+Askar {Ibragimov} and Juri {Poutanen}.
+\newblock {Accreting millisecond pulsar SAX J1808.4-3658 during its 2002
+  outburst: evidence for a receding disc}.
+\newblock \emph{\mnras}, 400\penalty0 (1):\penalty0 492--508, November 2009.
+\newblock \doi{10.1111/j.1365-2966.2009.15477.x}.
+
+\bibitem[{Johnston} et~al.(2018){Johnston}, {Heger}, and
+  {Galloway}]{2018MNRAS.477.2112J}
+Zac {Johnston}, Alexander {Heger}, and Duncan~K. {Galloway}.
+\newblock {Simulating X-ray bursts during a transient accretion event}.
+\newblock \emph{\mnras}, 477\penalty0 (2):\penalty0 2112--2118, June 2018.
+\newblock \doi{10.1093/mnras/sty757}.
+
+\bibitem[{Kennea} et~al.(2022{\natexlab{a}}){Kennea}, {Evans}, and
+  {Negoro}]{2022ATel15421....1K}
+J.~A. {Kennea}, P.~A. {Evans}, and H.~{Negoro}.
+\newblock {MAXI J1816-195: Swift Localization of this new transient}.
+\newblock \emph{The Astronomer's Telegram}, 15421:\penalty0 1, June
+  2022{\natexlab{a}}.
+
+\bibitem[{Kennea} et~al.(2022{\natexlab{b}}){Kennea}, {Evans}, and
+  {Negoro}]{2022ATel15467....1K}
+J.~A. {Kennea}, P.~A. {Evans}, and H.~{Negoro}.
+\newblock {MAXI J1816-195: Corrected Swift/XRT localization and IR
+  counterpart}.
+\newblock \emph{The Astronomer's Telegram}, 15467:\penalty0 1, June
+  2022{\natexlab{b}}.
+
+\bibitem[{Kulkarni} and {Romanova}(2013)]{2013MNRAS.433.3048K}
+A.~K. {Kulkarni} and M.~M. {Romanova}.
+\newblock {Analytical hotspot shapes and magnetospheric radius from 3D
+  simulations of magnetospheric accretion}.
+\newblock \emph{\mnras}, 433\penalty0 (4):\penalty0 3048--3061, August 2013.
+\newblock \doi{10.1093/mnras/stt945}.
+
+\bibitem[{Kuulkers} et~al.(2003){Kuulkers}, {den Hartog}, {in't Zand},
+  {Verbunt}, {Harris}, and {Cocchi}]{2003A&A...399..663K}
+E.~{Kuulkers}, P.~R. {den Hartog}, J.~J.~M. {in't Zand}, F.~W.~M. {Verbunt},
+  W.~E. {Harris}, and M.~{Cocchi}.
+\newblock {Photospheric radius expansion X-ray bursts as standard candles}.
+\newblock \emph{\aap}, 399:\penalty0 663--680, February 2003.
+\newblock \doi{10.1051/0004-6361:20021781}.
+
+\bibitem[{Lasota}(2001)]{2001NewAR..45..449L}
+Jean-Pierre {Lasota}.
+\newblock {The disc instability model of dwarf novae and low-mass X-ray binary
+  transients}.
+\newblock \emph{\nar}, 45\penalty0 (7):\penalty0 449--508, June 2001.
+\newblock \doi{10.1016/S1387-6473(01)00112-9}.
+
+\bibitem[{Leahy} et~al.(1983){Leahy}, {Darbro}, {Elsner}, {Weisskopf },
+  {Sutherland}, {Kahn}, and {Grindlay}]{Leahy_1983ApJ}
+D.~A. {Leahy}, W.~{Darbro}, R.~F. {Elsner}, M.~C. {Weisskopf }, P.~G.
+  {Sutherland}, S.~{Kahn}, and J.~E. {Grindlay}.
+\newblock {On searches for pulsed emission with application to four globular
+  cluster X-ray sources : NGC 1851, 6441, 6624 and 6712.}
+\newblock \emph{\apj}, 266:\penalty0 160--170, March 1983.
+\newblock \doi{10.1086/160766}.
+
+\bibitem[{Lewin} et~al.(1993){Lewin}, {van Paradijs}, and
+  {Taam}]{1993SSRv...62..223L}
+Walter H.~G. {Lewin}, Jan {van Paradijs}, and Ronald~E. {Taam}.
+\newblock {X-Ray Bursts}.
+\newblock \emph{\ssr}, 62\penalty0 (3-4):\penalty0 223--389, September 1993.
+\newblock \doi{10.1007/BF00196124}.
+
+\bibitem[{Mascia}(2018/19)]{Tesi_Sara_Mascia}
+Sara {Mascia}.
+\newblock {Analisi temporale del pulsatore X al millisecondo XTE J0929-314},
+  2018/19.
+
+\bibitem[{National Aeronautics and Space
+  Administration}(2023)]{NICER_Documentation}
+{National Aeronautics and Space Administration}.
+\newblock {Neutron Star Interior Composition Explorer}, 2023.
+
+\bibitem[{Negoro} et~al.(2022){Negoro}, {Serino}, {Iwakiri}, {Nakajima},
+  {Kobayashi}, {Tanaka}, {Soejima}, {Mihara}, {Kawamuro}, {Yamada}, {Tamagawa},
+  { Matsuoka}, {Sakamoto}, {Sugita}, {Hiramatsu}, {Yoshida}, {Tsuboi},
+  {Kohara}, { Shidatsu}, {Iwasaki}, {Kawai}, {Niwano}, {Hosokawa}, {Imai},
+  {Ito}, {Takamatsu}, {Nakahira}, {Ueno}, {Tomida}, {Ishikawa}, {Tominaga},
+  {Nagatsuka}, {Kurihara}, { Ueda}, {Ogawa}, {Setoguchi}, {Yoshitake}, {Inaba},
+  {Tsunemi}, {Yamauchi}, {Sato}, {Hatsuda}, {Fukuoka}, {hagiwara}, {Umeki},
+  {Yamaoka}, {Kawakubo}, and {Sugizaki}]{2022ATel15418....1N}
+H.~{Negoro}, M.~{Serino}, W.~{Iwakiri}, M.~{Nakajima}, K.~{Kobayashi},
+  M.~{Tanaka}, Y.~{Soejima}, T.~{Mihara}, T.~{Kawamuro}, S.~{Yamada},
+  T.~{Tamagawa}, M.~{ Matsuoka}, T.~{Sakamoto}, S.~{Sugita}, H.~{Hiramatsu},
+  A.~{Yoshida}, Y.~{Tsuboi}, J.~{Kohara}, M.~{ Shidatsu}, M.~{Iwasaki},
+  N.~{Kawai}, M.~{Niwano}, R.~{Hosokawa}, Y.~{Imai}, N.~{Ito}, Y.~{Takamatsu},
+  S.~{Nakahira}, S.~{Ueno}, H.~{Tomida}, M.~{Ishikawa}, M.~{Tominaga},
+  T.~{Nagatsuka}, T.~{Kurihara}, Y.~{ Ueda}, S.~{Ogawa}, K.~{Setoguchi},
+  T.~{Yoshitake}, K.~{Inaba}, H.~{Tsunemi}, M.~{Yamauchi}, T.~{Sato},
+  R.~{Hatsuda}, R.~{Fukuoka}, Y.~{hagiwara}, Y.~{Umeki}, K.~{Yamaoka},
+  Y.~{Kawakubo}, and M.~{Sugizaki}.
+\newblock {MAXI/GSC discovered a new X-ray transient MAXI J1816-195}.
+\newblock \emph{The Astronomer's Telegram}, 15418:\penalty0 1, June 2022.
+
+\bibitem[{Patruno} et~al.(2009){Patruno}, {Wijnands}, and {van der
+  Klis}]{2009ApJ...698L..60P}
+Alessandro {Patruno}, Rudy {Wijnands}, and Michiel {van der Klis}.
+\newblock {An Alternative Interpretation of the Timing Noise in Accreting
+  Millisecond Pulsars}.
+\newblock \emph{\apjl}, 698\penalty0 (1):\penalty0 L60--L63, June 2009.
+\newblock \doi{10.1088/0004-637X/698/1/L60}.
+
+\bibitem[{Poutanen} and {Gierli{\'n}ski}(2003)]{2003MNRAS.343.1301P}
+Juri {Poutanen} and Marek {Gierli{\'n}ski}.
+\newblock {On the nature of the X-ray emission from the accreting millisecond
+  pulsar SAX J1808.4-3658}.
+\newblock \emph{\mnras}, 343\penalty0 (4):\penalty0 1301--1311, August 2003.
+\newblock \doi{10.1046/j.1365-8711.2003.06773.x}.
+
+\bibitem[{Psaltis} and {Chakrabarty}(1999)]{1999ApJ...521..332P}
+Dimitrios {Psaltis} and Deepto {Chakrabarty}.
+\newblock {The Disk-Magnetosphere Interaction in the Accretion-powered
+  Millisecond Pulsar SAX J1808.4-3658}.
+\newblock \emph{\apj}, 521\penalty0 (1):\penalty0 332--340, August 1999.
+\newblock \doi{10.1086/307525}.
+
+\bibitem[{Rappaport} et~al.(2004){Rappaport}, {Fregeau}, and
+  {Spruit}]{Articolo_Rappaport}
+S.~A. {Rappaport}, J.~M. {Fregeau}, and H.~{Spruit}.
+\newblock {Accretion onto Fast X-Ray Pulsars}.
+\newblock \emph{\apj}, 606\penalty0 (1):\penalty0 436--443, May 2004.
+\newblock \doi{10.1086/382863}.
+
+\bibitem[{Remillard} et~al.(2022){Remillard}, {Loewenstein}, {Steiner},
+  {Prigozhin}, {LaMarr}, { Enoto}, {Gendreau}, {Arzoumanian}, {Markwardt},
+  {Basak}, {Stevens}, {Ray}, {Altamirano}, and {Buisson}]{2022AJ....163..130R}
+Ronald~A. {Remillard}, Michael {Loewenstein}, James~F. {Steiner}, Gregory~Y.
+  {Prigozhin}, Beverly {LaMarr}, Teruaki { Enoto}, Keith~C. {Gendreau}, Zaven
+  {Arzoumanian}, Craig {Markwardt}, Arkadip {Basak}, Abigail~L. {Stevens},
+  Paul~S. {Ray}, Diego {Altamirano}, and Douglas J.~K. {Buisson}.
+\newblock {An Empirical Background Model for the NICER X-Ray Timing
+  Instrument}.
+\newblock \emph{\aj}, 163\penalty0 (3):\penalty0 130, March 2022.
+\newblock \doi{10.3847/1538-3881/ac4ae6}.
+
+\bibitem[{Sanna} et~al.(2020){Sanna}, {Burderi}, {Gendreau}, {Di Salvo}, {Ray},
+  {Riggio}, {Gambino}, { Iaria}, {Piga}, {Malacaria}, and
+  {Jaisawal}]{2020MNRAS.495.1641S}
+A.~{Sanna}, L.~{Burderi}, K.~C. {Gendreau}, T.~{Di Salvo}, P.~S. {Ray},
+  A.~{Riggio}, A.~F. {Gambino}, R.~{ Iaria}, L.~{Piga}, C.~{Malacaria}, and
+  G.~K. {Jaisawal}.
+\newblock {Timing of the accreting millisecond pulsar IGR J17591-2342: evidence
+  of spin-down during accretion}.
+\newblock \emph{\mnras}, 495\penalty0 (2):\penalty0 1641--1649, June 2020.
+\newblock \doi{10.1093/mnras/staa1253}.
+
+\bibitem[{Sartori}(2018/19)]{Tesi_Simone_Sartori}
+Simone {Sartori}.
+\newblock {Fisica dell'accrescimento}, 2018/19.
+
+\bibitem[{Tout} et~al.(1996){Tout}, {Pols}, {Eggleton}, and
+  {Han}]{1996MNRAS.281..257T}
+Christopher~A. {Tout}, Onno~R. {Pols}, Peter~P. {Eggleton}, and Zhanwen {Han}.
+\newblock {Zero-age main-seqence radii and luminosities as analytic functions
+  of mass and metallicity}.
+\newblock \emph{\mnras}, 281\penalty0 (1):\penalty0 257--262, July 1996.
+\newblock \doi{10.1093/mnras/281.1.257}.
+
+\bibitem[{Van der Klis}(1988)]{Van_der_Klis}
+Michiel {Van der Klis}.
+\newblock {Fourier techniques for X-ray timing}, 1988.
+\newblock Second, slightly updated version, May 1994 Proceedings title:
+  Proceedings of the NATO Advanced Study Institute Timing Neutron Stars ,
+  Çeşme, Turkey, 4 - 15 April 1988, NATO ASI Series C, Vol. 262 Publisher:
+  Kluwer Academic Publishers Place of publication: Dordrecht ISBN: 0377-2071
+  Editors: H. Ögelman, E.P.J. van den Heuvel.
+
+\bibitem[{Wijnands} and {van der Klis}(1998)]{1998ApJ...507L..63W}
+Rudy {Wijnands} and Michiel {van der Klis}.
+\newblock {The Broadband Power Spectrum of SAX J1808.4-3658}.
+\newblock \emph{\apjl}, 507\penalty0 (1):\penalty0 L63--L66, November 1998.
+\newblock \doi{10.1086/311676}.
+
+\bibitem[{Wikipedia}(2023{\natexlab{a}})]{Wiki_NICER}
+{Wikipedia}.
+\newblock {Neutron Star Interior Composition Explorer}, 2023{\natexlab{a}}.
+
+\bibitem[{Wikipedia}(2023{\natexlab{b}})]{Wiki_accretion}
+{Wikipedia}.
+\newblock {Accretion (astrophysics)}, 2023{\natexlab{b}}.
+
+\bibitem[{Woosley} et~al.(2004){Woosley}, {Heger}, {Cumming}, {Hoffman},
+  {Pruet}, {Rauscher}, {Fisker}, { Schatz}, {Brown}, and
+  {Wiescher}]{2004ApJS..151...75W}
+S.~E. {Woosley}, A.~{Heger}, A.~{Cumming}, R.~D. {Hoffman}, J.~{Pruet},
+  T.~{Rauscher}, J.~L. {Fisker}, H.~{ Schatz}, B.~A. {Brown}, and
+  M.~{Wiescher}.
+\newblock {Models for Type I X-Ray Bursts with Improved Nuclear Physics}.
+\newblock \emph{\apjs}, 151\penalty0 (1):\penalty0 75--102, March 2004.
+\newblock \doi{10.1086/381533}.
+
+\bibitem[{Worpel} et~al.(2013){Worpel}, {Galloway}, and
+  {Price}]{2013ApJ...772...94W}
+Hauke {Worpel}, Duncan~K. {Galloway}, and Daniel~J. {Price}.
+\newblock {Evidence for Accretion Rate Change during Type I X-Ray Bursts}.
+\newblock \emph{\apj}, 772\penalty0 (2):\penalty0 94, August 2013.
+\newblock \doi{10.1088/0004-637X/772/2/94}.
+
+\bibitem[{Zdziarski} et~al.(1996){Zdziarski}, {Johnson}, and
+  {Magdziarz}]{1996MNRAS.283..193Z}
+A.~A. {Zdziarski}, W.~N. {Johnson}, and P.~{Magdziarz}.
+\newblock {Broad-band {\ensuremath{\gamma}}-ray and X-ray spectra of NGC 4151
+  and their implications for physical processes and geometry.}
+\newblock \emph{\mnras}, 283\penalty0 (1):\penalty0 193--206, November 1996.
+\newblock \doi{10.1093/mnras/283.1.193}.
+
+\bibitem[Zuo et~al.(2016)Zuo, Huang, Zhang, Chen, and Asundi]{ZUO201684}
+Chao Zuo, Lei Huang, Minliang Zhang, Qian Chen, and Anand Asundi.
+\newblock Temporal phase unwrapping algorithms for fringe projection
+  profilometry: A comparative review.
+\newblock \emph{Optics and Lasers in Engineering}, 85:\penalty0 84--103, 2016.
+\newblock ISSN 0143-8166.
+\newblock \doi{https://doi.org/10.1016/j.optlaseng.2016.04.022}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0143816616300653}.
+
+\bibitem[{{\.Z}ycki} et~al.(1999){{\.Z}ycki}, {Done}, and
+  {Smith}]{1999MNRAS.309..561Z}
+Piotr~T. {{\.Z}ycki}, Chris {Done}, and David~A. {Smith}.
+\newblock {The 1989 May outburst of the soft X-ray transient GS 2023+338 (V404
+  Cyg)}.
+\newblock \emph{\mnras}, 309\penalty0 (3):\penalty0 561--575, November 1999.
+\newblock \doi{10.1046/j.1365-8711.1999.02885.x}.
+
+\end{thebibliography}
