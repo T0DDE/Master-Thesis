@@ -14,44 +14,47 @@ A level-1 auxiliary file: chapters/Capitolo8.aux
 A level-1 auxiliary file: chapters/AppendiceA.aux
 The style file: plainnat.bst
 Database file #1: chapters/Bibliografia.bib
-You've used 54 entries,
+Warning--entry type for "2019zndo...3561144B" isn't style-file defined
+--line 619 of file chapters/Bibliografia.bib
+You've used 163 entries,
             2773 wiz_defined-function locations,
-            980 strings with 19166 characters,
-and the built_in function-call counts, 33461 in all, are:
-= -- 2692
-> -- 3006
-< -- 22
-+ -- 1014
-- -- 956
-* -- 3293
-:= -- 5428
-add.period$ -- 194
-call.type$ -- 54
-change.case$ -- 480
-chr.to.int$ -- 50
-cite$ -- 108
-duplicate$ -- 1090
-empty$ -- 2030
-format.name$ -- 1022
-if$ -- 6721
-int.to.chr$ -- 5
+            1761 strings with 51619 characters,
+and the built_in function-call counts, 111761 in all, are:
+= -- 8975
+> -- 10775
+< -- 57
++ -- 3603
+- -- 3435
+* -- 11413
+:= -- 18301
+add.period$ -- 643
+call.type$ -- 163
+change.case$ -- 1632
+chr.to.int$ -- 158
+cite$ -- 326
+duplicate$ -- 3389
+empty$ -- 6135
+format.name$ -- 3680
+if$ -- 22284
+int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 47
-newline$ -- 310
-num.names$ -- 218
-pop$ -- 876
+missing$ -- 162
+newline$ -- 977
+num.names$ -- 656
+pop$ -- 2811
 preamble$ -- 1
-purify$ -- 426
+purify$ -- 1469
 quote$ -- 0
-skip$ -- 935
+skip$ -- 3023
 stack$ -- 0
-substring$ -- 799
-swap$ -- 116
-text.length$ -- 3
+substring$ -- 2497
+swap$ -- 357
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 594
+type$ -- 1793
 warning$ -- 0
-while$ -- 203
+while$ -- 599
 width$ -- 0
-write$ -- 767
+write$ -- 2435
+(There was 1 warning)
