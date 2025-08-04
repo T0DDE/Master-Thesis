@@ -31,8 +31,8 @@
 \contentsline {subsubsection}{Convergence}{17}{section*.4}%
 \contentsline {subsection}{\numberline {3.2.2}The output}{18}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Astrophysical population}{18}{section.3.3}%
-\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properies}{19}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Total Gravitational Wave Signal}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Results}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Perspectives}{25}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Appendix}{27}{appendix.A}%
+\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properies}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Total Gravitational Wave Signal}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Results}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Perspectives}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Appendix}{29}{appendix.A}%
