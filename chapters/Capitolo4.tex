@@ -51,7 +51,7 @@ In the following section we will see the main features of the code, and explain 
 
 \subsection{Fixed population}
 A fundamental concept in COSMIC, which is the key to the code's efficiency, is the idea of \textit{fixed population}.
-This refers to a relatively small sample of just enough binaries to capture, in a statistically meaningful way, the underlying shape of the parameter distribution functions of the target population, as determined by the user specified Star Formation History (SFH) and evolution model.
+This refers to a relatively small sample\footnote{Note that, from now on, every time we talk about sampling, that is where the "M" of COSMIC comes into play: this code uses proficiently the Monte Carlo Markov Chain methods to sample populations and parameter distributions, as will follow in this section.} of just enough binaries to capture, in a statistically meaningful way, the underlying shape of the parameter distribution functions of the target population, as determined by the user specified Star Formation History (SFH) and evolution model.
 This is achieved following an iterative process designed to reach a convergence with respect to a defined matching condition, and consists of five key steps:
 \begin{enumerate}
     \item The user selects a binary evolution model and SFH;
@@ -65,27 +65,47 @@ In practice, the fixed population is the converged, computationally efficient re
 The output is stored in a data frame, which separates the full galaxy properties from the fixed population ones.
 The last step required to construct a full size galaxy is to scale the fixed population (by mass or by number of stars) with a re-sampling approach with replacement, allowing to extrapolate a larger final population that preserves the statistical properties encoded in the fixed population.
 
-\subsection{Initialization}
-The fixed population is generated from an initial collection of binaries sampled from distribution functions to assign to each binary an initial value of metallicity ($Z$), primary star mass ($m$), mass ratio ($q$), orbital separation ($a$), eccentricity ($e$), and birth time ($T0$) according to the selected SFH.
-In COSMIC the user can choose between different binary parameter distributions, and different parameters can be treated indipendently.
-In particular:
+\subsubsection{Initialization}
+The fixed population is generated from an initial collection of binaries sampled from distribution functions to assign to each binary an initial value of metallicity ($Z$), primary star mass ($m$), mass ratio ($q$), orbital separation ($a$), eccentricity ($e$), and birth time ($T_0$) according to the selected SFH.
+In COSMIC the user can choose between different binary parameter distributions, and different parameters can be treated independently.
+%In particular:
+% \begin{itemize}
+%     \item Masses can be sampled from the \cite{Salpeter}, \cite{Kroupa93} or \cite{Kroupa01} Initial Mass Function (IMF);
+%     \item Mass ratios are uniformly sampled from \cite{Mazeh92} and \cite{Mazeh94};
+%     \item Orbital separations are log-uniformly sampled following \cite{Dominik};
+%     \item Eccentricities can be sampled from \cite{Heggie} or from \cite{Geller}; 
+%     \item Binarity can follow \cite{Haaften} or follow user specified fractions; 
+%     \item COSMIC can also generate initial binary samples following \cite{MoeDiStefano}.
+% \end{itemize}
+% In this thesis we chose to have independent parameter distributions, and used the default options for all of them, which means \cite{Kroupa01} for the primary model, COMPLETE THIS PART.
+Moreover, COSMIC allows a complete personalization of the initial population through a number of other parameters, including different time-steps to control the binary physics, metallicity, stellar winds, common envelope phase, natal kicks, remnant mass, remnant spin, gravitational wave orbital decay, mass transfer, tides, and particular specifications for different kinds of stellar objects, mixing variables, and magnetic braking.
+In this work all the parameters were left default, but one: we tweaked the metallicity value, in order to differentiate fixed populations describing the parameter distributions for galaxies of different types.
+We will go more into detail on this topic in the next chapters.
+
+\subsubsection{Convergence}
+The number of simulated systems in the fixed population ideally describes the final parameter distribution functions while being low enough to keep the code efficient. 
+Since every population depends on a different binary evolution model, to quantify this number a \textit{discrete match criteria} is developed, based on the work \cite{Chatziioannou17}.
+Independently generated histograms for each parameter are used to track their distribution as successive populations are generated and cumulatively added to the fixed population.
+The physical limits of the simulated systems are then enforced by taking the logistic transform, and finally the match is defined as: 
+\begin{equation}
+    match=\displaystyle\frac{\sum_{k=1}^{N}P_{k,i} P_{k,i+1}}{\sqrt{\sum_{k=1}^{N}(P_{k,i}P_{k,i})\sum_{k=1}^{N}(P_{k,i}P_{k,i+1})}},
+    \label{eq: match condition}
+    \notag
+\end{equation}
+where $P_{k,i}$ is the probability for the \textit{k}th bin, for the \textit{i}th iteration.
+For how it is defined, the match value shifts between $0$ and $1$, and tends to unity as the parameter distributions converge to a distinct shape.
+
+\subsection{The output}
+
 \begin{itemize}
-    \item Masses can be sampled from the \cite{Salpeter}, \cite{Kroupa93} or \cite{Kroupa01} Initial Mass Function (IMF);
-    \item Mass ratios are uniformly sampled from \cite{Mazeh92} and \cite{Mazeh94};
-    \item Orbital separations are log-uniformly sampled following \cite{Dominik};
-    \item Eccentricities can be sampled from \cite{Heggie} or from \cite{Geller}; 
-    \item Binarity can follow \cite{Haaften} or follow user specified fractions; 
-    \item COSMIC can also generate initial binary samples following \cite{MoeDiStefano}.
+    \item population's parameters (the ones COSMIC gives to user)
+        \begin{itemize}
+            \item parameter distribution graphs
+        \end{itemize}
 \end{itemize}
-In this thesis we used the default parameter distributions for all the above, which means INSERT EXACT DISTRIBUTIONS USED.
 
 
-
-
-
-
-- COSMIC pipeline (why it's quick, intro to fixed population idea, match conditions, ...)
-- important parameters in COSMIC (the ones user chooses - stress on metallicity relevance)
-- population's parameters (the ones COSMIC gives to user)
-    - parameter distribution graphs
-- Scaling to astrophysical population, what is needed (refer to next chapter
+\section{Astrophysical population}
+\begin{itemize}
+    \item Scaling to astrophysical population, what is needed (refer to next chapter)
+\end{itemize}
