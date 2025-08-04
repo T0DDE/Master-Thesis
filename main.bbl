@@ -418,8 +418,7 @@ S.~E. {de Mink} and K.~{Belczynski}.
 \newblock \emph{\apj}, 814\penalty0 (1):\penalty0 58, November 2015.
 \newblock \doi{10.1088/0004-637X/814/1/58}.
 
-\bibitem[{de Mink} et~al.(2007){de Mink}, {Pols}, and
-  {Hilditch}]{2007A&A...467.1181D}
+\bibitem[{de Mink} et~al.(2007){de Mink}, {Pols}, and {Hilditch}]{deMink}
 S.~E. {de Mink}, O.~R. {Pols}, and R.~W. {Hilditch}.
 \newblock {Efficiency of mass transfer in massive close binaries. Tests from
   double-lined eclipsing binaries in the SMC}.
@@ -440,7 +439,7 @@ R.~J. {Dewey} and J.~M. {Cordes}.
 \newblock \doi{10.1086/165671}.
 
 \bibitem[{Dominik} et~al.(2012){Dominik}, {Belczynski}, {Fryer}, {Holz},
-  {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{2012ApJ...759...52D}
+  {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{Dominik}
 Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E.
   {Holz}, Emanuele {Berti}, Tomasz {Bulik}, Ilya {Mandel}, and Richard
   {O'Shaughnessy}.
@@ -520,7 +519,7 @@ Jim {Fuller} and Linhao {Ma}.
 \newblock \doi{10.3847/2041-8213/ab339b}.
 
 \bibitem[{Geller} et~al.(2019){Geller}, {Leigh}, {Giersz}, {Kremer}, and
-  {Rasio}]{2019ApJ...872..165G}
+  {Rasio}]{Geller}
 Aaron~M. {Geller}, Nathan W.~C. {Leigh}, Mirek {Giersz}, Kyle {Kremer}, and
   Frederic~A. {Rasio}.
 \newblock {In Search of the Thermal Eccentricity Distribution}.
@@ -542,7 +541,7 @@ Nicola {Giacobbo}, Michela {Mapelli}, and Mario {Spera}.
 \newblock \emph{\mnras}, 474\penalty0 (3):\penalty0 2959--2974, March 2018.
 \newblock \doi{10.1093/mnras/stx2933}.
 
-\bibitem[{Goldberg} and {Mazeh}(1994)]{1994A&A...282..801G}
+\bibitem[{Goldberg} and {Mazeh}(1994)]{Mazeh94}
 D.~{Goldberg} and T.~{Mazeh}.
 \newblock {The mass-ratio distribution of the spectroscopic binaries in the
   Pleiades.}
@@ -563,7 +562,7 @@ M.~Atakan {G{\"u}rkan}, Marc {Freitag}, and Frederic~A. {Rasio}.
 \newblock \emph{\apj}, 604\penalty0 (2):\penalty0 632--652, April 2004.
 \newblock \doi{10.1086/381968}.
 
-\bibitem[{Heggie}(1975)]{1975MNRAS.173..729H}
+\bibitem[{Heggie}(1975)]{Heggie}
 D.~C. {Heggie}.
 \newblock {Binary evolution in stellar dynamics.}
 \newblock \emph{\mnras}, 173:\penalty0 729--787, December 1975.
@@ -715,7 +714,7 @@ Paul~D. {Kiel}, Jarrod~R. {Hurley}, Matthew {Bailes}, and James~R. {Murray}.
 \newblock \doi{10.1111/j.1365-2966.2008.13402.x}.
 
 \bibitem[{Klencki} et~al.(2018){Klencki}, {Moe}, {Gladysz}, {Chruslinska},
-  {Holz}, and {Belczynski}]{2018A&A...619A..77K}
+  {Holz}, and {Belczynski}]{Klencki}
 J.~{Klencki}, M.~{Moe}, W.~{Gladysz}, M.~{Chruslinska}, D.~E. {Holz}, and
   K.~{Belczynski}.
 \newblock {Impact of inter-correlated initial binary parameters on double black
@@ -767,14 +766,13 @@ Kyle {Kremer}, Claire~S. {Ye}, Nicholas~Z. {Rui}, Newlin~C. { Weatherford},
 \newblock \emph{\apjs}, 247\penalty0 (2):\penalty0 48, April 2020.
 \newblock \doi{10.3847/1538-4365/ab7919}.
 
-\bibitem[{Kroupa}(2001)]{2001MNRAS.322..231K}
+\bibitem[{Kroupa}(2001)]{Kroupa01}
 Pavel {Kroupa}.
 \newblock {On the variation of the initial mass function}.
 \newblock \emph{\mnras}, 322\penalty0 (2):\penalty0 231--246, April 2001.
 \newblock \doi{10.1046/j.1365-8711.2001.04022.x}.
 
-\bibitem[{Kroupa} et~al.(1993){Kroupa}, {Tout}, and
-  {Gilmore}]{1993MNRAS.262..545K}
+\bibitem[{Kroupa} et~al.(1993){Kroupa}, {Tout}, and {Gilmore}]{Kroupa93}
 Pavel {Kroupa}, Christopher~A. {Tout}, and Gerard {Gilmore}.
 \newblock {The Distribution of Low-Mass Stars in the Galactic Disc}.
 \newblock \emph{\mnras}, 262:\penalty0 545--587, June 1993.
@@ -906,7 +904,7 @@ Pablo {Marchant}, Mathieu {Renzo}, Robert {Farmer}, Kaliroe M.~W. { Pappas},
 \newblock \doi{10.3847/1538-4357/ab3426}.
 
 \bibitem[{Mazeh} et~al.(1992){Mazeh}, {Goldberg}, {Duquennoy}, and
-  {Mayor}]{1992ApJ...401..265M}
+  {Mayor}]{Mazeh92}
 Tsevi {Mazeh}, Dorit {Goldberg}, Antoine {Duquennoy}, and Michel {Mayor}.
 \newblock {On the Mass-Ratio Distribution of Spectroscopic Binaries with
   Solar-Type Primaries}.
@@ -932,7 +930,7 @@ S.~{Miyaji}, K.~{Nomoto}, K.~{Yokoi}, and D.~{Sugimoto}.
 \newblock {Supernova triggered by electron captures.}
 \newblock \emph{\pasj}, 32:\penalty0 303--329, January 1980.
 
-\bibitem[{Moe} and {Di Stefano}(2017)]{2017ApJS..230...15M}
+\bibitem[{Moe} and {Di Stefano}(2017)]{MoeDiStefano}
 Maxwell {Moe} and Rosanne {Di Stefano}.
 \newblock {Mind Your Ps and Qs: The Interrelation between Period (P) and
   Mass-ratio (Q) Distributions of Binary Stars}.
@@ -1150,7 +1148,7 @@ Hideyuki {Saio} and Ken'ichi {Nomoto}.
 \newblock \emph{\apj}, 615\penalty0 (1):\penalty0 444--449, November 2004.
 \newblock \doi{10.1086/423976}.
 
-\bibitem[{Salpeter}(1955)]{1955ApJ...121..161S}
+\bibitem[{Salpeter}(1955)]{Salpeter}
 Edwin~E. {Salpeter}.
 \newblock {The Luminosity Function and Stellar Evolution.}
 \newblock \emph{\apj}, 121:\penalty0 161, January 1955.
@@ -1314,7 +1312,7 @@ Aleksandr~V. {Tutukov}, Lev~R. {Yungelson}, and Icko {Iben}, Jr.
 \newblock \doi{10.1086/171005}.
 
 \bibitem[{van Haaften} et~al.(2013){van Haaften}, {Nelemans}, {Voss}, {Toonen
-  }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{2013A&A...552A..69V}
+  }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{Haaften}
 L.~M. {van Haaften}, G.~{Nelemans}, R.~{Voss}, S.~{Toonen }, S.~F. {Portegies
   Zwart}, L.~R. {Yungelson}, and M.~V. {van der Sluys}.
 \newblock {Population synthesis of ultracompact X-ray binaries in the Galactic

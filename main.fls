@@ -355,6 +355,8 @@ INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./chapters/Capitolo5.tex
 INPUT ./chapters/Capitolo5.tex
 OUTPUT chapters/Capitolo5.aux

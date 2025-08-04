@@ -63,7 +63,22 @@ This is achieved following an iterative process designed to reach a convergence 
 \end{enumerate}
 In practice, the fixed population is the converged, computationally efficient representation of the systems that we want to simulate, embedded in a complete small-scale synthetic galaxy that also contains other stellar components.
 The output is stored in a data frame, which separates the full galaxy properties from the fixed population ones.
-The last step that is required to construct a full size astrophysical population is to scale the fixed population (by mass or by number of stars) with a re-sampling approach with replacement, allowing to extrapolate a larger final population that preserves the statistical properties encoded in the fixed population.
+The last step required to construct a full size galaxy is to scale the fixed population (by mass or by number of stars) with a re-sampling approach with replacement, allowing to extrapolate a larger final population that preserves the statistical properties encoded in the fixed population.
+
+\subsection{Initialization}
+The fixed population is generated from an initial collection of binaries sampled from distribution functions to assign to each binary an initial value of metallicity ($Z$), primary star mass ($m$), mass ratio ($q$), orbital separation ($a$), eccentricity ($e$), and birth time ($T0$) according to the selected SFH.
+In COSMIC the user can choose between different binary parameter distributions, and different parameters can be treated indipendently.
+In particular:
+\begin{itemize}
+    \item Masses can be sampled from the \cite{Salpeter}, \cite{Kroupa93} or \cite{Kroupa01} Initial Mass Function (IMF);
+    \item Mass ratios are uniformly sampled from \cite{Mazeh92} and \cite{Mazeh94};
+    \item Orbital separations are log-uniformly sampled following \cite{Dominik};
+    \item Eccentricities can be sampled from \cite{Heggie} or from \cite{Geller}; 
+    \item Binarity can follow \cite{Haaften} or follow user specified fractions; 
+    \item COSMIC can also generate initial binary samples following \cite{MoeDiStefano}.
+\end{itemize}
+In this thesis we used the default parameter distributions for all the above, which means INSERT EXACT DISTRIBUTIONS USED.
+
 
 
 
