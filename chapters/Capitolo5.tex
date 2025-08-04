@@ -1,7 +1,37 @@
 \chapter{GWGC and Galaxy Properies}
-- Catalog introduction and description (what it has - what we need)
-- How we'll get what we need (brief description of how we use catalog info to get what we want)
+As we have seen in \textbf{Chapter 2}, the goal of this work is to simulate the gravitational wave background produced by compact binaries in the local universe.
+To do this, we must first generate the populations emitting this signal, and we do this by using COSMIC to replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content.
+To access the required galactic properties, we rely on the dataset provided in \cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
+This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from gravitational wave searches.
+
+\section{What it has vs what we need}
+In principle, we could generate a separate fixed population for each galaxy in the GWGC and scale it individually.
+However, this is simply not practical because of the computational power and time it would require, and therefore we must find a strategy to group them in a few, representative, categories.
+As we will show in this section, many of the information in the GWGC can be used to infer the missing astrophysical quantities we need for population synthesis. 
+Ultimately, we will find that metallicity is the most suitable parameter for grouping galaxies.
+To get there, we follow a chain of empirical relations, starting from the galaxy morphological type, through  a luminosity to mass, and then a mass to metallicity relation. 
+This process will enable us to provide COSMIC with the necessary input, found in a consistent and astrophisically motivated way.
+
+\subsection{Galaxy types}
+
     - T value to Class
-        - Class to Mass-Luminosity relation -> Mass (Faber \& Gallagher)
+
+\subsection{Mass-luminosity relation}
+
+    - Class to Mass-Luminosity relation -> Mass (Faber \& Gallagher)
+
+\subsection{Mass-metallicity relation}
+
     - Finding each galaxy's metallicity from the mass (Tremonti - Allende Prieto)
-- Metallicity bins for GWGC galaxies
+
+
+\section{The final fixed populations}
+
+\subsection{Final catalog editing}
+
+    - Graphs of catalog distributions
+
+\subsection{Metallicity categorization}
+
+    - Metallicity bins for GWGC galaxies, and corresponding fixed populations
+

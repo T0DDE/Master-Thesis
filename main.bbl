@@ -1,4 +1,4 @@
-\begin{thebibliography}{163}
+\begin{thebibliography}{164}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -1359,6 +1359,15 @@ Chen {Wang}, Dong {Lai}, and J.~L. {Han}.
   Constraints and Implications for Kick Mechanisms}.
 \newblock \emph{\apj}, 639\penalty0 (2):\penalty0 1007--1017, March 2006.
 \newblock \doi{10.1086/499397}.
+
+\bibitem[White et~al.(2011)White, Daw, and Dhillon]{GWGC}
+Darren~J White, E~J Daw, and V~S Dhillon.
+\newblock A list of galaxies for gravitational wave searches.
+\newblock \emph{Classical and Quantum Gravity}, 28\penalty0 (8):\penalty0
+  085016, March 2011.
+\newblock ISSN 1361-6382.
+\newblock \doi{10.1088/0264-9381/28/8/085016}.
+\newblock URL \url{http://dx.doi.org/10.1088/0264-9381/28/8/085016}.
 
 \bibitem[{Whyte} and {Eggleton}(1985)]{1985MNRAS.214..357W}
 C.~A. {Whyte} and P.~P. {Eggleton}.
