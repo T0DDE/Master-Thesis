@@ -31,7 +31,7 @@
 \contentsline {subsubsection}{Convergence}{17}{section*.4}%
 \contentsline {subsection}{\numberline {3.2.2}The output}{18}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Astrophysical population}{18}{section.3.3}%
-\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properies}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {4}GWGC and Galaxy Properties}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}What it has vs what we need}{21}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Galaxy types}{21}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Mass-luminosity relation}{22}{subsection.4.1.2}%
