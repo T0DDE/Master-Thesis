@@ -1,4 +1,4 @@
-\begin{thebibliography}{164}
+\begin{thebibliography}{166}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -479,6 +479,12 @@ J.~J. {Eldridge}, E.~R. {Stanway}, L.~{Xiao}, L.~A.~S. { McClelland},
   Observational Verification, and New Results}.
 \newblock \emph{\pasa}, 34:\penalty0 e058, November 2017.
 \newblock \doi{10.1017/pasa.2017.51}.
+
+\bibitem[{Faber} and {Gallagher}(1979)]{Faber&Gallagher}
+S.~M. {Faber} and J.~S. {Gallagher}.
+\newblock {Masses and mass-to-light ratios of galaxies.}
+\newblock \emph{\araa}, 17:\penalty0 135--187, January 1979.
+\newblock \doi{10.1146/annurev.aa.17.090179.001031}.
 
 \bibitem[{Fedorova} et~al.(2004){Fedorova}, {Tutukov}, and
   {Yungelson}]{2004AstL...30...73F}
@@ -1283,6 +1289,18 @@ S.~{Toonen}, J.~S.~W. {Claeys}, N.~{Mennekens}, and A.~J. { Ruiter}.
   synthesis codes}.
 \newblock \emph{\aap}, 562:\penalty0 A14, February 2014.
 \newblock \doi{10.1051/0004-6361/201321576}.
+
+\bibitem[{Tremonti} et~al.(2004){Tremonti}, {Heckman}, {Kauffmann},
+  {Brinchmann}, {Charlot}, { White}, {Seibert}, {Peng}, { Schlegel}, {Uomoto},
+  {Fukugita}, and {Brinkmann}]{Tremonti}
+Christy~A. {Tremonti}, Timothy~M. {Heckman}, Guinevere {Kauffmann}, Jarle
+  {Brinchmann}, St{\'e}phane {Charlot}, Simon D.~M. { White}, Mark {Seibert},
+  Eric~W. {Peng}, David~J. { Schlegel}, Alan {Uomoto}, Masataka {Fukugita}, and
+  Jon {Brinkmann}.
+\newblock {The Origin of the Mass-Metallicity Relation: Insights from 53,000
+  Star-forming Galaxies in the Sloan Digital Sky Survey}.
+\newblock \emph{\apj}, 613\penalty0 (2):\penalty0 898--913, October 2004.
+\newblock \doi{10.1086/423264}.
 
 \bibitem[{Tutukov} and {Yungelson}(1996)]{1996MNRAS.280.1035T}
 A.~{Tutukov} and L.~{Yungelson}.

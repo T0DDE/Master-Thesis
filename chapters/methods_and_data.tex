@@ -2,7 +2,7 @@
 The abundance of information of the electromagnetic spectrum allowed us to build highly detailed models of various celestial objects such as stars, both on their individual internal structure and on how this is influenced by the interaction with other bodies, for instance in binary systems.
 In the pursuit of reaching a greater sensitivity in the gravitational counterpart too, which could potentially reveal new information, or place better constrains on the existing models, these stellar models, when combined with a good theory of gravity, can be used to construct synthetic populations that reproduce observable features like luminosity, color, and chemical composition, which could enable us to predict what their gravitational signal would look like.
 In gravitational waves research, our observational capabilities are still very limited, and the signals are still comparatively very weak relative to their electromagnetic counterpart. 
-Thererfore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
+Therefore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
 
 \section{Stellar populations synthesis codes}
 Generating a synthetic population of stars is a very complex task, that involves multiple steps, each involving important choices.
@@ -139,15 +139,60 @@ However, this is simply not practical because of the computational power and tim
 As we will show in this section, many of the information in the GWGC can be used to infer the missing astrophysical quantities we need for population synthesis. 
 Ultimately, we will find that metallicity is the most suitable parameter for grouping galaxies.
 To get there, we follow a chain of empirical relations, starting from the galaxy morphological type, through  a luminosity to mass, and then a mass to metallicity relation. 
-This process will enable us to provide COSMIC with the necessary input, found in a consistent and astrophisically motivated way.
+This process will enable us to provide COSMIC with the necessary input, found in a consistent and astrophysically motivated way.
 
-\subsection{Galaxy types}
 
-    - T value to Class
 
 \subsection{Mass-luminosity relation}
 
-    - Class to Mass-Luminosity relation -> Mass (Faber \& Gallagher)
+As previously discussed, in order to scale a fixed population to the size of a specific galaxy, we need either its total stellar mass or the number of stars.
+In particular, \cite{Faber&Gallagher} presents a luminosity-to-mass relation that depends on the morphological type.
+This allows to use the blue magnitude and the T-type provided in GWGC to estimate each galaxy's stellar mass.
+
+\subsubsection{Magnitude to luminosity}
+To compute the stellar mass, the luminosity-to-mass ratio presented in \cite{Faber&Gallagher} applies to the absolute blue luminosity of each galaxy.
+GWGC provides the absolute blue magnitude, thus we have to convert it into blue luminosity using the Sun's blue-band absolute magnitude as a reference (typically $M_{B,\odot} = 5.48$).
+Starting from the magnitude definition,
+\[
+    m_{B,gal} - m_{B,\odot} = -2.5\log_10\left(\frac{L_{B,gal}}{L_{B,\odot}}\right),
+\]
+which, in stellar units, brings us to the following conversion:
+\begin{equation}
+    L_{B,gal} = 10^{-0.4(m_{B,gal}-m_{B,\odot})}L_{B,\odot}
+    \label{eq: magnitude to luminosity}
+\end{equation}
+where $m_{B,gal}$ and $m_{B,\odot}\approx 5.48$ are the absolute blue magnitudes of the specific galaxy and the sun.
+
+\subsubsection{Galaxy morphological types}
+Although the GWGC denotes galaxy morphology using the de Vaucouleurs T-type scale, the luminosity-to-mass relations used in \cite{Faber&Gallagher} are defined in terms of Hubble morphological classes.
+This classification is crucial because different morphological types exhibit significantly different stellar populations and star formation histories, which affect both luminosity and mass content.
+For example, elliptical galaxies generally have lower luminosity-to-mass ratios than spirals due to their older stellar populations and lack of ongoing star formation.
+Fortunately, a direct correspondence exists between T-type values and Hubble types, and thanks to the results in \cite{Faber&Gallagher} we find the following correspondences:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ccc}
+        T-Value & Hubble Class & $\frac{M}{L_B}$ \\
+        \hline
+        $-6.00$ to $-4.01$ & $E$ & 8.5\\
+        $-4.00$ to $-2.01$ & $S0^-$ & 9.5\\
+        $-2.00$ to $-0.99$ & $S0^+-S_a$ & 6.2\\
+        $1.00$ to $3.99$ & $S_{ab}-S_{bc}$ & 6.5\\
+        $4.00$ to $4.99$ & $S_{bc}-S_{c}$ & 4.7\\
+        $5.00$ to $5.99$ & $S_{cd}-S_{d}$ & 3.9\\
+        $6.00$ to $10.00$ & $S_{dm}-Irr$ & 8.5\\
+        \hline
+    \end{tabular}
+    % \caption{Caption}
+    \label{tab: mass luminosity conversions tab}
+\end{table}\\
+
+\subsubsection{Total mass}
+The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \ref{tab: mass luminosity conversions tab}, to yield the total stellar mass for the galaxy
+\begin{equation}
+    
+    \label{eq: total mass calculation}
+\end{equation}
+
 
 \subsection{Mass-metallicity relation}
 

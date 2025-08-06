@@ -3,58 +3,55 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: chapters/Frontespizio.aux
 A level-1 auxiliary file: chapters/Abstract.aux
-A level-1 auxiliary file: chapters/Capitolo1.aux
-A level-1 auxiliary file: chapters/Capitolo2.aux
-A level-1 auxiliary file: chapters/Capitolo3.aux
-A level-1 auxiliary file: chapters/Capitolo4.aux
-A level-1 auxiliary file: chapters/Capitolo5.aux
-A level-1 auxiliary file: chapters/Capitolo6.aux
-A level-1 auxiliary file: chapters/Capitolo7.aux
-A level-1 auxiliary file: chapters/Capitolo8.aux
+A level-1 auxiliary file: chapters/Introduzione.aux
+A level-1 auxiliary file: chapters/theory_framework.aux
+A level-1 auxiliary file: chapters/methods_and_data.aux
+A level-1 auxiliary file: chapters/Results.aux
+A level-1 auxiliary file: chapters/Conclusions.aux
 A level-1 auxiliary file: chapters/AppendiceA.aux
 The style file: plainnat.bst
 Database file #1: chapters/Bibliografia.bib
 Warning--entry type for "2019zndo...3561144B" isn't style-file defined
---line 634 of file chapters/Bibliografia.bib
-You've used 164 entries,
+--line 678 of file chapters/Bibliografia.bib
+You've used 166 entries,
             2773 wiz_defined-function locations,
-            1771 strings with 51543 characters,
-and the built_in function-call counts, 112288 in all, are:
-= -- 9025
-> -- 10805
-< -- 57
-+ -- 3613
-- -- 3444
-* -- 11466
-:= -- 18385
-add.period$ -- 649
-call.type$ -- 164
-change.case$ -- 1638
-chr.to.int$ -- 159
-cite$ -- 328
-duplicate$ -- 3410
-empty$ -- 6175
-format.name$ -- 3690
-if$ -- 22393
+            1783 strings with 52103 characters,
+and the built_in function-call counts, 113707 in all, are:
+= -- 9142
+> -- 10937
+< -- 58
++ -- 3657
+- -- 3486
+* -- 11608
+:= -- 18615
+add.period$ -- 657
+call.type$ -- 166
+change.case$ -- 1658
+chr.to.int$ -- 161
+cite$ -- 332
+duplicate$ -- 3451
+empty$ -- 6255
+format.name$ -- 3736
+if$ -- 22679
 int.to.chr$ -- 6
 int.to.str$ -- 1
-missing$ -- 163
-newline$ -- 985
-num.names$ -- 660
-pop$ -- 2818
+missing$ -- 165
+newline$ -- 997
+num.names$ -- 668
+pop$ -- 2852
 preamble$ -- 1
-purify$ -- 1474
+purify$ -- 1492
 quote$ -- 0
-skip$ -- 3037
+skip$ -- 3075
 stack$ -- 0
-substring$ -- 2517
-swap$ -- 359
+substring$ -- 2563
+swap$ -- 363
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1804
+type$ -- 1826
 warning$ -- 0
-while$ -- 603
+while$ -- 611
 width$ -- 0
-write$ -- 2454
+write$ -- 2484
 (There was 1 warning)
