@@ -1,4 +1,4 @@
-\chapter{COSMIC and Stellar Populations Synthesis}
+\chapter{Methods and Data}
 The abundance of information of the electromagnetic spectrum allowed us to build highly detailed models of various celestial objects such as stars, both on their individual internal structure and on how this is influenced by the interaction with other bodies, for instance in binary systems.
 In the pursuit of reaching a greater sensitivity in the gravitational counterpart too, which could potentially reveal new information, or place better constrains on the existing models, these stellar models, when combined with a good theory of gravity, can be used to construct synthetic populations that reproduce observable features like luminosity, color, and chemical composition, which could enable us to predict what their gravitational signal would look like.
 In gravitational waves research, our observational capabilities are still very limited, and the signals are still comparatively very weak relative to their electromagnetic counterpart. 
@@ -125,3 +125,53 @@ population, $N_{astro, tot}$, to the total number of stars formed to produce the
 \end{equation}
 Thus, to create a full-scale astrophysical population we need a reference population from which we can extract either the total mass or the total number of stars, to then use to scale up our fixed population.
 As will follow in \textbf{Chapter 4}, we will use a catalog which reports the total mass of the galaxies in it, so we will proceed using the method in \eqref{eq: scale by mass}.
+
+
+
+\section{GWGC and Galaxy Properties}
+As we have seen in \textbf{Chapter 2}, the goal of this work is to simulate the gravitational wave background produced by compact binaries in the local universe.
+To do this, we must first generate the populations emitting this signal, and we do this by using COSMIC to replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content.
+To access the required galactic properties, we rely on the dataset provided in \cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
+This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from gravitational wave searches.
+
+\section{What it has vs what we need}
+In principle, we could generate a separate fixed population for each galaxy in the GWGC and scale it individually.
+However, this is simply not practical because of the computational power and time it would require, and therefore we must find a strategy to group them in a few, representative, categories.
+As we will show in this section, many of the information in the GWGC can be used to infer the missing astrophysical quantities we need for population synthesis. 
+Ultimately, we will find that metallicity is the most suitable parameter for grouping galaxies.
+To get there, we follow a chain of empirical relations, starting from the galaxy morphological type, through  a luminosity to mass, and then a mass to metallicity relation. 
+This process will enable us to provide COSMIC with the necessary input, found in a consistent and astrophisically motivated way.
+
+\subsection{Galaxy types}
+
+    - T value to Class
+
+\subsection{Mass-luminosity relation}
+
+    - Class to Mass-Luminosity relation -> Mass (Faber \& Gallagher)
+
+\subsection{Mass-metallicity relation}
+
+    - Finding each galaxy's metallicity from the mass (Tremonti - Allende Prieto)
+
+
+\section{The final fixed populations}
+
+\subsection{Final catalog editing}
+
+    - Graphs of catalog distributions
+
+\subsection{Metallicity categorization}
+
+    - Metallicity bins for GWGC galaxies, and corresponding fixed populations
+
+
+\section{Total Gravitational Wave Signal}
+- For each galaxy:
+    - Compute right $N_astro$
+    - compute each binary's GW signal;
+    - bin it to LISA's frequency sensibility bins
+    - Plot it on LISA's sensibility curve
+- Zone of avoidance: how to consider all the sky
+
+

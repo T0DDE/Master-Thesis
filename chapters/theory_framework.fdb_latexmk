@@ -1,0 +1,16 @@
+# Fdb version 4
+["pdflatex"] 1754466854.26694 "/home/gabri/tesi_magistrale/chapters/theory_framework.tex" "theory_framework.pdf" "theory_framework" 1754466854.5013 2
+  "/home/gabri/tesi_magistrale/chapters/theory_framework.tex" 1754466854.16272 5149 522aea6915ca46094ab5767859952c6b ""
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1742685315 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1742685315 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1745398029 325717 59a65e600f662ceace641c3ea8b5d4af ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1745397993 2008249 e2720c7eea163939791745b5bfb40bcb ""
+  "theory_framework.aux" 1754466854.26642 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "theory_framework.tex" 1754466854.16272 5149 522aea6915ca46094ab5767859952c6b ""
+  (generated)
+  "theory_framework.aux"
+  "theory_framework.log"
+  "theory_framework.pdf"
+  (rewritten before read)
