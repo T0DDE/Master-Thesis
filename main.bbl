@@ -1,4 +1,4 @@
-\begin{thebibliography}{166}
+\begin{thebibliography}{168}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -159,6 +159,13 @@ B.~P. {Abbott}, R.~{Abbott}, T.~D. {Abbott}, S.~{Abraham}, F.~{Acernese},
 \newblock \emph{Physical Review X}, 9\penalty0 (3):\penalty0 031040, July 2019.
 \newblock \doi{10.1103/PhysRevX.9.031040}.
 
+\bibitem[{Allende Prieto} et~al.(2001){Allende Prieto}, {Lambert}, and
+  {Asplund}]{AllendePrieto}
+Carlos {Allende Prieto}, David~L. {Lambert}, and Martin {Asplund}.
+\newblock {The Forbidden Abundance of Oxygen in the Sun}.
+\newblock \emph{\apjl}, 556\penalty0 (1):\penalty0 L63--L66, July 2001.
+\newblock \doi{10.1086/322874}.
+
 \bibitem[{Andrews} et~al.(2015){Andrews}, {Farr}, {Kalogera}, and {
   Willems}]{2015ApJ...801...32A}
 Jeff~J. {Andrews}, W.~M. {Farr}, V.~{Kalogera}, and B.~{ Willems}.
@@ -182,6 +189,13 @@ Jeff~J. {Andrews}, Katelyn {Breivik}, Chris {Pankow}, Daniel~J. {D'Orazio}, and
   Formation Channel}.
 \newblock \emph{\apjl}, 892\penalty0 (1):\penalty0 L9, March 2020.
 \newblock \doi{10.3847/2041-8213/ab5b9a}.
+
+\bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and
+  {Scott}]{Asplund}
+Martin {Asplund}, Nicolas {Grevesse}, A.~Jacques {Sauval}, and Pat {Scott}.
+\newblock {The Chemical Composition of the Sun}.
+\newblock \emph{\araa}, 47\penalty0 (1):\penalty0 481--522, September 2009.
+\newblock \doi{10.1146/annurev.astro.46.060407.145222}.
 
 \bibitem[{Astropy Collaboration} et~al.(2013){Astropy Collaboration},
   {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, { Bray}, {Aldcroft},

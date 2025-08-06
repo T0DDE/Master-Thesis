@@ -91,7 +91,7 @@ The physical limits of the simulated systems are then enforced by taking the log
     match=\displaystyle\frac{\sum_{k=1}^{N}P_{k,i} P_{k,i+1}}{\sqrt{\sum_{k=1}^{N}(P_{k,i}P_{k,i})\sum_{k=1}^{N}(P_{k,i}P_{k,i+1})}},
     \label{eq: match condition}
     \notag
-\end{equation}
+u\end{equation}
 where $P_{k,i}$ is the probability for the \textit{k}th bin, for the \textit{i}th iteration.
 For how it is defined, the match value shifts between $0$ and $1$, and tends to unity as the parameter distributions converge to a distinct shape.
 
@@ -182,32 +182,65 @@ Fortunately, a direct correspondence exists between T-type values and Hubble typ
         $6.00$ to $10.00$ & $S_{dm}-Irr$ & 8.5\\
         \hline
     \end{tabular}
-    % \caption{Caption}
+    \caption{WRITE CAPTION}
     \label{tab: mass luminosity conversions tab}
 \end{table}\\
-
-\subsubsection{Total mass}
-The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \ref{tab: mass luminosity conversions tab}, to yield the total stellar mass for the galaxy
+\vspace{3mm}
+The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \textbf{Table \ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
 \begin{equation}
-    
+    M_{gal} = \frac{M}{L_B}L_{B,gal}
     \label{eq: total mass calculation}
 \end{equation}
 
 
 \subsection{Mass-metallicity relation}
+Now that we have estimated the stellar mass of each galaxy, we can also derive the corresponding metallicity.
+This is made possible by the results of \cite{Tremonti}, where an empirical relation between stellar mass and gas-phase oxygen abundance (a proxy for galaxy metallicity) is established.
+The study, based on a sample of over 50,000 star-forming galaxies observed by the Sloan Digital Sky Survey, reveals a tight correlation between stellar mass and metallicity, spanning three orders of magnitude in mass and a factor of ten in metallicity, which can be written as follows:
+\begin{equation}
+    Z' = -1.492 + 1.847\times\log(M_*) - 0.08026\times[\log(M_*)]^2,
+    \label{eq: mass to metallicity relation}
+\end{equation}
+where $M_*$ is the galactic stellar mass, and 
+\begin{equation}
+    Z'= 12+\log(O/H)
+    \label{eq: metalliticy weird units definition}
+\end{equation}
+is the metallicity written in terms of the oxygen abundance (all the metallicity values with an apostrophe are intended as in these units).
+\subsubsection{On metallicity units}\label{sec:on_metallicity_units} % (fold)
+Now, in these units the sun's metallicity is\footnote{This value is taken from the work \cite{AllendePrieto}} $Z_\odot ' = 8.69$, whereas in the units used by COSMIC it is\footnote{This refers to the work \cite{Asplund}} $Z_\odot=0.0134$ (all the metallicity values without the apostrophe are intended as in these units).
+We can easily find a conversion between the two unit systems by assuming that the rate of oxygen abundance in the galaxy and the one in the sun is equal to the rate of the metallicities in COSMIC's units,
+\begin{equation}
+    \frac{(O/H)_{gal}}{(O/H)_\odot}=\frac{Z_{gal}}{Z_\odot},
+    \label{eq: metallicity rateo assumption}
+\end{equation}
+where $(O/H)$ can be found inverting \eqref{eq: metalliticy weird units definition}. 
+At this point, knowing that $Z_\odot ' = 8.69$, we can:
+\begin{itemize}
+    \item Compute the $Z_{gal}'$ value for each galaxy in GWGC using \eqref{eq: mass to metallicity relation};
+    \item Write $(O/H)_\odot$ and $(O/H)_{gal}$ in terms of the corresponding  $Z'$ value using \eqref{eq: metalliticy weird units definition}: $(O/H)=10^{(Z'-12)}$ and  $(O/H)\odot \approx 0.32\hspace{1mm}$. 
+\end{itemize}
+Finally, finding $Z_{gal}$ from \eqref{eq: metallicity rateo assumption}, we can write the metallicity units conversion as:
+\begin{equation}
+    Z_{gal}=27.3\times10^{(Z'-12)},
+    \label{eq: Metallicity unit conversion}
+\end{equation}
+where the "$27.3$" coefficient mainly depends on the $Z_\odot$ value.
+This relation allows us to assign a realistic metallicity estimate to each GWGC galaxy in COSMIC's units, which we can now use to group them into representative subsets. 
+This way, we can account for the significant impact of metallicity on stellar wind strength, remnant masses, and binary evolution outcomes, that greatly affects the expected gravitational wave signal.
 
-    - Finding each galaxy's metallicity from the mass (Tremonti - Allende Prieto)
-
-
-\section{The final fixed populations}
-
-\subsection{Final catalog editing}
+\subsection{The final fixed populations}
+Not all the objects listed in the GWGC are suitable for our purposes.
+In addition to galaxies, the catalog also includes globular clusters, which can be identified through their T-type values. 
+Moreover, not all galaxies in the catalog contain all the information required to perform the procedures described in the previous sections.
+In order to go through all the steps we have discussed, and only work with galaxies, we applied a series of masks to clean the catalog.
+After this selection, we retained approximately $20,000$ galaxies from the original $53,255$ in the GWGC catalog, which constitute the final sample used for generating our synthetic populations and gravitational wave background estimates.
 
     - Graphs of catalog distributions
 
 \subsection{Metallicity categorization}
 
-    - Metallicity bins for GWGC galaxies, and corresponding fixed populations
+In particular, we will classify galaxies into 10 metallicity bins, each linked to a different synthetic population generated with COSMIC.
 
 
 \section{Total Gravitational Wave Signal}

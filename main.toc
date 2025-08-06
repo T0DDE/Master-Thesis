@@ -40,12 +40,11 @@
 \contentsline {subsection}{\numberline {2.3.2}Mass-luminosity relation}{18}{subsection.2.3.2}%
 \contentsline {subsubsection}{Magnitude to luminosity}{18}{section*.18}%
 \contentsline {subsubsection}{Galaxy morphological types}{18}{section*.19}%
-\contentsline {subsubsection}{Total mass}{19}{section*.20}%
 \contentsline {subsection}{\numberline {2.3.3}Mass-metallicity relation}{19}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}The final fixed populations}{19}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Final catalog editing}{19}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Metallicity categorization}{19}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Total Gravitational Wave Signal}{19}{section.2.5}%
+\contentsline {subsubsection}{On metallicity units}{19}{section*.20}%
+\contentsline {subsection}{\numberline {2.3.4}The final fixed populations}{20}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Metallicity categorization}{20}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Total Gravitational Wave Signal}{20}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Results}{21}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Conclusions and Future Perspectives}{23}{chapter.4}%
 \contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}%
