@@ -229,26 +229,101 @@ where the "$27.3$" coefficient mainly depends on the $Z_\odot$ value.
 This relation allows us to assign a realistic metallicity estimate to each GWGC galaxy in COSMIC's units, which we can now use to group them into representative subsets. 
 This way, we can account for the significant impact of metallicity on stellar wind strength, remnant masses, and binary evolution outcomes, that greatly affects the expected gravitational wave signal.
 
+
+\subsection{Missing galaxies}
+The GWGC is far from being a complete list of the galaxies in the local Universe.
+As we will now see, there are two main factors contributing to this incompleteness: observational limitations due to the Zone of Avoidance (ZOA) and limitations of the information that the catalog presents.
+
+\subsubsection{Zone of avoiance}
+
+Since the GWGC is an observation-based catalog compiled from optical surveys, we must account for the Zone of Avoidance — the region of the sky obscured by the Milky Way’s interstellar dust and stellar crowding, which impedes the detection of background galaxies.
+The extent of the ZOA depends on the wavelength of observation: infrared surveys penetrate deeper through the dust, while optical surveys, like those used for GWGC, are more strongly affected. 
+In the optical band, the ZOA is expected to cover about $\sim25\%$ of the sky \cite{Kraan-Korteweg}.
+For this work, we estimated the ZOA directly from the spatial distribution of galaxies in GWGC, by plotting their positions in Galactic coordinates. 
+This way, the ZOA appears clearly as a horizontal band centered around the Galactic plane (see \textbf{Figure~\ref{fig: ZOA in galactic coordinates}}).
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{images/ZOA_galactic_coords.png}
+    \end{center}
+    \caption{INSERT CAPTION AND REDO IMAGE IN PDF!!!}\label{fig: ZOA in galactic coordinates}
+\end{figure}
+To quantify its extent, we divided the sky map into $n_{\rm pix}$ equal-area pixels and focused on the band $|b| \leq 15^\circ$ in Galactic latitude.
+Counting the empty pixels in this band and dividing by $n_{\rm pix}$ gives an estimated ZOA coverage of $\sim20\%$–$25\%$ of the sky, depending on the chosen pixel resolution.
+This estimate is fully consistent with the literature \cite{Kraan-Korteweg}, so in our analysis we will assume that GWGC effectively covers $\sim80\%$ of the sky.
+
+\subsubsection{Incompleteness and non-galactic objects}
+Secondly, the entries of the GWGC represent a source of incompleteness themselves. 
+Not all the objects listed in the GWGC are suitable for our purposes:
+in addition to galaxies, the catalog also includes globular clusters, which can be identified through their T-type values; 
+moreover, not all galaxies in the catalog contain all the information required to perform the procedures described in the previous sections.
+To construct a working sample, we applied a series of masks to clean the catalog:
+\begin{itemize}
+    \item Only keep entries classified as galaxies; 
+    \item Require that the distance, T-type, and absolute blue magnitude are provided; 
+\end{itemize}
+After this selection, the sample we are left with reduced from the original $53,255$ entries to roughly $20,000$ galaxies suitable for population synthesis.
+
+\subsubsection{Filling the gap}
+In order to compensate the missing galaxies, we have make two physically motivated assumptions.
+\begin{enumerate}
+    \item \textbf{Cosmological Principle}:\\
+    The GWGC lists all the observed galaxies within $100Mpc$.
+    On such scales, the Universe can be assumed to be statistically \textit{homogeneous} and \textit{isotropic}. 
+    This assumption is supported from observations of the \textit{Cosmic Microwave Background} (CMB), where we know that the correlation function of the temperature fluctuations across the sky peaks at scales of $\sim100Mpc$. 
+    Under this assumption, the selected galaxies of the GWGC should be statistically representative of the overall population in he same volume.
+    \item \textbf{Distance Matters}:\\ 
+    The angular position is irrelevant in the computation of the gravitational wave signal; only the distance of the source matters.
+    Therefore, missing galaxies from the unexplored volume covered by the Milky Way can be statistically represented by the galaxies from our retained sample.
+\end{enumerate}
+Following these assumptions, we “fill in” the missing fraction of the sky and the dropped entries of the catalog by sampling with replacement from the cleaned GWGC, just like we did to extract an astrophysical from the fixed one, preserving its parameter distributions.
+This ensures that the statistical properties of the synthetic galaxy distribution match those of the observed portion while restoring the full-sky coverage. 
+This is shown in a graphical representation of the distributions of distances, blue band magnitudes and T-types, in \textbf{Figure~\ref{fig: distro comparison}}: the distributions have been scaled up without visible changes.
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{images/distro_comparison.pdf}
+    \end{center}
+    \caption{INSERT CAPTION}\label{fig: distro comparison}
+\end{figure}
+
+
+\section{Final considerations}
+Now that the catalog has been completed and its ready for the population synthesis, its time to put all the pieces together.
+What we will do in this last section, is to generate the fixed populations that will represent all the galaxies in the final catalog, scale them accordingly, compute the gravitational wave signal of all the binaries they contain, and finally compare it with LISA's sensitivity curve.
+
 \subsection{The final fixed populations}
-Not all the objects listed in the GWGC are suitable for our purposes.
-In addition to galaxies, the catalog also includes globular clusters, which can be identified through their T-type values. 
-Moreover, not all galaxies in the catalog contain all the information required to perform the procedures described in the previous sections.
-In order to go through all the steps we have discussed, and only work with galaxies, we applied a series of masks to clean the catalog.
-After this selection, we retained approximately $20,000$ galaxies from the original $53,255$ in the GWGC catalog, which constitute the final sample used for generating our synthetic populations and gravitational wave background estimates.
+As we already discussed, the metallicity of a galaxy has a great impact on the stellar evolution and, thus, gravitational wave signal.
+This, plus the fact that metallicity is closely linked to the galaxy types too, led us to choose it as characterizing parameter for the populations that we will generate to represent the galaxy in the catalog.
+In particular, we the final catalog covers a range from a minimum of $ Z= 0.00748$ to a maximum of $Z= 0.03948$.
+We decided to group all the values in between in ten equally wide bins, represented in \textbf{Figure~\ref{fig: Z distribution of final catalog}}.
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{images/z_distro_gwgc_completed_ZOA.pdf}
+    \end{center}
+    \caption{insert caption}\label{fig: Z distribution of final catalog}
+\end{figure}\\
+Each one of the center values of the bins, shown in the $x$ label, is linked to a different synthetic fixed population generated with COSMIC.
+For this thesis project, the fixed populations we generated covered the kstar values $10$, $11$ and $12$, corresponding to He, CO, and Ne white dwarfs\footnote{INSERISCI TABELLA IN APPENDICE, E QUI IL RIERIMENTO}.
+The simulation was done using ASK WILL INFO ON COSMIC-POP COMMAND USED.
 
-    - Graphs of catalog distributions
+\subsection{LISA's frequency resolution}
+\subsubsection{Sum gw signal}
+ASD and multiple sources signal addition 
 
-\subsubsection{Metallicity categorization}
+\subsubsection{LISA frequency bins}
+LISA $T_{obs}$
 
-In particular, we will classify galaxies into 10 metallicity bins, each linked to a different synthetic population generated with COSMIC.
+\subsubsection{The signal computation IN RESULTS?}
+At this point we are fully equipped to be able to compute the gravitational wave signal of the sources.
+This will be done in an iterative process applied to each galaxy in the final catalog, which consists of the following steps:
+\begin{itemize}
+    \item Compute the right $N_{astro}$ using the~\eqref{eq: scale by mass}
+    \item Scale the fixed population accordingly, thus creating the full-scale galaxy simulation.
+    At this point for each binary system in this astrophysical population we:
+    \begin{itemize}
+        \item Compute each binary's gravitational wave signal using~\eqref{};
+        \item Bin this signal to LISA's frequency bins, by summing it using~\eqref{};
+        \item Plot this value on LISA's curve.
+    \end{itemize}
+\end{itemize}
 
 
-\section{Total Gravitational Wave Signal}
-- For each galaxy:
-    - Compute right $N_astro$
-    - compute each binary's GW signal;
-    - bin it to LISA's frequency sensibility bins
-    - Plot it on LISA's sensibility curve
-- Zone of avoidance: how to consider all the sky
-
-prova
