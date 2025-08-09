@@ -1,4 +1,19 @@
 \chapter{Results}
+\subsubsection{The signal computation}
+At this point we are fully equipped to be able to compute the gravitational wave signal of the sources.
+This will be done in an iterative process applied to each galaxy in the final catalog, which consists of the following steps:
+\begin{itemize}
+    \item Compute the right $N_{astro}$ using the~\eqref{eq: scale by mass}
+    \item Scale the fixed population accordingly, thus creating the full-scale galaxy simulation.
+    At this point for each binary system in this astrophysical population we:
+    \begin{itemize}
+        \item Compute each binary's gravitational wave signal using~\eqref{}\footnote{Note here that all the binaries within the same galaxy are given the same distance from us. This approximation is valid since the distance of the galaxy is much much bigger the its size, and thus the maximum possible distance between tow binaries within the same galaxy.};
+        \item Bin this signal to LISA's frequency bins, by summing it using~\eqref{};
+        \item Plot this value on LISA's curve.
+    \end{itemize}
+\end{itemize}
+
+
 - Plot of spectral distribution of the computed signal
 - Analysis of the distribution of the sources
 - Eventual implications (none, since it shouldn't be visible)

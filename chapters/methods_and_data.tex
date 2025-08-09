@@ -286,9 +286,9 @@ This is shown in a graphical representation of the distributions of distances, b
 \end{figure}
 
 
-\section{Final considerations}
+\section{Final steps}
 Now that the catalog has been completed and its ready for the population synthesis, its time to put all the pieces together.
-What we will do in this last section, is to generate the fixed populations that will represent all the galaxies in the final catalog, scale them accordingly, compute the gravitational wave signal of all the binaries they contain, and finally compare it with LISA's sensitivity curve.
+We will analyze the metallicity distribution of the galaxies in the final catalog, categorize and generate the fixed populations accordingly, and make some final considerations regarding LISA's frequency resolution, how to take care of it, and how to sum gravitational wave signals of multiple sources that LISA will not be able to distinguish. 
 
 \subsection{The final fixed populations}
 As we already discussed, the metallicity of a galaxy has a great impact on the stellar evolution and, thus, gravitational wave signal.
@@ -306,24 +306,46 @@ For this thesis project, the fixed populations we generated covered the kstar va
 The simulation was done using ASK WILL INFO ON COSMIC-POP COMMAND USED.
 
 \subsection{LISA's frequency resolution}
-\subsubsection{Sum gw signal}
-ASD and multiple sources signal addition 
+The duration of LISA’s mission directly impacts its frequency resolution: the longer the observation time, the finer the frequency bins it can resolve.
+In this work, we assume an observation tipe of: 
+\[
+    T_{obs}=4yr=126,144,000s
+\]
+which corresponds to a minimum frequency resolution of
+\begin{equation}
+    \delta\nu_{LISA,min}\approx \frac{1}{T_{obs}}\sim 8\times 10^{-9}Hz.
+    \label{eq: LISA frequency resolution}
+\end{equation}
+This fundamental limit comes from the Furier transform properties, and determines the smallest frequency interval over which the signals can be resolved.
+Although this is a very fine resolution, the precision of the orbital period in the simulated binary systems, and thus the frequency resolution on their gravitational signal, is actually much bigger, since these values come from a simulation rather than from real observations.
+For this reason, when computing the gravitational wave signals of our simulated binaries, we must take into account the fact that LISA will not be able to distinguish sources whose sources fall in the same frequency bin.
+To model this, we group the resulting gravitational wave signals in bins of size $\delta\nu_{LISA,min}$, and sum all the signals that fall within each bin, as we will now explain.
 
-\subsubsection{LISA frequency bins}
-LISA $T_{obs}$
-
-\subsubsection{The signal computation IN RESULTS?}
-At this point we are fully equipped to be able to compute the gravitational wave signal of the sources.
-This will be done in an iterative process applied to each galaxy in the final catalog, which consists of the following steps:
-\begin{itemize}
-    \item Compute the right $N_{astro}$ using the~\eqref{eq: scale by mass}
-    \item Scale the fixed population accordingly, thus creating the full-scale galaxy simulation.
-    At this point for each binary system in this astrophysical population we:
-    \begin{itemize}
-        \item Compute each binary's gravitational wave signal using~\eqref{};
-        \item Bin this signal to LISA's frequency bins, by summing it using~\eqref{};
-        \item Plot this value on LISA's curve.
-    \end{itemize}
-\end{itemize}
-
+\subsubsection{Multiple signals summation}
+To accurately represent the frequency resolution limit imposed by LISA's observation time, we have to sum all the signals within the same frequency bin. 
+In principle, over the observation time $T_{obs}$, the orbital parameters of the sources may slowly evolve, causing a drift in the gravitational wave frequency. 
+Integrating the resulting signal during this period is no easy task.
+However, for the slowly evolving white dwarf binaries we are considering, the change in such short time-frames is negligible, so we can treat their signals as effectively monochromatic within the observation window. 
+Thus, we can define a commonly used variable to simplify our job, which is called  \textbf{Amplitude Spectral Density} (\textbf{ASD}):
+\begin{equation}
+    ASD = h\sqrt{T_{obs}},
+    \label{eq: ASD definition}
+\end{equation}
+where $h$ is the gravitational wave strain of the binary, computed in \eqref{}, and $T_{obs}$ is the mission duration for LISA.
+This quantity represents the characteristic strain amplitude of the gravitational wave signal per square root of frequency, scaled by the observation time, and its very convenient for comparing the signals in frequency space.
+Correspondingly, we can define the \textbf{Power Spectral Density} (\textbf{PSD}) as the square of the ASD
+\begin{equation}
+    PSD = ASD^2,
+    \label{eq: PSD definition}
+\end{equation}
+which properly represents the signal power per frequency unit.
+Since power contributions from independent sources add linearly, the total PSD in a given frequency bin is simply found by summing the power of all the sources within it:
+\begin{equation}
+    PSD_{tot,bin_1} = PSD_{1,bin_1} + PSD_{2,bin_1} + \dots
+    \label{eq: total PSD}
+\end{equation}
+This way, we effectively accounted for LISA's frequency resolution limit.
+The reason for introducing this quantities is that gravitational waves from different binaries are uncorrelated, so their strains add incoherently. 
+This means we cannot simply sum the strain amplitudes directly.
+Instead, the PSD provides a way to combine signals that ensures a correct representation of the combined gravitational wave background.
 
