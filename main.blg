@@ -1,48 +1,54 @@
 This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-I found no \citation commands---while reading file main.aux
-I found no \bibdata command---while reading file main.aux
-I found no \bibstyle command---while reading file main.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 482 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+A level-1 auxiliary file: chapters/Frontespizio.aux
+A level-1 auxiliary file: chapters/Abstract.aux
+A level-1 auxiliary file: chapters/Introduzione.aux
+A level-1 auxiliary file: chapters/theory_framework.aux
+A level-1 auxiliary file: chapters/methods_and_data.aux
+A level-1 auxiliary file: chapters/Results.aux
+A level-1 auxiliary file: chapters/Conclusions.aux
+A level-1 auxiliary file: chapters/AppendiceA.aux
+The style file: plainnat.bst
+Database file #1: chapters/Bibliografia.bib
+You've used 22 entries,
+            2773 wiz_defined-function locations,
+            786 strings with 9807 characters,
+and the built_in function-call counts, 11963 in all, are:
+= -- 1025
+> -- 888
+< -- 7
++ -- 298
+- -- 276
+* -- 1160
+:= -- 1922
+add.period$ -- 89
+call.type$ -- 22
+change.case$ -- 158
+chr.to.int$ -- 22
+cite$ -- 44
+duplicate$ -- 455
+empty$ -- 825
+format.name$ -- 306
+if$ -- 2437
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 22
+newline$ -- 141
+num.names$ -- 88
+pop$ -- 252
+preamble$ -- 1
+purify$ -- 136
 quote$ -- 0
-skip$ -- 0
+skip$ -- 343
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 338
+swap$ -- 44
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 242
 warning$ -- 0
-while$ -- 0
+while$ -- 81
 width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+write$ -- 339

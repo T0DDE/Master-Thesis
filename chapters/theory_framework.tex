@@ -136,7 +136,7 @@ Thus, a plane gravitational wave propagating along the $x$-axis is characterized
     \label{eq: h as a matrix in x case}
 \end{equation}
 In conclusion, the gravitational wave only has \textbf{two physical degrees of freedom} which correspond to two polarization states.
-This gauge is called \textbf{TT gauge} because of the \textit{transverse traceless} nature: $h_{\mu\nu}$ is traceless, thus $h=0$, and transverse, since the components of $h_{\mu\nu}$ along the direction of propagation are null (in this case $h_{\mux}=0$).
+This gauge is called \textbf{TT gauge} because of the \textit{transverse traceless} nature: $h_{\mu\nu}$ is traceless, thus $h=0$, and transverse, since the components of $h_{\mu\nu}$ along the direction of propagation are null (in this case $h_{\mu_x}=0$).
 
 \subsection{Motion and geodesics}
 Free test particles in General Relativity move along geodesic, which means that, in terms of a world line $x^\mu(\tau)$ parametrized by proper time $\tau$, they satisfy the \textit{geodesic equation}:
@@ -243,16 +243,129 @@ Their distinct effects on a ring of close particles are viually represented in \
     \label{fig:gw_polarizations}
 \end{figure}
 
-
-
 \subsection{The Quadrupole Approximation}
-\subsubsection{The weak-field, slow-motion approximation}
-\subsubsection{The quadrupole formula}
-\subsubsection{Transform to the TT gauge}
+Now that we have discussed the effects of the passage of a gravitational wave on the relative motion of close particles, we can focus on another important ptoblem: \textit{how such waves are generated}.
+Gravitational radiation is a consequence of variations in the spacetime curvature, and it generates from time-dependent distributions of mass and momentum.
+But not every motion of matter can produce gravitational wave signal, as we will see: conservation laws of general relativity, impose strict constraints on the possible multipole moment that can contribute to the tensorial metric perturbations.
 
-\subsection{Gravitational waves from a binary system}
-\subsubsection{General solution for circular orbits}
-Up to 13.86/7 at page 255 of the book.
+
+\subsubsection{The weak-field, slow-motion approximation}
+We already introduced previously the weak-field limit, which allows us to write the metric as a perturbed Minkowski $g_{\mu\nu}=\eta_{\mu\nu} + h_{\mu\nu}$, with $|h_{\mu\nu}|\ll 1$, and we found the solutions as in~\eqref{eq: Einstein equations as wave equations}.
+Until now, we have only solved these equations with a null stress-energy tensor.
+If we assume that the region, of size $\epsilon$, where the source of the signal is confined, is much smaller than the wavelenght of the emitted gravitational radiation, $\lambda_{GW} = \frac{2\pi c}{\omega}$, we find the following condition:
+\begin{equation}
+    \frac{2\pi c}{\omega}\gg \epsilon \to \epsilon\omega \ll c \to v_{typical} \ll c.
+    \label{eq: slow motion approximation}
+\end{equation}
+The typical velocities of the system are much smaller than the speed of light: this is the so called \textit{slow motion approximation}.
+If we now use the solution found using the retarded potentials in~\eqref{eq: solutions with retarded potentials}, by making use of the Fourier transforms it can be found that the gravitational wave signal emitted by the source, to leading order in the weak-field, slow-motion approximation is
+\begin{equation}
+    \bar{h}_{\mu\nu}(t,r) = \frac{4G}{rc^4}\int_V T_{\mu\nu}(t-\frac{r}{c}, \mathbf{x}')d^3x.
+    \label{eq: weak-field slow-motion solutions}
+\end{equation}
+
+\subsubsection{The quadrupole formula}
+The integral in~\eqref{eq: weak-field slow-motion solutions} can be simplified with some expedients. 
+First of all, by making use of the conservation law that applies to the stress-energy tensor
+\[
+    \frac{\partial T^{\mu\nu}}{\partial x^\nu}=0, \hspace{4mm} \to \hspace{4mm} \frac{1}{c}\frac{\partial T^{\mu 0}}{\partial t} = - \frac{\partial T^{\mu\nu}}{\partial x^k}, \hspace{4mm} \mu=0,\dots,3,\hspace{2mm} k=1,2,3,
+\]
+a smart use of the Gauss' theorem (reminding that the stress-energy tensor is null on the source's surface), it can be found that 
+\[
+    \bar{h}^{\mu\nu}=0.
+\]
+Secondly, we can use the \textbf{tensor-virial theorem}
+\begin{equation}
+    \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\int_V T^{00}x^kx^nd^3x = 2\int_V T^{kn}d^3x, \hspace{3mm} k,n=1,2,3,
+    \label{eq: tensor-virial theorem}
+\end{equation}
+in the definition of the \textbf{quadrupole moment tensor}
+\begin{equation}
+    q^{kn}(t) = \frac{1}{c^2}\int_VT^{00}(t,\mathbf{x})x^kx^nd^3x,
+    \label{eq: quadrupole moment tensor}
+\end{equation}
+we finally find that~\eqref{eq: weak-field slow-motion solutions} can be re-written as
+\begin{align}
+   &\bar{h}^{\mu 0} =0,\notag\\
+   &\bar{h}^{ik}(t,r) = \frac{2G}{c^4r}\frac{d^2}{dt^2}q^{ik}(t-\frac{r}{c}),
+    \label{eq: quadrupole formula}
+\end{align}
+known as the \textbf{quadrupole formula}.
+This formulation describes the gravitational wave signal emitted by a gravitating system that evolves in time, whatever the mass-energy distribution looks like, as long as $\ddot{q}^{ik}\not = 0$.
+Note that in this approximation, the only component of the stress-energy tensor that generates the metric perturbation is $T^{00}$, and that the $c^{-4}$ rendes the characteristic strain extremely small:
+\[
+    \frac{G}{c^4}\sim 10^{-49}\frac{s^2}{g\hspace{1mm}cm}.
+\]
+
+\subsubsection{Transform to the TT gauge}
+The solution in~\eqref{eq: quadrupole formula} represents a spherical wave far from the source, which locally looks like a plane wave.
+It can also be expressed, after an infinitesimal coordinate trasformation that preserves the harmonic gauge.
+This projection in the TT gauge is performed by defining symmetric and transverse \textit{projector operators} as
+\[
+    P_{jk}\equiv \delta_{jk} - n_jn_k,
+\]
+to than define the \textbf{transverse-traceless projector} 
+\begin{equation}
+    P_{jkmn}\equiv P_{jm}P_{kn}-\frac{1}{2}P_{jk}P_{mn},
+    \label{eq: transverse-traceless projector}
+\end{equation}
+which "extracts" the transverse-traceless part of a rank two tensor on the three-dimensional Euclidean space.
+This way we can, for example, define
+\[
+    h_{jk}^{TT} = P_{jkmn}\bar{h}_{mn},
+\]
+that, if applied to the~\eqref{eq: quadrupole formula}, gives
+\begin{align}
+   &\bar{h}^{\mu 0} =0,\notag\\
+   &\bar{h}^{TT}_{ik}(t,r) = \frac{2G}{c^4r}\frac{d^2}{dt^2}Q^{TT}_{ik}(t-\frac{r}{c}),
+   \notag
+\end{align}
+where $Q_{jk}^{TT} = P_{jkmn}q_{mn}$ is the \textbf{transverse-traceless part of the quadrupole moment}.
+As we will see, to compute the "luminosity" of a gravitational wave source, it is useful to define the \textbf{reduced quadrupole moment}
+\begin{equation}
+    Q_{jk} \equiv q_{jk} - \frac{1}{3}\delta_{jk}q_m^m, 
+    \label{eq: reduced quadrupole moment}
+\end{equation}
+which is traceless by definition.
+
+\subsubsection{Gravitational waves from a binary system}
+As an example, we can consider a binary system where two masses $m_1$ and $m_2$ are in a circular orbit around the common center of mass.
+The typical parameters are the total mass
+\[
+    M\equiv m_1+m_2,
+\]
+the \textit{reduced mass}
+\[
+    \mu\equiv \frac{m_1m_2}{M},
+\]
+and, by placing the origin of the coordinate frame in the center of mass, 
+\[
+    l_0 = r_1+r_2, \hspace{3mm} r_1=\frac{m_2}{M}l_0, \hspace{3mm} r_2=\frac{m_1}{M}l_0, \hspace{3mm} \omega_K=\sqrt{ \frac{GM}{l_0^3}}.
+\]
+Now, after defining the coordinates of the masses $(x_1,y_1)$ and $(x_2,y_2)$ in an orbital plane, orthogonal to the $z$-axis, as functions of all the above parameters, it becomes possible to compute the 00-component of the stress-energy tensor as
+\[
+T^{00}=c^2\sum^2_{n=1}m_n\delta(x-x_n)\delta(y-y_n)\delta(z),
+\]
+and thus all the non-vanishing components of $q_{jk}$.
+From this we can find $Q_{jk}$, $Q_{jk}^{TT}$, and finally
+\begin{equation}
+    h_{ij}^{TT}(t,r) = -\frac{A}{r}A_{ij}^{TT}(t-\frac{r}{c}),
+    \label{eq: binary system general strain solution}
+\end{equation}
+where
+\begin{align}
+    & A=\frac{4\muMG^2}{l_0c^4},\\
+    & A_{ij}^{TT}(t-\frac{r}{c} = P_{ijkl}A{kl}(t-\frac{r}{c}),
+\end{align}
+and\footnote{Note that this shows that a \textit{binary system in circular orbits emits waves at twice the orbital frewuency}a}
+\[
+    A_{\mu\nu}(t) =  
+    \begin{pmatrix}
+        \cos{2\omega_Kt} & \sin{2\omega_Kt} & 0 \\
+     \sin{2\omega_Kt} &  -\cos{2\omega_Kt}& 0 \\
+     0 & 0 & 0 \\
+    \end{pmatrix}.
+\]
 
 \subsection{Energy carried by a gravitational wave}
 \subsubsection{Stress-energy pseudo-tensor}
