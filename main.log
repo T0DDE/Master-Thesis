@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  10 AUG 2025 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  11 AUG 2025 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -178,26 +178,13 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
 )
-(/usr/share/texmf-dist/tex/generic/babel/errbabel.def)
-
-! Package babel Error: Unknown option 'italian'. Either you misspelled it
-(babel)                or the language definition file italian.ldf
-(babel)                was not found.
-(babel)                There is a locale ini file for this language.
-(babel)                If it’s the main language, try adding `provide=*'
-(babel)                to the babel package options.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4138 \ProcessOptions*
-                       
-Valid options are, among others: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-) (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+(/usr/share/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex)
+Package babel Info: Importing data for italian
+(babel)             from babel-it.ini. Reported on input line 4167.
+Package babel Info: Hyphen rules for 'italian' set to \l@english
+(babel)             (\language0). Reported on input line 4167.
+)
+(/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 )
@@ -1116,15 +1103,21 @@ or `english'. on input line 169.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-babelbib: Set bibliography fall-back language to english
+babelbib: Set bibliography fall-back language to italian
 babelbib: english.bdf loaded because language english defined.
 (/usr/share/texmf-dist/tex/latex/babelbib/english.bdf
 File: english.bdf 2021/01/06 v1.34 babelbib: multilingual bibliographies
 
 babelbib extension \btxifchangecaseon added to \extrasenglish
 )
-babelbib: Load BibTeX extensions \bibsenglish for english
-babelbib: Set language for keywords in the bibliography fixed to english
+babelbib: italian.bdf loaded because language italian defined.
+(/usr/share/texmf-dist/tex/latex/babelbib/italian.bdf
+File: italian.bdf 2021/01/06 v1.34 babelbib: multilingual bibliographies
+
+babelbib extension \btxifchangecaseoff added to \extrasitalian
+)
+babelbib: Load BibTeX extensions \bibsitalian for italian
+babelbib: Set language for keywords in the bibliography fixed to italian
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count365
@@ -1339,7 +1332,7 @@ LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/regular/it' will be
 \openout2 = `chapters/theory_framework.aux'.
 
  (./chapters/theory_framework.tex
-Chapter 1.
+\bbl@ensure@italian {Capitolo} 1.
 LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/m/n' aliased to
 (Font)              `T1/GaramondLibre-LF/regular/n' on input line 4.
 LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/regular/n' will be
@@ -1453,17 +1446,6 @@ Overfull \hbox (1.54558pt too wide) in paragraph at lines 172--173
 more de-tail we can choose to in-te-grate the []
  []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.177 ...ession for $R^{TT}_{\alpha k \lambda \mu$
-                                                  .
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1480,62 +1462,44 @@ rt of a rank two ten-sor on the three-dimensional
 
 
 [13]
-! Undefined control sequence.
-<argument> 4\muMG 
-                  ^2
-l.359 \end{align}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 4\muMG 
-                  ^2
-l.359 \end{align}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/b/n' aliased to
-(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 360.
+(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 361.
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 360.
+(Font)              scaled to size 10.0pt on input line 361.
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/b/n' aliased to
-(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 360.
+(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 361.
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/bold/n' will be
-(Font)              scaled to size 7.3pt on input line 360.
+(Font)              scaled to size 7.3pt on input line 361.
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/b/n' aliased to
-(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 360.
+(Font)              `OT1/GaramondLibre-LF/bold/n' on input line 361.
 LaTeX Font Info:    Font shape `OT1/GaramondLibre-LF/bold/n' will be
-(Font)              scaled to size 5.5pt on input line 360.
+(Font)              scaled to size 5.5pt on input line 361.
 LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/m/it' aliased to
-(Font)              `T1/GaramondLibre-LF/regular/it' on input line 360.
+(Font)              `T1/GaramondLibre-LF/regular/it' on input line 361.
 LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 360.
+(Font)              scaled to size 10.0pt on input line 361.
 
 
-[14])
+[14]
 
 [15]
+
+[16])
+
+[17]
 \openout2 = `chapters/methods_and_data.aux'.
 
  (./chapters/methods_and_data.tex
 
-[16
+[18
 
 
 
 
 
 ]
-Chapter 2.
-<images/Hertzsprung_Russel_Diagram.jpg, id=310, 1259.70625pt x 1284.8pt>
+\bbl@ensure@italian {Capitolo} 2.
+<images/Hertzsprung_Russel_Diagram.jpg, id=326, 1259.70625pt x 1284.8pt>
 File: images/Hertzsprung_Russel_Diagram.jpg Graphic file (type jpg)
 <use images/Hertzsprung_Russel_Diagram.jpg>
 Package pdftex.def Info: images/Hertzsprung_Russel_Diagram.jpg  used on input l
@@ -1543,14 +1507,14 @@ ine 19.
 (pdftex.def)             Requested size: 277.41176pt x 282.93134pt.
 
 
-[17]
-
-[18 <./images/Hertzsprung_Russel_Diagram.jpg>]
-
 [19]
 
-[20{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<images/first_fixed_params_distr.jpg, id=355, 1715.40875pt x 726.715pt>
+[20 <./images/Hertzsprung_Russel_Diagram.jpg>]
+
+[21]
+
+[22{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<images/first_fixed_params_distr.jpg, id=371, 1715.40875pt x 726.715pt>
 File: images/first_fixed_params_distr.jpg Graphic file (type jpg)
 <use images/first_fixed_params_distr.jpg>
 Package pdftex.def Info: images/first_fixed_params_distr.jpg  used on input lin
@@ -1558,37 +1522,37 @@ e 106.
 (pdftex.def)             Requested size: 362.77525pt x 153.67917pt.
 
 
-[21]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \begin{equation}
-                      
-
-[22 <./images/first_fixed_params_distr.jpg (PNG copy)>]
-
 [23]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{equation}
+                      
 
-[24]
+[24 <./images/first_fixed_params_distr.jpg (PNG copy)>]
+
+[25]
+
+[26]
 LaTeX Font Info:    Trying to load font information for TS1+GaramondLibre-LF on
  input line 220.
  (/usr/share/texmf-dist/tex/latex/garamond-libre/TS1GaramondLibre-LF.fd
@@ -1599,7 +1563,7 @@ LaTeX Font Info:    Font shape `TS1/GaramondLibre-LF/m/n' aliased to
 (Font)              `TS1/GaramondLibre-LF/regular/n' on input line 220.
 LaTeX Font Info:    Font shape `TS1/GaramondLibre-LF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 220.
-<images/ZOA_galactic_coords.png, id=421, 1130.2225pt x 679.53876pt>
+<images/ZOA_galactic_coords.png, id=438, 1130.2225pt x 679.53876pt>
 File: images/ZOA_galactic_coords.png Graphic file (type png)
 <use images/ZOA_galactic_coords.png>
 Package pdftex.def Info: images/ZOA_galactic_coords.png  used on input line 246
@@ -1607,18 +1571,18 @@ Package pdftex.def Info: images/ZOA_galactic_coords.png  used on input line 246
 (pdftex.def)             Requested size: 405.45047pt x 243.77315pt.
 
 
-[25{/usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc}]
+[27{/usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc}]
 
-[26 <./images/ZOA_galactic_coords.png (PNG copy)>]
-<images/distro_comparison.pdf, id=448, 1084.05pt x 578.16pt>
+[28 <./images/ZOA_galactic_coords.png (PNG copy)>]
+<images/distro_comparison.pdf, id=464, 1084.05pt x 578.16pt>
 File: images/distro_comparison.pdf Graphic file (type pdf)
 <use images/distro_comparison.pdf>
 Package pdftex.def Info: images/distro_comparison.pdf  used on input line 283.
 (pdftex.def)             Requested size: 405.45047pt x 216.23604pt.
 
 
-[27 <./images/distro_comparison.pdf>]
-<images/z_distro_gwgc_completed_ZOA.pdf, id=539, 578.16pt x 361.35pt>
+[29 <./images/distro_comparison.pdf>]
+<images/z_distro_gwgc_completed_ZOA.pdf, id=555, 578.16pt x 361.35pt>
 File: images/z_distro_gwgc_completed_ZOA.pdf Graphic file (type pdf)
 <use images/z_distro_gwgc_completed_ZOA.pdf>
 Package pdftex.def Info: images/z_distro_gwgc_completed_ZOA.pdf  used on input 
@@ -1626,37 +1590,16 @@ line 300.
 (pdftex.def)             Requested size: 405.45047pt x 253.40643pt.
 
 
-[28 <./images/z_distro_gwgc_completed_ZOA.pdf>]
+[30 <./images/z_distro_gwgc_completed_ZOA.pdf>]
 
-LaTeX Warning: Reference `' on page 29 undefined on input line 334.
-
-)
-
-[29]
-\openout2 = `chapters/Results.aux'.
-
- (./chapters/Results.tex
-
-[30
-
-
-
-
-
-]
-Chapter 3.
-
-LaTeX Warning: Reference `' on page 31 undefined on input line 10.
-
-
-LaTeX Warning: Reference `' on page 31 undefined on input line 11.
+LaTeX Warning: Reference `' on page 31 undefined on input line 334.
 
 )
 
 [31]
-\openout2 = `chapters/Conclusions.aux'.
+\openout2 = `chapters/Results.aux'.
 
- (./chapters/Conclusions.tex
+ (./chapters/Results.tex
 
 [32
 
@@ -1665,13 +1608,19 @@ LaTeX Warning: Reference `' on page 31 undefined on input line 11.
 
 
 ]
-Chapter 4.
+\bbl@ensure@italian {Capitolo} 3.
+
+LaTeX Warning: Reference `' on page 33 undefined on input line 10.
+
+
+LaTeX Warning: Reference `' on page 33 undefined on input line 11.
+
 )
 
 [33]
-\openout2 = `chapters/AppendiceA.aux'.
+\openout2 = `chapters/Conclusions.aux'.
 
- (./chapters/AppendiceA.tex
+ (./chapters/Conclusions.tex
 
 [34
 
@@ -1680,21 +1629,36 @@ Chapter 4.
 
 
 ]
-Appendix A.
+\bbl@ensure@italian {Capitolo} 4.
 )
 
-[35] (./main.bbl
+[35]
+\openout2 = `chapters/AppendiceA.aux'.
+
+ (./chapters/AppendiceA.tex
 
 [36
 
 
 
 
+
+]
+\bbl@ensure@italian {Appendice} A.
+)
+
+[37] (./main.bbl
+
+[38
+
+
+
+
 ]
 
-[37])
+[39])
 
-[38] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
+[40] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
 (./chapters/Introduzione.aux) (./chapters/theory_framework.aux)
 (./chapters/methods_and_data.aux) (./chapters/Results.aux)
 (./chapters/Conclusions.aux) (./chapters/AppendiceA.aux))
@@ -1710,10 +1674,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F286302268ABF63A78EFA5225E5D1A71;5395.
  ) 
 Here is how much of TeX's memory you used:
- 33787 strings out of 474651
- 652678 string characters out of 5756723
- 1209968 words of memory out of 5000000
- 56118 multiletter control sequences out of 15000+600000
+ 33903 strings out of 474651
+ 654893 string characters out of 5756723
+ 1215516 words of memory out of 5000000
+ 56225 multiletter control sequences out of 15000+600000
  645659 words of font info for 162 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  108i,12n,107p,654b,1198s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1727,10 +1691,10 @@ cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 ></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-d
 ist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/newtx/txsys.pfb>
-Output written on main.pdf (38 pages, 1472221 bytes).
+Output written on main.pdf (40 pages, 1477711 bytes).
 PDF statistics:
- 753 PDF objects out of 1000 (max. 8388607)
- 567 compressed objects within 6 object streams
- 176 named destinations out of 1000 (max. 500000)
+ 769 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 180 named destinations out of 1000 (max. 500000)
  299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
