@@ -577,6 +577,20 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/garamond-libre/GaramondLibre-Regula
 INPUT /usr/share/texmf-dist/fonts/vf/public/garamond-libre/GaramondLibre-Regular-lf-ts1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/garamond-libre/GaramondLibre-Regular-lf-ts1--base.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc
+INPUT ./images/michaelson_interferometer.jpg
+INPUT ./images/michaelson_interferometer.jpg
+INPUT ./images/michaelson_interferometer.jpg
+INPUT ./images/michaelson_interferometer.jpg
+INPUT ./images/michaelson_interferometer.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxsy7.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
+INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
 INPUT ./chapters/methods_and_data.tex
 INPUT ./chapters/methods_and_data.tex
 OUTPUT chapters/methods_and_data.aux
@@ -589,7 +603,6 @@ INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT ./images/Hertzsprung_Russel_Diagram.jpg
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
-INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT ./images/first_fixed_params_distr.jpg
 INPUT ./images/first_fixed_params_distr.jpg
 INPUT ./images/first_fixed_params_distr.jpg
@@ -631,7 +644,6 @@ INPUT chapters/AppendiceA.tex
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
 INPUT main.aux
 INPUT ./chapters/Frontespizio.aux
 INPUT ./chapters/Frontespizio.aux

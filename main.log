@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  13 AUG 2025 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  14 AUG 2025 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,7 +1119,7 @@ Package hyperref Info: Link coloring OFF on input line 169.
 \openout2 = `chapters/Frontespizio.aux'.
 
  (./chapters/Frontespizio.tex
-<images/Frontespizio/download.png, id=135, 225.84375pt x 225.84375pt>
+<images/Frontespizio/download.png, id=139, 225.84375pt x 225.84375pt>
 File: images/Frontespizio/download.png Graphic file (type png)
 <use images/Frontespizio/download.png>
 Package pdftex.def Info: images/Frontespizio/download.png  used on input line 4
@@ -1457,25 +1457,47 @@ LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/regular/it' will be
 
 [18]
 LaTeX Font Info:    Trying to load font information for TS1+GaramondLibre-LF on
- input line 508.
+ input line 509.
  (/usr/share/texmf-dist/tex/latex/garamond-libre/TS1GaramondLibre-LF.fd
 File: TS1GaramondLibre-LF.fd 2020/04/29 (autoinst) Font definitions for TS1/Gar
 amondLibre-LF.
 )
 LaTeX Font Info:    Font shape `TS1/GaramondLibre-LF/m/n' aliased to
-(Font)              `TS1/GaramondLibre-LF/regular/n' on input line 508.
+(Font)              `TS1/GaramondLibre-LF/regular/n' on input line 509.
 LaTeX Font Info:    Font shape `TS1/GaramondLibre-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 508.
+(Font)              scaled to size 12.0pt on input line 509.
 
 
-[19{/usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc}])
+[19{/usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc}]
+<images/michaelson_interferometer.jpg, id=366, 1606.0pt x 1518.67375pt>
+File: images/michaelson_interferometer.jpg Graphic file (type jpg)
+<use images/michaelson_interferometer.jpg>
+Package pdftex.def Info: images/michaelson_interferometer.jpg  used on input li
+ne 554.
+(pdftex.def)             Requested size: 277.41176pt x 262.31909pt.
+
+Underfull \hbox (badness 2119) in paragraph at lines 556--556
+[]\T1/GaramondLibre-LF/regular/n/12 Figure 1.2: []INSERT CAP-TION, []$\T1/cmtt/
+m/n/12 https : / / www . britannica . com / technology /
+ []
+
+
 
 [20]
+
+[21{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/m
+ichaelson_interferometer.jpg>]
+
+[22]
+
+[23])
+
+[24]
 \openout2 = `chapters/methods_and_data.aux'.
 
  (./chapters/methods_and_data.tex
 \bbl@ensure@english {Chapter} 2.
-<images/Hertzsprung_Russel_Diagram.jpg, id=361, 1259.70625pt x 1284.8pt>
+<images/Hertzsprung_Russel_Diagram.jpg, id=416, 1259.70625pt x 1284.8pt>
 File: images/Hertzsprung_Russel_Diagram.jpg Graphic file (type jpg)
 <use images/Hertzsprung_Russel_Diagram.jpg>
 Package pdftex.def Info: images/Hertzsprung_Russel_Diagram.jpg  used on input l
@@ -1483,7 +1505,7 @@ ine 19.
 (pdftex.def)             Requested size: 277.41176pt x 282.93134pt.
 
 
-[21
+[25
 
 
 
@@ -1491,12 +1513,12 @@ ine 19.
 
 ]
 
-[22 <./images/Hertzsprung_Russel_Diagram.jpg>]
+[26 <./images/Hertzsprung_Russel_Diagram.jpg>]
 
-[23]
+[27]
 
-[24{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<images/first_fixed_params_distr.jpg, id=406, 1715.40875pt x 726.715pt>
+[28]
+<images/first_fixed_params_distr.jpg, id=461, 1715.40875pt x 726.715pt>
 File: images/first_fixed_params_distr.jpg Graphic file (type jpg)
 <use images/first_fixed_params_distr.jpg>
 Package pdftex.def Info: images/first_fixed_params_distr.jpg  used on input lin
@@ -1504,7 +1526,7 @@ e 106.
 (pdftex.def)             Requested size: 362.77525pt x 153.67917pt.
 
 
-[25]
+[29]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1530,12 +1552,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 l.116 \begin{equation}
                       
 
-[26 <./images/first_fixed_params_distr.jpg (PNG copy)>]
+[30 <./images/first_fixed_params_distr.jpg (PNG copy)>]
 
-[27]
+[31]
 
-[28]
-<images/ZOA_galactic_coords.png, id=472, 1130.2225pt x 679.53876pt>
+[32]
+<images/ZOA_galactic_coords.png, id=527, 1130.2225pt x 679.53876pt>
 File: images/ZOA_galactic_coords.png Graphic file (type png)
 <use images/ZOA_galactic_coords.png>
 Package pdftex.def Info: images/ZOA_galactic_coords.png  used on input line 246
@@ -1543,18 +1565,18 @@ Package pdftex.def Info: images/ZOA_galactic_coords.png  used on input line 246
 (pdftex.def)             Requested size: 405.45047pt x 243.77315pt.
 
 
-[29]
+[33]
 
-[30 <./images/ZOA_galactic_coords.png (PNG copy)>]
-<images/distro_comparison.pdf, id=497, 1084.05pt x 578.16pt>
+[34 <./images/ZOA_galactic_coords.png (PNG copy)>]
+<images/distro_comparison.pdf, id=553, 1084.05pt x 578.16pt>
 File: images/distro_comparison.pdf Graphic file (type pdf)
 <use images/distro_comparison.pdf>
 Package pdftex.def Info: images/distro_comparison.pdf  used on input line 283.
 (pdftex.def)             Requested size: 405.45047pt x 216.23604pt.
 
 
-[31 <./images/distro_comparison.pdf>]
-<images/z_distro_gwgc_completed_ZOA.pdf, id=590, 578.16pt x 361.35pt>
+[35 <./images/distro_comparison.pdf>]
+<images/z_distro_gwgc_completed_ZOA.pdf, id=644, 578.16pt x 361.35pt>
 File: images/z_distro_gwgc_completed_ZOA.pdf Graphic file (type pdf)
 <use images/z_distro_gwgc_completed_ZOA.pdf>
 Package pdftex.def Info: images/z_distro_gwgc_completed_ZOA.pdf  used on input 
@@ -1562,18 +1584,18 @@ line 300.
 (pdftex.def)             Requested size: 405.45047pt x 253.40643pt.
 
 
-[32 <./images/z_distro_gwgc_completed_ZOA.pdf>]
+[36 <./images/z_distro_gwgc_completed_ZOA.pdf>]
 
-LaTeX Warning: Reference `' on page 33 undefined on input line 334.
+LaTeX Warning: Reference `' on page 37 undefined on input line 334.
 
 )
 
-[33]
+[37]
 \openout2 = `chapters/Results.aux'.
 
  (./chapters/Results.tex
 
-[34
+[38
 
 
 
@@ -1582,19 +1604,19 @@ LaTeX Warning: Reference `' on page 33 undefined on input line 334.
 ]
 \bbl@ensure@english {Chapter} 3.
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 10.
+LaTeX Warning: Reference `' on page 39 undefined on input line 10.
 
 
-LaTeX Warning: Reference `' on page 35 undefined on input line 11.
+LaTeX Warning: Reference `' on page 39 undefined on input line 11.
 
 )
 
-[35]
+[39]
 \openout2 = `chapters/Conclusions.aux'.
 
  (./chapters/Conclusions.tex
 
-[36
+[40
 
 
 
@@ -1604,12 +1626,12 @@ LaTeX Warning: Reference `' on page 35 undefined on input line 11.
 \bbl@ensure@english {Chapter} 4.
 )
 
-[37]
+[41]
 \openout2 = `chapters/AppendiceA.aux'.
 
  (./chapters/AppendiceA.tex
 
-[38
+[42
 
 
 
@@ -1619,20 +1641,20 @@ LaTeX Warning: Reference `' on page 35 undefined on input line 11.
 \bbl@ensure@english {Appendix} A.
 )
 
-[39] (./main.bbl
+[43] (./main.bbl
 
-[40
+[44
 
 
 
 
 ]
 
-[41]
+[45]
 
-[42])
+[46])
 
-[43] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
+[47] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
 (./chapters/Introduzione.aux) (./chapters/theory_framework.aux)
 (./chapters/methods_and_data.aux) (./chapters/Results.aux)
 (./chapters/Conclusions.aux) (./chapters/AppendiceA.aux))
@@ -1645,14 +1667,14 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 76E571D96C5933D536C1442F719A5DC5;5395.
+(rerunfilecheck)             Checksum: BC37D86E6DB200B191FD5FDBBF926B85;5693.
  ) 
 Here is how much of TeX's memory you used:
- 33639 strings out of 474651
- 642013 string characters out of 5756723
- 1205377 words of memory out of 5000000
- 55962 multiletter control sequences out of 15000+600000
- 645659 words of font info for 162 fonts, out of 8000000 for 9000
+ 33683 strings out of 474651
+ 642916 string characters out of 5756723
+ 1205951 words of memory out of 5000000
+ 55981 multiletter control sequences out of 15000+600000
+ 646986 words of font info for 166 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  108i,14n,107p,654b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Bold.p
@@ -1665,10 +1687,10 @@ cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 ></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-d
 ist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/newtx/txsys.pfb>
-Output written on main.pdf (43 pages, 1496470 bytes).
+Output written on main.pdf (47 pages, 1597621 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 621 compressed objects within 7 object streams
- 195 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 871 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 216 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 
