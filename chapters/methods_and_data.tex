@@ -4,7 +4,7 @@ In the pursuit of reaching a greater sensitivity in the gravitational counterpar
 In gravitational waves research, our observational capabilities are still very limited, and the signals are still comparatively very weak relative to their electromagnetic counterpart. 
 Therefore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
 
-\section{Stellar populations synthesis codes}
+\section{Stellar Populations Synthesis Codes}
 Generating a synthetic population of stars is a very complex task, that involves multiple steps, each involving important choices.
 \textit{First}, we need to choose a starting point: we could start from the very beginning of stars formation and simulate all the process from the birth onward, or we could select a later phase in the stars evolution, shared from the most, in order to reduce unnecessary computational power and time consumption. 
 If we want to simulate entire stellar populations choosing a starting point also implies selecting appropriate distributions for the main parameters that characterize the "starting point population", like masses, metallicities, but also orbital parameters for the stars that are in binary systems, like orbital period, distance, and eccentricity. 
@@ -286,7 +286,7 @@ This is shown in a graphical representation of the distributions of distances, b
 \end{figure}
 
 
-\section{Final steps}
+\section{Final Steps}
 Now that the catalog has been completed and its ready for the population synthesis, its time to put all the pieces together.
 We will analyze the metallicity distribution of the galaxies in the final catalog, categorize and generate the fixed populations accordingly, and make some final considerations regarding LISA's frequency resolution, how to take care of it, and how to sum gravitational wave signals of multiple sources that LISA will not be able to distinguish. 
 
@@ -331,7 +331,7 @@ Thus, we can define a commonly used variable to simplify our job, which is calle
     ASD = h\sqrt{T_{obs}},
     \label{eq: ASD definition}
 \end{equation}
-where $h$ is the gravitational wave strain of the binary, computed in \eqref{}, and $T_{obs}$ is the mission duration for LISA.
+where $h$ is the gravitational wave strain of the binary, computed in \eqref{eq: the strain we use}, and $T_{obs}$ is the mission duration for LISA.
 This quantity represents the characteristic strain amplitude of the gravitational wave signal per square root of frequency, scaled by the observation time, and its very convenient for comparing the signals in frequency space.
 Correspondingly, we can define the \textbf{Power Spectral Density} (\textbf{PSD}) as the square of the ASD
 \begin{equation}
