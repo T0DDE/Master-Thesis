@@ -591,6 +591,11 @@ INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
+INPUT ./images/lisa_sensitivity_with_noises.png
+INPUT ./images/lisa_sensitivity_with_noises.png
+INPUT ./images/lisa_sensitivity_with_noises.png
+INPUT ./images/lisa_sensitivity_with_noises.png
+INPUT ./images/lisa_sensitivity_with_noises.png
 INPUT ./chapters/methods_and_data.tex
 INPUT ./chapters/methods_and_data.tex
 OUTPUT chapters/methods_and_data.aux

@@ -669,27 +669,34 @@ The spacecrafts will trail by about $20^{\circ}$, with the triangular constellat
 With this configuration, it is possible to keep the long baseline stable, while having continuous source visibility, and a good localization (granted by the triangular shape).
 
 \subsubsection{Frequency}
-TO REVISION
-LISA will be sensitive roughly to the range $0.1~\mathrm{mHz} \lesssim f \lesssim 0.1~\mathrm{Hz}$.  
-At the low end, the sensitivity is limited by acceleration noise on the test masses, while at the high end it is limited by photon shot noise.  
-This band covers the inspiral phase of massive black hole binaries, extreme mass-ratio inspirals, and the majority of Galactic compact binaries, including most DWDs.
-The frequency resolution of a coherent observation is set by the inverse of the total observation time:  
+LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 1000 Hz), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the detection realm to a wider range of gravitational wave sources. 
+In this frequency range also reside most DWDs.  
+In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the "free" test masses are not completely isolated, but could be influenced by solar radiation and winds, and the "drag-free" micro-propellers that compensate these disturbances make noise under the $0.1mHz$. 
+Also, in order to detect a very slow waves, LISA needs to observe it for at least one complete cycle, and if the wave has a period of months, the signal could become indistinguishable from a slow relative position change between the three satellites.
+At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies.  
+LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic background and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}. 
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{images/lisa_sensitivity_with_noises.png}
+    \end{center}
+    \caption{}\label{fig: LISA sens curve with noises}
+\end{figure}
+As far as the frequency resolution of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
 \begin{equation}
 \Delta f \approx \frac{1}{T_{\mathrm{obs}}}.
 \end{equation}
 For a nominal mission duration of $T_{\mathrm{obs}} \simeq 4$~years, $\Delta f \approx 8\times 10^{-9}$~Hz, allowing very fine separation of closely spaced monochromatic sources.
-LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground.  
-In the mHz band, Galactic DWD binaries form a confusion-limited foreground that dominates over instrumental noise below a few mHz.  
-At higher frequencies, shot noise and optical path length noise define the sensitivity limit.
 
 \subsubsection{Why white dwarfs}
-TO REVISION
-From a scientific perspective, DWDs offer a rich laboratory:  
+As shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}, we expect the Galactic binaries to generate a confusion foreground that is able to shape the LISA sensitivity curve, mostly due to their proximity and large number.
+The purpose of this work, however, is to discover if the extra-galactic binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic gravitational wave background in the LISA band.
+In particular, from a scientific perspective, DWDs offer a rich laboratory:  
 \begin{itemize}
-    \item They are the most numerous individually resolvable sources for LISA, providing a dense sampling of the Galaxy’s stellar population.  
-    \item They enable precision tests of binary stellar evolution and mass transfer physics.  
-    \item Their distribution in the Galaxy can serve as a tracer of Galactic structure.  
-    \item Some DWDs are potential progenitors of Type Ia supernovae, linking gravitational wave observations to explosive astrophysics.  
+    \item The DWDs binary systems typically are in compact orbits, and the corresponding frequencies easily fall in LISA's band; 
+    \item The DWDs are some of the most common compact systems in the universe, that represent a probable output for binary system evolutions. 
+    When the number of non-resolvable sources is big, their signals superpose stochastically, generating a background; 
+    \item We have found a simple and predictable shape for their signal, in~\eqref{eq: the strain we use}, which is easy to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
+    \item As we said, we already expect galactic binaries to affect LISA's curve, therefore it is a natural realistic candidate to test;
 \end{itemize}
-The combination of abundance, signal strength, and astrophysical relevance makes them a key target for LISA’s mission.
+The combination of abundance, signal strength, and astrophysical relevance makes them a target for LISA’s mission that is worth exploring further.
 
