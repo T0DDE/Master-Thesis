@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  15 AUG 2025 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  15 AUG 2025 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1711,4 +1711,147 @@ PDF statistics:
  737 compressed objects within 8 object streams
  227 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  TeX Warning: Reference `eq: the strain we use' on page 41 undefined on input line 17.
+
+
+LaTeX Warning: Reference `eq: ASD definition' on page 41 undefined on input line 17.
+
+
+LaTeX Warning: Reference `eq: PSD definition' on page 41 undefined on input line 17.
+
+
+LaTeX Warning: Reference `eq: total PSD' on page 41 undefined on input line 18.
+
+
+Package natbib Warning: Citation `Robson_2019' on page 41 undefined on input line 24.
+
+
+
+[41]
+
+Package natbib Warning: Citation `Robson_2019' on page 42 undefined on input line 31.
+
+
+LaTeX Warning: Reference `fig: Final results plot' on page 42 undefined on input line 31.
+
+<images/Final_results_plot.pdf, id=488, 433.62pt x 289.08pt>
+File: images/Final_results_plot.pdf Graphic file (type pdf)
+<use images/Final_results_plot.pdf>
+Package pdftex.def Info: images/Final_results_plot.pdf  used on input line 34.
+(pdftex.def)             Requested size: 341.43437pt x 227.63405pt.
+
+LaTeX Warning: Reference `fig: Final results plot' on page 42 undefined on input line 38.
+
+
+LaTeX Warning: Reference `eq: LISA frequency resolution' on page 42 undefined on input line 38.
+
+
+LaTeX Warning: Reference `eq: total PSD' on page 42 undefined on input line 38.
+
+
+LaTeX Warning: Reference `fig: LISA sens curve with noises' on page 42 undefined on input line 47.
+
+
+LaTeX Warning: Reference `eq: the strain we use' on page 42 undefined on input line 48.
+
+)
+
+[42 <./images/Final_results_plot.pdf>]
+
+[43]
+\openout2 = `chapters/Conclusions.aux'.
+
+ (./chapters/Conclusions.tex
+
+[44
+
+
+
+
+
+]
+
+Package natbib Warning: Citation `Robson_2019' on page 45 undefined on input line 9.
+
+
+Overfull \hbox (1.72118pt too wide) in paragraph at lines 3--17
+\T1/GaramondLibre-LF/regular/n/12 In this the-sis we in-ves-ti-gated the con-tri-bu-tion of ex-tra-galac-tic dou-ble white dwarf (DWD)
+ []
+
+
+
+[45])
+
+[46]
+\openout2 = `chapters/AppendiceA.aux'.
+
+ (./chapters/AppendiceA.tex
+\bbl@ensure@english {Appendix} A.
+)
+
+[47
+
+
+
+
+
+] (./main.bbl
+
+[48
+
+
+
+
+]
+
+[49]
+
+[50])
+
+Package natbib Warning: There were undefined citations.
+
+
+
+[51] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux) (./chapters/Introduzione.aux) (./chapters/theory_framework.aux) (./chapters/methods_and_data.aux) (./chapters/Results.aux) (./chapters/Conclusions.aux) (./chapters/AppendiceA.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  9EB2DC4C67B4EE003FAA759C9FD9A586;6052.
+ ) 
+Here is how much of TeX's memory you used:
+ 33657 strings out of 474651
+ 642656 string characters out of 5756723
+ 1196165 words of memory out of 5000000
+ 55960 multiletter control sequences out of 15000+600000
+ 650028 words of font info for 168 fonts, out of 8000000 for 9000
+ 264 hyphenation exceptions out of 8191
+ 108i,14n,107p,626b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (51 pages, 1927308 bytes).
+PDF statistics:
+ 730 PDF objects out of 1000 (max. 8388607)
+ 484 compressed objects within 5 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
