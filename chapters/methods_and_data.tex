@@ -12,13 +12,14 @@ If we want to simulate entire stellar populations choosing a starting point also
 \textit{Finally}, we have to decide when we want to stop the simulation, choosing an endpoint that aligns with the needs of this study.
 
 \subsection{The starting point}
-As we know, in the Hertzsprung-Russel diagram, which plots the \textit{luminosity} of the stars vs their \textit{color index}, most of the stars appear distributed in the \textbf{main sequence} (\textbf{MS}), a continuous and distinctive band.
+As we know, in the Hertzsprung-Russel diagram, shown in \textbf{Figure~\ref{fig: Hertzsprung_Russel_Diagram}}, which plots the \textit{luminosity} of the stars in solar units vs their surface temperature in Kelvin, most of the stars appear distributed in the \textbf{main sequence} (\textbf{MS}), a continuous and distinctive band.
 A star's position on this band is determined by its initial mass, and a good rule of thumb is that the most massive stars are hotter, more luminous, and evolve more quickly, while the lower-mass stars burn their fuel more slowly, and remain on the MS longer.
 \begin{figure}[h!]
     \begin{center}
         \includegraphics[width=0.65\textwidth]{images/Hertzsprung_Russel_Diagram.jpg}
     \end{center}
-    \caption{WRITE CAPTION, INSERT REFERENCE}\label{fig: Hertzsprung_Russel_Diagram}
+    \caption{Hertzsprung–Russell (H–R) diagram showing the relationship between stellar luminosity (in solar units) and surface temperature (in Kelvin), that indicates the main stellar evolutionary stages: the main sequence, the giant and supergiant branches, and the white dwarf region.
+    The source of the image is~\url{https://asktheman.xyz/}}\label{fig: Hertzsprung_Russel_Diagram}
 \end{figure}\\
 Since almost all stars go through a phase in the MS, and evolve from there differently, in this work, the chosen starting point for stellar evolution is the Zero Age Main Sequence (ZAMS). 
 At this stage, stars have just begun hydrogen burning in their cores, marking the start of their stable main sequence phase.
@@ -103,7 +104,7 @@ The \textit{conv} data frame contains all the information about the final fixed 
 The parameter distributions of a fixed population of binary white dwarfs with a default metallicity value set at $0.020$ is shown in \textbf{Figure~\ref{fig: first fixed pop distributions}}.
 \begin{figure}[ht!]
     \begin{center}
-        \includegraphics[width=0.85\textwidth]{images/first_fixed_params_distr.jpg}
+        \includegraphics[width=0.85\textwidth]{images/first_fixed_params_distr.pdf}
     \end{center}
     \caption{Distributions of the parameters of a fixed population with metallicity $Z=0.020$ composed of He+He, CO+He and CO+CO binary white dwarfs. This includes the mass, radius of primary and secondary stars, the radius ratios between the two, the orbital period, average separation, and evolution time.}\label{fig: first fixed pop distributions}
 \end{figure}
@@ -182,10 +183,12 @@ Fortunately, a direct correspondence exists between T-type values and Hubble typ
         $6.00$ to $10.00$ & $S_{dm}-Irr$ & 8.5\\
         \hline
     \end{tabular}
-    \caption{WRITE CAPTION}
+    \caption{The first two columns of this table present a conversion between the Hubble class and the T-value classifications for the different galactic morphological types.
+    This was done using the conversion table presented in \url{https://en.wikipedia.org/wiki/Galaxy_morphological_classification}.
+    The last column associates at each galaxy type a mass-to-luminosity ratio, found using the work in~\cite{Faber&Gallagher}.}
     \label{tab: mass luminosity conversions tab}
-\end{table}\\
-\vspace{3mm}
+\end{table}
+\vspace{3mm}\\
 The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \textbf{Table \ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
 \begin{equation}
     M_{gal} = \frac{M}{L_B}L_{B,gal}
@@ -234,7 +237,7 @@ This way, we can account for the significant impact of metallicity on stellar wi
 The GWGC is far from being a complete list of the galaxies in the local Universe.
 As we will now see, there are two main factors contributing to this incompleteness: observational limitations due to the Zone of Avoidance (ZOA) and limitations of the information that the catalog presents.
 
-\subsubsection{Zone of avoiance}
+\subsubsection{Zone of avoidance}
 
 Since the GWGC is an observation-based catalog compiled from optical surveys, we must account for the Zone of Avoidance — the region of the sky obscured by the Milky Way’s interstellar dust and stellar crowding, which impedes the detection of background galaxies.
 The extent of the ZOA depends on the wavelength of observation: infrared surveys penetrate deeper through the dust, while optical surveys, like those used for GWGC, are more strongly affected. 
@@ -243,11 +246,20 @@ For this work, we estimated the ZOA directly from the spatial distribution of ga
 This way, the ZOA appears clearly as a horizontal band centered around the Galactic plane (see \textbf{Figure~\ref{fig: ZOA in galactic coordinates}}).
 \begin{figure}
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{images/ZOA_galactic_coords.png}
+        \includegraphics[width=\textwidth]{images/truly_empty_pixels.pdf}
     \end{center}
-    \caption{INSERT CAPTION AND REDO IMAGE IN PDF!!!}\label{fig: ZOA in galactic coordinates}
+    \caption{Visual representation of the regions of the sky not covered by any of the 53,255 galaxies in the GWGC, plotted in galactic coordinates using \textbf{healpy}, a Python package that handles pixelated data on the sphere based on the Hierarchical Equal Area isoLatitude Pixelization (\textbf{HEALPix}, \url{https://sourceforge.net/projects/healpix/}). 
+    This library allows the user to choose the number of pixels, and thus their size, through a power-of-2 parameter in the \textit{nside2npix} function: the larger the parameter, the smaller the pixel and the bigger their number. 
+    The gray dots in the figure represent the empty sky pixels, while the white areas correspond to pixels containing at least one galaxy.
+    The central band, where the Milky Way lies, appears significantly emptier than the rest of the sky; this is the so called Zone Of Avoidance (ZOA).
+    To estimate the ZOA, we calculated the percentage of empty pixels in the band $|b| \leq 15^\circ$ in Galactic latitude.
+    Choosing the parameter to be too small, the produced pixels would be too large, and the empty area would be underestimated.
+    Larger values would make the estimation only more precise, and by selecting parameters starting from $2^6=64$, it's possible to estimate roughly $\sim20\%$–$25\%$ of empty sky, fully consistent with the value reported in~\cite{Kraan-Korteweg}.
+    The $22.07\%$ estimation in the title is found using $64$ as parameter value.
+    }
+    \label{fig: ZOA in galactic coordinates}
 \end{figure}
-To quantify its extent, we divided the sky map into $n_{\rm pix}$ equal-area pixels and focused on the band $|b| \leq 15^\circ$ in Galactic latitude.
+To quantify its extent, we used a Python package that handles pixelated data on the sphere based on the Hierarchical Equal Area isoLatitude Pixelization (HEALPix, \url{https://sourceforge.net/projects/healpix/}), called healpy, to divide the sky map into $n_{\rm pix}$ equal-area pixels, and focused on the band $|b| \leq 15^\circ$ in Galactic latitude.
 Counting the empty pixels in this band and dividing by $n_{\rm pix}$ gives an estimated ZOA coverage of $\sim20\%$–$25\%$ of the sky, depending on the chosen pixel resolution.
 This estimate is fully consistent with the literature \cite{Kraan-Korteweg}, so in our analysis we will assume that GWGC effectively covers $\sim80\%$ of the sky.
 
@@ -261,7 +273,7 @@ To construct a working sample, we applied a series of masks to clean the catalog
     \item Only keep entries classified as galaxies; 
     \item Require that the distance, T-type, and absolute blue magnitude are provided; 
 \end{itemize}
-After this selection, the sample we are left with reduced from the original $53,255$ entries to roughly $20,000$ galaxies suitable for population synthesis.
+After this selection, the sample we are left with scaled down in size, from the original $53,255$ entries to $20,246$ galaxies suitable for population synthesis.
 
 \subsubsection{Filling the gap}
 In order to compensate the missing galaxies, we have make two physically motivated assumptions.
@@ -282,9 +294,13 @@ This is shown in a graphical representation of the distributions of distances, b
     \begin{center}
         \includegraphics[width=0.95\textwidth]{images/distro_comparison.pdf}
     \end{center}
-    \caption{INSERT CAPTION}\label{fig: distro comparison}
+    \caption{Distributions of T-value, distance and B-band magnitude of the galaxies in the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}) before and after compensating for the lack of galaxies due to the catalog's incompleteness and the \textbf{Zone Of Avoidance} (\textbf{ZOA}). 
+    The three graphs \textit{above} show the mentioned distributions for the $20,246$ galaxies of the original GWGC after we dropped those missing the key parameters we needed; the three graphs \textit{below} show the same distributions for the $66,568$ galaxies we are left with after taking into account both the catalog's incompleteness and the ZOA with a sampling eith replacement method.
+    The parameters distributions appear to be indistinguishable in shape: the scaling up in size left the properties of the catalog.
+    }\label{fig: distro comparison}
 \end{figure}
-
+\\
+The total number of galaxies that we have, now that we took into consideration both the dropped galaxies of the original GWGC and the ones covered by the ZOA, is $66,568$.
 
 \section{Final Steps}
 Now that the catalog has been completed and its ready for the population synthesis, its time to put all the pieces together.
@@ -299,11 +315,13 @@ We decided to group all the values in between in ten equally wide bins, represen
     \begin{center}
         \includegraphics[width=0.95\textwidth]{images/z_distro_gwgc_completed_ZOA.pdf}
     \end{center}
-    \caption{insert caption}\label{fig: Z distribution of final catalog}
+    \caption{Metallicity distribution of the final galaxy catalog. 
+    The metallicity of the galaxieshas been shown to correlate with their morphological type~\cite{Faber&Gallagher}.
+    Therefore, the entries of our final catalog can be grouped into 10 bins, each associated to a metallicity value (the middle value of the corresponding bin, shown in the $x$-axis label of the graph), and a corresponding fixed population.
+    }\label{fig: Z distribution of final catalog}
 \end{figure}\\
 Each one of the center values of the bins, shown in the $x$ label, is linked to a different synthetic fixed population generated with COSMIC.
-For this thesis project, the fixed populations we generated covered the kstar values $10$, $11$ and $12$, corresponding to He, CO, and Ne white dwarfs\footnote{INSERISCI TABELLA IN APPENDICE, E QUI IL RIERIMENTO}.
-The simulation was done using ASK WILL INFO ON COSMIC-POP COMMAND USED.
+The simulation was done generating the fixed populations "\textit{the cosmic way}", via terminal, specifying $Nstep = 5000$ and $Niter=1000000000$ and kstar values $10$, $11$ and $12$, corresponding to He, CO, and Ne white dwarfs\footnote{All the kstar values and the corresponding astrophysical objects are shown in \textbf{Table~\ref{tab: kstar values}}, in the \textbf{Appendix}.}.
 
 \subsection{LISA's frequency resolution}
 The duration of LISA’s mission directly impacts its frequency resolution: the longer the observation time, the finer the frequency bins it can resolve.

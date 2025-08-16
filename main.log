@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  15 AUG 2025 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.10)  16 AUG 2025 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,7 +1119,7 @@ Package hyperref Info: Link coloring OFF on input line 169.
 \openout2 = `chapters/Frontespizio.aux'.
 
  (./chapters/Frontespizio.tex
-<images/Frontespizio/download.png, id=147, 225.84375pt x 225.84375pt>
+<images/Frontespizio/download.png, id=151, 225.84375pt x 225.84375pt>
 File: images/Frontespizio/download.png Graphic file (type png)
 <use images/Frontespizio/download.png>
 Package pdftex.def Info: images/Frontespizio/download.png  used on input line 4
@@ -1469,18 +1469,12 @@ LaTeX Font Info:    Font shape `TS1/GaramondLibre-LF/regular/n' will be
 
 
 [19{/usr/share/texmf-dist/fonts/enc/dvips/garamond-libre/grmlbr_syncrn.enc}]
-<images/michaelson_interferometer.jpg, id=375, 1606.0pt x 1518.67375pt>
+<images/michaelson_interferometer.jpg, id=381, 1606.0pt x 1518.67375pt>
 File: images/michaelson_interferometer.jpg Graphic file (type jpg)
 <use images/michaelson_interferometer.jpg>
 Package pdftex.def Info: images/michaelson_interferometer.jpg  used on input li
 ne 554.
-(pdftex.def)             Requested size: 277.41176pt x 262.31909pt.
-
-Underfull \hbox (badness 2119) in paragraph at lines 556--556
-[]\T1/GaramondLibre-LF/regular/n/12 Figure 1.2: []INSERT CAP-TION, []$\T1/cmtt/
-m/n/12 https : / / www . britannica . com / technology /
- []
-
+(pdftex.def)             Requested size: 341.43437pt x 322.87032pt.
 
 
 [20]
@@ -1491,37 +1485,24 @@ ichaelson_interferometer.jpg>]
 [22]
 
 [23]
-<images/lisa_sensitivity_with_noises.png, id=418, 446.66875pt x 327.2225pt>
+<images/lisa_sensitivity_with_noises.png, id=424, 446.66875pt x 327.2225pt>
 File: images/lisa_sensitivity_with_noises.png Graphic file (type png)
 <use images/lisa_sensitivity_with_noises.png>
 Package pdftex.def Info: images/lisa_sensitivity_with_noises.png  used on input
- line 680.
+ line 684.
 (pdftex.def)             Requested size: 298.75264pt x 218.86345pt.
 
-Underfull \hbox (badness 1320) in paragraph at lines 682--682
-[]\T1/GaramondLibre-LF/regular/n/12 Figure 1.3: []INSERT CAP-TION []$\T1/cmtt/m
-/n/12 https : / / ar5iv . labs . arxiv . org / html / 1803 .
- []
 
+[24]
 
+[25 <./images/lisa_sensitivity_with_noises.png>])
 
-[24])
-
-[25 <./images/lisa_sensitivity_with_noises.png>]
+[26]
 \openout2 = `chapters/methods_and_data.aux'.
 
-
-(./chapters/methods_and_data.tex
-
-[26
-
-
-
-
-
-]
+ (./chapters/methods_and_data.tex
 \bbl@ensure@english {Chapter} 2.
-<images/Hertzsprung_Russel_Diagram.jpg, id=444, 1259.70625pt x 1284.8pt>
+<images/Hertzsprung_Russel_Diagram.jpg, id=451, 1259.70625pt x 1284.8pt>
 File: images/Hertzsprung_Russel_Diagram.jpg Graphic file (type jpg)
 <use images/Hertzsprung_Russel_Diagram.jpg>
 Package pdftex.def Info: images/Hertzsprung_Russel_Diagram.jpg  used on input l
@@ -1529,19 +1510,25 @@ ine 19.
 (pdftex.def)             Requested size: 277.41176pt x 282.93134pt.
 
 
-[27]
+[27
+
+
+
+
+
+]
 
 [28 <./images/Hertzsprung_Russel_Diagram.jpg>]
 
 [29]
 
 [30]
-<images/first_fixed_params_distr.jpg, id=488, 1715.40875pt x 726.715pt>
-File: images/first_fixed_params_distr.jpg Graphic file (type jpg)
-<use images/first_fixed_params_distr.jpg>
-Package pdftex.def Info: images/first_fixed_params_distr.jpg  used on input lin
-e 106.
-(pdftex.def)             Requested size: 362.77525pt x 153.67917pt.
+<images/first_fixed_params_distr.pdf, id=497, 1445.4pt x 578.16pt>
+File: images/first_fixed_params_distr.pdf Graphic file (type pdf)
+<use images/first_fixed_params_distr.pdf>
+Package pdftex.def Info: images/first_fixed_params_distr.pdf  used on input lin
+e 107.
+(pdftex.def)             Requested size: 362.77525pt x 145.10425pt.
 
 
 [31]
@@ -1549,85 +1536,89 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \begin{equation}
+l.117 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \begin{equation}
+l.117 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \begin{equation}
+l.117 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \begin{equation}
+l.117 \begin{equation}
                       
 
-[32 <./images/first_fixed_params_distr.jpg (PNG copy)>]
+[32 <./images/first_fixed_params_distr.pdf>]
 
 [33]
 
 [34]
-<images/ZOA_galactic_coords.png, id=555, 1130.2225pt x 679.53876pt>
-File: images/ZOA_galactic_coords.png Graphic file (type png)
-<use images/ZOA_galactic_coords.png>
-Package pdftex.def Info: images/ZOA_galactic_coords.png  used on input line 246
-.
-(pdftex.def)             Requested size: 405.45047pt x 243.77315pt.
+<images/truly_empty_pixels.pdf, id=640, 722.7pt x 433.62pt>
+File: images/truly_empty_pixels.pdf Graphic file (type pdf)
+<use images/truly_empty_pixels.pdf>
+Package pdftex.def Info: images/truly_empty_pixels.pdf  used on input line 249.
+
+(pdftex.def)             Requested size: 426.79135pt x 256.07838pt.
 
 
 [35]
-
-[36 <./images/ZOA_galactic_coords.png (PNG copy)>]
-<images/distro_comparison.pdf, id=580, 1084.05pt x 578.16pt>
+<images/distro_comparison.pdf, id=663, 1084.05pt x 578.16pt>
 File: images/distro_comparison.pdf Graphic file (type pdf)
 <use images/distro_comparison.pdf>
-Package pdftex.def Info: images/distro_comparison.pdf  used on input line 283.
+Package pdftex.def Info: images/distro_comparison.pdf  used on input line 295.
 (pdftex.def)             Requested size: 405.45047pt x 216.23604pt.
 
 
-[37 <./images/distro_comparison.pdf>]
-<images/z_distro_gwgc_completed_ZOA.pdf, id=672, 578.16pt x 361.35pt>
+[36]
+
+[37 <./images/truly_empty_pixels.pdf>]
+<images/z_distro_gwgc_completed_ZOA.pdf, id=729, 578.16pt x 361.35pt>
 File: images/z_distro_gwgc_completed_ZOA.pdf Graphic file (type pdf)
 <use images/z_distro_gwgc_completed_ZOA.pdf>
 Package pdftex.def Info: images/z_distro_gwgc_completed_ZOA.pdf  used on input 
-line 300.
+line 316.
 (pdftex.def)             Requested size: 405.45047pt x 253.40643pt.
+LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/b/n' aliased to
+(Font)              `T1/GaramondLibre-LF/bold/n' on input line 324.
+LaTeX Font Info:    Font shape `T1/GaramondLibre-LF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 324.
 
 
-[38 <./images/z_distro_gwgc_completed_ZOA.pdf>])
+[38 <./images/distro_comparison.pdf>]
 
-[39]
+[39 <./images/z_distro_gwgc_completed_ZOA.pdf>])
+
+[40]
 \openout2 = `chapters/Results.aux'.
 
  (./chapters/Results.tex
+\bbl@ensure@english {Chapter} 3.
 
-[40
+
+[41
 
 
 
 
 
 ]
-\bbl@ensure@english {Chapter} 3.
-
-
-[41]
-<images/Final_results_plot.pdf, id=752, 433.62pt x 289.08pt>
+<images/Final_results_plot.pdf, id=898, 433.62pt x 289.08pt>
 File: images/Final_results_plot.pdf Graphic file (type pdf)
 <use images/Final_results_plot.pdf>
 Package pdftex.def Info: images/Final_results_plot.pdf  used on input line 34.
 (pdftex.def)             Requested size: 341.43437pt x 227.63405pt.
-)
 
-[42 <./images/Final_results_plot.pdf>]
+
+[42 <./images/Final_results_plot.pdf>])
 
 [43]
 \openout2 = `chapters/Conclusions.aux'.
@@ -1655,7 +1646,7 @@ i-bu-tion of ex-tra-galac-tic dou-ble white dwarf (DWD)
 
  (./chapters/AppendiceA.tex
 \bbl@ensure@english {Appendix} A.
-)
+
 
 [47
 
@@ -1663,20 +1654,29 @@ i-bu-tion of ex-tra-galac-tic dou-ble white dwarf (DWD)
 
 
 
+]
+
+[48]
+\bbl@ensure@english {Appendix} B.
+)
+
+[49
+
+
 ] (./main.bbl
 
-[48
+[50
 
 
 
 
 ]
 
-[49]
+[51]
 
-[50])
+[52])
 
-[51] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
+[53] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux)
 (./chapters/Introduzione.aux) (./chapters/theory_framework.aux)
 (./chapters/methods_and_data.aux) (./chapters/Results.aux)
 (./chapters/Conclusions.aux) (./chapters/AppendiceA.aux))
@@ -1685,16 +1685,16 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9EB2DC4C67B4EE003FAA759C9FD9A586;6052.
+(rerunfilecheck)             Checksum: 4ED5FD27D410A9A992E64FF5ECDCFC84;6041.
  ) 
 Here is how much of TeX's memory you used:
- 33715 strings out of 474651
- 643803 string characters out of 5756723
- 1206194 words of memory out of 5000000
- 56002 multiletter control sequences out of 15000+600000
- 646986 words of font info for 166 fonts, out of 8000000 for 9000
+ 33727 strings out of 474651
+ 644062 string characters out of 5756723
+ 1211551 words of memory out of 5000000
+ 56009 multiletter control sequences out of 15000+600000
+ 650028 words of font info for 168 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 108i,14n,107p,654b,1251s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,14n,107p,1652b,1251s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Bold.p
 fb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Itali
 c.pfb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Re
@@ -1705,153 +1705,10 @@ cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb
 ></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-d
 ist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/newtx/txsys.pfb>
-Output written on main.pdf (51 pages, 1936706 bytes).
+Output written on main.pdf (53 pages, 1273570 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 737 compressed objects within 8 object streams
- 227 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  TeX Warning: Reference `eq: the strain we use' on page 41 undefined on input line 17.
-
-
-LaTeX Warning: Reference `eq: ASD definition' on page 41 undefined on input line 17.
-
-
-LaTeX Warning: Reference `eq: PSD definition' on page 41 undefined on input line 17.
-
-
-LaTeX Warning: Reference `eq: total PSD' on page 41 undefined on input line 18.
-
-
-Package natbib Warning: Citation `Robson_2019' on page 41 undefined on input line 24.
-
-
-
-[41]
-
-Package natbib Warning: Citation `Robson_2019' on page 42 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig: Final results plot' on page 42 undefined on input line 31.
-
-<images/Final_results_plot.pdf, id=488, 433.62pt x 289.08pt>
-File: images/Final_results_plot.pdf Graphic file (type pdf)
-<use images/Final_results_plot.pdf>
-Package pdftex.def Info: images/Final_results_plot.pdf  used on input line 34.
-(pdftex.def)             Requested size: 341.43437pt x 227.63405pt.
-
-LaTeX Warning: Reference `fig: Final results plot' on page 42 undefined on input line 38.
-
-
-LaTeX Warning: Reference `eq: LISA frequency resolution' on page 42 undefined on input line 38.
-
-
-LaTeX Warning: Reference `eq: total PSD' on page 42 undefined on input line 38.
-
-
-LaTeX Warning: Reference `fig: LISA sens curve with noises' on page 42 undefined on input line 47.
-
-
-LaTeX Warning: Reference `eq: the strain we use' on page 42 undefined on input line 48.
-
-)
-
-[42 <./images/Final_results_plot.pdf>]
-
-[43]
-\openout2 = `chapters/Conclusions.aux'.
-
- (./chapters/Conclusions.tex
-
-[44
-
-
-
-
-
-]
-
-Package natbib Warning: Citation `Robson_2019' on page 45 undefined on input line 9.
-
-
-Overfull \hbox (1.72118pt too wide) in paragraph at lines 3--17
-\T1/GaramondLibre-LF/regular/n/12 In this the-sis we in-ves-ti-gated the con-tri-bu-tion of ex-tra-galac-tic dou-ble white dwarf (DWD)
- []
-
-
-
-[45])
-
-[46]
-\openout2 = `chapters/AppendiceA.aux'.
-
- (./chapters/AppendiceA.tex
-\bbl@ensure@english {Appendix} A.
-)
-
-[47
-
-
-
-
-
-] (./main.bbl
-
-[48
-
-
-
-
-]
-
-[49]
-
-[50])
-
-Package natbib Warning: There were undefined citations.
-
-
-
-[51] (./main.aux (./chapters/Frontespizio.aux) (./chapters/Abstract.aux) (./chapters/Introduzione.aux) (./chapters/theory_framework.aux) (./chapters/methods_and_data.aux) (./chapters/Results.aux) (./chapters/Conclusions.aux) (./chapters/AppendiceA.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  9EB2DC4C67B4EE003FAA759C9FD9A586;6052.
- ) 
-Here is how much of TeX's memory you used:
- 33657 strings out of 474651
- 642656 string characters out of 5756723
- 1196165 words of memory out of 5000000
- 55960 multiletter control sequences out of 15000+600000
- 650028 words of font info for 168 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 108i,14n,107p,626b,1226s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/garamond-libre/GaramondLibre-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (51 pages, 1927308 bytes).
-PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 227 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

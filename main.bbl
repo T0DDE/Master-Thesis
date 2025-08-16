@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -61,6 +61,12 @@ Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E.
   on Merger Rates}.
 \newblock \emph{\apj}, 759\penalty0 (1):\penalty0 52, November 2012.
 \newblock \doi{10.1088/0004-637X/759/1/52}.
+
+\bibitem[{Einstein}(1918)]{Einstein_1918}
+Albert {Einstein}.
+\newblock {{\"U}ber Gravitationswellen}.
+\newblock \emph{Sitzungsberichte der K{\"o}niglich Preussischen Akademie der
+  Wissenschaften}, pages 154--167, January 1918.
 
 \bibitem[{Faber} and {Gallagher}(1979)]{Faber&Gallagher}
 S.~M. {Faber} and J.~S. {Gallagher}.

@@ -242,7 +242,7 @@ Their distinct effects on a ring of close particles are viually represented in \
     \end{scope}
 
     \end{tikzpicture}
-    \caption{Effect of the two gravitational wave polarizations on a ring of free-falling particles: blue and red dots represent two opposite phases of the wave.}
+    \caption{Effect of the two gravitational wave polarizations on a ring of free-falling particles, caused by a wave moving in the direction perpendicular to the page: blue and red dots represent two opposite phases of the wave.}
     \label{fig:gw_polarizations}
 \end{figure}
 
@@ -420,7 +420,7 @@ and writing $Q^{TT}$ as a function of~\eqref{eq: reduced quadrupole moment}, by 
     L_{GW}(t) = \frac{G}{5c^5}\Big\langle \left(\dddot{Q}_{ij}(t- \frac{r}{c}\right) \left(\dddot{Q}_{ij}(t-\frac{r}{c}\right) \Big\rangle,
     \label{eq: luminosity quadrupole formula}
 \end{equation}
-as was derived by Einstein\footnote{insert the reference?} in $1918$.
+as was derived by Einstein in \cite{Einstein_1918}.
 
 \subsection{Evolution of a compact binary system}
 By applying what we have found in the previous subsection to real astrophysical sources of gravitational wave, in this section we will find the amplitude that we are going to use for this thesis work to generate the total gravitational wave signal.
@@ -551,9 +551,13 @@ The Michaelson interferometer is an optical instrument invented in 1887 in occas
 It uses a \textit{beam splitter} to separate a single laser beam into two independent, and perpendicular paths, that end up recombining via the superposition principle before meeting the photoelectric detector or camera, as represented in \textbf{Figure~\ref{fig: michaelson interferometer}}.
 \begin{figure}
     \begin{center}
-        \includegraphics[width=0.65\textwidth]{images/michaelson_interferometer.jpg}
+        \includegraphics[width=0.8\textwidth]{images/michaelson_interferometer.jpg}
     \end{center}
-    \caption{INSERT CAPTION, \url{https://www.britannica.com/technology/Michelson-interferometer}}\label{fig: michaelson interferometer}
+    \caption{Schematic representation of a Michelson interferometer. A laser beam is split by a half-transparent mirror into two orthogonal arms of length $L_A$ and $L_B$.
+    The beams reflected from the mirrors are recombined at the detector (screen), where, if a gravitational wave has passed, they produce an interference pattern.
+    Variations in the optical path length of one arm (through the movable mirror) shift the observed fringes.
+    The source for this image is at \url{https://www.britannica.com/technology/Michelson-interferometer}.}
+    \label{fig: michaelson interferometer}
 \end{figure}
 The laser is used to have a monochromatic light source, with a frequency $\omega_L$, a wave-vector $k_L=\omega_L/c$ and a wavelength $\lambda_L = 2\pi/k_L$.
 Therefore, referring to \textbf{Figure~\ref{fig: michaelson interferometer}}, we label as A and B respectively the $x$ and $y$ arms of the interferometer, with lengths $L_A$ and $L_B$.
@@ -679,7 +683,10 @@ LISA’s sensitivity curve combines instrumental noise and the astrophysical for
     \begin{center}
         \includegraphics[width=0.7\textwidth]{images/lisa_sensitivity_with_noises.png}
     \end{center}
-    \caption{INSERT CAPTION \url{https://ar5iv.labs.arxiv.org/html/1803.01944}}\label{fig: LISA sens curve with noises}
+    \caption{LISA sensitivity curve in the characteristic strain representation.
+    The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the background contribution from unresolved Galactic binaries.
+    Different astrophysical sources that emit gravitational wave signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
+    The source for this image is~\url{https://ar5iv.labs.arxiv.org/html/1803.01944}}\label{fig: LISA sens curve with noises}
 \end{figure}
 As far as the frequency resolution of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
 \begin{equation}
