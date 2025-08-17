@@ -1,72 +1,61 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{Allende Prieto} et~al.(2001){Allende Prieto}, {Lambert}, and
-  {Asplund}]{AllendePrieto}
+\bibitem[{Allende Prieto} et~al.(2001){Allende Prieto}, {Lambert}, and {Asplund}]{AllendePrieto}
 Carlos {Allende Prieto}, David~L. {Lambert}, and Martin {Asplund}.
 \newblock {The Forbidden Abundance of Oxygen in the Sun}.
 \newblock \emph{\apjl}, 556\penalty0 (1):\penalty0 L63--L66, July 2001.
 \newblock \doi{10.1086/322874}.
 
-\bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and
-  {Scott}]{Asplund}
+\bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and {Scott}]{Asplund}
 Martin {Asplund}, Nicolas {Grevesse}, A.~Jacques {Sauval}, and Pat {Scott}.
 \newblock {The Chemical Composition of the Sun}.
 \newblock \emph{\araa}, 47\penalty0 (1):\penalty0 481--522, September 2009.
 \newblock \doi{10.1146/annurev.astro.46.060407.145222}.
 
-\bibitem[{Breivik} et~al.(2020){Breivik}, {Coughlin}, {Zevin}, {Rodriguez},
-  {Kremer}, {Ye}, { Andrews}, {Kurkowski}, {Digman}, {Larson}, and
-  {Rasio}]{Breivik}
-Katelyn {Breivik}, Scott {Coughlin}, Michael {Zevin}, Carl~L. {Rodriguez}, Kyle
-  {Kremer}, Claire~S. {Ye}, Jeff~J. { Andrews}, Michael {Kurkowski}, Matthew~C.
-  {Digman}, Shane~L. {Larson}, and Frederic~A. {Rasio}.
+\bibitem[{Breivik} et~al.(2020){Breivik}, {Coughlin}, {Zevin}, {Rodriguez}, {Kremer}, {Ye}, { Andrews}, {Kurkowski}, {Digman}, {Larson}, and {Rasio}]{Breivik}
+Katelyn {Breivik}, Scott {Coughlin}, Michael {Zevin}, Carl~L. {Rodriguez}, Kyle {Kremer}, Claire~S. {Ye}, Jeff~J. { Andrews}, Michael {Kurkowski}, Matthew~C. {Digman}, Shane~L. {Larson}, and Frederic~A. {Rasio}.
 \newblock {COSMIC Variance in Binary Population Synthesis}.
 \newblock \emph{\apj}, 898\penalty0 (1):\penalty0 71, July 2020.
 \newblock \doi{10.3847/1538-4357/ab9d85}.
 
-\bibitem[{Chatziioannou} et~al.(2017){Chatziioannou}, {Clark}, { Bauswein},
-  {Millhouse}, {Littenberg}, and {Cornish}]{Chatziioannou17}
-Katerina {Chatziioannou}, James~Alexander {Clark}, Andreas { Bauswein},
-  Margaret {Millhouse}, Tyson~B. {Littenberg}, and Neil {Cornish}.
-\newblock {Inferring the post-merger gravitational wave emission from binary
-  neutron star coalescences}.
+\bibitem[{Chatziioannou} et~al.(2017){Chatziioannou}, {Clark}, { Bauswein}, {Millhouse}, {Littenberg}, and {Cornish}]{Chatziioannou17}
+Katerina {Chatziioannou}, James~Alexander {Clark}, Andreas { Bauswein}, Margaret {Millhouse}, Tyson~B. {Littenberg}, and Neil {Cornish}.
+\newblock {Inferring the post-merger gravitational wave emission from binary neutron star coalescences}.
 \newblock \emph{\prd}, 96\penalty0 (12):\penalty0 124035, December 2017.
 \newblock \doi{10.1103/PhysRevD.96.124035}.
 
 \bibitem[{de Mink} et~al.(2007){de Mink}, {Pols}, and {Hilditch}]{deMink}
 S.~E. {de Mink}, O.~R. {Pols}, and R.~W. {Hilditch}.
-\newblock {Efficiency of mass transfer in massive close binaries. Tests from
-  double-lined eclipsing binaries in the SMC}.
+\newblock {Efficiency of mass transfer in massive close binaries. Tests from double-lined eclipsing binaries in the SMC}.
 \newblock \emph{\aap}, 467\penalty0 (3):\penalty0 1181--1196, June 2007.
 \newblock \doi{10.1051/0004-6361:20067007}.
 
-\bibitem[{de Vaucouleurs} et~al.(1991){de Vaucouleurs}, {de Vaucouleurs},
-  {Corwin}, {Buta}, {Paturel}, and {Fouque}]{Vaculeurs}
-Gerard {de Vaucouleurs}, Antoinette {de Vaucouleurs}, Herold~G. {Corwin}, Jr.,
-  Ronald~J. {Buta}, Georges {Paturel}, and Pascal {Fouque}.
+\bibitem[De~Vaucouleurs(1974)]{De_Vaucouleurs_1974}
+G.~De~Vaucouleurs.
+\newblock Structure, dynamics and statistical properties of galaxies.
+\newblock \emph{Symposium - International Astronomical Union}, 58:\penalty0 1–53, 1974.
+\newblock \doi{10.1017/S007418090002430X}.
+
+\bibitem[{de Vaucouleurs} et~al.(1991){de Vaucouleurs}, {de Vaucouleurs}, {Corwin}, {Buta}, {Paturel}, and {Fouque}]{Vaculeurs}
+Gerard {de Vaucouleurs}, Antoinette {de Vaucouleurs}, Herold~G. {Corwin}, Jr., Ronald~J. {Buta}, Georges {Paturel}, and Pascal {Fouque}.
 \newblock \emph{{Third Reference Catalogue of Bright Galaxies}}.
 \newblock 1991.
 
-\bibitem[{Dominik} et~al.(2012){Dominik}, {Belczynski}, {Fryer}, {Holz},
-  {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{Dominik}
-Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E.
-  {Holz}, Emanuele {Berti}, Tomasz {Bulik}, Ilya {Mandel}, and Richard
-  {O'Shaughnessy}.
-\newblock {Double Compact Objects. I. The Significance of the Common Envelope
-  on Merger Rates}.
+\bibitem[{Dominik} et~al.(2012){Dominik}, {Belczynski}, {Fryer}, {Holz}, {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{Dominik}
+Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E. {Holz}, Emanuele {Berti}, Tomasz {Bulik}, Ilya {Mandel}, and Richard {O'Shaughnessy}.
+\newblock {Double Compact Objects. I. The Significance of the Common Envelope on Merger Rates}.
 \newblock \emph{\apj}, 759\penalty0 (1):\penalty0 52, November 2012.
 \newblock \doi{10.1088/0004-637X/759/1/52}.
 
 \bibitem[{Einstein}(1918)]{Einstein_1918}
 Albert {Einstein}.
 \newblock {{\"U}ber Gravitationswellen}.
-\newblock \emph{Sitzungsberichte der K{\"o}niglich Preussischen Akademie der
-  Wissenschaften}, pages 154--167, January 1918.
+\newblock \emph{Sitzungsberichte der K{\"o}niglich Preussischen Akademie der Wissenschaften}, pages 154--167, January 1918.
 
 \bibitem[{Faber} and {Gallagher}(1979)]{Faber&Gallagher}
 S.~M. {Faber} and J.~S. {Gallagher}.
@@ -76,24 +65,20 @@ S.~M. {Faber} and J.~S. {Gallagher}.
 
 \bibitem[Ferrari et~al.(2020)Ferrari, Gualtieri, and Pani]{ferrari2020general}
 V.~Ferrari, L.~Gualtieri, and P.~Pani.
-\newblock \emph{General Relativity and its Applications: Black Holes, Compact
-  Stars and Gravitational Waves}.
+\newblock \emph{General Relativity and its Applications: Black Holes, Compact Stars and Gravitational Waves}.
 \newblock CRC Press, 1st edition, 2020.
 \newblock \doi{10.1201/9780429491405}.
 \newblock URL \url{https://doi.org/10.1201/9780429491405}.
 
-\bibitem[{Geller} et~al.(2019){Geller}, {Leigh}, {Giersz}, {Kremer}, and
-  {Rasio}]{Geller}
-Aaron~M. {Geller}, Nathan W.~C. {Leigh}, Mirek {Giersz}, Kyle {Kremer}, and
-  Frederic~A. {Rasio}.
+\bibitem[{Geller} et~al.(2019){Geller}, {Leigh}, {Giersz}, {Kremer}, and {Rasio}]{Geller}
+Aaron~M. {Geller}, Nathan W.~C. {Leigh}, Mirek {Giersz}, Kyle {Kremer}, and Frederic~A. {Rasio}.
 \newblock {In Search of the Thermal Eccentricity Distribution}.
 \newblock \emph{\apj}, 872\penalty0 (2):\penalty0 165, February 2019.
 \newblock \doi{10.3847/1538-4357/ab0214}.
 
 \bibitem[{Goldberg} and {Mazeh}(1994)]{Mazeh94}
 D.~{Goldberg} and T.~{Mazeh}.
-\newblock {The mass-ratio distribution of the spectroscopic binaries in the
-  Pleiades.}
+\newblock {The mass-ratio distribution of the spectroscopic binaries in the Pleiades.}
 \newblock \emph{\aap}, 282:\penalty0 801--803, February 1994.
 
 \bibitem[{Heggie}(1975)]{Heggie}
@@ -110,24 +95,19 @@ E.~P. {Hubble}.
 
 \bibitem[{Hurley} et~al.(2000){Hurley}, {Pols}, and {Tout}]{SSE}
 Jarrod~R. {Hurley}, Onno~R. {Pols}, and Christopher~A. {Tout}.
-\newblock {Comprehensive analytic formulae for stellar evolution as a function
-  of mass and metallicity}.
+\newblock {Comprehensive analytic formulae for stellar evolution as a function of mass and metallicity}.
 \newblock \emph{\mnras}, 315\penalty0 (3):\penalty0 543--569, July 2000.
 \newblock \doi{10.1046/j.1365-8711.2000.03426.x}.
 
 \bibitem[{Hurley} et~al.(2002){Hurley}, {Tout}, and {Pols}]{BSE}
 Jarrod~R. {Hurley}, Christopher~A. {Tout}, and Onno~R. {Pols}.
-\newblock {Evolution of binary stars and the effect of tides on binary
-  populations}.
+\newblock {Evolution of binary stars and the effect of tides on binary populations}.
 \newblock \emph{\mnras}, 329\penalty0 (4):\penalty0 897--928, February 2002.
 \newblock \doi{10.1046/j.1365-8711.2002.05038.x}.
 
-\bibitem[{Klencki} et~al.(2018){Klencki}, {Moe}, {Gladysz}, {Chruslinska},
-  {Holz}, and {Belczynski}]{Klencki}
-J.~{Klencki}, M.~{Moe}, W.~{Gladysz}, M.~{Chruslinska}, D.~E. {Holz}, and
-  K.~{Belczynski}.
-\newblock {Impact of inter-correlated initial binary parameters on double black
-  hole and neutron star mergers}.
+\bibitem[{Klencki} et~al.(2018){Klencki}, {Moe}, {Gladysz}, {Chruslinska}, {Holz}, and {Belczynski}]{Klencki}
+J.~{Klencki}, M.~{Moe}, W.~{Gladysz}, M.~{Chruslinska}, D.~E. {Holz}, and K.~{Belczynski}.
+\newblock {Impact of inter-correlated initial binary parameters on double black hole and neutron star mergers}.
 \newblock \emph{\aap}, 619:\penalty0 A77, November 2018.
 \newblock \doi{10.1051/0004-6361/201833025}.
 
@@ -157,26 +137,22 @@ Michele Maggiore.
 \newblock \doi{10.1093/acprof:oso/9780198570745.001.0001}.
 \newblock URL \url{https://doi.org/10.1093/acprof:oso/9780198570745.001.0001}.
 
-\bibitem[{Mazeh} et~al.(1992){Mazeh}, {Goldberg}, {Duquennoy}, and
-  {Mayor}]{Mazeh92}
+\bibitem[{Mazeh} et~al.(1992){Mazeh}, {Goldberg}, {Duquennoy}, and {Mayor}]{Mazeh92}
 Tsevi {Mazeh}, Dorit {Goldberg}, Antoine {Duquennoy}, and Michel {Mayor}.
-\newblock {On the Mass-Ratio Distribution of Spectroscopic Binaries with
-  Solar-Type Primaries}.
+\newblock {On the Mass-Ratio Distribution of Spectroscopic Binaries with Solar-Type Primaries}.
 \newblock \emph{\apj}, 401:\penalty0 265, December 1992.
 \newblock \doi{10.1086/172058}.
 
 \bibitem[{Moe} and {Di Stefano}(2017)]{MoeDiStefano}
 Maxwell {Moe} and Rosanne {Di Stefano}.
-\newblock {Mind Your Ps and Qs: The Interrelation between Period (P) and
-  Mass-ratio (Q) Distributions of Binary Stars}.
+\newblock {Mind Your Ps and Qs: The Interrelation between Period (P) and Mass-ratio (Q) Distributions of Binary Stars}.
 \newblock \emph{\apjs}, 230\penalty0 (2):\penalty0 15, June 2017.
 \newblock \doi{10.3847/1538-4365/aa6fb6}.
 
 \bibitem[Robson et~al.(2019)Robson, Cornish, and Liu]{Robson_2019}
 Travis Robson, Neil~J Cornish, and Chang Liu.
 \newblock The construction and use of lisa sensitivity curves.
-\newblock \emph{Classical and Quantum Gravity}, 36\penalty0 (10):\penalty0
-  105011, April 2019.
+\newblock \emph{Classical and Quantum Gravity}, 36\penalty0 (10):\penalty0 105011, April 2019.
 \newblock ISSN 1361-6382.
 \newblock \doi{10.1088/1361-6382/ab1101}.
 \newblock URL \url{http://dx.doi.org/10.1088/1361-6382/ab1101}.
@@ -187,32 +163,22 @@ Edwin~E. {Salpeter}.
 \newblock \emph{\apj}, 121:\penalty0 161, January 1955.
 \newblock \doi{10.1086/145971}.
 
-\bibitem[{Tremonti} et~al.(2004){Tremonti}, {Heckman}, {Kauffmann},
-  {Brinchmann}, {Charlot}, { White}, {Seibert}, {Peng}, { Schlegel}, {Uomoto},
-  {Fukugita}, and {Brinkmann}]{Tremonti}
-Christy~A. {Tremonti}, Timothy~M. {Heckman}, Guinevere {Kauffmann}, Jarle
-  {Brinchmann}, St{\'e}phane {Charlot}, Simon D.~M. { White}, Mark {Seibert},
-  Eric~W. {Peng}, David~J. { Schlegel}, Alan {Uomoto}, Masataka {Fukugita}, and
-  Jon {Brinkmann}.
-\newblock {The Origin of the Mass-Metallicity Relation: Insights from 53,000
-  Star-forming Galaxies in the Sloan Digital Sky Survey}.
+\bibitem[{Tremonti} et~al.(2004){Tremonti}, {Heckman}, {Kauffmann}, {Brinchmann}, {Charlot}, { White}, {Seibert}, {Peng}, { Schlegel}, {Uomoto}, {Fukugita}, and {Brinkmann}]{Tremonti}
+Christy~A. {Tremonti}, Timothy~M. {Heckman}, Guinevere {Kauffmann}, Jarle {Brinchmann}, St{\'e}phane {Charlot}, Simon D.~M. { White}, Mark {Seibert}, Eric~W. {Peng}, David~J. { Schlegel}, Alan {Uomoto}, Masataka {Fukugita}, and Jon {Brinkmann}.
+\newblock {The Origin of the Mass-Metallicity Relation: Insights from 53,000 Star-forming Galaxies in the Sloan Digital Sky Survey}.
 \newblock \emph{\apj}, 613\penalty0 (2):\penalty0 898--913, October 2004.
 \newblock \doi{10.1086/423264}.
 
-\bibitem[{van Haaften} et~al.(2013){van Haaften}, {Nelemans}, {Voss}, {Toonen
-  }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{Haaften}
-L.~M. {van Haaften}, G.~{Nelemans}, R.~{Voss}, S.~{Toonen }, S.~F. {Portegies
-  Zwart}, L.~R. {Yungelson}, and M.~V. {van der Sluys}.
-\newblock {Population synthesis of ultracompact X-ray binaries in the Galactic
-  bulge}.
+\bibitem[{van Haaften} et~al.(2013){van Haaften}, {Nelemans}, {Voss}, {Toonen }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{Haaften}
+L.~M. {van Haaften}, G.~{Nelemans}, R.~{Voss}, S.~{Toonen }, S.~F. {Portegies Zwart}, L.~R. {Yungelson}, and M.~V. {van der Sluys}.
+\newblock {Population synthesis of ultracompact X-ray binaries in the Galactic bulge}.
 \newblock \emph{\aap}, 552:\penalty0 A69, April 2013.
 \newblock \doi{10.1051/0004-6361/201220552}.
 
 \bibitem[White et~al.(2011)White, Daw, and Dhillon]{GWGC}
 Darren~J White, E~J Daw, and V~S Dhillon.
 \newblock A list of galaxies for gravitational wave searches.
-\newblock \emph{Classical and Quantum Gravity}, 28\penalty0 (8):\penalty0
-  085016, March 2011.
+\newblock \emph{Classical and Quantum Gravity}, 28\penalty0 (8):\penalty0 085016, March 2011.
 \newblock ISSN 1361-6382.
 \newblock \doi{10.1088/0264-9381/28/8/085016}.
 \newblock URL \url{http://dx.doi.org/10.1088/0264-9381/28/8/085016}.

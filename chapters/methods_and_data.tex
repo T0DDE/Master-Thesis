@@ -16,10 +16,10 @@ As we know, in the Hertzsprung-Russel diagram, shown in \textbf{Figure~\ref{fig:
 A star's position on this band is determined by its initial mass, and a good rule of thumb is that the most massive stars are hotter, more luminous, and evolve more quickly, while the lower-mass stars burn their fuel more slowly, and remain on the MS longer.
 \begin{figure}[h!]
     \begin{center}
-        \includegraphics[width=0.65\textwidth]{images/Hertzsprung_Russel_Diagram.jpg}
+        \includegraphics[width=\textwidth]{images/Hertzsprung_Russel_Diagram.jpg}
     \end{center}
     \caption{Hertzsprung–Russell (H–R) diagram showing the relationship between stellar luminosity (in solar units) and surface temperature (in Kelvin), that indicates the main stellar evolutionary stages: the main sequence, the giant and supergiant branches, and the white dwarf region.
-    The source of the image is~\url{https://asktheman.xyz/}}\label{fig: Hertzsprung_Russel_Diagram}
+    The source of the image is~\href{https://asktheman.xyz/}{\textit{\underline{here}}}.}\label{fig: Hertzsprung_Russel_Diagram}
 \end{figure}\\
 Since almost all stars go through a phase in the MS, and evolve from there differently, in this work, the chosen starting point for stellar evolution is the Zero Age Main Sequence (ZAMS). 
 At this stage, stars have just begun hydrogen burning in their cores, marking the start of their stable main sequence phase.
@@ -43,11 +43,10 @@ The BSE algorithm tracks the joint evolution of both stars in a binary system, t
 The flexibility and speed of the BSE code make it a key component in many modern population synthesis tools, including the one used in this thesis, which we will now introduce.
 
 \section{COSMIC}
-For the purposes of this work, we employ a community-developed binary population synthesis (BPS) python-based code, called the \textbf{Compact Object Synthesis and Monte Carlo Investigation Code} (\textbf{COSMIC}), whose <<\textit{primary purpose is to generate synthetic populations with an adaptive size based on how the shape of binary parameter distributions change as the number of simulated binaries increases}>>
-\footnote{\url{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}}. 
+For the purposes of this work, we employ a community-developed binary population synthesis (BPS) python-based code, called the \textbf{Compact Object Synthesis and Monte Carlo Investigation Code} (\underline{\textbf{\href{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}{COSMIC}}}), whose <<\textit{primary purpose is to generate synthetic populations with an adaptive size based on how the shape of binary parameter distributions change as the number of simulated binaries increases}>>. 
 COSMIC's binary evolution is built upon BSE, incorporating extensive modifications in order to include updated physical prescriptions.
 It  includes all necessary tools to generate a population, from the generation of initial conditions, to scaling the simulated systems to full-scale astrophysical populations.
-The code is presented in \cite{Breivik}, where it is described in full detail and used, as a proof of concept, to simulate the Galactic population of compact binaries and their associated gravitational wave signal.
+The code is presented in~\cite{Breivik}, where it is described in full detail and used, as a proof of concept, to simulate the Galactic population of compact binaries and their associated gravitational wave signal.
 In the following section we will see the main features of the code, and explain what makes it the right choice for this thesis work.
 
 \subsection{Fixed population}
@@ -85,7 +84,7 @@ We will go more into detail on this topic in the next chapters.
 
 \subsubsection{Convergence}
 The number of simulated systems in the fixed population ideally describes the final parameter distribution functions while being low enough to keep the code efficient. 
-Since every population depends on a different binary evolution model, to quantify this number a \textit{discrete match criteria} is developed, based on the work \cite{Chatziioannou17}.
+Since every population depends on a different binary evolution model, to quantify this number a \textit{discrete match criteria} is developed, based on the work~\cite{Chatziioannou17}.
 Independently generated histograms for each parameter are used to track their distribution as successive populations are generated and cumulatively added to the fixed population.
 The physical limits of the simulated systems are then enforced by taking the logistic transform, and finally the match is defined as: 
 \begin{equation}
@@ -97,14 +96,15 @@ where $P_{k,i}$ is the probability for the \textit{k}th bin, for the \textit{i}t
 For how it is defined, the match value shifts between $0$ and $1$, and tends to unity as the parameter distributions converge to a distinct shape.
 
 \subsubsection{The output}
-Since COSMIC uses BSE as it’s core binary evolution algorithm, the output of COSMIC follows most of the same conventions as BSE. The \textit{kstar values} (e.g. the number that represent a specific stellar type) and evolution stages are nearly identical to their BSE counterparts, and the exact references can be found in the \textbf{Appendix}.
+Since COSMIC uses BSE as it’s core binary evolution algorithm, the output of COSMIC follows most of the same conventions as BSE. 
+The \textit{kstar values} (e.g. the number that represent a specific stellar type) and evolution stages are nearly identical to their BSE counterparts, and the exact references can be found in the \textbf{Appendix}.
 In order to generate a fixed population, the COSMIC can be ran through a one-line command directly on the terminal, specifying a parameter file, the kstar values for the primary and secondary star, the maximum number of systems to evolve, every how many systems to check in, in order to track the distributions of the parameters, and how many processors to use.
 The final output is in an \textit{hdf5} file containing several data frames, that keep track pf various important quantities during the evolution: the total number of stars and total mass of the entire population, the number of binaries, the convergence, and so on. 
 The \textit{conv} data frame contains all the information about the final fixed population, and thus is the one that we will use the most: from it we can extract all the parameter distributions of the fixed population, such as the orbital parameters, and the individual star information.
 The parameter distributions of a fixed population of binary white dwarfs with a default metallicity value set at $0.020$ is shown in \textbf{Figure~\ref{fig: first fixed pop distributions}}.
 \begin{figure}[ht!]
     \begin{center}
-        \includegraphics[width=0.85\textwidth]{images/first_fixed_params_distr.pdf}
+        \includegraphics[width=\textwidth]{images/first_fixed_params_distr.pdf}
     \end{center}
     \caption{Distributions of the parameters of a fixed population with metallicity $Z=0.020$ composed of He+He, CO+He and CO+CO binary white dwarfs. This includes the mass, radius of primary and secondary stars, the radius ratios between the two, the orbital period, average separation, and evolution time.}\label{fig: first fixed pop distributions}
 \end{figure}
@@ -113,7 +113,7 @@ The parameter distributions of a fixed population of binary white dwarfs with a 
 
 \subsection{Astrophysical population}
 Once the convergence criteria is achieved, an astrophysical population can be sampled. 
-The number of sources in the astrophysical population $N_{astro, tot}$ can be found by upscaling the size of the fixed population, $N_{fixed}$ ,by the ratio of the mass of the astrophysical population, $M_{astro}$, to the mass of all the stars in the whole small-scale galaxy in which the fixed population is embedded, $M_{fixed,stars}$, as follows:
+The number of sources in the astrophysical population $N_{astro, tot}$ can be found by upscaling the size of the fixed population, $N_{fixed}$, by the ratio of the mass of the astrophysical population, $M_{astro}$, to the mass of all the stars in the whole small-scale galaxy in which the fixed population is embedded, $M_{fixed,stars}$, as follows:
 \begin{equation}
     N_{astro} = N_{fixed}\frac{M_{astro, tot}}{M_{fixed, stars}},
     \label{eq: scale by mass}
@@ -125,13 +125,13 @@ population, $N_{astro, tot}$, to the total number of stars formed to produce the
     \label{eq: scale by number}
 \end{equation}
 Thus, to create a full-scale astrophysical population we need a \textit{reference population} from which we can extract either the total mass or the total number of stars, to then use to scale up our fixed population.
-As we will now see, the chosen reference for our purpose is a catalog which reports many key galactic parameters in it, which will allow us to proceed using the method in \eqref{eq: scale by mass}.
+As we will now see, the chosen reference for our purpose is a catalog which reports many key galactic parameters in it, which will allow us to proceed using the method in~\eqref{eq: scale by mass}.
 
 
 
-\section{GWGC and Galaxy Properties}
+\section{GWGC Galaxy catalog}
 As we have seen, the goal of this work is to simulate the gravitational wave background produced by compact binaries in the \textit{local universe}, by generating the sources using COSMIC.
-To replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content we rely on the dataset provided in \cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
+To replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content we rely on the dataset provided in~\cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
 This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from gravitational wave searches.
 
 \subsection{What it has vs what we need}
@@ -147,11 +147,11 @@ This process will enable us to provide COSMIC with the necessary input, found in
 \subsection{Mass-luminosity relation}
 
 As previously discussed, in order to scale a fixed population to the size of a specific galaxy, we need either its total stellar mass or the number of stars.
-In particular, \cite{Faber&Gallagher} presents a luminosity-to-mass relation that depends on the morphological type.
+In particular,~\cite{Faber&Gallagher} presents a luminosity-to-mass relation that depends on the morphological type.
 This allows to use the blue magnitude and the T-type provided in GWGC to estimate each galaxy's stellar mass.
 
 \subsubsection{Magnitude to luminosity}
-To compute the stellar mass, the luminosity-to-mass ratio presented in \cite{Faber&Gallagher} applies to the absolute blue luminosity of each galaxy.
+To compute the stellar mass, the luminosity-to-mass ratio presented in~\cite{Faber&Gallagher} applies to the absolute blue luminosity of each galaxy.
 GWGC provides the absolute blue magnitude, thus we have to convert it into blue luminosity using the Sun's blue-band absolute magnitude as a reference (typically $M_{B,\odot} = 5.48$).
 Starting from the magnitude definition,
 \[
@@ -165,15 +165,15 @@ which, in stellar units, brings us to the following conversion:
 where $m_{B,gal}$ and $m_{B,\odot}\approx 5.48$ are the absolute blue magnitudes of the specific galaxy and the sun.
 
 \subsubsection{Galaxy morphological types}
-Although the GWGC denotes galaxy morphology using the de Vaucouleurs T-type scale, the luminosity-to-mass relations used in \cite{Faber&Gallagher} are defined in terms of Hubble morphological classes.
+Although the GWGC denotes galaxy morphology using the de Vaucouleurs T-type scale, the luminosity-to-mass relations used in~\cite{Faber&Gallagher} are defined in terms of Hubble morphological classes.
 This classification is crucial because different morphological types exhibit significantly different stellar populations and star formation histories, which affect both luminosity and mass content.
 For example, elliptical galaxies generally have lower luminosity-to-mass ratios than spirals due to their older stellar populations and lack of ongoing star formation.
-Fortunately, a direct correspondence exists between T-type values and Hubble types, and thanks to the results in \cite{Faber&Gallagher} we find the following correspondences:
+Fortunately, a direct correspondence exists between T-type values and Hubble types, and thanks to the results in~\cite{Faber&Gallagher} we find the following correspondences:
 \begin{table}[h!]
     \centering
     \begin{tabular}{ccc}
         T-Value & Hubble Class & $\frac{M}{L_B}$ \\
-        \hline
+        \toprule
         $-6.00$ to $-4.01$ & $E$ & 8.5\\
         $-4.00$ to $-2.01$ & $S0^-$ & 9.5\\
         $-2.00$ to $-0.99$ & $S0^+-S_a$ & 6.2\\
@@ -181,15 +181,14 @@ Fortunately, a direct correspondence exists between T-type values and Hubble typ
         $4.00$ to $4.99$ & $S_{bc}-S_{c}$ & 4.7\\
         $5.00$ to $5.99$ & $S_{cd}-S_{d}$ & 3.9\\
         $6.00$ to $10.00$ & $S_{dm}-Irr$ & 8.5\\
-        \hline
+        \bottomrule
     \end{tabular}
     \caption{The first two columns of this table present a conversion between the Hubble class and the T-value classifications for the different galactic morphological types.
-    This was done using the conversion table presented in \url{https://en.wikipedia.org/wiki/Galaxy_morphological_classification}.
-    The last column associates at each galaxy type a mass-to-luminosity ratio, found using the work in~\cite{Faber&Gallagher}.}
-    \label{tab: mass luminosity conversions tab}
+    This was done using the conversion table presented in~\cite{De_Vaucouleurs_1974}.
+    The last column associates at each galaxy type a mass-to-luminosity ratio, found using the work in~\cite{Faber&Gallagher}.}\label{tab: mass luminosity conversions tab}
 \end{table}
 \vspace{3mm}\\
-The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \textbf{Table \ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
+The luminosity resulting from~\eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \textbf{Table~\ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
 \begin{equation}
     M_{gal} = \frac{M}{L_B}L_{B,gal}
     \label{eq: total mass calculation}
@@ -198,10 +197,10 @@ The luminosity resulting from \eqref{eq: magnitude to luminosity}, expressed in 
 
 \subsection{Mass-metallicity relation}
 Now that we have estimated the stellar mass of each galaxy, we can also derive the corresponding metallicity.
-This is made possible by the results of \cite{Tremonti}, where an empirical relation between stellar mass and gas-phase oxygen abundance (a proxy for galaxy metallicity) is established.
+This is made possible by the results of~\cite{Tremonti}, where an empirical relation between stellar mass and gas-phase oxygen abundance (a proxy for galaxy metallicity) is established.
 The study, based on a sample of over 50,000 star-forming galaxies observed by the Sloan Digital Sky Survey, reveals a tight correlation between stellar mass and metallicity, spanning three orders of magnitude in mass and a factor of ten in metallicity, which can be written as follows:
 \begin{equation}
-    Z' = -1.492 + 1.847\times\log(M_*) - 0.08026\times[\log(M_*)]^2,
+    Z' = -1.492 + 1.847\times\log(M_*) - 0.08026\times{[\log(M_*)]}^2,
     \label{eq: mass to metallicity relation}
 \end{equation}
 where $M_*$ is the galactic stellar mass, and 
@@ -210,20 +209,21 @@ where $M_*$ is the galactic stellar mass, and
     \label{eq: metalliticy weird units definition}
 \end{equation}
 is the metallicity written in terms of the oxygen abundance (all the metallicity values with an apostrophe are intended as in these units).
+
 \subsubsection{On metallicity units}\label{sec:on_metallicity_units} % (fold)
-Now, in these units the sun's metallicity is\footnote{This value is taken from the work \cite{AllendePrieto}} $Z_\odot ' = 8.69$, whereas in the units used by COSMIC it is\footnote{This refers to the work \cite{Asplund}} $Z_\odot=0.0134$ (all the metallicity values without the apostrophe are intended as in these units).
+Now, in these units the sun's metallicity is\footnote{This value is taken from the work~\cite{AllendePrieto}} $Z_\odot ' = 8.69$, whereas in the units used by COSMIC it is\footnote{This refers to the work~\cite{Asplund}} $Z_\odot=0.0134$ (all the metallicity values without the apostrophe are intended as in these units).
 We can easily find a conversion between the two unit systems by assuming that the rate of oxygen abundance in the galaxy and the one in the sun is equal to the rate of the metallicities in COSMIC's units,
 \begin{equation}
     \frac{(O/H)_{gal}}{(O/H)_\odot}=\frac{Z_{gal}}{Z_\odot},
     \label{eq: metallicity rateo assumption}
 \end{equation}
-where $(O/H)$ can be found inverting \eqref{eq: metalliticy weird units definition}. 
+where $(O/H)$ can be found inverting~\eqref{eq: metalliticy weird units definition}. 
 At this point, knowing that $Z_\odot ' = 8.69$, we can:
 \begin{itemize}
-    \item Compute the $Z_{gal}'$ value for each galaxy in GWGC using \eqref{eq: mass to metallicity relation};
-    \item Write $(O/H)_\odot$ and $(O/H)_{gal}$ in terms of the corresponding  $Z'$ value using \eqref{eq: metalliticy weird units definition}: $(O/H)=10^{(Z'-12)}$ and  $(O/H)\odot \approx 0.32\hspace{1mm}$. 
+    \item Compute the $Z_{gal}'$ value for each galaxy in GWGC using~\eqref{eq: mass to metallicity relation};
+    \item Write $(O/H)_\odot$ and $(O/H)_{gal}$ in terms of the corresponding $Z'$ value using~\eqref{eq: metalliticy weird units definition}: $(O/H)=10^{(Z'-12)}$ and  $(O/H)\odot \approx 0.32\hspace{1mm}$. 
 \end{itemize}
-Finally, finding $Z_{gal}$ from \eqref{eq: metallicity rateo assumption}, we can write the metallicity units conversion as:
+Finally, finding $Z_{gal}$ from~\eqref{eq: metallicity rateo assumption}, we can write the metallicity units conversion as:
 \begin{equation}
     Z_{gal}=27.3\times10^{(Z'-12)},
     \label{eq: Metallicity unit conversion}
@@ -232,138 +232,4 @@ where the "$27.3$" coefficient mainly depends on the $Z_\odot$ value.
 This relation allows us to assign a realistic metallicity estimate to each GWGC galaxy in COSMIC's units, which we can now use to group them into representative subsets. 
 This way, we can account for the significant impact of metallicity on stellar wind strength, remnant masses, and binary evolution outcomes, that greatly affects the expected gravitational wave signal.
 
-
-\subsection{Missing galaxies}
-The GWGC is far from being a complete list of the galaxies in the local Universe.
-As we will now see, there are two main factors contributing to this incompleteness: observational limitations due to the Zone of Avoidance (ZOA) and limitations of the information that the catalog presents.
-
-\subsubsection{Zone of avoidance}
-
-Since the GWGC is an observation-based catalog compiled from optical surveys, we must account for the Zone of Avoidance — the region of the sky obscured by the Milky Way’s interstellar dust and stellar crowding, which impedes the detection of background galaxies.
-The extent of the ZOA depends on the wavelength of observation: infrared surveys penetrate deeper through the dust, while optical surveys, like those used for GWGC, are more strongly affected. 
-In the optical band, the ZOA is expected to cover about $\sim25\%$ of the sky \cite{Kraan-Korteweg}.
-For this work, we estimated the ZOA directly from the spatial distribution of galaxies in GWGC, by plotting their positions in Galactic coordinates. 
-This way, the ZOA appears clearly as a horizontal band centered around the Galactic plane (see \textbf{Figure~\ref{fig: ZOA in galactic coordinates}}).
-\begin{figure}
-    \begin{center}
-        \includegraphics[width=\textwidth]{images/truly_empty_pixels.pdf}
-    \end{center}
-    \caption{Visual representation of the regions of the sky not covered by any of the 53,255 galaxies in the GWGC, plotted in galactic coordinates using \textbf{healpy}, a Python package that handles pixelated data on the sphere based on the Hierarchical Equal Area isoLatitude Pixelization (\textbf{HEALPix}, \url{https://sourceforge.net/projects/healpix/}). 
-    This library allows the user to choose the number of pixels, and thus their size, through a power-of-2 parameter in the \textit{nside2npix} function: the larger the parameter, the smaller the pixel and the bigger their number. 
-    The gray dots in the figure represent the empty sky pixels, while the white areas correspond to pixels containing at least one galaxy.
-    The central band, where the Milky Way lies, appears significantly emptier than the rest of the sky; this is the so called Zone Of Avoidance (ZOA).
-    To estimate the ZOA, we calculated the percentage of empty pixels in the band $|b| \leq 15^\circ$ in Galactic latitude.
-    Choosing the parameter to be too small, the produced pixels would be too large, and the empty area would be underestimated.
-    Larger values would make the estimation only more precise, and by selecting parameters starting from $2^6=64$, it's possible to estimate roughly $\sim20\%$–$25\%$ of empty sky, fully consistent with the value reported in~\cite{Kraan-Korteweg}.
-    The $22.07\%$ estimation in the title is found using $64$ as parameter value.
-    }
-    \label{fig: ZOA in galactic coordinates}
-\end{figure}
-To quantify its extent, we used a Python package that handles pixelated data on the sphere based on the Hierarchical Equal Area isoLatitude Pixelization (HEALPix, \url{https://sourceforge.net/projects/healpix/}), called healpy, to divide the sky map into $n_{\rm pix}$ equal-area pixels, and focused on the band $|b| \leq 15^\circ$ in Galactic latitude.
-Counting the empty pixels in this band and dividing by $n_{\rm pix}$ gives an estimated ZOA coverage of $\sim20\%$–$25\%$ of the sky, depending on the chosen pixel resolution.
-This estimate is fully consistent with the literature \cite{Kraan-Korteweg}, so in our analysis we will assume that GWGC effectively covers $\sim80\%$ of the sky.
-
-\subsubsection{Incompleteness and non-galactic objects}
-Secondly, the entries of the GWGC represent a source of incompleteness themselves. 
-Not all the objects listed in the GWGC are suitable for our purposes:
-in addition to galaxies, the catalog also includes globular clusters, which can be identified through their T-type values; 
-moreover, not all galaxies in the catalog contain all the information required to perform the procedures described in the previous sections.
-To construct a working sample, we applied a series of masks to clean the catalog:
-\begin{itemize}
-    \item Only keep entries classified as galaxies; 
-    \item Require that the distance, T-type, and absolute blue magnitude are provided; 
-\end{itemize}
-After this selection, the sample we are left with scaled down in size, from the original $53,255$ entries to $20,246$ galaxies suitable for population synthesis.
-
-\subsubsection{Filling the gap}
-In order to compensate the missing galaxies, we have make two physically motivated assumptions.
-\begin{enumerate}
-    \item \textbf{Cosmological Principle}:\\
-    The GWGC lists all the observed galaxies within $100Mpc$.
-    On such scales, the Universe can be assumed to be statistically \textit{homogeneous} and \textit{isotropic}. 
-    This assumption is supported from observations of the \textit{Cosmic Microwave Background} (CMB), where we know that the correlation function of the temperature fluctuations across the sky peaks at scales of $\sim100Mpc$. 
-    Under this assumption, the selected galaxies of the GWGC should be statistically representative of the overall population in he same volume.
-    \item \textbf{Distance Matters}:\\ 
-    The angular position is irrelevant in the computation of the gravitational wave signal; only the distance of the source matters.
-    Therefore, missing galaxies from the unexplored volume covered by the Milky Way can be statistically represented by the galaxies from our retained sample.
-\end{enumerate}
-Following these assumptions, we “fill in” the missing fraction of the sky and the dropped entries of the catalog by sampling with replacement from the cleaned GWGC, just like we did to extract an astrophysical from the fixed one, preserving its parameter distributions.
-This ensures that the statistical properties of the synthetic galaxy distribution match those of the observed portion while restoring the full-sky coverage. 
-This is shown in a graphical representation of the distributions of distances, blue band magnitudes and T-types, in \textbf{Figure~\ref{fig: distro comparison}}: the distributions have been scaled up without visible changes.
-\begin{figure}[h!]
-    \begin{center}
-        \includegraphics[width=0.95\textwidth]{images/distro_comparison.pdf}
-    \end{center}
-    \caption{Distributions of T-value, distance and B-band magnitude of the galaxies in the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}) before and after compensating for the lack of galaxies due to the catalog's incompleteness and the \textbf{Zone Of Avoidance} (\textbf{ZOA}). 
-    The three graphs \textit{above} show the mentioned distributions for the $20,246$ galaxies of the original GWGC after we dropped those missing the key parameters we needed; the three graphs \textit{below} show the same distributions for the $66,568$ galaxies we are left with after taking into account both the catalog's incompleteness and the ZOA with a sampling eith replacement method.
-    The parameters distributions appear to be indistinguishable in shape: the scaling up in size left the properties of the catalog.
-    }\label{fig: distro comparison}
-\end{figure}
-\\
-The total number of galaxies that we have, now that we took into consideration both the dropped galaxies of the original GWGC and the ones covered by the ZOA, is $66,568$.
-
-\section{Final Steps}
-Now that the catalog has been completed and its ready for the population synthesis, its time to put all the pieces together.
-We will analyze the metallicity distribution of the galaxies in the final catalog, categorize and generate the fixed populations accordingly, and make some final considerations regarding LISA's frequency resolution, how to take care of it, and how to sum gravitational wave signals of multiple sources that LISA will not be able to distinguish. 
-
-\subsection{The final fixed populations}
-As we already discussed, the metallicity of a galaxy has a great impact on the stellar evolution and, thus, gravitational wave signal.
-This, plus the fact that metallicity is closely linked to the galaxy types too, led us to choose it as characterizing parameter for the populations that we will generate to represent the galaxy in the catalog.
-In particular, we the final catalog covers a range from a minimum of $ Z= 0.00748$ to a maximum of $Z= 0.03948$.
-We decided to group all the values in between in ten equally wide bins, represented in \textbf{Figure~\ref{fig: Z distribution of final catalog}}.
-\begin{figure}[h!]
-    \begin{center}
-        \includegraphics[width=0.95\textwidth]{images/z_distro_gwgc_completed_ZOA.pdf}
-    \end{center}
-    \caption{Metallicity distribution of the final galaxy catalog. 
-    The metallicity of the galaxieshas been shown to correlate with their morphological type~\cite{Faber&Gallagher}.
-    Therefore, the entries of our final catalog can be grouped into 10 bins, each associated to a metallicity value (the middle value of the corresponding bin, shown in the $x$-axis label of the graph), and a corresponding fixed population.
-    }\label{fig: Z distribution of final catalog}
-\end{figure}\\
-Each one of the center values of the bins, shown in the $x$ label, is linked to a different synthetic fixed population generated with COSMIC.
-The simulation was done generating the fixed populations "\textit{the cosmic way}", via terminal, specifying $Nstep = 5000$ and $Niter=1000000000$ and kstar values $10$, $11$ and $12$, corresponding to He, CO, and Ne white dwarfs\footnote{All the kstar values and the corresponding astrophysical objects are shown in \textbf{Table~\ref{tab: kstar values}}, in the \textbf{Appendix}.}.
-
-\subsection{LISA's frequency resolution}
-The duration of LISA’s mission directly impacts its frequency resolution: the longer the observation time, the finer the frequency bins it can resolve.
-In this work, we assume an observation tipe of: 
-\[
-    T_{obs}=4yr=126,144,000s
-\]
-which corresponds to a minimum frequency resolution of
-\begin{equation}
-    \delta\nu_{LISA,min}\approx \frac{1}{T_{obs}}\sim 8\times 10^{-9}Hz.
-    \label{eq: LISA frequency resolution}
-\end{equation}
-This fundamental limit comes from the Furier transform properties, and determines the smallest frequency interval over which the signals can be resolved.
-Although this is a very fine resolution, the precision of the orbital period in the simulated binary systems, and thus the frequency resolution on their gravitational signal, is actually much bigger, since these values come from a simulation rather than from real observations.
-For this reason, when computing the gravitational wave signals of our simulated binaries, we must take into account the fact that LISA will not be able to distinguish sources whose sources fall in the same frequency bin.
-To model this, we group the resulting gravitational wave signals in bins of size $\delta\nu_{LISA,min}$, and sum all the signals that fall within each bin, as we will now explain.
-
-\subsubsection{Multiple signals summation}
-To accurately represent the frequency resolution limit imposed by LISA's observation time, we have to sum all the signals within the same frequency bin. 
-In principle, over the observation time $T_{obs}$, the orbital parameters of the sources may slowly evolve, causing a drift in the gravitational wave frequency. 
-Integrating the resulting signal during this period is no easy task.
-However, for the slowly evolving white dwarf binaries we are considering, the change in such short time-frames is negligible, so we can treat their signals as effectively monochromatic within the observation window. 
-Thus, we can define a commonly used variable to simplify our job, which is called  \textbf{Amplitude Spectral Density} (\textbf{ASD}):
-\begin{equation}
-    ASD = h\sqrt{T_{obs}},
-    \label{eq: ASD definition}
-\end{equation}
-where $h$ is the gravitational wave strain of the binary, computed in \eqref{eq: the strain we use}, and $T_{obs}$ is the mission duration for LISA.
-This quantity represents the characteristic strain amplitude of the gravitational wave signal per square root of frequency, scaled by the observation time, and its very convenient for comparing the signals in frequency space.
-Correspondingly, we can define the \textbf{Power Spectral Density} (\textbf{PSD}) as the square of the ASD
-\begin{equation}
-    PSD = ASD^2,
-    \label{eq: PSD definition}
-\end{equation}
-which properly represents the signal power per frequency unit.
-Since power contributions from independent sources add linearly, the total PSD in a given frequency bin is simply found by summing the power of all the sources within it:
-\begin{equation}
-    PSD_{tot,bin_1} = PSD_{1,bin_1} + PSD_{2,bin_1} + \dots
-    \label{eq: total PSD}
-\end{equation}
-This way, we effectively accounted for LISA's frequency resolution limit.
-The reason for introducing this quantities is that gravitational waves from different binaries are uncorrelated, so their strains add incoherently. 
-This means we cannot simply sum the strain amplitudes directly.
-Instead, the PSD provides a way to combine signals that ensures a correct representation of the combined gravitational wave background.
 
