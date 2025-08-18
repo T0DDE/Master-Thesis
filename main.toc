@@ -29,39 +29,39 @@
 \contentsline {subsubsection}{Gravitational waves and TT gauge}{22}{section*.15}%
 \contentsline {subsection}{\numberline {1.3.2}LISA}{24}{subsection.1.3.2}%
 \contentsline {subsubsection}{Instrument description}{24}{section*.16}%
-\contentsline {subsubsection}{Frequency}{24}{section*.17}%
-\contentsline {subsubsection}{Why white dwarfs}{26}{section*.18}%
-\contentsline {chapter}{\numberline {2}Methods and Data}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Stellar Populations Synthesis Codes}{27}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}The starting point}{28}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Single star evolution}{29}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Binary stars evolution}{29}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}COSMIC}{30}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Fixed population}{30}{subsection.2.2.1}%
-\contentsline {subsubsection}{Initialization}{31}{section*.19}%
-\contentsline {subsubsection}{Convergence}{31}{section*.20}%
-\contentsline {subsubsection}{The output}{32}{section*.21}%
-\contentsline {subsection}{\numberline {2.2.2}Astrophysical population}{32}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}GWGC Galaxy catalog}{33}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}What it has vs what we need}{33}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Mass-luminosity relation}{33}{subsection.2.3.2}%
-\contentsline {subsubsection}{Magnitude to luminosity}{34}{section*.22}%
-\contentsline {subsubsection}{Galaxy morphological types}{34}{section*.23}%
-\contentsline {subsection}{\numberline {2.3.3}Mass-metallicity relation}{35}{subsection.2.3.3}%
-\contentsline {subsubsection}{On metallicity units}{35}{section*.24}%
-\contentsline {chapter}{\numberline {3}Results and Discussion}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Preparations}{37}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Missing galaxies}{38}{subsection.3.1.1}%
-\contentsline {subsubsection}{GWGC incompleteness and non-galactic objects}{38}{section*.25}%
-\contentsline {subsubsection}{Zone of avoidance}{38}{section*.26}%
-\contentsline {subsubsection}{Filling the gap}{38}{section*.27}%
-\contentsline {subsection}{\numberline {3.1.2}The final fixed populations}{40}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}The signal computation}{41}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}LISA's frequency resolution}{41}{subsection.3.2.1}%
-\contentsline {subsubsection}{Signals summation}{42}{section*.28}%
-\contentsline {subsection}{\numberline {3.2.2}The pipeline}{43}{subsection.3.2.2}%
-\contentsline {subsubsection}{LISA's sensitivity curve}{44}{section*.29}%
-\contentsline {paragraph}{Distribution of the sources.}{44}{section*.30}%
-\contentsline {chapter}{Conclusions and Future Perspectives}{47}{chapter*.31}%
-\contentsline {chapter}{\numberline {A}}{49}{appendix.A}%
-\contentsline {chapter}{\numberline {B}}{51}{appendix.B}%
+\contentsline {subsubsection}{Frequency}{25}{section*.17}%
+\contentsline {subsubsection}{Why white dwarfs}{25}{section*.18}%
+\contentsline {chapter}{\numberline {2}Methods and Data}{29}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Stellar Populations Synthesis Codes}{29}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}The starting point}{30}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Single star evolution}{31}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Binary stars evolution}{31}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}COSMIC}{32}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Fixed population}{32}{subsection.2.2.1}%
+\contentsline {subsubsection}{Initialization}{33}{section*.19}%
+\contentsline {subsubsection}{Convergence}{33}{section*.20}%
+\contentsline {subsubsection}{The output}{34}{section*.21}%
+\contentsline {subsection}{\numberline {2.2.2}Astrophysical population}{34}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}GWGC Galaxy catalog}{35}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}What it has vs what we need}{35}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Mass-luminosity relation}{35}{subsection.2.3.2}%
+\contentsline {subsubsection}{Magnitude to luminosity}{36}{section*.22}%
+\contentsline {subsubsection}{Galaxy morphological types}{36}{section*.23}%
+\contentsline {subsection}{\numberline {2.3.3}Mass-metallicity relation}{37}{subsection.2.3.3}%
+\contentsline {subsubsection}{On metallicity units}{37}{section*.24}%
+\contentsline {chapter}{\numberline {3}Results and Discussion}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Preparations}{39}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Missing galaxies}{40}{subsection.3.1.1}%
+\contentsline {subsubsection}{GWGC incompleteness and non-galactic objects}{40}{section*.25}%
+\contentsline {subsubsection}{Zone of avoidance}{40}{section*.26}%
+\contentsline {subsubsection}{Filling the gap}{40}{section*.27}%
+\contentsline {subsection}{\numberline {3.1.2}The final fixed populations}{42}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}The signal computation}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}LISA's frequency resolution}{43}{subsection.3.2.1}%
+\contentsline {subsubsection}{Signals summation}{44}{section*.28}%
+\contentsline {subsection}{\numberline {3.2.2}The pipeline}{45}{subsection.3.2.2}%
+\contentsline {subsubsection}{LISA's sensitivity curve}{46}{section*.29}%
+\contentsline {paragraph}{Distribution of the sources.}{46}{section*.30}%
+\contentsline {chapter}{Conclusions and Future Perspectives}{49}{chapter*.31}%
+\contentsline {chapter}{\numberline {A}}{51}{appendix.A}%
+\contentsline {chapter}{\numberline {B}}{53}{appendix.B}%

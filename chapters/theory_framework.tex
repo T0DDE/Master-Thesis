@@ -150,9 +150,9 @@ where $u^\alpha = \frac{dx^\alpha}{d\tau}$ is the particle velocity.
 By imposing the rest condition, $u^\alpha = (1,0,0,0)$, to the~\eqref{eq: geodesic equation of free particle} and considering the TT gauge component prescriptions for $h_{\mu\nu}$, we find that a particle initially at rest is not accelerated by the passage of a wave, but remains at a fixed coordinate position: the motion of a single particle is not affected by the gravitational waves.
 
 \subsubsection{The geodesic deviation}
-If we consider, instead, the relative motion of close particles, the situation is different.
+If we consider the relative motion of close particles, the situation is different.
 This relative motion is governed by the \textit{geodesic deviation}, which quantifies how two very close geodesics deviate from one another.
-Although, as we have seen, the coordinates of the two particles (and thus their difference) do not change when a gravitational wave passes, this does not hold true for their \textit{proper distance} o
+Although, as we have seen, the coordinates of the two particles (and thus their difference) do not change when a gravitational wave passes, this does not hold true for their \textit{proper distance}
 \[
     \Delta l = \int ds \not = const.
 \]
@@ -171,7 +171,7 @@ is the Riemann curvature tensor, $\vec{t}$ is the tangent vector to one of the g
 it is important to note that in the presence of a gravitational wave the Riemann tensor is never zero in any reference frame, and consequently neither is the geodesic deviation. 
 In contrast, the quantity $\frac{d^2\delta x^i}{d\tau^2}$ (which is not a tensorial quantity) vanishes in the TT frame.
 
-Knowing this, to analyze this effect in more detail we can choose to integrate the~\eqref{eq: geodesic deviation} in a \textit{Locally Inertial Frame}, LIF \{$\xi^\alpha$\}, centered on one of the two particles, where the metric can be approximated close to the origin as Minkowski up to quadratic, negligible, corrections:
+Knowing this, in order to analyze this effect in more detail we can choose to integrate the~\eqref{eq: geodesic deviation} in a \textit{Locally Inertial Frame}, LIF \{$\xi^\alpha$\}, centered on one of the two particles, where the metric can be approximated close to the origin as Minkowski up to quadratic, negligible, corrections:
 \[
     ds^2 = \eta_{\alpha\beta} d\xi^\alpha d\xi^\beta + O(|\xi|^2).
 \]
@@ -246,7 +246,7 @@ Their distinct effects on a ring of close particles are viually represented in \
 \end{figure}
 
 \subsection{The quadrupole approximation}
-Now that we have discussed the effects of the passage of a gravitational wave on the relative motion of close particles, we can focus on another important ptoblem: \textit{how such waves are generated}.
+We have discussed the effects of the passage of a gravitational wave on the relative motion of close particles; in this section we focus on another important problem: \textit{how such waves are generated}.
 Gravitational radiation is a consequence of variations in the spacetime curvature, and it generates from time-dependent distributions of mass and momentum.
 But not every motion of matter can produce gravitational wave signal, as we will see: conservation laws of general relativity, impose strict constraints on the possible multipole moment that can contribute to the tensorial metric perturbations.
 
@@ -389,7 +389,7 @@ The equivalence principle states that the effect of the gravitational field vani
 But if a tensor field is null in one frame, than it must be in all the other too: for this reason, there cannot be anything like a true gravitational field tensor.
 
 \subsubsection{Stress-energy pseudo-tensor}
-For this reason, we are going to introduce a \textbf{stress-energy pseudo tensor}, where a pseudo-tensor is a mathematical object that behaves like a tensor only under linear coordinate transformations.
+Since no tensor can represent the gravitational field itself, we are going to introduce a \textbf{stress-energy pseudo tensor}, where a pseudo-tensor is a mathematical object that behaves like a tensor only under linear coordinate transformations.
 It is possible to define procedures of \textit{integration} or \textit{averaging} involving it, which allow to construct well-defined gauge-invariant quantities.
 In particular, it is possible to define a \textit{local} notion of energy and momentum in the weak field approximation, on the assumption that the characteristic length-scale $\lambda$ of the perturbation is much smaller than the characteristic length-scale $L$ of the background: $\lambda/K\ll 1$.
 In this regime, it can be shown that if averaged over multiple wavelengths $\lambda$, the stress-energy pseudo-tensor transforms as a tensor for coordinate transformations linear in $h$ (i.e. of order $O(h)$),
@@ -416,10 +416,10 @@ and after defining the \textbf{gravitational wave luminosity} as
 \]
 and writing $Q^{TT}$ as a function of~\eqref{eq: reduced quadrupole moment}, by using the TT projectors in~\eqref{eq: transverse-traceless projector} and their properties, it can be shown that the energy associated to a ravitational wave can be written as the \textbf{luminosity quadrupole formula}:
 \begin{equation}
-    L_{GW}(t) = \frac{G}{5c^5}\Big\langle \left(\dddot{Q}_{ij}(t- \frac{r}{c}\right) \left(\dddot{Q}_{ij}(t-\frac{r}{c}\right) \Big\rangle,
+    L_{GW}(t) = \frac{G}{5c^5}\Big\langle \left(\dddot{Q}_{ij}\left(t- \frac{r}{c}\right) \dddot{Q}_{ij}\left(t-\frac{r}{c}\right)\right) \Big\rangle,
     \label{eq: luminosity quadrupole formula}
 \end{equation}
-as was derived by Einstein in \cite{Einstein_1918}.
+as was derived by Einstein in~\cite{Einstein_1918}.
 
 \subsection{Evolution of a compact binary system}
 By applying what we have found in the previous subsection to real astrophysical sources of gravitational wave, in this section we will find the amplitude that we are going to use for this thesis work to generate the total gravitational wave signal.
@@ -442,12 +442,12 @@ Using Kepler's laws it is also possible to translate this in a time dependence o
 \end{equation}
 or the period
 \begin{equation}
-    P(t) = P^{in}\left(1-\frac{t}{t_c}\right)^{3/8}.
+    P(t) = P^{in}{\left(1-\frac{t}{t_c}\right)}^{3/8}.
     \label{eq: P time variation}
 \end{equation}
 
 \subsubsection{Signal from inspiralling compact objects}
-Now that we have seen how the orbital parameters should change we can finally find the gravitational wave signal for an \textit{inspiralling compact object}.
+Knowing how the orbital parameters evolve with time allows us to find the gravitational wave signal for an \textit{inspiralling compact object}.
 We have already found in~\eqref{eq: binary system general strain solution} the general strain solution for a binary system, where its useful to redefine the instantaneous amplitude as
 \[
     h_0 = \frac{A}{r} = \frac{4\mu M G^2}{l_0c^4r},
@@ -503,7 +503,7 @@ These types of medium-to-low massive star's remnant, supported entirely by elect
 \subsubsection{Binary systems}
 A great fraction of the white dwarfs in the universe are found in binary systems, known as \textbf{double white dwarfs} (\textbf{DWDs}), that show a wide range of orbital separations and periods, depending on their formation and evolutionary history.  
 In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit gravitational waves in the milliHertz band.  
-Between the most relevant parameters for DWDs, with a particular focus for those that affect the gravitational wave signal in ~\eqref{eq: the strain we use}, typical values are:
+Between the most relevant parameters for DWDs, with a particular focus for those that affect the gravitational wave signal in~~\eqref{eq: the strain we use}, typical values are:
 \begin{itemize}
     \item \textbf{Masses:} typically between $0.2\,M_\odot$ and $1.2\,M_\odot$, with the most common systems having total masses $M_{\mathrm{tot}} \sim 0.6$--$1.0\,M_\odot$.
     \item \textbf{Radii:} $\sim 0.01\,R_\odot$ ($\approx 7\times 10^{3}$~km), decreasing with increasing mass according to the mass–radius relation for degenerate matter.
@@ -521,8 +521,8 @@ They host the vast majority of stars, stellar remnants, and interstellar matter,
 At the same time, their distribution in space and their physical properties affect the detectability of the gravitational-wave signals produced by these binaries.  
 
 \subsubsection{Morphological types}
-Their role as environment in which DWDs are born and evolve, their properties are fundamental because they influence it greatly.
-It becomes thus necessary to categorize them, in order to schematize the most important differences in this perspective.
+The role of galaxies as environment in which DWDs are born and evolve, and their properties are fundamental because they influence star evolution greatly.
+Therefore, it becomes necessary to categorize them, in order to schematize the most important differences from this perspective.
 The classical way to classify them is based on their morphology, as first organized by \citet{Hubble1926} into the \textit{Hubble sequence}.  
 This classification broadly distinguishes between:
 \begin{itemize}
@@ -655,7 +655,7 @@ At the same time, setting the instrument to a phase where the variation is maxim
 Therefore, depending on how this parameter is adjusted the instrument can be more or less sensible to signal variations, and the best value tends to be between these two extremes.
 
 \subsection{LISA}
-Ground-based detectors such as LIGO and Virgo have pioneered the technique we have just shown in the high-frequency band ($\gtrsim 10$~Hz).
+Already existing detectors such as LIGO and Virgo have pioneered the technique we have just shown in the high-frequency band ($\gtrsim 10$~Hz).
 The purpose for future space-based interferometers like LISA is to extend it to the low-frequency regime, opening a new observational window on astrophysical and cosmological sources.
 Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes.  
 At the shortest periods, these binaries are in very tight orbits, with separations of only a few $10^{4}$–$10^{5}$~km, comparable to Earth's diameter.
@@ -664,8 +664,7 @@ Detached systems with periods in the mHz range are also important, as they provi
 Given their abundance and gravitational wave luminosity, binary white dwarfs are expected to be the most numerous class of resolvable sources for LISA, and their unresolved population will form a significant component of the low-frequency gravitational wave foreground.
 
 \subsubsection{Instrument description}
-Earth-based detectors are limited in sensitivity in the low frequencies by sysmic noise, gravity gradients from local mass movements, etc.
-Basing new detectors allows to eliminate these sources of noise, allowing to explore a frequency regime which contains precious information ob many interesting astrophysical sources, such as DWDs, extreme mass-ratio inspirals and massive black hole mergers.
+Basing new detectors in space allows to eliminate sources of noise such as sysmic noise and gravity gradients from local movements, allowing to explore a frequency regime which contains precious information ob many interesting astrophysical sources, such as DWDs, extreme mass-ratio inspirals and massive black hole mergers.
 In LISA's case, the arms are not going to be physical structures, but $2.5\times10^6$km separations between three identical spacecrafts at the vertices of an equilateral triangle.
 Each one of the spacecraft will host two free-falling test masses, isolated from all non-gravitational interactions by a drag-free control system.
 The spacecrafts will trail by about $20^{\circ}$, with the triangular constellation inclined by $60^{\circ}$ to the ecliptic plane, following the earth around the sun.
