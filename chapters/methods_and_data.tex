@@ -5,8 +5,8 @@ In gravitational waves research, our observational capabilities are still very l
 Therefore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
 
 \section{Stellar Populations Synthesis Codes}
-Generating a synthetic population of stars is a very complex task, that involves multiple steps, each involving important choices.
-\textit{First}, we need to choose a starting point: we could start from the very beginning of stars formation and simulate all the process from the birth onward, or we could select a later phase in the stars evolution, shared from the most, in order to reduce unnecessary computational power and time consumption. 
+Generating a synthetic population of stars is a very complex task, that includes multiple steps, each involving important choices.
+\textit{First}, we need to choose a starting point: we could start from the very beginning of star's formation and simulate all the process from the birth onward, or we could select a later phase in the star's evolution, shared from the most, in order to reduce unnecessary computational power and time consumption. 
 If we want to simulate entire stellar populations choosing a starting point also implies selecting appropriate distributions for the main parameters that characterize the "starting point population", like masses, metallicities, but also orbital parameters for the stars that are in binary systems, like orbital period, distance, and eccentricity. 
 \textit{Second}, we must choose how the stars will evolve from the starting point, and this involves the single star evolution but also the effects that interaction with other stars in binary systems have on it.
 \textit{Finally}, we have to decide when we want to stop the simulation, choosing an endpoint that aligns with the needs of this study.
@@ -18,7 +18,7 @@ A star's position on this band is determined by its initial mass, and a good rul
     \begin{center}
         \includegraphics[width=\textwidth]{images/Hertzsprung_Russel_Diagram.jpg}
     \end{center}
-    \caption{Hertzsprung–Russell (H–R) diagram showing the relationship between stellar luminosity (in solar units) and surface temperature (in Kelvin), that indicates the main stellar evolutionary stages: the main sequence, the giant and supergiant branches, and the white dwarf region.
+    \caption{Hertzsprung–Russell (H–R) diagram showing the relationship between stellar luminosity (in solar units) and surface temperature (in Kelvin), that indicates the main stellar evolutionary stages: the main sequence, were most stars lie, the giant and supergiant branches, and the white dwarf region.
     The source of the image is~\href{https://asktheman.xyz/}{\textit{\underline{here}}}.}\label{fig: Hertzsprung_Russel_Diagram}
 \end{figure}\\
 Since almost all stars go through a phase in the MS, and evolve from there differently, in this work, the chosen starting point for stellar evolution is the Zero Age Main Sequence (ZAMS). 
@@ -31,13 +31,13 @@ In fact, detailed evolution codes can require substantial computational time eve
 Also, in order to make population synthesis statistically robust a large enough number of stars of a certain type must be evolved in order to overcome stochastic noise (in particular, the Poisson noise for $n$ simulations of a particular type of star, implies an error that grows as $\sqrt{n}$).
 A winning strategy, adopted by several population synthesis frameworks, is to pre-generate a large grid of detailed stellar evolution models, and use them to derive a number of interpolation formulae as functions that approximate stellar properties as a function of age, mass and metallicity. 
 In \cite{SSE} this method is implemented through the development of a set of \textbf{Single Star Evolution} (\textbf{SSE}) formulae, with the result of a very compact, efficient and adaptable code, which makes it perfect for the integration of binary-star interactions.
-The work presented in \cite{SSE} therefore serves as the theoretical and computational foundation for many complex stellar population synthesis codes, including the one used in this thesis. It takes care of the single-star evolution of stars from ZAMS through all the possible evolutionary outcomes, depending on the star's initial conditions.
+The work presented in \cite{SSE} therefore serves as the theoretical and computational foundation for many complex stellar population synthesis codes, including the one used in this thesis. It takes care of the single-star evolution from ZAMS through all the possible evolutionary outcomes, depending on the star's initial conditions.
 
 \subsection{Binary stars evolution}
 While the evolution of single stars already represents a challenge, the inclusion of binary interactions introduces a much higher level of complexity.
 In such systems, the evolution of each star is strongly influenced by its companion through a variety of processes, such as mass transfer and accretion, common envelope evolution, collisions, supernova kicks, tidal effects, angular momentum loss, and mergers.
 These interactions can drastically alter the final outcomes, and are essential for modeling the formation of compact binaries that are potential gravitational wave targets for LISA.
-To efficiently model binary evolution within the framework of stellar population synthesis, the work of \cite{BSE} extends the SSE formalism by introducing a set of prescriptions for binary interactions, and updating the treatment of processes such as Roche lobe overflow, common envelope evolution ans coalescence by collision, leading to the development of the \textbf{Binary Star Evolution} (\textbf{BSE}) algorithm.
+To efficiently model binary evolution within the framework of stellar population synthesis, the work of \cite{BSE} extends the SSE formalism by introducing a set of prescriptions for binary interactions, and updating the treatment of processes such as Roche lobe overflow, common envelope evolution and coalescence by collision, leading to the development of the \textbf{Binary Star Evolution} (\textbf{BSE}) algorithm.
 This code includes the interpolation-based approach used in SSE for single-star evolution, but adds a comprehensive treatment of binary-specific processes, enabling the simulation of a wide range of binary configurations but keeping the affordable computational requirements of SSE.
 The BSE algorithm tracks the joint evolution of both stars in a binary system, taking into account their initial parameters, such as masses, orbital period, eccentricity, and metallicity, and updates these properties dynamically as the system evolves.
 The flexibility and speed of the BSE code make it a key component in many modern population synthesis tools, including the one used in this thesis, which we will now introduce.
@@ -45,7 +45,7 @@ The flexibility and speed of the BSE code make it a key component in many modern
 \section{COSMIC}
 For the purposes of this work, we employ a community-developed binary population synthesis (BPS) python-based code, called the \textbf{Compact Object Synthesis and Monte Carlo Investigation Code} (\underline{\textbf{\href{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}{COSMIC}}}), whose <<\textit{primary purpose is to generate synthetic populations with an adaptive size based on how the shape of binary parameter distributions change as the number of simulated binaries increases}>>. 
 COSMIC's binary evolution is built upon BSE, incorporating extensive modifications in order to include updated physical prescriptions.
-It  includes all necessary tools to generate a population, from the generation of initial conditions, to scaling the simulated systems to full-scale astrophysical populations.
+It  includes all necessary tools to generate a population, from the generation of initial conditions, to scaling the simulated systems to full-size astrophysical populations.
 The code is presented in~\cite{Breivik}, where it is described in full detail and used, as a proof of concept, to simulate the Galactic population of compact binaries and their associated gravitational wave signal.
 In the following section we will see the main features of the code, and explain what makes it the right choice for this thesis work.
 
@@ -89,19 +89,19 @@ Independently generated histograms for each parameter are used to track their di
 The physical limits of the simulated systems are then enforced by taking the logistic transform, and finally the match is defined as: 
 \begin{equation}
     match=\displaystyle\frac{\sum_{k=1}^{N}P_{k,i} P_{k,i+1}}{\sqrt{\sum_{k=1}^{N}(P_{k,i}P_{k,i})\sum_{k=1}^{N}(P_{k,i}P_{k,i+1})}},
-    \label{eq: match condition}
+    %\label{eq: match condition}
     \notag
-u\end{equation}
+\end{equation}
 where $P_{k,i}$ is the probability for the \textit{k}th bin, for the \textit{i}th iteration.
 For how it is defined, the match value shifts between $0$ and $1$, and tends to unity as the parameter distributions converge to a distinct shape.
 
 \subsubsection{The output}
 Since COSMIC uses BSE as it’s core binary evolution algorithm, the output of COSMIC follows most of the same conventions as BSE. 
-The \textit{kstar values} (e.g. the number that represent a specific stellar type) and evolution stages are nearly identical to their BSE counterparts, and the exact references can be found in the \textbf{Appendix}.
-In order to generate a fixed population, the COSMIC can be ran through a one-line command directly on the terminal, specifying a parameter file, the kstar values for the primary and secondary star, the maximum number of systems to evolve, every how many systems to check in, in order to track the distributions of the parameters, and how many processors to use.
-The final output is in an \textit{hdf5} file containing several data frames, that keep track pf various important quantities during the evolution: the total number of stars and total mass of the entire population, the number of binaries, the convergence, and so on. 
+The \textit{kstar values} (e.g. the number that represent a specific stellar type) and evolution stages are nearly identical to their BSE counterparts, and the exact references can be found in \textbf{Table~\ref{tab: kstar values}} in the \textbf{Appendix}.
+In order to generate a fixed population, COSMIC can be ran through a one-line command directly on the terminal, specifying a parameter file, the kstar values for the primary and secondary star, the maximum number of systems to evolve, every how many systems to check in, in order to track the distributions of the parameters, and how many processors to use.
+The final output is in an \textit{hdf5} file containing several data frames, that keep track of various important quantities during the evolution: the total number of stars and total mass of the entire population, the number of binaries, the convergence, and so on. 
 The \textit{conv} data frame contains all the information about the final fixed population, and thus is the one that we will use the most: from it we can extract all the parameter distributions of the fixed population, such as the orbital parameters, and the individual star information.
-The parameter distributions of a fixed population of binary white dwarfs with a default metallicity value set at $0.020$ is shown in \textbf{Figure~\ref{fig: first fixed pop distributions}}.
+The parameter distributions of a fixed population of binary white dwarfs with a default metallicity value set at $0.020$ are shown in \textbf{Figure~\ref{fig: first fixed pop distributions}}.
 \begin{figure}[ht!]
     \begin{center}
         \includegraphics[width=\textwidth]{images/first_fixed_params_distr.pdf}
@@ -119,17 +119,18 @@ The number of sources in the astrophysical population $N_{astro, tot}$ can be fo
     \label{eq: scale by mass}
 \end{equation}
 or by the ratio of the number of stars in the astrophysical
-population, $N_{astro, tot}$, to the total number of stars formed to produce the fixed population, $N_{fixed,tot}$,
+population, $N_{astro, tot}$, to the total number of stars in the whole small-scale galaxy in which the fixed population is embedded, $N_{fixed,tot}$,
 \begin{equation}
     N_{astro} = N_{fixed}\frac{N_{astro, tot}}{N_{fixed, stars}}.
-    \label{eq: scale by number}
+    \notag
+    %\label{eq: scale by number}
 \end{equation}
 Thus, to create a full-scale astrophysical population we need a \textit{reference population} from which we can extract either the total mass or the total number of stars, to then use to scale up our fixed population.
-As we will now see, the chosen reference for our purpose is a catalog which reports many key galactic parameters in it, which will allow us to proceed using the method in~\eqref{eq: scale by mass}.
+As we will now see, the chosen reference for our purpose is a catalog that reports many key galactic parameters in it, which will allow us to proceed using the method in~\eqref{eq: scale by mass}.
 
 
 
-\section{GWGC Galaxy catalog}
+\section{GWGC Galaxy Catalog}
 As we have seen, the goal of this work is to simulate the gravitational wave background produced by compact binaries in the \textit{local universe}, by generating the sources using COSMIC.
 To replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content we rely on the dataset provided in~\cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
 This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from gravitational wave searches.
@@ -152,23 +153,23 @@ This allows to use the blue magnitude and the T-type provided in GWGC to estimat
 
 \subsubsection{Magnitude to luminosity}
 To compute the stellar mass, the luminosity-to-mass ratio presented in~\cite{Faber&Gallagher} applies to the absolute blue luminosity of each galaxy.
-GWGC provides the absolute blue magnitude, thus we have to convert it into blue luminosity using the Sun's blue-band absolute magnitude as a reference (typically $M_{B,\odot} = 5.48$).
+GWGC provides the absolute blue magnitude, thus we have to convert it into blue luminosity using the Sun's blue-band absolute magnitude as a reference (typically $m_{B,\odot} = 5.48$).
 Starting from the magnitude definition,
 \[
-    m_{B,gal} - m_{B,\odot} = -2.5\log_10\left(\frac{L_{B,gal}}{L_{B,\odot}}\right),
+    m_{B,gal} - m_{B,\odot} = -2.5\log_{10}\left(\frac{L_{B,gal}}{L_{B,\odot}}\right),
 \]
-which, in stellar units, brings us to the following conversion:
+which, in stellar units, we get to the following conversion:
 \begin{equation}
-    L_{B,gal} = 10^{-0.4(m_{B,gal}-m_{B,\odot})}L_{B,\odot}
+    L_{B,gal} = 10^{-0.4(m_{B,gal}-m_{B,\odot})}L_{B,\odot},
     \label{eq: magnitude to luminosity}
 \end{equation}
 where $m_{B,gal}$ and $m_{B,\odot}\approx 5.48$ are the absolute blue magnitudes of the specific galaxy and the sun.
 
 \subsubsection{Galaxy morphological types}
-Although the GWGC denotes galaxy morphology using the de Vaucouleurs T-type scale, the luminosity-to-mass relations used in~\cite{Faber&Gallagher} are defined in terms of Hubble morphological classes.
+Although the GWGC denotes galaxy morphology using the~\cite{Vaculeurs} T-type scale, the luminosity-to-mass relations used in~\cite{Faber&Gallagher} are defined in terms of Hubble morphological classes.
 This classification is crucial because different morphological types exhibit significantly different stellar populations and star formation histories, which affect both luminosity and mass content.
 For example, elliptical galaxies generally have lower luminosity-to-mass ratios than spirals due to their older stellar populations and lack of ongoing star formation.
-Fortunately, a direct correspondence exists between T-type values and Hubble types, and thanks to the results in~\cite{Faber&Gallagher} we find the following correspondences:
+Fortunately, a direct correspondence exists between T-type values and Hubble types, presented in~\cite{De_Vaucouleurs_1974}, and thanks to the results in~\cite{Faber&Gallagher} we find the following correspondences:
 \begin{table}[h!]
     \centering
     \begin{tabular}{ccc}
@@ -188,10 +189,11 @@ Fortunately, a direct correspondence exists between T-type values and Hubble typ
     The last column associates at each galaxy type a mass-to-luminosity ratio, found using the work in~\cite{Faber&Gallagher}.}\label{tab: mass luminosity conversions tab}
 \end{table}
 \vspace{3mm}\\
-The luminosity resulting from~\eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, as in \textbf{Table~\ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
+The luminosity resulting from~\eqref{eq: magnitude to luminosity}, expressed in units of solar blue luminosity $L_{B,\odot}$, can then be multiplied by the appropriate $M/L_B$ ratio, found in \textbf{Table~\ref{tab: mass luminosity conversions tab}}, to yield the total stellar mass for the galaxy
 \begin{equation}
     M_{gal} = \frac{M}{L_B}L_{B,gal}
-    \label{eq: total mass calculation}
+    \notag
+    % \label{eq: total mass calculation}
 \end{equation}
 
 
@@ -210,7 +212,7 @@ where $M_*$ is the galactic stellar mass, and
 \end{equation}
 is the metallicity written in terms of the oxygen abundance (all the metallicity values with an apostrophe are intended as in these units).
 
-\subsubsection{On metallicity units}\label{sec:on_metallicity_units} % (fold)
+\subsubsection{On metallicity units}
 Now, in these units the sun's metallicity is\footnote{This value is taken from the work~\cite{AllendePrieto}} $Z_\odot ' = 8.69$, whereas in the units used by COSMIC it is\footnote{This refers to the work~\cite{Asplund}} $Z_\odot=0.0134$ (all the metallicity values without the apostrophe are intended as in these units).
 We can easily find a conversion between the two unit systems by assuming that the rate of oxygen abundance in the galaxy and the one in the sun is equal to the rate of the metallicities in COSMIC's units,
 \begin{equation}
@@ -221,12 +223,12 @@ where $(O/H)$ can be found inverting~\eqref{eq: metalliticy weird units definiti
 At this point, knowing that $Z_\odot ' = 8.69$, we can:
 \begin{itemize}
     \item Compute the $Z_{gal}'$ value for each galaxy in GWGC using~\eqref{eq: mass to metallicity relation};
-    \item Write $(O/H)_\odot$ and $(O/H)_{gal}$ in terms of the corresponding $Z'$ value using~\eqref{eq: metalliticy weird units definition}: $(O/H)=10^{(Z'-12)}$ and  $(O/H)\odot \approx 0.32\hspace{1mm}$. 
+    \item Write $(O/H)_\odot$ and $(O/H)_{gal}$ in terms of the corresponding  $Z'$ value using~\eqref{eq: metalliticy weird units definition}: $(O/H)=10^{(Z'-12)}$ and  $(O/H)\odot \approx 0.32\hspace{1mm}$. 
 \end{itemize}
 Finally, finding $Z_{gal}$ from~\eqref{eq: metallicity rateo assumption}, we can write the metallicity units conversion as:
 \begin{equation}
     Z_{gal}=27.3\times10^{(Z'-12)},
-    \label{eq: Metallicity unit conversion}
+    %\label{eq: Metallicity unit conversion}
 \end{equation}
 where the "$27.3$" coefficient mainly depends on the $Z_\odot$ value.
 This relation allows us to assign a realistic metallicity estimate to each GWGC galaxy in COSMIC's units, which we can now use to group them into representative subsets. 
