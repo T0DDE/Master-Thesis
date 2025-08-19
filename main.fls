@@ -644,6 +644,11 @@ INPUT ./images/Final_results_plot.pdf
 INPUT ./images/Final_results_plot.pdf
 INPUT ./images/Final_results_plot.pdf
 INPUT ./images/Final_results_plot.pdf
+INPUT ./images/Final_results__incomplete_GWGC_plot.pdf
+INPUT ./images/Final_results__incomplete_GWGC_plot.pdf
+INPUT ./images/Final_results__incomplete_GWGC_plot.pdf
+INPUT ./images/Final_results__incomplete_GWGC_plot.pdf
+INPUT ./images/Final_results__incomplete_GWGC_plot.pdf
 INPUT ./chapters/Conclusions.tex
 INPUT ./chapters/Conclusions.tex
 OUTPUT chapters/Conclusions.aux
