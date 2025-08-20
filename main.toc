@@ -68,4 +68,3 @@
 \contentsline {subsubsection}{The signal}{46}{section*.32}%
 \contentsline {chapter}{Conclusions and Future Perspectives}{49}{chapter*.33}%
 \contentsline {chapter}{\numberline {A}}{51}{appendix.A}%
-\contentsline {chapter}{\numberline {B}}{53}{appendix.B}%

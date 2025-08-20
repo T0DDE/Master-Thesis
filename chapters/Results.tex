@@ -83,16 +83,16 @@ The total number of galaxies that we have after taking into consideration both t
 
 
 \subsection{The final fixed populations}
-As we already discussed, the metallicity of a galaxy has a great impact on the stellar evolution and, thus, gravitational wave signal.
+As we already discussed, the metallicity of a galaxy has a great impact on the stellar evolution and, thus, on the gravitational wave signal.
 This, plus the fact that metallicity is also closely linked to the galaxy types, led us to choose it as characterizing parameter for the fixed populations that we will generate to represent the galaxy in the catalog.
-In particular, we the final catalog covers a range from a minimum of $ Z= 0.00748$ to a maximum of $Z= 0.03948$.
+In particular, we the final catalog covers a range from a minimum of $ Z_{min}= 0.00748$ to a maximum of $Z_{max}= 0.03948$.
 We decided to group all the values in between in ten equally wide bins, represented in \textbf{Figure~\ref{fig: Z distribution of final catalog}}.
 \begin{figure}[h!]
     \begin{center}
         \includegraphics[width=\textwidth]{images/z_distro_gwgc_completed_ZOA.pdf}
     \end{center}
     \caption{Metallicity distribution of the final galaxy catalog. 
-    The metallicity of the galaxieshas been shown to correlate with their morphological type~\cite{Faber&Gallagher}.
+    The metallicity of the galaxies has been shown to correlate with their morphological type in~\cite{Faber&Gallagher}.
     Therefore, the entries of our final catalog can be grouped into 10 bins, each associated to a metallicity value (the middle value of the corresponding bin, shown in the $x$-axis label of the graph), and a corresponding fixed population.
     }\label{fig: Z distribution of final catalog}
 \end{figure}\\
@@ -103,7 +103,6 @@ The simulations were done generating the fixed populations "\textit{\href{https:
 \section{The Signal Computation}
 Generating the DWDs using COSMIC gives us the possibility to calculate the gravitational wave contribution of each one of them, assuming their distance to be the same as the hosting galaxy's one, provided from the galaxy catalog, and with an extreme precision in frequency.
 Before scaling up the fixed population, and calculating each binary's gravitational wave signal, and confronting it with LISA's sensitivity curve, we must then consider LISA's limited \textit{frequency resolution}, and understand how to process the signals of indistinguishable sources.
-This will allow us to finally find if LISA's curve will be affected by the unresolved extragalactic DWDs gravitational wave confusion foreground.
 
 \subsection{LISA's frequency resolution}
 The duration of LISA’s mission directly impacts its frequency resolution: the longer the observation time, the finer the frequency bins it can resolve.
@@ -119,10 +118,9 @@ which corresponds to a minimum frequency resolution of
 This fundamental limit comes from the Fourier transform properties, and determines the smallest frequency interval over which the signals can be resolved.
 Although this is a very fine resolution, the precision of the orbital period in the simulated binary systems, and thus the frequency resolution on their gravitational signal, is actually much bigger, since these values come from a simulation rather than from real observations.
 For this reason, when computing the gravitational wave signals of our simulated binaries, we must take into account the fact that LISA will not be able to distinguish sources within the same frequency bin.
-To model this, we group the resulting gravitational wave signals in bins of size $\delta\nu_{LISA,\min}$, and sum all the signals that fall within each bin, as we will now explain.
+To model this, we group the resulting gravitational wave signals in bins of size $\delta\nu_{LISA,\min}$, and sum all the signals that fall within each bin.
 
 \subsubsection{Signals summation}
-To accurately represent the frequency resolution limit imposed by LISA's observation time, we have to sum all the signals within the same frequency bin. 
 In principle, over the observation time $T_{obs}$, the orbital parameters of the sources may slowly evolve, causing a drift in the gravitational wave frequency. 
 Integrating the resulting signal during this period is no easy task.
 However, for the slowly evolving white dwarf binaries we are considering, the change in such short time-frames is negligible, so we can treat their signals as effectively monochromatic within the observation window. 
@@ -141,12 +139,12 @@ Correspondingly, we can define the \textbf{Power Spectral Density} (\textbf{PSD}
 which properly represents the signal power per frequency unit.
 Since power contributions from independent sources add linearly, the total PSD in a given frequency bin is simply found by summing the power of all the sources within it:
 \begin{equation}
-    PSD_{tot,bin_1} = PSD_{1,bin_1} + PSD_{2,bin_1} + \dots
+    PSD_{tot,bin_1} = PSD_{*_1,bin_1} + PSD_{*_2,bin_1} + \dots
     \label{eq: total PSD}
 \end{equation}
 This way, we effectively accounted for LISA's frequency resolution limit.
 The reason for introducing this quantities is that gravitational waves from different binaries are uncorrelated, so their strains add incoherently. 
-This means we cannot simply sum the strain amplitudes directly.
+This means that we cannot simply sum the strain amplitudes directly.
 Instead, the PSD provides a way to combine signals that ensures a correct representation of the combined gravitational wave background.
 
 \subsection{The pipeline}
@@ -157,31 +155,31 @@ In order to compute the total extragalactic DWDs gravitational background, we mu
     \vspace{1.5mm}\\
     At this point for each binary system in this astrophysical population we:
     \begin{itemize}
-        \item Compute the gravitational wave signal using~\eqref{eq: the strain we use}\footnote{Note here that all the binaries within the same galaxy are given the same distance from us. This approximation is considered to be valid since the distance of the galaxy is much much bigger the its size, and thus the maximum possible distance between two binaries within the same galaxy.} and the corresponding $PSD$ using~\eqref{eq: ASD definition} and~\eqref{eq: PSD definition};
+        \item Compute the gravitational wave signal using~\eqref{eq: the strain we use}\footnote{Note here that all the binaries within the same galaxy are given the same distance from us. This approximation is considered to be valid since the distance of the galaxy is much much bigger then its size, and thus then the maximum possible distance between two binaries within the same galaxy.} and the corresponding $PSD$ using~\eqref{eq: ASD definition} and~\eqref{eq: PSD definition};
         \item Sum the total PSD of the binaries whose frequencies fall within the same LISA's frequency bin, using~\eqref{eq: total PSD};
         \item Plot the total binned signals on LISA's curve.
     \end{itemize}
 \end{itemize}
 \subsubsection{LISA's sensitivity curve}
 The LISA curve is constantly updated when new gravitational wave components that can affect it are found, meaning that there are many different versions around.
-The one we chose to use is the widely used version presented in~\cite{Robson_2019}, which is written as:
+The one we chose to adopt is the widely used version presented in~\cite{Robson_2019}, which is written as:
 \begin{equation}
     S_n = \frac{10}{3L^2} \left( P_{OMS}(f) + \frac{4P_{acc}(f)}{(2\pi f)^4} \right)\left( 1 + \frac{6}{10}\left(\frac{f}{f_*}\right)^2 \right) + S_c(f),
     \notag
     %\label{eq: LISA sensitivity curve by Robson}
 \end{equation}
 where $L=2.5 Gm$ is the LISA arm length, $f_*=19.09mHz$ and $P_{OMS}(f)$, $P_{acc}(f)$ and $S_c(f)$ are the expressions for the single-link optical metrology noise, the single test mass acceleration noise and the total Michaelson-style LISA data channel. 
-The equations for these factors, as well as more detail on the curve that we chose, can be found in the article.
+The equations for these factors, as well as more detail on the curve, can be found in the article.
 
 
 \section{Discussion}
 
-Doing this, the spectral distribution of the final resulting signal is plotted over the LISA's sensitivity curve\footnote{This particular curve is presented in~\cite{Robson_2019}.} in \textbf{Figure~\ref{fig: Final results plot}}
-\begin{figure}[hb!]
+Doing this, the spectral distribution of the final resulting signal is plotted over the LISA's sensitivity curve\footnote{This particular curve is presented in~\cite{Robson_2019}.} in \textbf{Figure~\ref{fig: Final results plot}}.
+\begin{figure}[ht!]
     \begin{center}
         \includegraphics[width=\textwidth]{images/Final_results_plot.pdf}
     \end{center}
-    \caption{Total gravitational wave signal of the simulated Double White Dwarfs (DWDs) hosted by the $66,568$ galaxies of the final catalog, binned in $\sim 8\times10^{-9}Hz$ large frequency bins, representing LISA's spectral resolution. 
+    \caption{Total gravitational wave signal of the simulated Double White Dwarfs (DWDs) hosted by the $66,568$ galaxies of the final catalog, binned in $\sim 8\times10^{-9}Hz$ large frequency bins, representing LISA's spectral resolution for an observational time $T_{obs}\sim4yr$. 
     Every orange dot represents the signal of a frequency bin, calculated by summing the Power Spectral Density (PSD) of every galaxy that it contained, using~\eqref{eq: total PSD}. 
     The dots are plotted on LISA's sensitivity curve, as found in~\cite{Robson_2019}, and appear to be about one order of magnitude below the minimum threshold of this curve.
     This results suggest that we should not expect LISA to be able to detect the unresolved extragalactic DWDs confusion foreground, at least under the assumptions and approximations adopted in this work.}\label{fig: Final results plot}
@@ -202,7 +200,7 @@ As the binary systems evolve they get more compact, and the parameters change mo
 Moreover, the spectral shape of the resulting background is positioned at frequencies that are similar to the expected Galactic foreground ones (corresponding to the slight bump at the left of the lowest point in the graph. 
 This is better shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}), but with a significantly lower amplitude due to the much larger average distances.
 Indeed, as shown in~\eqref{eq: the strain we use}, the gravitational wave amplitude scales inversely with the distance from the source, so even relatively nearby galaxies contribute far less per binary than the Milky Way population. 
-The total number of galaxies in the local Universe, even if large, is not sufficient to compensate for this distance-induced amplitude suppression in the LISA band.
+The total number of galaxies in the local Universe, even if large, is not sufficient to compensate for this distance-induced amplitude suppression.
 
 
 \subsection{Stability of the results}
@@ -220,7 +218,7 @@ For example, if we only used the GWGC catalog after dropping the incomplete voic
         \includegraphics[width=\textwidth]{images/Final_results__incomplete_GWGC_plot.pdf}
     \end{center}
     \caption{Total gravitational wave signal of the simulated Double White Dwarfs (DWDs) hosted by the $20,246$ galaxies of the GWGC after dropping the galaxies with incomplete information, and without considering the zone of avoidance. 
-    The signal is binned in $\sim 8\times10^{-9}Hz$ large frequency bins, representing LISA's spectral resolution. 
+    The signal is binned in $\sim 8\times10^{-9}Hz$ large frequency bins, representing LISA's spectral resolution, assuming an observational time $T_{obs}\sim4yr$. 
     Every orange dot represents the signal of a frequency bin, calculated by summing the Power Spectral Density (PSD) of every galaxy that it contained, using~\eqref{eq: total PSD}. 
     The dots are plotted on LISA's sensitivity curve, as found in~\cite{Robson_2019}, and appear to be about one order of magnitude below the minimum threshold of this curve.
     This results, if compared with the ones showed in \textbf{Figure~\ref{fig: Final results plot}}, show that the effect of not taking into account the missing galaxies is very small, barely noticeable. 
@@ -228,7 +226,7 @@ For example, if we only used the GWGC catalog after dropping the incomplete voic
 \end{figure}
 Although a slight difference in height with the results obtained for all the $66,568$ galaxies presented in \textbf{Figure~\ref{fig: Final results plot}} is noticeable, it is important to note that it is caused by considering less then a third of the sources.
 Therefore, even if it is possible to consider different and more complete catalogs, and the zone of avoidance could be estimated with better precision, the results we found do not depend significantly on this.
-In addition to this, the single DWDs were simulated using COSMIC, which represent and arbitrary choice between a number of different population synthesis codes: this might produce different sources parameter distributions, and could be an interesting extension of the present work.
+In addition to this, the single DWDs were simulated using COSMIC, which represent and arbitrary choice between a number of different population synthesis codes: a different code might produce different sources parameter distributions, and could be an interesting extension of the present work.
 
 \subsubsection{The signal}
 The main assumptions we made to obtain the results are surely how we calculated the gravitational wave characteristic strain, and the way we integrate the signal coming from unresolved sources within the same frequency bin.
@@ -236,6 +234,6 @@ The gravitational wave signal calculated in~\eqref{eq: the strain we use} is the
 Furthermore, the use of Amplitude Spectral Density (ASD) and Power Spectral Density (PSD) is unavoidable, since it is the only way to confront signals that LISA could not resolve in frequency with its sensitivity curve.
 Interestingly, assuming a longer observational time would guarantee LISA a better frequency resolution, and each frequency bin would appear to be less populated.
 Since, as we said, less populated bins generally contain lower total PSD, the better the LISA's frequency resolution, the lower the sensitivity to the noise that the unresolved sources produce, and therefore the lower LISA's sensitivity curve needs to be to detect it.
-In any case, the methods we used guarantee a pretty stable and reproducible output, given the same input.
+Overall, the methods we used guarantee a pretty stable and reproducible output, given the same input.
 
 
