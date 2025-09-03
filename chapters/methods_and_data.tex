@@ -1,8 +1,14 @@
 \chapter{Methods and Data}
-The abundance of information of the electromagnetic spectrum allowed us to build highly detailed models of various celestial objects such as stars, both on their individual internal structure and on how this is influenced by the interaction with other bodies, for instance in binary systems.
-In the pursuit of reaching a greater sensitivity in the gravitational counterpart too, which could potentially reveal new information, or place better constrains on the existing models, these stellar models, when combined with a good theory of gravity, can be used to construct synthetic populations that reproduce observable features like luminosity, color, and chemical composition, which could enable us to predict what their gravitational signal would look like.
-In gravitational waves research, our observational capabilities are still very limited, and the signals are still comparatively very weak relative to their electromagnetic counterpart. 
-Therefore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
+Before the launch of a space-based gravitational-wave detector, the study of the expected signal from DWD relies entirely on simulations.
+To this end, binary population synthesis codes have been developed as dedicated tools, whose accuracy benefits significantly from high-quality electromagnetic observations, especially in the era of large-scale surveys such as \underline{\href{https://www.sdss.org/}{SDSS}} and \underline{\href{https://www.ztf.caltech.edu/}{ZTF}}.
+These observations not only provide complementary insights but also serve as crucial constraints to guide and validate the simulations, ensuring that the predicted populations are consistent with the systems already observed.
+In this chapter we will discuss on population synthesis codes, to then introduce in detail the COSMIC code that we use in this work.
+We then introduce the astrophysical survey that we used as a reference for the simulation of our sources.
+
+% The abundance of information of the electromagnetic spectrum allowed us to build highly detailed models of various celestial objects such as stars, both on their individual internal structure and on how this is influenced by the interaction with other bodies, for instance in binary systems.
+% In the pursuit of reaching a greater sensitivity in the gravitational counterpart too, which could potentially reveal new information, or place better constrains on the existing models, these stellar models, when combined with a good theory of gravity, can be used to construct synthetic populations that reproduce observable features like luminosity, color, and chemical composition, which could enable us to predict what their gravitational signal would look like.
+% In gravitational waves research, our observational capabilities are still very limited, and the signals are still comparatively very weak relative to their electromagnetic counterpart. 
+% Therefore, methods that rely on simulations can be very useful both to  explore how different sources could look like in the gravitational wave domain, and how effectively they could be detected with current or future instruments.
 
 \section{Stellar Populations Synthesis Codes}
 Generating a synthetic population of stars is a very complex task, that includes multiple steps, each involving important choices.
@@ -23,7 +29,7 @@ A star's position on this band is determined by its initial mass, and a good rul
 \end{figure}\\
 Since almost all stars go through a phase in the MS, and evolve from there differently, in this work, the chosen starting point for stellar evolution is the Zero Age Main Sequence (ZAMS). 
 At this stage, stars have just begun hydrogen burning in their cores, marking the start of their stable main sequence phase.
-This allows to bypass the early phases of star formation, which are much less relevant to the gravitational wave sources of interest, while still capturing the essential evolutionary processes that lead to the formation of compact objects.
+This allows to bypass the early phases of star formation, which are much less relevant to the GE sources of interest, while still capturing the essential evolutionary processes that lead to the formation of compact objects.
 
 \subsection{Single star evolution}
 Simulating the evolution of a single star is in itself a very complex matter, and the only way to make it computationally feasible in the context of large-scale population synthesis is to approximate the evolution for a wide range of mass $M$ and metallicity $Z$. 
@@ -36,7 +42,7 @@ The work presented in \cite{SSE} therefore serves as the theoretical and computa
 \subsection{Binary stars evolution}
 While the evolution of single stars already represents a challenge, the inclusion of binary interactions introduces a much higher level of complexity.
 In such systems, the evolution of each star is strongly influenced by its companion through a variety of processes, such as mass transfer and accretion, common envelope evolution, collisions, supernova kicks, tidal effects, angular momentum loss, and mergers.
-These interactions can drastically alter the final outcomes, and are essential for modeling the formation of compact binaries that are potential gravitational wave targets for LISA.
+These interactions can drastically alter the final outcomes, and are essential for modeling the formation of compact binaries that are potential GW targets for LISA.
 To efficiently model binary evolution within the framework of stellar population synthesis, the work of \cite{BSE} extends the SSE formalism by introducing a set of prescriptions for binary interactions, and updating the treatment of processes such as Roche lobe overflow, common envelope evolution and coalescence by collision, leading to the development of the \textbf{Binary Star Evolution} (\textbf{BSE}) algorithm.
 This code includes the interpolation-based approach used in SSE for single-star evolution, but adds a comprehensive treatment of binary-specific processes, enabling the simulation of a wide range of binary configurations but keeping the affordable computational requirements of SSE.
 The BSE algorithm tracks the joint evolution of both stars in a binary system, taking into account their initial parameters, such as masses, orbital period, eccentricity, and metallicity, and updates these properties dynamically as the system evolves.
@@ -44,9 +50,9 @@ The flexibility and speed of the BSE code make it a key component in many modern
 
 \section{COSMIC}
 For the purposes of this work, we employ a community-developed binary population synthesis (BPS) python-based code, called the \textbf{Compact Object Synthesis and Monte Carlo Investigation Code} (\underline{\textbf{\href{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}{COSMIC}}}), whose <<\textit{primary purpose is to generate synthetic populations with an adaptive size based on how the shape of binary parameter distributions change as the number of simulated binaries increases}>>. 
-COSMIC's binary evolution is built upon BSE, incorporating extensive modifications in order to include updated physical prescriptions.
+COSMIC's binary evolution is built upon BSE, incorporating extensive modifications in order to include updated physical prescriptions\footnote{Other then the various improvements for astrophysical processes in binary evolution, the biggest strength of COSMIC, when compared with other BSE based codes, is the use of Monte Carlo to make the large binary population simulation extremely efficient.}.
 It  includes all necessary tools to generate a population, from the generation of initial conditions, to scaling the simulated systems to full-size astrophysical populations.
-The code is presented in~\cite{Breivik}, where it is described in full detail and used, as a proof of concept, to simulate the Galactic population of compact binaries and their associated gravitational wave signal.
+The code is presented in~\cite{Breivik}, where it is described in full detail and used, as a proof of concept, to simulate the Galactic population of compact binaries and their associated GW signal.
 In the following section we will see the main features of the code, and explain what makes it the right choice for this thesis work.
 
 \subsection{Fixed population}
@@ -78,7 +84,7 @@ In COSMIC the user can choose between different binary parameter distributions, 
 %     \item COSMIC can also generate initial binary samples following \cite{MoeDiStefano}.
 % \end{itemize}
 % In this thesis we chose to have independent parameter distributions, and used the default options for all of them, which means \cite{Kroupa01} for the primary model, COMPLETE THIS PART.
-Moreover, COSMIC allows a complete personalization of the initial population through a number of other parameters, including different time-steps to control the binary physics, metallicity, stellar winds, common envelope phase, natal kicks, remnant mass, remnant spin, gravitational wave orbital decay, mass transfer, tides, and particular specifications for different kinds of stellar objects, mixing variables, and magnetic braking.
+Moreover, COSMIC allows a complete personalization of the initial population through a number of other parameters, including different time-steps to control the binary physics, metallicity, stellar winds, common envelope phase, natal kicks, remnant mass, remnant spin, GW orbital decay, mass transfer, tides, and particular specifications for different kinds of stellar objects, mixing variables, and magnetic braking.
 In this work all the parameters were left default, but one: we tweaked the metallicity value, in order to differentiate fixed populations describing the parameter distributions for galaxies of different types.
 We will go more into detail on this topic in the next chapters.
 
@@ -112,7 +118,7 @@ The parameter distributions of a fixed population of binary white dwarfs with a 
 
 
 \subsection{Astrophysical population}
-Once the convergence criteria is achieved, an astrophysical population can be sampled. 
+Once the convergence criteria are achieved, an astrophysical population can be sampled. 
 The number of sources in the astrophysical population $N_{astro, tot}$ can be found by upscaling the size of the fixed population, $N_{fixed}$, by the ratio of the mass of the astrophysical population, $M_{astro}$, to the mass of all the stars in the whole small-scale galaxy in which the fixed population is embedded, $M_{fixed,stars}$, as follows:
 \begin{equation}
     N_{astro} = N_{fixed}\frac{M_{astro, tot}}{M_{fixed, stars}},
@@ -130,14 +136,14 @@ As we will now see, the chosen reference for our purpose is a catalog that repor
 
 
 
-\section{GWGC Galaxy Catalog}
-As we have seen, the goal of this work is to simulate the gravitational wave background produced by compact binaries in the \textit{local universe}, by generating the sources using COSMIC.
-To replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content we rely on the dataset provided in~\cite{GWGC}, the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC}).
-This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from gravitational wave searches.
+\section{Gravitational Wave Galaxy Catalog}
+As we have seen, the goal of this work is to simulate the GW foreground produced by compact binaries in the \textit{local universe}, by generating the sources using COSMIC.
+To replicate the existing, observed galaxies in the vicinity of the Milky Way and simulate their stellar content we rely on the dataset provided in~\cite{GWGC}, the \textbf{GWGC}.
+This catalog includes a list of $53,255$ galaxies within $100Mpc$ from earth, containing information on sky position, distance, blue magnitude, major and minor diameters, position angle, and galaxy type, currently used for follow-up searches of electromagnetic counterparts from GW searches.
 
 \subsection{What it has vs what we need}
 In principle, we could generate a separate fixed population for each galaxy in the GWGC and scale it individually.
-However, this is simply not practical because of the computational power and time it would require, and therefore we must find a strategy to group them in a few, representative, categories.
+However, this is simply not practical because of the computational power and time it would require\footnote{A single fixed population can require up to $\sim4$h to be generated, and the GWGC contains $\sim50,000$ galaxies: generating a fixed population per each galaxy would require a computational time of $\sim20$yr.}, and therefore we must find a strategy to group them in a few, representative, categories.
 As we will show in this section, many of the information in the GWGC can be used to infer the missing astrophysical quantities we need for population synthesis. 
 Ultimately, we will find that metallicity is the most suitable parameter for grouping galaxies.
 To get there, we follow a chain of empirical relations, starting from the galaxy morphological type, through  a luminosity to mass, and then a mass to metallicity relation. 
@@ -232,6 +238,6 @@ Finally, finding $Z_{gal}$ from~\eqref{eq: metallicity rateo assumption}, we can
 \end{equation}
 where the "$27.3$" coefficient mainly depends on the $Z_\odot$ value.
 This relation allows us to assign a realistic metallicity estimate to each GWGC galaxy in COSMIC's units, which we can now use to group them into representative subsets. 
-This way, we can account for the significant impact of metallicity on stellar wind strength, remnant masses, and binary evolution outcomes, that greatly affects the expected gravitational wave signal.
+This way, we can account for the significant impact of metallicity on stellar wind strength, remnant masses, and binary evolution outcomes, that greatly affects the expected GW signal.
 
 

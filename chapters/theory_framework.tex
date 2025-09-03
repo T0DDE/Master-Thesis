@@ -1,7 +1,70 @@
 \chapter{Theoretical Framework}
+In this chapter we will cover all the theoretical foundations for this thesis. 
+We will start by describing the astrophysics of DWDs and the galaxies hosting them.
+Next, we will go through the GW theory, starting from the linearization of Einstein's equations, up to the characteristic strain that we would expect from the DWDs.
+Finally, we will understand the functioning of GW detectors, using the Michelson interferometer as example, and introducing LISA's characteristics.
 
 
-\section{Gravitational Waves Theory}
+\section{Double White Dwarfs}
+In this section, we will introduce the main astrophysical theory elements for the GW sources we want to simulate.
+First of all, we focus on white dwarfs, the compact remnants of low- and intermediate-mass stars, both as isolated objects or as components of binary systems.  
+We then shift our discussion to galaxies, the large-scale environments in which these compact binaries form and evolve. 
+The properties of galaxies, including their morphology, stellar populations, and dynamical structure, strongly influence the formation rates, spatial distribution, and evolution of white dwarf binaries. 
+A clear understanding of both the compact objects themselves and their host galaxies is necessary for predicting the GW signals that can be observed.
+
+\subsection{White dwarfs}
+During its evolution, a star generates energy in its core through the nuclear fusion reactions, "burning" the elements in its core. 
+During this process, which represents most of the star's life, the \textit{radiation pressure} generated holds the star from the gravitational collapse. 
+For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will look colder and larger, as a \textit{red giant}.
+If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages.  
+In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it.
+In such stars, when the helium starts burning the emitted radiation is not sufficient to push back against the enormous gravitational pressure.
+At this point a runaway process can be initialized, in which the core keeps compressing, and heating, and the fusion rate increases.
+This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage.
+The cycle of contraction and fusion continues until the core is composed of an element that cannot be fused under the prevailing conditions, either because the temperatures are too low, or because the reactions would no longer be exothermic (as in the case of iron core white dwarfs).  
+Moreover, for low and intermediate-mass stars, intense winds and envelope ejections during late stages of the evolution can strip away the outer layers, leaving behind a naked, degenerate core.
+These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs}.
+
+\subsubsection{Binary systems}
+A great fraction of the white dwarfs in the universe are found DWDs systems, that show a wide range of orbital separations and periods, depending on their formation and evolutionary history.  
+In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit GWs in the milliHertz band.  
+Among the most relevant parameters for DWDs, typical values are:
+\begin{itemize}
+    \item \textbf{Masses:} typically between $0.2\,M_\odot$ and $1.2\,M_\odot$, with the most common systems having total masses $M_{\mathrm{tot}} \sim 0.6$--$1.0\,M_\odot$.
+    \item \textbf{Radii:} $\sim 0.01\,R_\odot$ ($\approx 7\times 10^{3}$~km), decreasing with increasing mass according to the mass-radius relation for degenerate matter.
+    \item \textbf{Orbital periods:} between $\sim 10^{4}$~s (a few hours) and $\lesssim 300$~s (5 minutes) for the most compact systems.
+    \item \textbf{Gravitational wave frequencies:} $f_{\mathrm{GW}} = 2/P_{\mathrm{orb}}$, hence in the range $\sim 0.1$--$10$~mHz for LISA-relevant binaries.
+\end{itemize}
+In some binaries, the DWDs are detached, and neither star fills its Roche lobe, while in \textbf{interacting systems} there might be mass transfers.
+In these cases, once one of the white dwarfs overflows its own Roche lobe, material flows through the inner Lagrangian point toward the companion.
+The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met\footnote{More on white dwarfs can be found in~\cite{Shen_2009} and~\cite{refId0}, and in~\cite{Shen_2018} while in~\cite{Das2025} are more details of the Supernova detonation from white dwarfs}.
+
+
+\subsection{Galaxies}
+Galaxies are the fundamental building blocks of the large-scale structure of the Universe. 
+They host the vast majority of stars, stellar remnants, and interstellar matter, and therefore also the majority of DWDs, and represent the environment in which such objects are generated and evolve.  
+At the same time, their distribution in space and their physical properties affect the detectability of the gravitational-wave signals produced by these binaries.  
+
+\subsubsection{Morphological types}
+The role of galaxies as environment in which DWDs are born and evolve, and their properties are fundamental because they influence star evolution greatly.
+Therefore, it becomes necessary to categorize them, in order to schematize the most important differences from this perspective.
+The classical way to classify them is based on their morphology, as first organized by \citet{Hubble1926} into the \textit{Hubble sequence}.  
+This classification broadly distinguishes between:
+\begin{itemize}
+    \item \textbf{Elliptical galaxies (E):} They present smooth, featureless light profiles with nearly elliptical shape, and they are mostly populated by older stars and very little interstellar medium, and show little to no ongoing star formation. 
+    They range from nearly spherical (E0) to highly elongated ellipses (E7), depending on the eccentricity. 
+    \item \textbf{Lenticular galaxies (S0):} An intermediate class between elliptical and spiral galaxies, they present a central bulge and a disk but do not have prominent spiral arms.
+    They also often contain older stars and have low gas content, but their flattened structure suggests a disk-like stellar kinematics.
+    \item \textbf{Spiral galaxies (Sa, Sb, Sc, Sd):} such as our own, they are disk galaxies with spiral arms rooted in a central bulge.
+    Early-type spirals (Sa) have tightly wound arms and larger bulges, whereas late-type spirals (Sc, Sd) have more open arms, smaller bulges, and more gas and young stars.
+    \item \textbf{Irregular galaxies (Irr):} They lack of a defined shape, and are often rich in gas and undergoing intense star formation, possibly as a result of interactions or mergers.
+\end{itemize}
+For quantitative studies as the present one, morphological types can be conveniently parameterized by the \textbf{T-value} introduced in the \textit{Third Reference Catalogue of Bright Galaxies} (\citealt{Vaculeurs}), which allows an easy mapping between the numerical index and the traditional Hubble sequence morphology.
+This system assigns values from $T=-6$ (E ellipticals) through $T\approx 0$ (S lenticulars), to $T\approx 10$ (irregulars), with intermediate integers corresponding to specific spiral subclasses (Sa, Sb, Sc, etc.).  
+Note that the difference in the age of the stars populating the different morphological types illustrated translates in a systematic variation in the typical metallicity values, with early types generally being more metal-rich on average than late types. 
+This metallicity fingerprint that distinguishes morphological types will be an important feature in the next chapters, where the stellar population properties will influence the compact binary formation and GW emission.
+
+\section{Gravitational Wave Theory}
 After considering, in 1905, the problem of the apparently \textit{instantaneous} propagation of light, with the theory of Special Relativity, in 1916 Albert Einstein considered the problem of the apparently \textit{instantaneous} propagation of gravity through \textit{long distances}, in his theory of General Relativity.
 Einstein showed that long-distance interaction arises from the deformation of spacetime caused by massive objects.
 Hence, the deviated motion apparently caused by the interaction between two distant masses really is, in fact, a manifestation of spacetime curvature nearby, generated by the presence of the two objects.
@@ -11,7 +74,7 @@ The treatment that follows primarily relies on~\cite{ferrari2020general}, partic
 We will not go into the full mathematical derivations here, but they are presented in detail in the book.
 
 \subsection{Gravitational waves as perturbations}
-The typical approach to the study of gravitational waves is to derive them as small perturbations of the background from the Einstein's equations: 
+The typical approach to the study of GWs is to derive them as small perturbations of the background from the Einstein's equations: 
 \begin{equation}
     G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R,
 \end{equation}
@@ -127,7 +190,7 @@ and with the~\eqref{eq: first four conditions} follows
 \]
 The only components which cannot be set to zero are $\bar{h}^z_y$ and $\bar{h}^y_y - \bar{h}^z_z$, because now we have completely used all the gauge freedom.
 It can be shown that, from all the above conditions, it follows that $\bar{h} \equiv h$, i.e. in this gauge the wave results to be \textit{traceless}.
-Thus, a plane gravitational wave propagating along the $x$-axis is characterized by only two non-zero functions $h_{zy}$ and $h_{yy}=-h_{zz}$:
+Thus, a plane GW propagating along the $x$-axis is characterized by only two non-zero functions $h_{zy}$ and $h_{yy}=-h_{zz}$:
 \begin{equation}
     h^{TT}_{\mu\nu} =  
     \begin{pmatrix}
@@ -138,7 +201,7 @@ Thus, a plane gravitational wave propagating along the $x$-axis is characterized
 \end{pmatrix}.
     \label{eq: h as a matrix in x case}
 \end{equation}
-The gravitational wave only has \textbf{two physical degrees of freedom} which correspond to two polarization states.
+The GW only has \textbf{two physical degrees of freedom} which correspond to two polarization states.
 This gauge is called \textbf{TT gauge} because of the \textit{transverse traceless} nature: $h_{\mu\nu}$ is traceless, thus $h=0$, and transverse, since the components of $h_{\mu\nu}$ along the direction of propagation are null (in this case $h_{\mu_x}=0$).
 
 \subsection{Motion and geodesics}
@@ -148,12 +211,12 @@ Free test particles in General Relativity move along geodesic, which means that,
     \label{eq: geodesic equation of free particle}
 \end{equation}
 where $u^\alpha = \frac{dx^\alpha}{d\tau}$ is the particle velocity.
-By imposing the rest condition, $u^\alpha = (1,0,0,0)$, to the~\eqref{eq: geodesic equation of free particle} and considering the TT gauge component prescriptions for $h_{\mu\nu}$, we find that a particle initially at rest is not accelerated by the passage of a wave, but remains at a fixed coordinate position: the motion of a single particle is not affected by the gravitational waves.
+By imposing the rest condition, $u^\alpha = (1,0,0,0)$, to the~\eqref{eq: geodesic equation of free particle} and considering the TT gauge component prescriptions for $h_{\mu\nu}$, we find that a particle initially at rest is not accelerated by the passage of a wave, but remains at a fixed coordinate position: the motion of a single particle is not affected by the GWs.
 
 \subsubsection{The geodesic deviation}
 If we consider the relative motion of close particles, the situation is different.
 This relative motion is governed by the \textit{geodesic deviation}, which quantifies how two very close geodesics deviate from one another.
-Although, as we have seen, the coordinates of the two particles (and thus their difference) do not change when a gravitational wave passes, this does not hold true for their \textit{proper distance}
+Although, as we have seen, the coordinates of the two particles (and thus their difference) do not change when a GW passes, this does not hold true for their \textit{proper distance}
 \[
     \Delta l = \int ds \not = const.
 \]
@@ -169,7 +232,7 @@ where
     \label{eq: Riemann tensor def}
 \end{equation}
 is the Riemann curvature tensor, $\vec{t}$ is the tangent vector to one of the geodesic, $\vec{\delta x}$ is a deviation vector between the two geodesics and $\frac{D}{d\tau}$ is the covariant derivative over the proper time $\tau$.
-It is important to note that in the presence of a gravitational wave the Riemann tensor is never zero in any reference frame, and consequently neither is the geodesic deviation. 
+It is important to note that in the presence of a GW the Riemann tensor is never zero in any reference frame, and consequently neither is the geodesic deviation. 
 In contrast, the quantity $\frac{d^2\delta x^i}{d\tau^2}$ (which is not a tensorial quantity) vanishes in the TT frame.
 
 Knowing this, in order to analyze this effect in more detail we can choose to integrate the~\eqref{eq: geodesic deviation} in a \textit{Locally Inertial Frame}, LIF \{$\xi^\alpha$\}, centered on one of the two particles, where the metric can be approximated close to the origin as Minkowski up to quadratic, negligible, corrections:
@@ -184,7 +247,7 @@ Assuming that the wave travels along the $\xi^1$ direction, the solutions for th
     \notag
 \end{equation}
 where $\delta\xi_0^j$ represent the initial, constant separation between the particles. 
-As previously discussed, the non-zero components of the strain tensor $h_{ik}^{TT}$ correspond to two possible polarizations of the gravitational wave. 
+As previously discussed, the non-zero components of the strain tensor $h_{ik}^{TT}$ correspond to two possible polarizations of the GW. 
 Their distinct effects on a ring of close particles are visually represented in \textbf{Figure~\ref{fig:gw_polarizations}}.
 \begin{figure}[h]
     \centering
@@ -242,14 +305,14 @@ Their distinct effects on a ring of close particles are visually represented in 
     \end{scope}
 
     \end{tikzpicture}
-    \caption{Effect of the two gravitational wave polarizations on a ring of free-falling particles, caused by a wave moving in the direction perpendicular to the page: blue and red dots represent two opposite phases of the wave.}
+    \caption{Effect of the two GW polarizations on a ring of free-falling particles, caused by a wave moving in the direction perpendicular to the page: blue and red dots represent two opposite phases of the wave.}
     \label{fig:gw_polarizations}
 \end{figure}
 
 \subsection{The quadrupole approximation}
-We have discussed the effects of the passage of a gravitational wave on the relative motion of close particles; in this section we focus on another important problem: \textit{how such waves are generated}.
+We have discussed the effects of the passage of a GW on the relative motion of close particles; in this section we focus on another important problem: \textit{how such waves are generated}.
 Gravitational radiation is a consequence of variations in the spacetime curvature, and it generates from time-dependent distributions of mass and momentum.
-But not every motion of matter can produce gravitational wave signal, as we will see: conservation laws of general relativity, impose strict constraints on the possible multipole moment that can contribute to the tensorial metric perturbations.
+But not every motion of matter can produce GW signal, as we will see: conservation laws of general relativity, impose strict constraints on the possible multipole moment that can contribute to the tensorial metric perturbations.
 
 
 \subsubsection{The weak-field, slow-motion approximation}
@@ -261,7 +324,7 @@ If we assume that the region, of size $\epsilon$, where the source of the signal
     \notag
 \end{equation}
 The typical velocities of the system are much smaller than the speed of light: this is the so called \textit{slow motion approximation}.
-If we now use the solution found using the retarded potentials in~\eqref{eq: solutions with retarded potentials}, by making use of the Fourier transforms it can be found that the gravitational wave signal emitted by the source, to leading order in the weak-field, slow-motion approximation is
+If we now use the solution found using the retarded potentials in~\eqref{eq: solutions with retarded potentials}, by making use of the Fourier transforms it can be found that the GW signal emitted by the source, to leading order in the weak-field, slow-motion approximation is
 \begin{equation}
     \bar{h}_{\mu\nu}(t,r) = \frac{4G}{rc^4}\int_V T_{\mu\nu}(t-\frac{r}{c}, \mathbf{x}')d^3x.
     \label{eq: weak-field slow-motion solutions}
@@ -294,7 +357,7 @@ we finally find that~\eqref{eq: weak-field slow-motion solutions} can be re-writ
     \label{eq: quadrupole formula}
 \end{align}
 known as the \textbf{quadrupole formula}.
-This formulation describes the gravitational wave signal emitted by a gravitating system that evolves in time, whatever the mass-energy distribution looks like, as long as $\ddot{q}^{ik}\not = 0$.
+This formulation describes the GW signal emitted by a gravitating system that evolves in time, whatever the mass-energy distribution looks like, as long as $\ddot{q}^{ik}\not = 0$.
 Note that in this approximation, the only component of the stress-energy tensor that generates the metric perturbation is $T^{00}$, and that the $c^{-4}$ makes the characteristic strain extremely small:
 \[
     \frac{G}{c^4}\sim 10^{-49}\frac{s^2}{g\hspace{1mm}cm}.
@@ -324,7 +387,7 @@ that, if applied to the~\eqref{eq: quadrupole formula}, gives
    \label{eq: TT part of quadrupole moment}
 \end{align}
 where $Q_{jk}^{TT} = P_{jkmn}q_{mn}$ is the \textbf{transverse-traceless part of the quadrupole moment}.
-As we will see, to compute the "luminosity" of a gravitational wave source, it is useful to define the \textbf{reduced quadrupole moment}
+As we will see, to compute the "luminosity" of a GW source, it is useful to define the \textbf{reduced quadrupole moment}
 \begin{equation}
     Q_{jk} \equiv q_{jk} - \frac{1}{3}\delta_{jk}q_m^m, 
     \label{eq: reduced quadrupole moment}
@@ -377,7 +440,7 @@ and using~\eqref{eq: A definition}, we find
     h_0\sim 5\times10^{-23}, 
     \label{eq: typical strain amplitude value}
 \end{equation}
-as an estimate of a typical gravitational wave signal amplitude generated by a binary system.
+as an estimate of a typical GW signal amplitude generated by a binary system.
 
 \subsection{Energy carried by a gravitational wave}
 The stress-energy tensor conservation laws that we know in Special Relativity
@@ -402,7 +465,7 @@ and is therefore \textit{suitable to describe energy and momentum carried by the
 
 \subsubsection{Gravitational wave luminosity}
 In general, it can be shown that the energy flowing across a unit surface orthogonal to the direction $x'$ per unit time is given by the $0x'$ component of the stress-energy tensor times the speed of light.
-Similarly, the energy flux of a gravitational wave propagating in the same direction is given by the same component of the stress-energy pseudo-tensor averaged over several wavelengths, and can be derived as
+Similarly, the energy flux of a GW propagating in the same direction is given by the same component of the stress-energy pseudo-tensor averaged over several wavelengths, and can be derived as
 \[
     \frac{dE_{GW}}{dtdS} = c\langle t^{0x'}\rangle = \frac{c^3}{16\pi G}\langle (\dot{h}_+(t,x'))^2 + (\dot{h}_x(t,x'))^2 \rangle.
 \]
@@ -415,7 +478,7 @@ and after defining the \textbf{gravitational wave luminosity} as
 \[
     L_{GW} = \frac{dE_{GW}}{dt} = \int \frac{dE_{GW}}{dtdS}dS,
 \]
-and writing $Q^{TT}$ as a function of~\eqref{eq: reduced quadrupole moment}, by using the TT projectors in~\eqref{eq: transverse-traceless projector} and their properties, it can be shown that the energy associated to a gravitational wave can be written as the \textbf{luminosity quadrupole formula}:
+and writing $Q^{TT}$ as a function of~\eqref{eq: reduced quadrupole moment}, by using the TT projectors in~\eqref{eq: transverse-traceless projector} and their properties, it can be shown that the energy associated to a GW can be written as the \textbf{luminosity quadrupole formula}:
 \begin{equation}
     L_{GW}(t) = \frac{G}{5c^5}\Big\langle \left(\dddot{Q}_{ij}\left(t- \frac{r}{c}\right) \dddot{Q}_{ij}\left(t-\frac{r}{c}\right)\right) \Big\rangle,
     \label{eq: luminosity quadrupole formula}
@@ -423,13 +486,13 @@ and writing $Q^{TT}$ as a function of~\eqref{eq: reduced quadrupole moment}, by 
 as was derived by Einstein in~\cite{Einstein_1918}.
 
 \subsection{Evolution of a compact binary system}
-By applying what we have found in the previous subsection to real astrophysical sources of gravitational wave, in this section we will find the amplitude that we are going to use for this thesis work to generate the total gravitational wave signal.
-In particular, we can apply the general results we found for two objects in a circular orbit in~\eqref{eq: A definition} to compute the quadratic sum of the components of $\dddot{Q}_{ij}$ in~\eqref{eq: luminosity quadrupole formula}, and find the gravitational wave luminosity of a compact binary system as
+By applying what we have found in the previous subsection to real astrophysical sources of GW, in this section we will find the amplitude that we are going to use for this thesis work to generate the total GW signal.
+In particular, we can apply the general results we found for two objects in a circular orbit in~\eqref{eq: A definition} to compute the quadratic sum of the components of $\dddot{Q}_{ij}$ in~\eqref{eq: luminosity quadrupole formula}, and find the GW luminosity of a compact binary system as
 \[
     L_{GW}=\frac{32}{5}\frac{G^4}{c^5}\frac{\mu^2 M^3}{l_0^5}
 \]
 Remember that this represents an average over several wavelengths, and thus, of course, over many orbital periods (since $\omega_{GW}=2\omega_K$), which makes it applicable only for systems that do not change significantly over a large number of periods (very far from merger), an assumption that is called \textit{adiabatic approximation}.
-The energy emitted in gravitational waves comes from the total energy of the system, which is in part kinetic and in part potential energy. 
+The energy emitted in GW comes from the total energy of the system, which is in part kinetic and in part potential energy. 
 By requiring the time derivative of the two to be equal, we can find how the binary parameters must change accordingly. 
 For example, the distance between the two objects shortens with time as
 \begin{equation}
@@ -448,7 +511,7 @@ or the period
 \end{equation}
 
 \subsubsection{Signal from inspiralling compact objects}
-Knowing how the orbital parameters evolve with time allows us to find the gravitational wave signal for an \textit{inspiralling compact object}.
+Knowing how the orbital parameters evolve with time allows us to find the GW signal for an \textit{inspiralling compact object}.
 We have already found in~\eqref{eq: binary system general strain solution} the general strain solution for a binary system, where its useful to redefine the instantaneous amplitude as
 \[
     h_0 = \frac{A}{r} = \frac{4\mu M G^2}{l_0c^4r},
@@ -468,7 +531,7 @@ is the \textbf{chirp mass}, and
     \nu_{GW}(t)=\frac{\nu_{GW}^{in}t_c^{3/8}}{(t_c-t)^{3/8}},
     \notag
 \end{equation}
-is the gravitational wave frequency.
+is the GW frequency.
 By substituting $t_c$ as defined in~\eqref{eq: l_0 time variation}, we finally find the signal emitted during the inspiral as
 \begin{equation}
     h_{ij}^{TT}(t,r)= -h_0\left(t-\frac{r}{c}\right)P_{ijkl}A_{kl}\left(t-\frac{r}{c}\right),
@@ -481,70 +544,11 @@ where
 \end{equation}
 is the wave amplitude that we are going to refer to in this thesis work, when we calculate the signal from the simulated binaries.
 
-\section{White Dwarfs and Galaxies}
-In this section, we will introduce the main astrophysical theory elements for the gravitational wave sources we want to simulate.
-First of all, we focus on white dwarfs, the compact remnants of low- and intermediate-mass stars, both as isolated objects or as components of binary systems.  
-We then shift our discussion to galaxies, the large-scale environments in which these compact binaries form and evolve. 
-The properties of galaxies, including their morphology, stellar populations, and dynamical structure, strongly influence the formation rates, spatial distribution, and evolution of white dwarf binaries. 
-A clear understanding of both the compact objects themselves and their host galaxies is necessary for predicting the gravitational wave signals that can be observed.
-
-\subsection{White dwarfs}
-During its evolution, a star generates energy in its core through the nuclear fusion reactions, "burning" the elements in its core. 
-During this process, which represents most of the star's life, the \textit{radiation pressure} generated holds the star from the gravitational collapse. 
-For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will look colder and larger, as a \textit{red giant}.
-If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages.  
-In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it.
-In such stars, when the helium starts burning the emitted radiation is not sufficient to push back against the enormous gravitational pressure.
-At this point a runaway process can be initialized, in which the core keeps compressing, and heating, and the fusion rate increases.
-This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage.
-The cycle of contraction and fusion continues until the core is composed of an element that cannot be fused under the prevailing conditions, either because the temperatures are too low, or because the reactions would no longer be exothermic (as in the case of iron core white dwarfs).  
-Moreover, for low and intermediate-mass stars, intense winds and envelope ejections during late stages of the evolution can strip away the outer layers, leaving behind a naked, degenerate core.
-These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs}.
-
-\subsubsection{Binary systems}
-A great fraction of the white dwarfs in the universe are found in binary systems, known as \textbf{Double White Dwarfs} (\textbf{DWDs}), that show a wide range of orbital separations and periods, depending on their formation and evolutionary history.  
-In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit gravitational waves in the milliHertz band.  
-Between the most relevant parameters for DWDs, with a particular focus for those that affect the gravitational wave signal in~~\eqref{eq: the strain we use}, typical values are:
-\begin{itemize}
-    \item \textbf{Masses:} typically between $0.2\,M_\odot$ and $1.2\,M_\odot$, with the most common systems having total masses $M_{\mathrm{tot}} \sim 0.6$--$1.0\,M_\odot$.
-    \item \textbf{Radii:} $\sim 0.01\,R_\odot$ ($\approx 7\times 10^{3}$~km), decreasing with increasing mass according to the mass-radius relation for degenerate matter.
-    \item \textbf{Orbital periods:} between $\sim 10^{4}$~s (a few hours) and $\lesssim 300$~s (5 minutes) for the most compact systems.
-    \item \textbf{Gravitational wave frequencies:} $f_{\mathrm{GW}} = 2/P_{\mathrm{orb}}$, hence in the range $\sim 0.1$--$10$~mHz for LISA-relevant binaries.
-\end{itemize}
-In some binaries, the DWDs are detached, and neither star fills its Roche lobe, while in \textbf{interacting systems} there might be mass transfers.
-In these cases, once one of the white dwarfs overflows its own Roche lobe, material flows through the inner Lagrangian point toward the companion.
-The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met.
-
-
-\subsection{Galaxies}
-Galaxies are the fundamental building blocks of the large-scale structure of the Universe. 
-They host the vast majority of stars, stellar remnants, and interstellar matter, and therefore also the majority of DWDs, and represent the environment in which such objects are generated and evolve.  
-At the same time, their distribution in space and their physical properties affect the detectability of the gravitational-wave signals produced by these binaries.  
-
-\subsubsection{Morphological types}
-The role of galaxies as environment in which DWDs are born and evolve, and their properties are fundamental because they influence star evolution greatly.
-Therefore, it becomes necessary to categorize them, in order to schematize the most important differences from this perspective.
-The classical way to classify them is based on their morphology, as first organized by \citet{Hubble1926} into the \textit{Hubble sequence}.  
-This classification broadly distinguishes between:
-\begin{itemize}
-    \item \textbf{Elliptical galaxies (E):} They present smooth, featureless light profiles with nearly elliptical shape, and they are mostly populated by older stars and very little interstellar medium, and show little to no ongoing star formation. 
-    They range from nearly spherical (E0) to highly elongated ellipses (E7), depending on the eccentricity. 
-    \item \textbf{Lenticular galaxies (S0):} An intermediate class between elliptical and spiral galaxies, they present a central bulge and a disk but do not have prominent spiral arms.
-    They also often contain older stars and have low gas content, but their flattened structure suggests a disk-like stellar kinematics.
-    \item \textbf{Spiral galaxies (Sa, Sb, Sc, Sd):} Like our own, they are disk galaxies with spiral arms rooted in a central bulge.
-    Early-type spirals (Sa) have tightly wound arms and larger bulges, whereas late-type spirals (Sc, Sd) have more open arms, smaller bulges, and more gas and young stars.
-    \item \textbf{Irregular galaxies (Irr):} They lack of a defined shape, and are often rich in gas and undergoing intense star formation, possibly as a result of interactions or mergers.
-\end{itemize}
-For quantitative studies as the present one, morphological types can be conveniently parameterized by the \textbf{T-value} introduced in the \textit{Third Reference Catalogue of Bright Galaxies} (\citealt{Vaculeurs}), which allows an easy mapping between the numerical index and the traditional Hubble sequence morphology.
-This system assigns values from $T=-6$ (E ellipticals) through $T\approx 0$ (S lenticulars), to $T\approx 10$ (irregulars), with intermediate integers corresponding to specific spiral subclasses (Sa, Sb, Sc, etc.).  
-Note that the difference in the age of the stars populating the different morphological types illustrated translates in a systematic variation in the typical metallicity values, with early types generally being more metal-rich on average than late types. 
-This metallicity fingerprint that distinguishes morphological types will be an important feature in the next chapters, where the stellar population properties will influence the compact binary formation and gravitational wave emission.
-
 \section{Gravitational Wave Interferometers}
-As we have shown in~\eqref{eq: typical strain amplitude value}, the typical gravitational wave amplitude for a binary system is very small, and this makes it quite a hard task to detect it.
-The most sensitive instrument that are capable of such measurements are the interferometric detectors, that are generally based on the same principle of the simple Michelson interferometer: by splitting a laser beam along two perpendicular arms and recombining it, they detect the small phase shifts induced by a passing gravitational wave.  
+The typical GW amplitude for a binary system is very small, and this makes it quite a hard task to detect it.
+The most sensitive instrument capable of such measurements are the interferometric detectors, that are generally based on the same principle of the simple Michelson interferometer: by splitting a laser beam along two perpendicular arms and recombining it, they detect the small phase shifts induced by a passing GW.  
 In this section, which is mainly based on the chapter 9 of \cite{Maggiore}, we explain the general working principle of interferometers using the Michelson interferometer as an example.
-After this, we will talk briefly about LISA's characteristics, and what makes it interesting for future research.
+After this, we will talk briefly about LISA's characteristics, and what makes it interesting for the purpose of this thesis.
 
 \subsection{Michelson interferometer}
 The Michelson interferometer is an optical instrument invented in 1887 in occasion of the Michelson-Morley experiment, with the purpose of measuring changes in the travel time of light due to its relative motion with respect to \textit{ether}.
@@ -554,7 +558,7 @@ It uses a \textit{beam splitter} to separate a single laser beam into two indepe
         \includegraphics[width=0.8\textwidth]{images/michaelson_interferometer.jpg}
     \end{center}
     \caption{Schematic representation of a Michelson interferometer. A laser beam is split by a half-transparent mirror into two orthogonal arms of length $L_A$ and $L_B$.
-    The beams reflected from the mirrors are recombined at the detector (screen), where, if a gravitational wave has passed, they produce an interference pattern.
+    The beams reflected from the mirrors are recombined at the detector (screen), where, if a GW has passed, they produce an interference pattern.
     Variations in the optical path length of one arm (through the movable mirror) shift the observed fringes.
 The source for this image can be found \underline{\textit{\href{https://www.britannica.com/technology/Michelson-interferometer}{here}}}.}
     \label{fig: michaelson interferometer}
@@ -584,15 +588,15 @@ Note that, since $k_L=2\pi/\lambda_L$, the~\eqref{eq: power measured by photodet
 \begin{equation*}
     |E_{out}|^2 = \frac{1}{2} E_0^2 \left[1-\cos{\left(\frac{4\pi}{\lambda_L}\Delta L\right)}\right],
 \end{equation*}
-therefore the detector measures a value depending on the cosine, which in turn depends on $\Delta L$: if there is no gravitational wave, a null measure should be expected.
+therefore the detector measures a value depending on the cosine, which in turn depends on $\Delta L$: if there is no GW, a null measure should be expected.
 
 \subsubsection{Gravitational waves and TT gauge}
-The TT gauge describes the position of \textit{free falling} objects, that does not change when a gravitational wave passes. 
+The TT gauge describes the position of \textit{free falling} objects, that does not change when a GW passes. 
 In order to replicate this condition the mirrors of the interferometers should also be "free falling", but instead their fall is halted by suspensions.
-This apparent problem is solved when considering that the effects of gravitational waves are perpendicular to their direction of motion, and therefore the mirrors need to be decoupled in the horizontal plane, rather than the vertical.
+This apparent problem is solved when considering that the effects of GWs are perpendicular to their direction of motion, and therefore the mirrors need to be decoupled in the horizontal plane, rather than the vertical.
 For this reason, the mirrors are suspended, and as far as the motion in the horizontal plane is concerned they can be taken to be following the geodesics of the time-dependent part of the gravitational field.
 Thus, in the TT gauge the coordinates of the beam splitter (at the origin) and of the mirrors (at $(L_A,0)$ and $(0,L_B)$) are not affected by the passage of a wave, but the propagation of light in the arms is.
-Assuming a \textit{plus-polarized} gravitational wave moving in the $z$ direction, perpendicular to the plane defined by the two arms, we have 
+Assuming a \textit{plus-polarized} GW moving in the $z$ direction, perpendicular to the plane defined by the two arms, we have 
 \[
     h_+(t)=h_0\cos{\omega_{gw}t},
 \]
@@ -615,7 +619,7 @@ where
 \[
     sinc\hspace{1mm}\left(\frac{\omega_{gw}L}{c}\right) \equiv \frac{\sin{(\omega_{gw}L_A/c)}}{(\omega_{gw}L_A/c)}\xrightarrow{\frac{\omega_{gw}L}{c}\to0}1.
 \]
-Therefore, when the period of the gravitational wave is large with respect to the time it takes the light to travel along the arm, the $\Delta t$ shift in the travel time $t_2 - t_0$, with respect to the unperturbed case is simply $h(t_1)L_A/c$.
+Therefore, when the period of the GW is large with respect to the time it takes the light to travel along the arm, the $\Delta t$ shift in the travel time $t_2 - t_0$, with respect to the unperturbed case is simply $h(t_1)L_A/c$.
 In the opposite case, when $\omega_{gw}L_A/c \gg 1$, $h(t)$ will change sign many times during the travel time, making its net contribute $\sim0$.
 Now, from~\eqref{eq: time interval for x-axis} and its $y$-axis counterpart, it is possible to find the two different starting times
 \footnote{Note that if $L_A=L_B=L$, and $\frac{\omega L}{c}\ll 1$, the difference between the two would be
@@ -653,18 +657,18 @@ where
     \notag
 \end{equation}
 is a phase parameter that the experimenter can adjust.
-The strategy to build a "null instrument", which records zero signal when the gravitational wave is not passing, by setting $L_A = L_B \to \phi_0=0$, turns out to be failing, since it makes the instrument insensitive to calibration uncertainties.
+The strategy to build a "null instrument", which records zero signal when the GW is not passing, by setting $L_A = L_B \to \phi_0=0$, turns out to be failing, since it makes the instrument insensitive to calibration uncertainties.
 At the same time, setting the instrument to a phase where the variation is maximum, as for $\phi_0=\pi/4$, makes the instrument too sensible, so much that it will not be able to distinguish a signal from the laser power fluctuations.
 Therefore, depending on how this parameter is adjusted the instrument can be more or less sensible to signal variations, and the best value tends to be between these two extremes.
 
-\subsection{LISA}
+\subsection{Laser Interferometer Space Antenna}
 Already existing detectors such as LIGO and Virgo have pioneered the technique we have just shown in the high-frequency band ($\gtrsim 10$~Hz).
-The purpose for future space-based interferometers like LISA is to extend it to the low-frequency regime, opening a new observational window on astrophysical and cosmological sources.
+The purpose for future space-based interferometers such as LISA is to extend it to the low-frequency regime (within $0.1$mHz and $1$Hz), opening a new observational window on astrophysical and cosmological sources.
 Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes.  
 At the shortest periods, these binaries are in very tight orbits, with separations of only a few $10^{4}$–$10^{5}$~km, comparable to Earth's diameter.
-Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic gravitational wave sources over LISA's lifetime.  
-Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries'' for space-based detectors.
-Given their abundance and gravitational wave luminosity, binary white dwarfs are expected to be the most numerous class of resolvable sources for LISA, and their unresolved population will form a significant component of the low-frequency gravitational wave foreground.
+Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic GW sources over LISA's lifetime, which in this work is considered of $\sim4$yr.  
+Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries''\footnote{\cite{kupfer_2018},~\cite{Kupfer_2024}} for space-based detectors.
+Given their abundance and GW luminosity, binary white dwarfs are expected to be the most numerous class of resolvable sources for LISA, and their unresolved population will form a significant component of the low-frequency GW foreground.
 
 \subsubsection{Instrument description}
 Basing new detectors in space allows to eliminate sources of noise such as seismic noise and gravity gradients from local movements, allowing to explore a frequency regime which contains precious information on many interesting astrophysical sources, such as DWDs, extreme mass-ratio inspirals and massive black hole mergers.
@@ -674,7 +678,7 @@ The spacecrafts will trail by about $20^{\circ}$, with the triangular constellat
 With this configuration, it is possible to keep the long baseline stable, while having continuous source visibility, and a good localization (granted by the triangular shape).
 
 \subsubsection{Frequency}
-LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 1000 Hz), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of gravitational wave sources. 
+LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 1000 Hz), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of GW sources. 
 In this frequency range also reside most DWDs.  
 In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the "free" test masses are not completely isolated, but could be influenced by solar radiation and winds, and the "drag-free" micro-propellers that compensate these disturbances make noise under the $0.1mHz$. 
 Also, in order to detect very slow wave, LISA needs to observe it for at least one complete cycle, and if the wave has a period of months, the signal could become indistinguishable from a slow relative position change between the three satellites.
@@ -686,7 +690,7 @@ LISA’s sensitivity curve combines instrumental noise and the astrophysical for
     \end{center}
     \caption{LISA sensitivity curve in the characteristic strain representation.
     The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the background contribution from unresolved Galactic binaries.
-    Different astrophysical sources that emit gravitational wave signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
+    Different astrophysical sources that emit GW signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
 The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}}}\label{fig: LISA sens curve with noises}
 \end{figure}
 As far as the frequency resolution of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
@@ -696,15 +700,15 @@ As far as the frequency resolution of a coherent observation is concerned, the l
 For a nominal mission duration of $T_{\mathrm{obs}} \simeq 4$~years, $\Delta f \approx 8\times 10^{-9}$~Hz, allowing very fine separation of closely spaced monochromatic sources.
 
 \subsubsection{Why white dwarfs}
-As shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}, we expect the Galactic binaries to generate a confusion foreground that is able to shape the LISA sensitivity curve, mostly due to their proximity and large number.
-The purpose of this work, however, is to discover if the \textit{extra-galactic} binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic gravitational wave background in the LISA band.
+As shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}, we expect the Galactic binaries to generate a confusion foreground that is able to shape the LISA sensitivity curve, mostly due to their proximity and large number\footnote{\cite{osti_6282329}, \cite{Nelemans_2001}}.
+The purpose of this work, however, is to discover if the \textit{extra-galactic} binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic GW background in the LISA band.
 In particular, from a scientific perspective, DWDs offer a rich laboratory:  
     \begin{itemize}
-        \item The DWDs binary systems typically are in compact orbits, and the corresponding frequencies easily fall in LISA's band; 
+        \item The DWDs binary systems typically are in compact orbits, and the corresponding frequencies fall in LISA's band; 
         \item The DWDs are some of the most common compact systems in the universe, that represent a probable output for binary system evolutions. 
         When the number of non-resolvable sources is big, their signals superpose stochastically, generating a background; 
-        \item We have found a simple and predictable shape for their signal, in~\eqref{eq: the strain we use}, which is easy to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
-        \item As we said, we already expect Galactic binaries to affect LISA's curve, therefore extra/galactic ones are a realistic candidate to test;
+        \item We have found a simple and predictable shape for their signal in the circular orbit approximation, in~\eqref{eq: the strain we use}, which is possible to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
+        \item As discussed previously, we already expect Galactic binaries to affect LISA's curve, therefore extra/galactic ones are a realistic candidate to test;
 \end{itemize}
 The combination of abundance, signal strength, and astrophysical relevance makes them a target for LISA’s mission that is worth exploring further.
 

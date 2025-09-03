@@ -1,79 +1,107 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{Allende Prieto} et~al.(2001){Allende Prieto}, {Lambert}, and
-  {Asplund}]{AllendePrieto}
+\bibitem[Acernese et~al.(2014)Acernese, Agathos, Agatsuma, Aisa, Allemandou, Allocca, Amarni, Astone, Balestri, Ballardin, Barone, Baronick, Barsuglia, Basti, Basti, Bauer, Bavigadda, Bejger, Beker, Belczynski, Bersanetti, Bertolini, Bitossi, Bizouard, Bloemen, Blom, Boer, Bogaert, Bondi, Bondu, Bonelli, Bonnand, Boschi, Bosi, Bouedo, Bradaschia, Branchesi, Briant, Brillet, Brisson, Bulik, Bulten, Buskulic, Buy, Cagnoli, Calloni, Campeggi, Canuel, Carbognani, Cavalier, Cavalieri, Cella, Cesarini, Mottin, Chincarini, Chiummo, Chua, Cleva, Coccia, Cohadon, Colla, Colombini, Conte, Coulon, Cuoco, Dalmaz, D’Antonio, Dattilo, Davier, Day, Debreczeni, Degallaix, Deléglise, Pozzo, Dereli, Rosa, Fiore, Lieto, Virgilio, Doets, Dolique, Drago, Ducrot, Endrőczi, Fafone, Farinon, Ferrante, Ferrini, Fidecaro, Fiori, Flaminio, Fournier, Franco, Frasca, Frasconi, Gammaitoni, Garufi, Gaspard, Gatto, Gemme, Gendre, Genin, Gennai, Ghosh, Giacobone, Giazotto, Gouaty, Granata, Greco, Groot, Guidi, Harms, Heidmann, Heitmann, Hello, Hemming, Hennes, Hofman, Jaranowski, Jonker, Kasprzack, Kéfélian, Kowalska, Kraan, Królak, Kutynia, Lazzaro, Leonardi, Leroy, Letendre, Li, Lieunard, Lorenzini, Loriette, Losurdo, Magazzù, Majorana, Maksimovic, Malvezzi, Man, Mangano, Mantovani, Marchesoni, Marion, Marque, Martelli, Martellini, Masserot, Meacher, Meidam, Mezzani, Michel, Milano, Minenkov, Moggi, Mohan, Montani, Morgado, Mours, Mul, Nagy, Nardecchia, Naticchioni, Nelemans, Neri, Neri, Nocera, Pacaud, Palomba, Paoletti, Paoli, Pasqualetti, Passaquieti, Passuello, Perciballi, Petit, Pichot, Piergiovanni, Pillant, Piluso, Pinard, Poggiani, Prijatelj, Prodi, Punturo, Puppo, Rabeling, Rácz, Rapagnani, Razzano, Re, Regimbau, Ricci, Robinet, Rocchi, Rolland, Romano, Rosińska, Ruggi, Saracco, Sassolas, Schimmel, Sentenac, Sequino, Shah, Siellez, Straniero, Swinkels, Tacca, Tonelli, Travasso, Turconi, Vajente, van Bakel, van Beuzekom, van~den Brand, Van Den~Broeck, van~der Sluys, van
+  Heijningen, Vasúth, Vedovato, Veitch, Verkindt, Vetrano, Viceré, Vinet, Visser, Vocca, Ward, Was, Wei, Yvert, żny, and Zendri]{Virgo_cit}
+F~Acernese, M~Agathos, K~Agatsuma, D~Aisa, N~Allemandou, A~Allocca, J~Amarni, P~Astone, G~Balestri, G~Ballardin, F~Barone, J-P Baronick, M~Barsuglia, A~Basti, F~Basti, Th~S Bauer, V~Bavigadda, M~Bejger, M~G Beker, C~Belczynski, D~Bersanetti, A~Bertolini, M~Bitossi, M~A Bizouard, S~Bloemen, M~Blom, M~Boer, G~Bogaert, D~Bondi, F~Bondu, L~Bonelli, R~Bonnand, V~Boschi, L~Bosi, T~Bouedo, C~Bradaschia, M~Branchesi, T~Briant, A~Brillet, V~Brisson, T~Bulik, H~J Bulten, D~Buskulic, C~Buy, G~Cagnoli, E~Calloni, C~Campeggi, B~Canuel, F~Carbognani, F~Cavalier, R~Cavalieri, G~Cella, E~Cesarini, E~Chassande Mottin, A~Chincarini, A~Chiummo, S~Chua, F~Cleva, E~Coccia, P-F Cohadon, A~Colla, M~Colombini, A~Conte, J-P Coulon, E~Cuoco, A~Dalmaz, S~D’Antonio, V~Dattilo, M~Davier, R~Day, G~Debreczeni, J~Degallaix, S~Deléglise, W~Del Pozzo, H~Dereli, R~De Rosa, L~Di Fiore, A~Di Lieto, A~Di Virgilio, M~Doets, V~Dolique, M~Drago, M~Ducrot, G~Endrőczi, V~Fafone, S~Farinon, I~Ferrante, F~Ferrini, F~Fidecaro, I~Fiori, R~Flaminio, J-D Fournier, S~Franco, S~Frasca, F~Frasconi, L~Gammaitoni, F~Garufi, M~Gaspard, A~Gatto, G~Gemme, B~Gendre, E~Genin, A~Gennai, S~Ghosh, L~Giacobone, A~Giazotto, R~Gouaty, M~Granata, G~Greco, P~Groot, G~M Guidi, J~Harms, A~Heidmann, H~Heitmann, P~Hello, G~Hemming, E~Hennes, D~Hofman, P~Jaranowski, R~J~G Jonker, M~Kasprzack, F~Kéfélian, I~Kowalska, M~Kraan, A~Królak, A~Kutynia, C~Lazzaro, M~Leonardi, N~Leroy, N~Letendre, T~G~F Li, B~Lieunard, M~Lorenzini, V~Loriette, G~Losurdo, C~Magazzù, E~Majorana, I~Maksimovic, V~Malvezzi, N~Man, V~Mangano, M~Mantovani, F~Marchesoni, F~Marion, J~Marque, F~Martelli, L~Martellini, A~Masserot, D~Meacher, J~Meidam, F~Mezzani, C~Michel, L~Milano, Y~Minenkov, A~Moggi, M~Mohan, M~Montani, N~Morgado, B~Mours, F~Mul, M~F Nagy, I~Nardecchia, L~Naticchioni, G~Nelemans, I~Neri, M~Neri, F~Nocera, E~Pacaud, C~Palomba, F~Paoletti, A~Paoli, A~Pasqualetti, R~Passaquieti, D~Passuello, M~Perciballi, S~Petit, M~Pichot, F~Piergiovanni,
+  G~Pillant, A~Piluso, L~Pinard, R~Poggiani, M~Prijatelj, G~A Prodi, M~Punturo, P~Puppo, D~S Rabeling, I~Rácz, P~Rapagnani, M~Razzano, V~Re, T~Regimbau, F~Ricci, F~Robinet, A~Rocchi, L~Rolland, R~Romano, D~Rosińska, P~Ruggi, E~Saracco, B~Sassolas, F~Schimmel, D~Sentenac, V~Sequino, S~Shah, K~Siellez, N~Straniero, B~Swinkels, M~Tacca, M~Tonelli, F~Travasso, M~Turconi, G~Vajente, N~van Bakel, M~van Beuzekom, J~F~J van~den Brand, C~Van Den~Broeck, M~V van~der Sluys, J~van Heijningen, M~Vasúth, G~Vedovato, J~Veitch, D~Verkindt, F~Vetrano, A~Viceré, J-Y Vinet, G~Visser, H~Vocca, R~Ward, M~Was, L-W Wei, M~Yvert, A~Zadro żny, and J-P Zendri.
+\newblock Advanced virgo: a second-generation interferometric gravitational wave detector.
+\newblock \emph{Classical and Quantum Gravity}, 32\penalty0 (2):\penalty0 024001, dec 2014.
+\newblock \doi{10.1088/0264-9381/32/2/024001}.
+\newblock URL \url{https://dx.doi.org/10.1088/0264-9381/32/2/024001}.
+
+\bibitem[Akutsu et~al.(2020)Akutsu, Ando, Arai, Arai, Araki, Araya, Aritomi, Aso, Bae, Bae, Baiotti, Bajpai, Barton, Cannon, Capocasa, Chan, Chen, Chen, Chen, Chu, Chu, Eguchi, Enomoto, Flaminio, Fujii, Fukunaga, Fukushima, Ge, Hagiwara, Haino, Hasegawa, Hayakawa, Hayama, Himemoto, Hiranuma, Hirata, Hirose, Hong, Hsieh, Huang, Huang, Huang, Ikenoue, Imam, Inayoshi, Inoue, Ioka, Itoh, Izumi, Jung, Jung, Kajita, Kamiizumi, Kanda, Kang, Kawaguchi, Kawai, Kawasaki, Kim, Kim, Kim, Kim, Kimura, Kita, Kitazawa, Kojima, Kokeyama, Komori, Kong, Kotake, Kozakai, Kozu, Kumar, Kume, Kuo, Kuo, Kuroyanagi, Kusayanagi, Kwak, Lee, Lee, Lee, Leonardi, Lin, Lin, Lin, Liu, Luo, Marchio, Michimura, Mio, Miyakawa, Miyamoto, Miyazaki, Miyo, Miyoki, Morisaki, Moriwaki, Nagano, Nagano, Nakamura, Nakano, Nakano, Nakashima, Narikawa, Negishi, Ni, Nishizawa, Obuchi, Ogaki, Oh, Oh, Ohashi, Ohishi, Ohkawa, Okutomi, Oohara, Ooi, Oshino, Pan, Pang, Park, Arellano, Pinto, Sago, Saito, Saito, Sakai, Sakai, Sakuno, Sato, Sato, Sawada, Sekiguchi, Sekiguchi, Shibagaki, Shimizu, Shimoda, Shimode, Shinkai, Shishido, Shoda, Somiya, Son, Sotani, Sugimoto, Suzuki, Suzuki, Tagoshi, Takahashi, Takahashi, Takamori, Takano, Takeda, Takeda, Tanaka, Tanaka, Tanaka, Tanaka, Tanaka, Tanioka, Tapia San~Martin, Telada, Tomaru, Tomigami, Tomura, Travasso, Trozzo, Tsang, Tsubono, Tsuchida, Tsuzuki, Tuyenbayev, Uchikata, Uchiyama, Ueda, Uehara, Ueno, Ueshima, Uraguchi, Ushiba, van Putten, Vocca, Wang, Wu, Wu, Wu, Xu, Yamada, Yamamoto, Yamamoto, Yamamoto, Yokogawa, Yokoyama, Yokozawa, Yoshioka, Yuzurihara, Zeidler, Zhao, and Zhu]{KAGRA}
+T~Akutsu, M~Ando, K~Arai, Y~Arai, S~Araki, A~Araya, N~Aritomi, Y~Aso, S~Bae, Y~Bae, L~Baiotti, R~Bajpai, M~A Barton, K~Cannon, E~Capocasa, M~Chan, C~Chen, K~Chen, Y~Chen, H~Chu, Y~K Chu, S~Eguchi, Y~Enomoto, R~Flaminio, Y~Fujii, M~Fukunaga, M~Fukushima, G~Ge, A~Hagiwara, S~Haino, K~Hasegawa, H~Hayakawa, K~Hayama, Y~Himemoto, Y~Hiranuma, N~Hirata, E~Hirose, Z~Hong, B~H Hsieh, C~Z Huang, P~Huang, Y~Huang, B~Ikenoue, S~Imam, K~Inayoshi, Y~Inoue, K~Ioka, Y~Itoh, K~Izumi, K~Jung, P~Jung, T~Kajita, M~Kamiizumi, N~Kanda, G~Kang, K~Kawaguchi, N~Kawai, T~Kawasaki, C~Kim, J~C Kim, W~S Kim, Y~M Kim, N~Kimura, N~Kita, H~Kitazawa, Y~Kojima, K~Kokeyama, K~Komori, A~K~H Kong, K~Kotake, C~Kozakai, R~Kozu, R~Kumar, J~Kume, C~Kuo, H~S Kuo, S~Kuroyanagi, K~Kusayanagi, K~Kwak, H~K Lee, H~W Lee, R~Lee, M~Leonardi, L~C~C Lin, C~Y Lin, F~L Lin, G~C Liu, L~W Luo, M~Marchio, Y~Michimura, N~Mio, O~Miyakawa, A~Miyamoto, Y~Miyazaki, K~Miyo, S~Miyoki, S~Morisaki, Y~Moriwaki, K~Nagano, S~Nagano, K~Nakamura, H~Nakano, M~Nakano, R~Nakashima, T~Narikawa, R~Negishi, W~T Ni, A~Nishizawa, Y~Obuchi, W~Ogaki, J~J Oh, S~H Oh, M~Ohashi, N~Ohishi, M~Ohkawa, K~Okutomi, K~Oohara, C~P Ooi, S~Oshino, K~Pan, H~Pang, J~Park, F~E~Peña Arellano, I~Pinto, N~Sago, S~Saito, Y~Saito, K~Sakai, Y~Sakai, Y~Sakuno, S~Sato, T~Sato, T~Sawada, T~Sekiguchi, Y~Sekiguchi, S~Shibagaki, R~Shimizu, T~Shimoda, K~Shimode, H~Shinkai, T~Shishido, A~Shoda, K~Somiya, E~J Son, H~Sotani, R~Sugimoto, T~Suzuki, T~Suzuki, H~Tagoshi, H~Takahashi, R~Takahashi, A~Takamori, S~Takano, H~Takeda, M~Takeda, H~Tanaka, K~Tanaka, K~Tanaka, T~Tanaka, T~Tanaka, S~Tanioka, E~N Tapia San~Martin, S~Telada, T~Tomaru, Y~Tomigami, T~Tomura, F~Travasso, L~Trozzo, T~Tsang, K~Tsubono, S~Tsuchida, T~Tsuzuki, D~Tuyenbayev, N~Uchikata, T~Uchiyama, A~Ueda, T~Uehara, K~Ueno, G~Ueshima, F~Uraguchi, T~Ushiba, M~H P~M van Putten, H~Vocca, J~Wang, C~Wu, H~Wu, S~Wu, W-R Xu, T~Yamada, K~Yamamoto, K~Yamamoto, T~Yamamoto, K~Yokogawa, J~Yokoyama, T~Yokozawa, T~Yoshioka,
+  H~Yuzurihara, S~Zeidler, Y~Zhao, and Z~H Zhu.
+\newblock Overview of kagra: Detector design and construction history.
+\newblock \emph{Progress of Theoretical and Experimental Physics}, 2021\penalty0 (5):\penalty0 05A101, 08 2020.
+\newblock ISSN 2050-3911.
+\newblock \doi{10.1093/ptep/ptaa125}.
+\newblock URL \url{https://doi.org/10.1093/ptep/ptaa125}.
+
+\bibitem[{Allende Prieto} et~al.(2001){Allende Prieto}, {Lambert}, and {Asplund}]{AllendePrieto}
 Carlos {Allende Prieto}, David~L. {Lambert}, and Martin {Asplund}.
 \newblock {The Forbidden Abundance of Oxygen in the Sun}.
 \newblock \emph{\apjl}, 556\penalty0 (1):\penalty0 L63--L66, July 2001.
 \newblock \doi{10.1086/322874}.
 
-\bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and
-  {Scott}]{Asplund}
+\bibitem[{Amaro-Seoane} et~al.(2023){Amaro-Seoane}, {Andrews}, {Arca Sedda}, {Askar}, {Baghi}, {Balasov}, {Bartos}, {Bavera}, {Bellovary}, {Berry}, {Berti}, {Bianchi}, {Blecha}, {Blondin}, {Bogdanovi{\'c}}, {Boissier}, {Bonetti}, {Bonoli}, {Bortolas}, {Breivik}, {Capelo}, {Caramete}, {Cattorini}, {Charisi}, {Chaty}, {Chen}, {Chru{\'s}li{\'n}ska}, {Chua}, {Church}, {Colpi}, {D'Orazio}, {Danielski}, {Davies}, {Dayal}, {De Rosa}, {Derdzinski}, {Destounis}, {Dotti}, {Du{\c{t}}an}, {Dvorkin}, {Fabj}, {Foglizzo}, {Ford}, {Fouvry}, {Franchini}, {Fragos}, {Fryer}, {Gaspari}, {Gerosa}, {Graziani}, {Groot}, {Habouzit}, {Haggard}, {Haiman}, {Han}, {Istrate}, {Johansson}, {Khan}, {Kimpson}, {Kokkotas}, {Kong}, {Korol}, {Kremer}, {Kupfer}, {Lamberts}, {Larson}, {Lau}, {Liu}, {Lloyd-Ronning}, {Lodato}, {Lupi}, {Ma}, {Maccarone}, {Mandel}, {Mangiagli}, {Mapelli}, {Mathis}, {Mayer}, {McGee}, {McKernan}, {Miller}, {Mota}, {Mumpower}, {Nasim}, {Nelemans}, {Noble}, {Pacucci}, {Panessa}, {Paschalidis}, {Pfister}, {Porquet}, {Quenby}, {Ricarte}, {R{\"o}pke}, {Regan}, {Rosswog}, {Ruiter}, {Ruiz}, {Runnoe}, {Schneider}, {Schnittman}, {Secunda}, {Sesana}, {Seto}, {Shao}, {Shapiro}, {Sopuerta}, {Stone}, {Suvorov}, {Tamanini}, {Tamfal}, {Tauris}, {Temmink}, {Tomsick}, {Toonen}, {Torres-Orjuela}, {Toscani}, {Tsokaros}, {Unal}, {V{\'a}zquez-Aceves}, {Valiante}, {van Putten}, {van Roestel}, {Vignali}, {Volonteri}, {Wu}, {Younsi}, {Yu}, {Zane}, {Zwick}, {Antonini}, {Baibhav}, {Barausse}, {Bonilla Rivera}, {Branchesi}, {Branduardi-Raymont}, {Burdge}, {Chakraborty}, {Cuadra}, {Dage}, {Davis}, {de Mink}, {Decarli}, {Doneva}, {Escoffier}, {Gandhi}, {Haardt}, {Lousto}, {Nissanke}, {Nordhaus}, {O'Shaughnessy}, {Portegies Zwart}, {Pound}, {Schussler}, {Sergijenko}, {Spallicci}, {Vernieri}, and {Vigna-G{\'o}mez}]{LISA_ref}
+Pau {Amaro-Seoane}, Jeff {Andrews}, Manuel {Arca Sedda}, Abbas {Askar}, Quentin {Baghi}, Razvan {Balasov}, Imre {Bartos}, Simone~S. {Bavera}, Jillian {Bellovary}, Christopher P.~L. {Berry}, Emanuele {Berti}, Stefano {Bianchi}, Laura {Blecha}, St{\'e}phane {Blondin}, Tamara {Bogdanovi{\'c}}, Samuel {Boissier}, Matteo {Bonetti}, Silvia {Bonoli}, Elisa {Bortolas}, Katelyn {Breivik}, Pedro~R. {Capelo}, Laurentiu {Caramete}, Federico {Cattorini}, Maria {Charisi}, Sylvain {Chaty}, Xian {Chen}, Martyna {Chru{\'s}li{\'n}ska}, Alvin J.~K. {Chua}, Ross {Church}, Monica {Colpi}, Daniel {D'Orazio}, Camilla {Danielski}, Melvyn~B. {Davies}, Pratika {Dayal}, Alessandra {De Rosa}, Andrea {Derdzinski}, Kyriakos {Destounis}, Massimo {Dotti}, Ioana {Du{\c{t}}an}, Irina {Dvorkin}, Gaia {Fabj}, Thierry {Foglizzo}, Saavik {Ford}, Jean-Baptiste {Fouvry}, Alessia {Franchini}, Tassos {Fragos}, Chris {Fryer}, Massimo {Gaspari}, Davide {Gerosa}, Luca {Graziani}, Paul {Groot}, Melanie {Habouzit}, Daryl {Haggard}, Zoltan {Haiman}, Wen-Biao {Han}, Alina {Istrate}, Peter~H. {Johansson}, Fazeel~Mahmood {Khan}, Tomas {Kimpson}, Kostas {Kokkotas}, Albert {Kong}, Valeriya {Korol}, Kyle {Kremer}, Thomas {Kupfer}, Astrid {Lamberts}, Shane {Larson}, Mike {Lau}, Dongliang {Liu}, Nicole {Lloyd-Ronning}, Giuseppe {Lodato}, Alessandro {Lupi}, Chung-Pei {Ma}, Tomas {Maccarone}, Ilya {Mandel}, Alberto {Mangiagli}, Michela {Mapelli}, St{\'e}phane {Mathis}, Lucio {Mayer}, Sean {McGee}, Berry {McKernan}, M.~Coleman {Miller}, David~F. {Mota}, Matthew {Mumpower}, Syeda~S. {Nasim}, Gijs {Nelemans}, Scott {Noble}, Fabio {Pacucci}, Francesca {Panessa}, Vasileios {Paschalidis}, Hugo {Pfister}, Delphine {Porquet}, John {Quenby}, Angelo {Ricarte}, Friedrich~K. {R{\"o}pke}, John {Regan}, Stephan {Rosswog}, Ashley {Ruiter}, Milton {Ruiz}, Jessie {Runnoe}, Raffaella {Schneider}, Jeremy {Schnittman}, Amy {Secunda}, Alberto {Sesana}, Naoki {Seto}, Lijing {Shao}, Stuart {Shapiro}, Carlos {Sopuerta}, Nicholas~C. {Stone},
+  Arthur {Suvorov}, Nicola {Tamanini}, Tomas {Tamfal}, Thomas {Tauris}, Karel {Temmink}, John {Tomsick}, Silvia {Toonen}, Alejandro {Torres-Orjuela}, Martina {Toscani}, Antonios {Tsokaros}, Caner {Unal}, Ver{\'o}nica {V{\'a}zquez-Aceves}, Rosa {Valiante}, Maurice {van Putten}, Jan {van Roestel}, Christian {Vignali}, Marta {Volonteri}, Kinwah {Wu}, Ziri {Younsi}, Shenghua {Yu}, Silvia {Zane}, Lorenz {Zwick}, Fabio {Antonini}, Vishal {Baibhav}, Enrico {Barausse}, Alexander {Bonilla Rivera}, Marica {Branchesi}, Graziella {Branduardi-Raymont}, Kevin {Burdge}, Srija {Chakraborty}, Jorge {Cuadra}, Kristen {Dage}, Benjamin {Davis}, Selma~E. {de Mink}, Roberto {Decarli}, Daniela {Doneva}, Stephanie {Escoffier}, Poshak {Gandhi}, Francesco {Haardt}, Carlos~O. {Lousto}, Samaya {Nissanke}, Jason {Nordhaus}, Richard {O'Shaughnessy}, Simon {Portegies Zwart}, Adam {Pound}, Fabian {Schussler}, Olga {Sergijenko}, Alessandro {Spallicci}, Daniele {Vernieri}, and Alejandro {Vigna-G{\'o}mez}.
+\newblock {Astrophysics with the Laser Interferometer Space Antenna}.
+\newblock \emph{Living Reviews in Relativity}, 26\penalty0 (1):\penalty0 2, December 2023.
+\newblock \doi{10.1007/s41114-022-00041-y}.
+
+\bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and {Scott}]{Asplund}
 Martin {Asplund}, Nicolas {Grevesse}, A.~Jacques {Sauval}, and Pat {Scott}.
 \newblock {The Chemical Composition of the Sun}.
 \newblock \emph{\araa}, 47\penalty0 (1):\penalty0 481--522, September 2009.
 \newblock \doi{10.1146/annurev.astro.46.060407.145222}.
 
-\bibitem[{Breivik} et~al.(2020){Breivik}, {Coughlin}, {Zevin}, {Rodriguez},
-  {Kremer}, {Ye}, { Andrews}, {Kurkowski}, {Digman}, {Larson}, and
-  {Rasio}]{Breivik}
-Katelyn {Breivik}, Scott {Coughlin}, Michael {Zevin}, Carl~L. {Rodriguez}, Kyle
-  {Kremer}, Claire~S. {Ye}, Jeff~J. { Andrews}, Michael {Kurkowski}, Matthew~C.
-  {Digman}, Shane~L. {Larson}, and Frederic~A. {Rasio}.
+\bibitem[{Breivik} et~al.(2020){Breivik}, {Coughlin}, {Zevin}, {Rodriguez}, {Kremer}, {Ye}, { Andrews}, {Kurkowski}, {Digman}, {Larson}, and {Rasio}]{Breivik}
+Katelyn {Breivik}, Scott {Coughlin}, Michael {Zevin}, Carl~L. {Rodriguez}, Kyle {Kremer}, Claire~S. {Ye}, Jeff~J. { Andrews}, Michael {Kurkowski}, Matthew~C. {Digman}, Shane~L. {Larson}, and Frederic~A. {Rasio}.
 \newblock {COSMIC Variance in Binary Population Synthesis}.
 \newblock \emph{\apj}, 898\penalty0 (1):\penalty0 71, July 2020.
 \newblock \doi{10.3847/1538-4357/ab9d85}.
 
-\bibitem[{Chatziioannou} et~al.(2017){Chatziioannou}, {Clark}, { Bauswein},
-  {Millhouse}, {Littenberg}, and {Cornish}]{Chatziioannou17}
-Katerina {Chatziioannou}, James~Alexander {Clark}, Andreas { Bauswein},
-  Margaret {Millhouse}, Tyson~B. {Littenberg}, and Neil {Cornish}.
-\newblock {Inferring the post-merger gravitational wave emission from binary
-  neutron star coalescences}.
+\bibitem[{Chatziioannou} et~al.(2017){Chatziioannou}, {Clark}, { Bauswein}, {Millhouse}, {Littenberg}, and {Cornish}]{Chatziioannou17}
+Katerina {Chatziioannou}, James~Alexander {Clark}, Andreas { Bauswein}, Margaret {Millhouse}, Tyson~B. {Littenberg}, and Neil {Cornish}.
+\newblock {Inferring the post-merger gravitational wave emission from binary neutron star coalescences}.
 \newblock \emph{\prd}, 96\penalty0 (12):\penalty0 124035, December 2017.
 \newblock \doi{10.1103/PhysRevD.96.124035}.
 
+\bibitem[Collaboration et~al.(2015)Collaboration, Aasi, Abbott, Abbott, Abbott, Abernathy, Ackley, Adams, Adams, Addesso, Adhikari, Adya, Affeldt, Aggarwal, Aguiar, Ain, Ajith, Alemic, Allen, Amariutei, Anderson, Anderson, Arai, Araya, Arceneaux, Areeda, Ashton, Ast, Aston, Aufmuth, Aulbert, Aylott, Babak, Baker, Ballmer, Barayoga, Barbet, Barclay, Barish, Barker, Barr, Barsotti, Bartlett, Barton, Bartos, Bassiri, Batch, Baune, Behnke, Bell, Bell, Benacquista, Bergman, Bergmann, Berry, Betzwieser, Bhagwat, Bhandare, Bilenko, Billingsley, Birch, Biscans, Biwer, Blackburn, Blackburn, Blair, Blair, Bock, Bodiya, Bojtos, Bond, Bork, Born, Bose, Brady, Braginsky, Brau, Bridges, Brinkmann, Brooks, Brown, Brown, Brown, Buchman, Buikema, Buonanno, Cadonati, Calderón~Bustillo, Camp, Cannon, Cao, Capano, Caride, Caudill, Cavaglià, Cepeda, Chakraborty, Chalermsongsak, Chamberlin, Chao, Charlton, Chen, Cho, Cho, Chow, Christensen, Chu, Chung, Ciani, Clara, Clark, Collette, Cominsky, Constancio, Cook, Corbitt, Cornish, Corsi, Costa, Coughlin, Countryman, Couvares, Coward, Cowart, Coyne, Coyne, Craig, Creighton, Creighton, Cripe, Crowder, Cumming, Cunningham, Cutler, Dahl, Dal~Canton, Damjanic, Danilishin, Danzmann, Dartez, Dave, Daveloza, Davies, Daw, DeBra, Del~Pozzo, Denker, Dent, Dergachev, DeRosa, DeSalvo, Dhurandhar, D´ıaz, Di~Palma, Dojcinoski, Dominguez, Donovan, Dooley, Doravari, Douglas, Downes, Driggers, Du, Dwyer, Eberle, Edo, Edwards, Edwards, Effler, Eggenstein, Ehrens, Eichholz, Eikenberry, Essick, Etzel, Evans, Evans, Factourovich, Fairhurst, Fan, Fang, Farr, Farr, Favata, Fays, Fehrmann, Fejer, Feldbaum, Ferreira, Fisher, Frei, Freise, Frey, Fricke, Fritschel, Frolov, Fuentes-Tapia, Fulda, Fyffe, Gair, Gaonkar, Gehrels, Gergely´, Giaime, Giardina, Gleason, Goetz, Goetz, Gondan, González, Gordon, Gorodetsky, Gossan, Goßler, Gräf, Graff, Grant, Gras, Gray, Greenhalgh, Gretarsson, Grote, Grunewald, Guido, Guo, Gushwa, Gustafson, Gustafson, Hacker, Hall,
+  Hammond, Hanke, Hanks, Hanna, Hannam, Hanson, Hardwick, Harry, Harry, Hart, Hartman, Haster, Haughian, Hee, Heintze, Heinzel, Hendry, Heng, Heptonstall, Heurs, Hewitson, Hild, Hoak, Hodge, Hollitt, Holt, Hopkins, Hosken, Hough, Houston, Howell, Hu, Huerta, Hughey, Husa, Huttner, Huynh, Huynh-Dinh, Idrisy, Indik, Ingram, Inta, Islas, Isler, Isogai, Iyer, Izumi, Jacobson, Jang, Jawahar, Ji, Jiménez-Forteza, Johnson, Jones, Jones, Ju, Haris, Kalogera, Kandhasamy, Kang, Kanner, Katsavounidis, Katzman, Kaufer, Kaufer, Kaur, Kawabe, Kawazoe, Keiser, Keitel, Kelley, Kells, Keppel, Key, Khalaidovski, Khalili, Khazanov, Kim, Kim, Kim, Kim, Kim, King, King, Kinzel, Kissel, Klimenko, Kline, Koehlenbeck, Kokeyama, Kondrashov, Korobko, Korth, Kozak, Kringel, Krishnan, Krueger, Kuehn, Kumar, Kumar, Kuo, Landry, Lantz, Larson, Lasky, Lazzarini, Lazzaro, Le, Leaci, Leavey, Lebigot, Lee, Lee, Lee, Leong, Levin, Levine, Lewis, Li, Libbrecht, Libson, Lin, Littenberg, Lockerbie, Lockett, Logue, Lombardi, Lormand, Lough, Lubinski, Lück, Lundgren, Lynch, Ma, Macarthur, MacDonald, Machenschalk, MacInnis, Macleod, Magaña-Sandoval, Magee, Mageswaran, Maglione, Mailand, Mandel, Mandic, Mangano, Mansell, Márka, Márka, Markosyan, Maros, Martin, Martin, Martynov, Marx, Mason, Massinger, Matichard, Matone, Mavalvala, Mazumder, Mazzolo, McCarthy, McClelland, McCormick, McGuire, McIntyre, McIver, McLin, McWilliams, Meadors, Meinders, Melatos, Mendell, Mercer, Meshkov, Messenger, Meyers, Miao, Middleton, Mikhailov, Miller, Miller, Millhouse, Ming, Mirshekari, Mishra, Mitra, Mitrofanov, Mitselmakher, Mittleman, Moe, Mohanty, Mohapatra, Moore, Moraru, Moreno, Morriss, Mossavi, Mow-Lowry, Mueller, Mueller, Mukherjee, Mullavey, Munch, Murphy, Murray, Mytidis, Nash, Nayak, Necula, Nedkova, Newton, Nguyen, Nielsen, Nissanke, Nitz, Nolting, Normandin, Nuttall, Ochsner, O’Dell, Oelker, Ogin, Oh, Oh, Ohme, Oppermann, Oram, O’Reilly, Ortega, O’Shaughnessy, Osthelder, Ott, Ottaway, Ottens,
+  Overmier, Owen, Padilla, Pai, Pai, Palashov, Pal-Singh, Pan, Pankow, Pannarale, Pant, Papa, Paris, Patrick, Pedraza, Pekowsky, Pele, Penn, Perreca, Phelps, Pierro, Pinto, Pitkin, Poeld, Post, Poteomkin, Powell, Prasad, Predoi, Premachandra, Prestegard, Price, Principe, Privitera, Prix, Prokhorov, Puncken, Pürrer, Qin, Quetschke, Quintero, Quiroga, Quitzow-James, Raab, Rabeling, Radkins, Raffai, Raja, Rajalakshmi, Rakhmanov, Ramirez, Raymond, Reed, Reid, Reitze, Reula, Riles, Robertson, Robie, Rollins, Roma, Romano, Romanov, Romie, Rowan, Rüdiger, Ryan, Sachdev, Sadecki, Sadeghian, Saleem, Salemi, Sammut, Sandberg, Sanders, Sannibale, Santiago-Prieto, Sathyaprakash, Saulson, Savage, Sawadsky, Scheuer, Schilling, Schmidt, Schnabel, Schofield, Schreiber, Schuette, Schutz, Scott, Scott, Sellers, Sengupta, Sergeev, Serna, Sevigny, Shaddock, Shahriar, Shaltev, Shao, Shapiro, Shawhan, Shoemaker, Sidery, Siemens, Sigg, Silva, Simakov, Singer, Singer, Singh, Sintes, Slagmolen, Smith, Smith, Smith, Smith-Lefebvre, Son, Sorazu, Souradeep, Staley, Stebbins, Steinke, Steinlechner, Steinlechner, Steinmeyer, Stephens, Steplewski, Stevenson, Stone, Strain, Strigin, Sturani, Stuver, Summerscales, Sutton, Szczepanczyk, Szeifert, Talukder, Tanner, Tápai, Tarabrin, Taracchini, Taylor, Tellez, Theeg, Thirugnanasambandam, Thomas, Thomas, Thorne, Thorne, Thrane, Tiwari, Tomlinson, Torres, Torrie, Traylor, Tse, Tshilumba, Ugolini, Unnikrishnan, Urban, Usman, Vahlbruch, Vajente, Valdes, Vallisneri, van Veggel, Vass, Vaulin, Vecchio, Veitch, Veitch, Venkateswara, Vincent-Finley, Vitale, Vo, Vorvick, Vousden, Vyatchanin, Wade, Wade, Wade, Walker, Wallace, Walsh, Wang, Wang, Wang, Ward, Warner, Was, Weaver, Weinert, Weinstein, Weiss, Welborn, Wen, Wessels, Westphal, Wette, Whelan, Whitcomb, White, Whiting, Wilkinson, Williams, Williams, Williamson, Willis, Willke, Wimmer, Winkler, Wipf, Wittel, Woan, Worden, Xie, Yablon, Yakushin, Yam, Yamamoto, Yancey, Yang, Zanolin, Zhang, Zhang, Zhang,
+  Zhang, Zhao, Zhou, Zhu, Zucker, Zuraw, and Zweizig]{LIGO_cit}
+The LIGO~Scientific Collaboration, J~Aasi, B~P Abbott, R~Abbott, T~Abbott, M~R Abernathy, K~Ackley, C~Adams, T~Adams, P~Addesso, R~X Adhikari, V~Adya, C~Affeldt, N~Aggarwal, O~D Aguiar, A~Ain, P~Ajith, A~Alemic, B~Allen, D~Amariutei, S~B Anderson, W~G Anderson, K~Arai, M~C Araya, C~Arceneaux, J~S Areeda, G~Ashton, S~Ast, S~M Aston, P~Aufmuth, C~Aulbert, B~E Aylott, S~Babak, P~T Baker, S~W Ballmer, J~C Barayoga, M~Barbet, S~Barclay, B~C Barish, D~Barker, B~Barr, L~Barsotti, J~Bartlett, M~A Barton, I~Bartos, R~Bassiri, J~C Batch, C~Baune, B~Behnke, A~S Bell, C~Bell, M~Benacquista, J~Bergman, G~Bergmann, C~P~L Berry, J~Betzwieser, S~Bhagwat, R~Bhandare, I~A Bilenko, G~Billingsley, J~Birch, S~Biscans, C~Biwer, J~K Blackburn, L~Blackburn, C~D Blair, D~Blair, O~Bock, T~P Bodiya, P~Bojtos, C~Bond, R~Bork, M~Born, Sukanta Bose, P~R Brady, V~B Braginsky, J~E Brau, D~O Bridges, M~Brinkmann, A~F Brooks, D~A Brown, D~D Brown, N~M Brown, S~Buchman, A~Buikema, A~Buonanno, L~Cadonati, J~Calderón~Bustillo, J~B Camp, K~C Cannon, J~Cao, C~D Capano, S~Caride, S~Caudill, M~Cavaglià, C~Cepeda, R~Chakraborty, T~Chalermsongsak, S~J Chamberlin, S~Chao, P~Charlton, Y~Chen, H~S Cho, M~Cho, J~H Chow, N~Christensen, Q~Chu, S~Chung, G~Ciani, F~Clara, J~A Clark, C~Collette, L~Cominsky, M~Constancio, D~Cook, T~R Corbitt, N~Cornish, A~Corsi, C~A Costa, M~W Coughlin, S~Countryman, P~Couvares, D~M Coward, M~J Cowart, D~C Coyne, R~Coyne, K~Craig, J~D~E Creighton, T~D Creighton, J~Cripe, S~G Crowder, A~Cumming, L~Cunningham, C~Cutler, K~Dahl, T~Dal~Canton, M~Damjanic, S~L Danilishin, K~Danzmann, L~Dartez, I~Dave, H~Daveloza, G~S Davies, E~J Daw, D~DeBra, W~Del~Pozzo, T~Denker, T~Dent, V~Dergachev, R~T DeRosa, R~DeSalvo, S~Dhurandhar, M~D´ıaz, I~Di~Palma, G~Dojcinoski, E~Dominguez, F~Donovan, K~L Dooley, S~Doravari, R~Douglas, T~P Downes, J~C Driggers, Z~Du, S~Dwyer, T~Eberle, T~Edo, M~Edwards, M~Edwards, A~Effler, H.-B Eggenstein, P~Ehrens, J~Eichholz, S~S Eikenberry, R~Essick, T~Etzel, M~Evans,
+  T~Evans, M~Factourovich, S~Fairhurst, X~Fan, Q~Fang, B~Farr, W~M Farr, M~Favata, M~Fays, H~Fehrmann, M~M Fejer, D~Feldbaum, E~C Ferreira, R~P Fisher, Z~Frei, A~Freise, R~Frey, T~T Fricke, P~Fritschel, V~V Frolov, S~Fuentes-Tapia, P~Fulda, M~Fyffe, J~R Gair, S~Gaonkar, N~Gehrels, L~Á Gergely´, J~A Giaime, K~D Giardina, J~Gleason, E~Goetz, R~Goetz, L~Gondan, G~González, N~Gordon, M~L Gorodetsky, S~Gossan, S~Goßler, C~Gräf, P~B Graff, A~Grant, S~Gras, C~Gray, R~J~S Greenhalgh, A~M Gretarsson, H~Grote, S~Grunewald, C~J Guido, X~Guo, K~Gushwa, E~K Gustafson, R~Gustafson, J~Hacker, E~D Hall, G~Hammond, M~Hanke, J~Hanks, C~Hanna, M~D Hannam, J~Hanson, T~Hardwick, G~M Harry, I~W Harry, M~Hart, M~T Hartman, C-J Haster, K~Haughian, S~Hee, M~Heintze, G~Heinzel, M~Hendry, I~S Heng, A~W Heptonstall, M~Heurs, M~Hewitson, S~Hild, D~Hoak, K~A Hodge, S~E Hollitt, K~Holt, P~Hopkins, D~J Hosken, J~Hough, E~Houston, E~J Howell, Y~M Hu, E~Huerta, B~Hughey, S~Husa, S~H Huttner, M~Huynh, T~Huynh-Dinh, A~Idrisy, N~Indik, D~R Ingram, R~Inta, G~Islas, J~C Isler, T~Isogai, B~R Iyer, K~Izumi, M~Jacobson, H~Jang, S~Jawahar, Y~Ji, F~Jiménez-Forteza, W~W Johnson, D~I Jones, R~Jones, L~Ju, K~Haris, V~Kalogera, S~Kandhasamy, G~Kang, J~B Kanner, E~Katsavounidis, W~Katzman, H~Kaufer, S~Kaufer, T~Kaur, K~Kawabe, F~Kawazoe, G~M Keiser, D~Keitel, D~B Kelley, W~Kells, D~G Keppel, J~S Key, A~Khalaidovski, F~Y Khalili, E~A Khazanov, C~Kim, K~Kim, N~G Kim, N~Kim, Y.-M Kim, E~J King, P~J King, D~L Kinzel, J~S Kissel, S~Klimenko, J~Kline, S~Koehlenbeck, K~Kokeyama, V~Kondrashov, M~Korobko, W~Z Korth, D~B Kozak, V~Kringel, B~Krishnan, C~Krueger, G~Kuehn, A~Kumar, P~Kumar, L~Kuo, M~Landry, B~Lantz, S~Larson, P~D Lasky, A~Lazzarini, C~Lazzaro, J~Le, P~Leaci, S~Leavey, E~O Lebigot, C~H Lee, H~K Lee, H~M Lee, J~R Leong, Y~Levin, B~Levine, J~Lewis, T~G~F Li, K~Libbrecht, A~Libson, A~C Lin, T~B Littenberg, N~A Lockerbie, V~Lockett, J~Logue, A~L Lombardi, M~Lormand, J~Lough, M~J Lubinski, H~Lück, A~P
+  Lundgren, R~Lynch, Y~Ma, J~Macarthur, T~MacDonald, B~Machenschalk, M~MacInnis, D~M Macleod, F~Magaña-Sandoval, R~Magee, M~Mageswaran, C~Maglione, K~Mailand, I~Mandel, V~Mandic, V~Mangano, G~L Mansell, S~Márka, Z~Márka, A~Markosyan, E~Maros, I~W Martin, R~M Martin, D~Martynov, J~N Marx, K~Mason, T~J Massinger, F~Matichard, L~Matone, N~Mavalvala, N~Mazumder, G~Mazzolo, R~McCarthy, D~E McClelland, S~McCormick, S~C McGuire, G~McIntyre, J~McIver, K~McLin, S~McWilliams, G~D Meadors, M~Meinders, A~Melatos, G~Mendell, R~A Mercer, S~Meshkov, C~Messenger, P~M Meyers, H~Miao, H~Middleton, E~E Mikhailov, A~Miller, J~Miller, M~Millhouse, J~Ming, S~Mirshekari, C~Mishra, S~Mitra, V~P Mitrofanov, G~Mitselmakher, R~Mittleman, B~Moe, S~D Mohanty, S~R~P Mohapatra, B~Moore, D~Moraru, G~Moreno, S~R Morriss, K~Mossavi, C~M Mow-Lowry, C~L Mueller, G~Mueller, S~Mukherjee, A~Mullavey, J~Munch, D~Murphy, P~G Murray, A~Mytidis, T~Nash, R~K Nayak, V~Necula, K~Nedkova, G~Newton, T~Nguyen, A~B Nielsen, S~Nissanke, A~H Nitz, D~Nolting, M~E~N Normandin, L~K Nuttall, E~Ochsner, J~O’Dell, E~Oelker, G~H Ogin, J~J Oh, S~H Oh, F~Ohme, P~Oppermann, R~Oram, B~O’Reilly, W~Ortega, R~O’Shaughnessy, C~Osthelder, C~D Ott, D~J Ottaway, R~S Ottens, H~Overmier, B~J Owen, C~Padilla, A~Pai, S~Pai, O~Palashov, A~Pal-Singh, H~Pan, C~Pankow, F~Pannarale, B~C Pant, M~A Papa, H~Paris, Z~Patrick, M~Pedraza, L~Pekowsky, A~Pele, S~Penn, A~Perreca, M~Phelps, V~Pierro, I~M Pinto, M~Pitkin, J~Poeld, A~Post, A~Poteomkin, J~Powell, J~Prasad, V~Predoi, S~Premachandra, T~Prestegard, L~R Price, M~Principe, S~Privitera, R~Prix, L~Prokhorov, O~Puncken, M~Pürrer, J~Qin, V~Quetschke, E~Quintero, G~Quiroga, R~Quitzow-James, F~J Raab, D~S Rabeling, H~Radkins, P~Raffai, S~Raja, G~Rajalakshmi, M~Rakhmanov, K~Ramirez, V~Raymond, C~M Reed, S~Reid, D~H Reitze, O~Reula, K~Riles, N~A Robertson, R~Robie, J~G Rollins, V~Roma, J~D Romano, G~Romanov, J~H Romie, S~Rowan, A~Rüdiger, K~Ryan, S~Sachdev, T~Sadecki, L~Sadeghian, M~Saleem,
+  F~Salemi, L~Sammut, V~Sandberg, J~R Sanders, V~Sannibale, I~Santiago-Prieto, B~S Sathyaprakash, P~R Saulson, R~Savage, A~Sawadsky, J~Scheuer, R~Schilling, P~Schmidt, R~Schnabel, R~M~S Schofield, E~Schreiber, D~Schuette, B~F Schutz, J~Scott, S~M Scott, D~Sellers, A~S Sengupta, A~Sergeev, G~Serna, A~Sevigny, D~A Shaddock, M~S Shahriar, M~Shaltev, Z~Shao, B~Shapiro, P~Shawhan, D~H Shoemaker, T~L Sidery, X~Siemens, D~Sigg, A~D Silva, D~Simakov, A~Singer, L~Singer, R~Singh, A~M Sintes, B~J~J Slagmolen, J~R Smith, M~R Smith, R~J~E Smith, N~D Smith-Lefebvre, E~J Son, B~Sorazu, T~Souradeep, A~Staley, J~Stebbins, M~Steinke, J~Steinlechner, S~Steinlechner, D~Steinmeyer, B~C Stephens, S~Steplewski, S~Stevenson, R~Stone, K~A Strain, S~Strigin, R~Sturani, A~L Stuver, T~Z Summerscales, P~J Sutton, M~Szczepanczyk, G~Szeifert, D~Talukder, D~B Tanner, M~Tápai, S~P Tarabrin, A~Taracchini, R~Taylor, G~Tellez, T~Theeg, M~P Thirugnanasambandam, M~Thomas, P~Thomas, K~A Thorne, K~S Thorne, E~Thrane, V~Tiwari, C~Tomlinson, C~V Torres, C~I Torrie, G~Traylor, M~Tse, D~Tshilumba, D~Ugolini, C~S Unnikrishnan, A~L Urban, S~A Usman, H~Vahlbruch, G~Vajente, G~Valdes, M~Vallisneri, A~A van Veggel, S~Vass, R~Vaulin, A~Vecchio, J~Veitch, P~J Veitch, K~Venkateswara, R~Vincent-Finley, S~Vitale, T~Vo, C~Vorvick, W~D Vousden, S~P Vyatchanin, A~R Wade, L~Wade, M~Wade, M~Walker, L~Wallace, S~Walsh, H~Wang, M~Wang, X~Wang, R~L Ward, J~Warner, M~Was, B~Weaver, M~Weinert, A~J Weinstein, R~Weiss, T~Welborn, L~Wen, P~Wessels, T~Westphal, K~Wette, J~T Whelan, S~E Whitcomb, D~J White, B~F Whiting, C~Wilkinson, L~Williams, R~Williams, A~R Williamson, J~L Willis, B~Willke, M~Wimmer, W~Winkler, C~C Wipf, H~Wittel, G~Woan, J~Worden, S~Xie, J~Yablon, I~Yakushin, W~Yam, H~Yamamoto, C~C Yancey, Q~Yang, M~Zanolin, Fan Zhang, L~Zhang, M~Zhang, Y~Zhang, C~Zhao, M~Zhou, X~J Zhu, M~E Zucker, S~Zuraw, and J~Zweizig.
+\newblock Advanced ligo.
+\newblock \emph{Classical and Quantum Gravity}, 32\penalty0 (7):\penalty0 074001, mar 2015.
+\newblock \doi{10.1088/0264-9381/32/7/074001}.
+\newblock URL \url{https://dx.doi.org/10.1088/0264-9381/32/7/074001}.
+
+\bibitem[Das et~al.(2025)Das, Seitenzahl, Ruiter, Röpke, Pakmor, Vogt, Collins, Ghavamian, Sim, Williams, Taubenberger, Laming, Suherli, Sutherland, and Rodríguez-Segovia]{Das2025}
+Priyam Das, Ivo~R. Seitenzahl, Ashley~J. Ruiter, Friedrich~K. Röpke, Rüdiger Pakmor, Frédéric P.~A. Vogt, Christine~E. Collins, Parviz Ghavamian, Stuart~A. Sim, Brian~J. Williams, Stefan Taubenberger, J.~Martin Laming, Janette Suherli, Ralph Sutherland, and Nicolás Rodríguez-Segovia.
+\newblock Calcium in a supernova remnant as a fingerprint of a sub-chandrasekhar-mass explosion.
+\newblock \emph{Nature Astronomy}, July 2025.
+\newblock ISSN 2397-3366.
+\newblock \doi{10.1038/s41550-025-02589-5}.
+\newblock URL \url{https://doi.org/10.1038/s41550-025-02589-5}.
+
 \bibitem[{de Mink} et~al.(2007){de Mink}, {Pols}, and {Hilditch}]{deMink}
 S.~E. {de Mink}, O.~R. {Pols}, and R.~W. {Hilditch}.
-\newblock {Efficiency of mass transfer in massive close binaries. Tests from
-  double-lined eclipsing binaries in the SMC}.
+\newblock {Efficiency of mass transfer in massive close binaries. Tests from double-lined eclipsing binaries in the SMC}.
 \newblock \emph{\aap}, 467\penalty0 (3):\penalty0 1181--1196, June 2007.
 \newblock \doi{10.1051/0004-6361:20067007}.
 
 \bibitem[De~Vaucouleurs(1974)]{De_Vaucouleurs_1974}
 G.~De~Vaucouleurs.
 \newblock Structure, dynamics and statistical properties of galaxies.
-\newblock \emph{Symposium - International Astronomical Union}, 58:\penalty0
-  1–53, 1974.
+\newblock \emph{Symposium - International Astronomical Union}, 58:\penalty0 1–53, 1974.
 \newblock \doi{10.1017/S007418090002430X}.
 
-\bibitem[{de Vaucouleurs} et~al.(1991){de Vaucouleurs}, {de Vaucouleurs},
-  {Corwin}, {Buta}, {Paturel}, and {Fouque}]{Vaculeurs}
-Gerard {de Vaucouleurs}, Antoinette {de Vaucouleurs}, Herold~G. {Corwin}, Jr.,
-  Ronald~J. {Buta}, Georges {Paturel}, and Pascal {Fouque}.
+\bibitem[{de Vaucouleurs} et~al.(1991){de Vaucouleurs}, {de Vaucouleurs}, {Corwin}, {Buta}, {Paturel}, and {Fouque}]{Vaculeurs}
+Gerard {de Vaucouleurs}, Antoinette {de Vaucouleurs}, Herold~G. {Corwin}, Jr., Ronald~J. {Buta}, Georges {Paturel}, and Pascal {Fouque}.
 \newblock \emph{{Third Reference Catalogue of Bright Galaxies}}.
 \newblock 1991.
 
-\bibitem[{Dominik} et~al.(2012){Dominik}, {Belczynski}, {Fryer}, {Holz},
-  {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{Dominik}
-Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E.
-  {Holz}, Emanuele {Berti}, Tomasz {Bulik}, Ilya {Mandel}, and Richard
-  {O'Shaughnessy}.
-\newblock {Double Compact Objects. I. The Significance of the Common Envelope
-  on Merger Rates}.
+\bibitem[{Dominik} et~al.(2012){Dominik}, {Belczynski}, {Fryer}, {Holz}, {Berti}, {Bulik}, {Mandel}, and {O'Shaughnessy}]{Dominik}
+Michal {Dominik}, Krzysztof {Belczynski}, Christopher {Fryer}, Daniel~E. {Holz}, Emanuele {Berti}, Tomasz {Bulik}, Ilya {Mandel}, and Richard {O'Shaughnessy}.
+\newblock {Double Compact Objects. I. The Significance of the Common Envelope on Merger Rates}.
 \newblock \emph{\apj}, 759\penalty0 (1):\penalty0 52, November 2012.
 \newblock \doi{10.1088/0004-637X/759/1/52}.
 
 \bibitem[{Einstein}(1918)]{Einstein_1918}
 Albert {Einstein}.
 \newblock {{\"U}ber Gravitationswellen}.
-\newblock \emph{Sitzungsberichte der K{\"o}niglich Preussischen Akademie der
-  Wissenschaften}, pages 154--167, January 1918.
+\newblock \emph{Sitzungsberichte der K{\"o}niglich Preussischen Akademie der Wissenschaften}, pages 154--167, January 1918.
 
 \bibitem[{Faber} and {Gallagher}(1979)]{Faber&Gallagher}
 S.~M. {Faber} and J.~S. {Gallagher}.
@@ -83,31 +111,50 @@ S.~M. {Faber} and J.~S. {Gallagher}.
 
 \bibitem[Ferrari et~al.(2020)Ferrari, Gualtieri, and Pani]{ferrari2020general}
 V.~Ferrari, L.~Gualtieri, and P.~Pani.
-\newblock \emph{General Relativity and its Applications: Black Holes, Compact
-  Stars and Gravitational Waves}.
+\newblock \emph{General Relativity and its Applications: Black Holes, Compact Stars and Gravitational Waves}.
 \newblock CRC Press, 1st edition, 2020.
 \newblock \doi{10.1201/9780429491405}.
 \newblock URL \url{https://doi.org/10.1201/9780429491405}.
 
-\bibitem[{Geller} et~al.(2019){Geller}, {Leigh}, {Giersz}, {Kremer}, and
-  {Rasio}]{Geller}
-Aaron~M. {Geller}, Nathan W.~C. {Leigh}, Mirek {Giersz}, Kyle {Kremer}, and
-  Frederic~A. {Rasio}.
+\bibitem[{Fink, M.} et~al.(2010){Fink, M.}, {Röpke, F. K.}, {Hillebrandt, W.}, {Seitenzahl, I. R.}, {Sim, S. A.}, and {Kromer, M.}]{refId0}
+{Fink, M.}, {Röpke, F. K.}, {Hillebrandt, W.}, {Seitenzahl, I. R.}, {Sim, S. A.}, and {Kromer, M.}
+\newblock Double-detonation sub-chandrasekhar supernovae: can minimum helium shell masses detonate the core?
+\newblock \emph{A&A}, 514:\penalty0 A53, 2010.
+\newblock \doi{10.1051/0004-6361/200913892}.
+\newblock URL \url{https://doi.org/10.1051/0004-6361/200913892}.
+
+\bibitem[{Geller} et~al.(2019){Geller}, {Leigh}, {Giersz}, {Kremer}, and {Rasio}]{Geller}
+Aaron~M. {Geller}, Nathan W.~C. {Leigh}, Mirek {Giersz}, Kyle {Kremer}, and Frederic~A. {Rasio}.
 \newblock {In Search of the Thermal Eccentricity Distribution}.
 \newblock \emph{\apj}, 872\penalty0 (2):\penalty0 165, February 2019.
 \newblock \doi{10.3847/1538-4357/ab0214}.
 
 \bibitem[{Goldberg} and {Mazeh}(1994)]{Mazeh94}
 D.~{Goldberg} and T.~{Mazeh}.
-\newblock {The mass-ratio distribution of the spectroscopic binaries in the
-  Pleiades.}
+\newblock {The mass-ratio distribution of the spectroscopic binaries in the Pleiades.}
 \newblock \emph{\aap}, 282:\penalty0 801--803, February 1994.
+
+\bibitem[Gorski et~al.(2005)Gorski, Hivon, Banday, Wandelt, Hansen, Reinecke, and Bartelmann]{HEALPix}
+K.~M. Gorski, E.~Hivon, A.~J. Banday, B.~D. Wandelt, F.~K. Hansen, M.~Reinecke, and M.~Bartelmann.
+\newblock Healpix: A framework for high‐resolution discretization and fast analysis of data distributed on the sphere.
+\newblock \emph{The Astrophysical Journal}, 622\penalty0 (2):\penalty0 759–771, April 2005.
+\newblock ISSN 1538-4357.
+\newblock \doi{10.1086/427976}.
+\newblock URL \url{http://dx.doi.org/10.1086/427976}.
 
 \bibitem[{Heggie}(1975)]{Heggie}
 D.~C. {Heggie}.
 \newblock {Binary evolution in stellar dynamics.}
 \newblock \emph{\mnras}, 173:\penalty0 729--787, December 1975.
 \newblock \doi{10.1093/mnras/173.3.729}.
+
+\bibitem[Hils et~al.(1990)Hils, Bender, and Webbink]{osti_6282329}
+D~Hils, P~L Bender, and R~F Webbink.
+\newblock Gravitational radiation from the galaxy.
+\newblock \emph{Astrophysical Journal; (USA)}, 360, 09 1990.
+\newblock ISSN ISSN 0004-637X.
+\newblock \doi{10.1086/169098}.
+\newblock URL \url{https://www.osti.gov/biblio/6282329}.
 
 \bibitem[{Hubble}(1926)]{Hubble1926}
 E.~P. {Hubble}.
@@ -117,24 +164,19 @@ E.~P. {Hubble}.
 
 \bibitem[{Hurley} et~al.(2000){Hurley}, {Pols}, and {Tout}]{SSE}
 Jarrod~R. {Hurley}, Onno~R. {Pols}, and Christopher~A. {Tout}.
-\newblock {Comprehensive analytic formulae for stellar evolution as a function
-  of mass and metallicity}.
+\newblock {Comprehensive analytic formulae for stellar evolution as a function of mass and metallicity}.
 \newblock \emph{\mnras}, 315\penalty0 (3):\penalty0 543--569, July 2000.
 \newblock \doi{10.1046/j.1365-8711.2000.03426.x}.
 
 \bibitem[{Hurley} et~al.(2002){Hurley}, {Tout}, and {Pols}]{BSE}
 Jarrod~R. {Hurley}, Christopher~A. {Tout}, and Onno~R. {Pols}.
-\newblock {Evolution of binary stars and the effect of tides on binary
-  populations}.
+\newblock {Evolution of binary stars and the effect of tides on binary populations}.
 \newblock \emph{\mnras}, 329\penalty0 (4):\penalty0 897--928, February 2002.
 \newblock \doi{10.1046/j.1365-8711.2002.05038.x}.
 
-\bibitem[{Klencki} et~al.(2018){Klencki}, {Moe}, {Gladysz}, {Chruslinska},
-  {Holz}, and {Belczynski}]{Klencki}
-J.~{Klencki}, M.~{Moe}, W.~{Gladysz}, M.~{Chruslinska}, D.~E. {Holz}, and
-  K.~{Belczynski}.
-\newblock {Impact of inter-correlated initial binary parameters on double black
-  hole and neutron star mergers}.
+\bibitem[{Klencki} et~al.(2018){Klencki}, {Moe}, {Gladysz}, {Chruslinska}, {Holz}, and {Belczynski}]{Klencki}
+J.~{Klencki}, M.~{Moe}, W.~{Gladysz}, M.~{Chruslinska}, D.~E. {Holz}, and K.~{Belczynski}.
+\newblock {Impact of inter-correlated initial binary parameters on double black hole and neutron star mergers}.
 \newblock \emph{\aap}, 619:\penalty0 A77, November 2018.
 \newblock \doi{10.1051/0004-6361/201833025}.
 
@@ -156,6 +198,29 @@ Pavel {Kroupa}, Christopher~A. {Tout}, and Gerard {Gilmore}.
 \newblock \emph{\mnras}, 262:\penalty0 545--587, June 1993.
 \newblock \doi{10.1093/mnras/262.3.545}.
 
+\bibitem[Kupfer et~al.(2018)Kupfer, Korol, Shah, Nelemans, Marsh, Ramsay, Groot, Steeghs, and Rossi]{kupfer_2018}
+T~Kupfer, V~Korol, S~Shah, G~Nelemans, T~R Marsh, G~Ramsay, P~J Groot, D~T~H Steeghs, and E~M Rossi.
+\newblock Lisa verification binaries with updated distances from gaia data release 2.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 480\penalty0 (1):\penalty0 302--309, 06 2018.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/sty1545}.
+\newblock URL \url{https://doi.org/10.1093/mnras/sty1545}.
+
+\bibitem[Kupfer et~al.(2024)Kupfer, Korol, Littenberg, Shah, Savalle, Groot, Marsh, Le~Jeune, Nelemans, Pala, Petiteau, Ramsay, Steeghs, and Babak]{Kupfer_2024}
+Thomas Kupfer, Valeriya Korol, Tyson~B. Littenberg, Sweta Shah, Etienne Savalle, Paul~J. Groot, Thomas~R. Marsh, Maude Le~Jeune, Gijs Nelemans, Anna~F. Pala, Antoine Petiteau, Gavin Ramsay, Danny Steeghs, and Stanislav Babak.
+\newblock Lisa galactic binaries with astrometry from gaia dr3.
+\newblock \emph{The Astrophysical Journal}, 963\penalty0 (2):\penalty0 100, mar 2024.
+\newblock \doi{10.3847/1538-4357/ad2068}.
+\newblock URL \url{https://dx.doi.org/10.3847/1538-4357/ad2068}.
+
+\bibitem[Luo et~al.(2016)Luo, Chen, Duan, Gong, Hu, Ji, Liu, Mei, Milyukov, Sazhin, Shao, Toth, Tu, Wang, Wang, Yeh, Zhan, Zhang, Zharov, and Zhou]{Luo_2016}
+Jun Luo, Li-Sheng Chen, Hui-Zong Duan, Yun-Gui Gong, Shoucun Hu, Jianghui Ji, Qi~Liu, Jianwei Mei, Vadim Milyukov, Mikhail Sazhin, Cheng-Gang Shao, Viktor~T Toth, Hai-Bo Tu, Yamin Wang, Yan Wang, Hsien-Chi Yeh, Ming-Sheng Zhan, Yonghe Zhang, Vladimir Zharov, and Ze-Bing Zhou.
+\newblock Tianqin: a space-borne gravitational wave detector.
+\newblock \emph{Classical and Quantum Gravity}, 33\penalty0 (3):\penalty0 035010, January 2016.
+\newblock ISSN 1361-6382.
+\newblock \doi{10.1088/0264-9381/33/3/035010}.
+\newblock URL \url{http://dx.doi.org/10.1088/0264-9381/33/3/035010}.
+
 \bibitem[Maggiore(2007)]{Maggiore}
 Michele Maggiore.
 \newblock \emph{Gravitational Waves: Volume 1: Theory and Experiments}.
@@ -164,26 +229,30 @@ Michele Maggiore.
 \newblock \doi{10.1093/acprof:oso/9780198570745.001.0001}.
 \newblock URL \url{https://doi.org/10.1093/acprof:oso/9780198570745.001.0001}.
 
-\bibitem[{Mazeh} et~al.(1992){Mazeh}, {Goldberg}, {Duquennoy}, and
-  {Mayor}]{Mazeh92}
+\bibitem[{Mazeh} et~al.(1992){Mazeh}, {Goldberg}, {Duquennoy}, and {Mayor}]{Mazeh92}
 Tsevi {Mazeh}, Dorit {Goldberg}, Antoine {Duquennoy}, and Michel {Mayor}.
-\newblock {On the Mass-Ratio Distribution of Spectroscopic Binaries with
-  Solar-Type Primaries}.
+\newblock {On the Mass-Ratio Distribution of Spectroscopic Binaries with Solar-Type Primaries}.
 \newblock \emph{\apj}, 401:\penalty0 265, December 1992.
 \newblock \doi{10.1086/172058}.
 
 \bibitem[{Moe} and {Di Stefano}(2017)]{MoeDiStefano}
 Maxwell {Moe} and Rosanne {Di Stefano}.
-\newblock {Mind Your Ps and Qs: The Interrelation between Period (P) and
-  Mass-ratio (Q) Distributions of Binary Stars}.
+\newblock {Mind Your Ps and Qs: The Interrelation between Period (P) and Mass-ratio (Q) Distributions of Binary Stars}.
 \newblock \emph{\apjs}, 230\penalty0 (2):\penalty0 15, June 2017.
 \newblock \doi{10.3847/1538-4365/aa6fb6}.
+
+\bibitem[Nelemans et~al.(2001)Nelemans, Yungelson, and Portegies~Zwart]{Nelemans_2001}
+G.~Nelemans, L.~R. Yungelson, and S.~F. Portegies~Zwart.
+\newblock The gravitational wave signal from the galactic disk population of binaries containing two compact objects.
+\newblock \emph{Astronomy &amp; Astrophysics}, 375\penalty0 (3):\penalty0 890–898, September 2001.
+\newblock ISSN 1432-0746.
+\newblock \doi{10.1051/0004-6361:20010683}.
+\newblock URL \url{http://dx.doi.org/10.1051/0004-6361:20010683}.
 
 \bibitem[Robson et~al.(2019)Robson, Cornish, and Liu]{Robson_2019}
 Travis Robson, Neil~J Cornish, and Chang Liu.
 \newblock The construction and use of lisa sensitivity curves.
-\newblock \emph{Classical and Quantum Gravity}, 36\penalty0 (10):\penalty0
-  105011, April 2019.
+\newblock \emph{Classical and Quantum Gravity}, 36\penalty0 (10):\penalty0 105011, April 2019.
 \newblock ISSN 1361-6382.
 \newblock \doi{10.1088/1361-6382/ab1101}.
 \newblock URL \url{http://dx.doi.org/10.1088/1361-6382/ab1101}.
@@ -194,32 +263,37 @@ Edwin~E. {Salpeter}.
 \newblock \emph{\apj}, 121:\penalty0 161, January 1955.
 \newblock \doi{10.1086/145971}.
 
-\bibitem[{Tremonti} et~al.(2004){Tremonti}, {Heckman}, {Kauffmann},
-  {Brinchmann}, {Charlot}, { White}, {Seibert}, {Peng}, { Schlegel}, {Uomoto},
-  {Fukugita}, and {Brinkmann}]{Tremonti}
-Christy~A. {Tremonti}, Timothy~M. {Heckman}, Guinevere {Kauffmann}, Jarle
-  {Brinchmann}, St{\'e}phane {Charlot}, Simon D.~M. { White}, Mark {Seibert},
-  Eric~W. {Peng}, David~J. { Schlegel}, Alan {Uomoto}, Masataka {Fukugita}, and
-  Jon {Brinkmann}.
-\newblock {The Origin of the Mass-Metallicity Relation: Insights from 53,000
-  Star-forming Galaxies in the Sloan Digital Sky Survey}.
+\bibitem[Shen and Bildsten(2009)]{Shen_2009}
+Ken~J. Shen and Lars Bildsten.
+\newblock Unstable helium shell burning on accreting white dwarfs.
+\newblock \emph{The Astrophysical Journal}, 699\penalty0 (2):\penalty0 1365–1373, June 2009.
+\newblock ISSN 1538-4357.
+\newblock \doi{10.1088/0004-637x/699/2/1365}.
+\newblock URL \url{http://dx.doi.org/10.1088/0004-637X/699/2/1365}.
+
+\bibitem[Shen et~al.(2018)Shen, Boubert, Gänsicke, Jha, Andrews, Chomiuk, Foley, Fraser, Gromadzki, Guillochon, Kotze, Maguire, Siebert, Smith, Strader, Badenes, Kerzendorf, Koester, Kromer, Miles, Pakmor, Schwab, Toloza, Toonen, Townsley, and Williams]{Shen_2018}
+Ken~J. Shen, Douglas Boubert, Boris~T. Gänsicke, Saurabh~W. Jha, Jennifer~E. Andrews, Laura Chomiuk, Ryan~J. Foley, Morgan Fraser, Mariusz Gromadzki, James Guillochon, Marissa~M. Kotze, Kate Maguire, Matthew~R. Siebert, Nathan Smith, Jay Strader, Carles Badenes, Wolfgang~E. Kerzendorf, Detlev Koester, Markus Kromer, Broxton Miles, Rüdiger Pakmor, Josiah Schwab, Odette Toloza, Silvia Toonen, Dean~M. Townsley, and Brian~J. Williams.
+\newblock Three hypervelocity white dwarfs in gaia dr2: Evidence for dynamically driven double-degenerate double-detonation type ia supernovae.
+\newblock \emph{The Astrophysical Journal}, 865\penalty0 (1):\penalty0 15, sep 2018.
+\newblock \doi{10.3847/1538-4357/aad55b}.
+\newblock URL \url{https://dx.doi.org/10.3847/1538-4357/aad55b}.
+
+\bibitem[{Tremonti} et~al.(2004){Tremonti}, {Heckman}, {Kauffmann}, {Brinchmann}, {Charlot}, { White}, {Seibert}, {Peng}, { Schlegel}, {Uomoto}, {Fukugita}, and {Brinkmann}]{Tremonti}
+Christy~A. {Tremonti}, Timothy~M. {Heckman}, Guinevere {Kauffmann}, Jarle {Brinchmann}, St{\'e}phane {Charlot}, Simon D.~M. { White}, Mark {Seibert}, Eric~W. {Peng}, David~J. { Schlegel}, Alan {Uomoto}, Masataka {Fukugita}, and Jon {Brinkmann}.
+\newblock {The Origin of the Mass-Metallicity Relation: Insights from 53,000 Star-forming Galaxies in the Sloan Digital Sky Survey}.
 \newblock \emph{\apj}, 613\penalty0 (2):\penalty0 898--913, October 2004.
 \newblock \doi{10.1086/423264}.
 
-\bibitem[{van Haaften} et~al.(2013){van Haaften}, {Nelemans}, {Voss}, {Toonen
-  }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{Haaften}
-L.~M. {van Haaften}, G.~{Nelemans}, R.~{Voss}, S.~{Toonen }, S.~F. {Portegies
-  Zwart}, L.~R. {Yungelson}, and M.~V. {van der Sluys}.
-\newblock {Population synthesis of ultracompact X-ray binaries in the Galactic
-  bulge}.
+\bibitem[{van Haaften} et~al.(2013){van Haaften}, {Nelemans}, {Voss}, {Toonen }, {Portegies Zwart}, {Yungelson}, and {van der Sluys}]{Haaften}
+L.~M. {van Haaften}, G.~{Nelemans}, R.~{Voss}, S.~{Toonen }, S.~F. {Portegies Zwart}, L.~R. {Yungelson}, and M.~V. {van der Sluys}.
+\newblock {Population synthesis of ultracompact X-ray binaries in the Galactic bulge}.
 \newblock \emph{\aap}, 552:\penalty0 A69, April 2013.
 \newblock \doi{10.1051/0004-6361/201220552}.
 
 \bibitem[White et~al.(2011)White, Daw, and Dhillon]{GWGC}
 Darren~J White, E~J Daw, and V~S Dhillon.
 \newblock A list of galaxies for gravitational wave searches.
-\newblock \emph{Classical and Quantum Gravity}, 28\penalty0 (8):\penalty0
-  085016, March 2011.
+\newblock \emph{Classical and Quantum Gravity}, 28\penalty0 (8):\penalty0 085016, March 2011.
 \newblock ISSN 1361-6382.
 \newblock \doi{10.1088/0264-9381/28/8/085016}.
 \newblock URL \url{http://dx.doi.org/10.1088/0264-9381/28/8/085016}.

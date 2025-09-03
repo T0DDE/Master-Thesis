@@ -12,45 +12,45 @@ A level-1 auxiliary file: chapters/AppendiceA.aux
 The style file: plainnat.bst
 Database file #1: chapters/Bibliografia.bib
 Warning--empty publisher in Vaculeurs
-You've used 29 entries,
+You've used 43 entries,
             2773 wiz_defined-function locations,
-            838 strings with 11100 characters,
-and the built_in function-call counts, 15070 in all, are:
-= -- 1303
-> -- 1045
-< -- 12
-+ -- 353
-- -- 324
-* -- 1411
-:= -- 2413
-add.period$ -- 120
-call.type$ -- 29
-change.case$ -- 193
-chr.to.int$ -- 29
-cite$ -- 59
-duplicate$ -- 607
-empty$ -- 1085
-format.name$ -- 361
-if$ -- 3091
+            972 strings with 36370 characters,
+and the built_in function-call counts, 90024 in all, are:
+= -- 6038
+> -- 13678
+< -- 13
++ -- 4564
+- -- 4521
+* -- 10250
+:= -- 15761
+add.period$ -- 197
+call.type$ -- 43
+change.case$ -- 1634
+chr.to.int$ -- 43
+cite$ -- 87
+duplicate$ -- 898
+empty$ -- 1620
+format.name$ -- 4574
+if$ -- 16771
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 186
-num.names$ -- 116
-pop$ -- 323
+missing$ -- 46
+newline$ -- 291
+num.names$ -- 172
+pop$ -- 3144
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 1593
 quote$ -- 0
-skip$ -- 448
+skip$ -- 2005
 stack$ -- 0
-substring$ -- 437
-swap$ -- 64
+substring$ -- 669
+swap$ -- 91
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 304
+type$ -- 458
 warning$ -- 1
-while$ -- 107
+while$ -- 160
 width$ -- 0
-write$ -- 447
+write$ -- 698
 (There was 1 warning)
