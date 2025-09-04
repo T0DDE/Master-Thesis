@@ -74,7 +74,7 @@ The treatment that follows primarily relies on~\cite{ferrari2020general}, partic
 We will not go into the full mathematical derivations here, but they are presented in detail in the book.
 
 \subsection{Gravitational waves as perturbations}
-The typical approach to the study of GWs is to derive them as small perturbations of the background from the Einstein's equations: 
+The typical approach to the study of GWs is to derive them as small perturbations of the foreground from the Einstein's equations: 
 \begin{equation}
     G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R,
 \end{equation}
@@ -84,7 +84,7 @@ which can be conveniently written as
     \label{eq: Einstein equations rewritten}
 \end{equation}
 where $G_{\mu\nu}$ is the Einstein tensor, $R_{\mu\nu}$ is the Ricci tensor, $R$ is the Ricci scalar, $g_{\mu\nu}$ is the metric of spacetime, and $T_{\mu\nu}$ is the stress-energy tensor.
-As a background solution we can consider the flat spacetime described by the metric $\eta_{\mu\nu}$, to which the perturbation term appears as a fluctuation in the metric $|h_{\mu\nu}|\ll|\eta_{\mu\nu}|$: this is known as \textit{weak field} approximation.
+As a foreground solution we can consider the flat spacetime described by the metric $\eta_{\mu\nu}$, to which the perturbation term appears as a fluctuation in the metric $|h_{\mu\nu}|\ll|\eta_{\mu\nu}|$: this is known as \textit{weak field} approximation.
 Thus, the perturbed spacetime can be written as:
 \[
     g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \hspace{5mm}  |h_{\mu\nu}|\ll|\eta_{\mu\nu}|.
@@ -160,7 +160,7 @@ Conventionally, $k^0$ is referred to as $\frac{\omega}{c}$, where $\omega$ is th
 \[
     \vec{k}_0 = \left(\frac{\omega}{c},\mathbf{k}\right),
 \]
-where $\mathbf{k}$ is the wave three-vector orthogonal to the wavefront, and is related to the \textit{wavelenght} by $|\mathbf{k}| = 2\pi/\lambda$.
+where $\mathbf{k}$ is the wave three-vector orthogonal to the wavefront, and is related to the \textit{wavelength} by $|\mathbf{k}| = 2\pi/\lambda$.
 Notice that, since the wave four-vector $\vec{k}$ is a null vector, it follows that
 \[
     -(k^0)^2 + |\mathbf{k}|^2 = 0 \to \omega = ck_0 = c|\mathbf{k}|,
@@ -318,7 +318,7 @@ But not every motion of matter can produce GW signal, as we will see: conservati
 \subsubsection{The weak-field, slow-motion approximation}
 We already introduced previously the weak-field limit, which allows us to write the metric as a perturbed Minkowski $g_{\mu\nu}=\eta_{\mu\nu} + h_{\mu\nu}$, with $|h_{\mu\nu}|\ll 1$, and we found the solutions as in~\eqref{eq: Einstein equations as wave equations}.
 Until now, we have only solved these equations with a null stress-energy tensor.
-If we assume that the region, of size $\epsilon$, where the source of the signal is confined, is much smaller than the wavelenght of the emitted gravitational radiation, $\lambda_{GW} = \frac{2\pi c}{\omega}$, we find the following condition:
+If we assume that the region, of size $\epsilon$, where the source of the signal is confined, is much smaller than the wavelength of the emitted gravitational radiation, $\lambda_{GW} = \frac{2\pi c}{\omega}$, we find the following condition:
 \begin{equation}
     \frac{2\pi c}{\omega}\gg \epsilon \to \epsilon\omega \ll c \to v_{typical} \ll c.
     \notag
@@ -455,7 +455,7 @@ But if a tensor field is null in one frame, than it must be in all the other too
 \subsubsection{Stress-energy pseudo-tensor}
 Since no tensor can represent the gravitational field itself, we are going to introduce a \textbf{stress-energy pseudo tensor}, where a pseudo-tensor is a mathematical object that behaves like a tensor only under linear coordinate transformations.
 It is possible to define procedures of \textit{integration} or \textit{averaging} involving it, which allow to construct well-defined gauge-invariant quantities.
-In particular, it is possible to define a \textit{local} notion of energy and momentum in the weak field approximation, on the assumption that the characteristic length-scale $\lambda$ of the perturbation is much smaller than the characteristic length-scale $L$ of the background: $\lambda/L\ll 1$.
+In particular, it is possible to define a \textit{local} notion of energy and momentum in the weak field approximation, on the assumption that the characteristic length-scale $\lambda$ of the perturbation is much smaller than the characteristic length-scale $L$ of the foreground: $\lambda/L\ll 1$.
 In this regime, it can be shown that if averaged over multiple wavelengths $\lambda$, the stress-energy pseudo-tensor transforms as a tensor for coordinate transformations linear in $h$ (i.e. of order $O(h)$),
 \[
     \langle t^{\mu\nu}\rangle,
@@ -683,13 +683,13 @@ In this frequency range also reside most DWDs.
 In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the "free" test masses are not completely isolated, but could be influenced by solar radiation and winds, and the "drag-free" micro-propellers that compensate these disturbances make noise under the $0.1mHz$. 
 Also, in order to detect very slow wave, LISA needs to observe it for at least one complete cycle, and if the wave has a period of months, the signal could become indistinguishable from a slow relative position change between the three satellites.
 At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies.  
-LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic background and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}. 
+LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic foreground and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}. 
 \begin{figure}
     \begin{center}
         \includegraphics[width=0.85\textwidth]{images/lisa_sensitivity_with_noises.png}
     \end{center}
     \caption{LISA sensitivity curve in the characteristic strain representation.
-    The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the background contribution from unresolved Galactic binaries.
+    The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the foreground contribution from unresolved Galactic binaries.
     Different astrophysical sources that emit GW signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
 The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}}}\label{fig: LISA sens curve with noises}
 \end{figure}
@@ -701,12 +701,12 @@ For a nominal mission duration of $T_{\mathrm{obs}} \simeq 4$~years, $\Delta f \
 
 \subsubsection{Why white dwarfs}
 As shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}, we expect the Galactic binaries to generate a confusion foreground that is able to shape the LISA sensitivity curve, mostly due to their proximity and large number\footnote{\cite{osti_6282329}, \cite{Nelemans_2001}}.
-The purpose of this work, however, is to discover if the \textit{extra-galactic} binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic GW background in the LISA band.
+The purpose of this work, however, is to discover if the \textit{extra-galactic} binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic GW foreground in the LISA band.
 In particular, from a scientific perspective, DWDs offer a rich laboratory:  
     \begin{itemize}
         \item The DWDs binary systems typically are in compact orbits, and the corresponding frequencies fall in LISA's band; 
         \item The DWDs are some of the most common compact systems in the universe, that represent a probable output for binary system evolutions. 
-        When the number of non-resolvable sources is big, their signals superpose stochastically, generating a background; 
+        When the number of non-resolvable sources is big, their signals superpose stochastically, generating a foreground; 
         \item We have found a simple and predictable shape for their signal in the circular orbit approximation, in~\eqref{eq: the strain we use}, which is possible to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
         \item As discussed previously, we already expect Galactic binaries to affect LISA's curve, therefore extra/galactic ones are a realistic candidate to test;
 \end{itemize}
