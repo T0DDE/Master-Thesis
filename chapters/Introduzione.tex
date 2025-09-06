@@ -1,6 +1,6 @@
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
-In the context of the GW study, there are mainly two possible paths: the first is the \textbf{analysis of existing data} from experiments such as LIGO, Virgo and KAGRA (\cite{LIGO_cit},~\cite{Virgo_cit},~\cite{KAGRA}), with the purpose of detecting and characterizing the observable sources within their relative frequency bands;
+In the context of the GW study, there are mainly two possible paths: the first is the \textbf{analysis of existing data} from experiments such as LIGO, Virgo and KAGRA (\correzione{\cite{LIGO_cit}},~\cite{Virgo_cit},~\cite{KAGRA}), with the purpose of detecting and characterizing the observable sources within their relative frequency bands;
 the second is the \textbf{forecasting approach}, which aims to characterize future experiments in order to better understand what types of sources they could be able to detect and how well.
 \vspace{2mm}\\
 One of the most important future detectors is LISA (\cite{LISA_ref}), a NASA-ESA collaboration space-based GW detector which is scheduled to launch around 2030s (\cite{Luo_2016}). 
@@ -10,7 +10,7 @@ Among the typical sources that emit GW signal in this range are the \textbf{Comp
 Many studies have been made to explore the effects of different type of sources on the LISA's sensitivity curve.
 For example, we know that the unresolved binary Galactic systems produce a confusion GW foreground that shapes noticeably the curve close to its lowest threshold.
 While the Galactic contribution has been extensively investigated, less attention has been devoted to the possible extragalactic binaries foreground.
-Therefore, as a natural continuation, the purpose of this work is to estimate the GW foreground produced by the \textit{extragalactic} DWDs in the nearby universe to an extension of $\sim100$Mpc, using the \underline{\textbf{\href{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}{COSMIC}}} code to generate synthetic astrophysical populations and the galaxies listed in the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC},~\cite{GWGC}), an observational survey, as a reference.
+Therefore, as a natural continuation, the purpose of this work is to estimate the GW foreground produced by the \textit{extragalactic} DWDs in the nearby universe to an extension of $\sim100$Mpc, using \correzione{the publicly available code} \underline{\textbf{\href{https://cosmic-popsynth.github.io/docs/stable/pages/about.html}{COSMIC}}} (\cite{Breivik}) to generate synthetic astrophysical populations and the galaxies listed in the \textbf{Gravitational Wave Galaxy Catalog} (\textbf{GWGC},~\cite{GWGC}), an observational survey, as a reference.
 The potential impact of these sources in the tentative to characterize the expected LISA sensitivity and to avoid misinterpreting unresolved signals, are the factors that make this research so important.
 \vspace{2mm}
 \\  
@@ -23,6 +23,5 @@ We present its features, main parameters, and pipeline, and explain how it is us
 In order to do this, we introduce the GWGC, and explain the procedure to generate the actual fixed populations, scale them to astrophysical full-size galaxies, and compute their GW signal. 
 Moreover, we discuss how to take care of the lack of galaxies due to the catalog's incompleteness and the Milky Way coverage in the \textbf{Zone Of Avoidance} (\textbf{ZOA}).
 Finally, we discuss the LISA frequency resolution problem, and how it affects the way we must process the GW signals simulated.\vspace{2mm}\\
-In \textbf{Chapter 3: Results and Discussion} we present the results that we found, by computing and showing the total resulting signal on the LISA's sensitivity curve.
-We then discuss physical implications.\vspace{2mm}\\
-Finally, in the \textbf{Chapter 4: Conclusions and Future Perspectives} we recap the work as a whole, discussing its limitations, assumptions and its possible extensions and follow-ups.
+In \textbf{Chapter 3: Results and Discussion} \correzione{ we compute and show the total resulting signal on the LISA's sensitivity curve, and we demonstrate that the total simulated extragalactic signal lies at one order of magnitude below LISA's sensitivity curve (\cite{Robson_2019})}.\vspace{2mm}\\
+Finally, in \textbf{Chapter 4: Conclusions and Future Perspectives} we recap our work as a whole, discussing limitations, assumptions, possible extensions and follow-ups.

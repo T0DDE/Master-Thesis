@@ -20,6 +20,8 @@
 \usepackage[fixlanguage]{babelbib}
 % Codifica del testo
 \usepackage[utf8]{inputenc} 
+\DeclareUnicodeCharacter{2009}{\,}
+
 % Encoding del testo
 \usepackage[T1]{fontenc}
 
@@ -155,8 +157,10 @@
 \providecommand*\theoremautorefname{Teorema}
 \providecommand*{\listingautorefname}{Listing}
 \providecommand*\lstnumberautorefname{Linea}
-
 \raggedbottom
+
+\definecolor{RED}{RGB}{255,0,0}
+\newcommand{\correzione}[1]{\textcolor{red}{#1}}
 
 %\newcommand{\cgs}[1]{{\textcolor{brown}[\textcolor{red}{\bf{GS: }}{ \textcolor{brown}{#1]}}}}             
 %\newcommand{\cmc}[1]{{\textcolor{blue}[\textcolor{magenta}{\bf{MC: }}{ \textcolor{blue}{#1]}}}}

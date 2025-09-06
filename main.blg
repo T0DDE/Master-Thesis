@@ -11,46 +11,48 @@ A level-1 auxiliary file: chapters/Conclusions.aux
 A level-1 auxiliary file: chapters/AppendiceA.aux
 The style file: plainnat.bst
 Database file #1: chapters/Bibliografia.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty journal in baker2019laserinterferometerspaceantenna
 Warning--empty publisher in Vaculeurs
-You've used 31 entries,
+You've used 44 entries,
             2773 wiz_defined-function locations,
-            881 strings with 34058 characters,
-and the built_in function-call counts, 84034 in all, are:
-= -- 5520
-> -- 13261
-< -- 8
-+ -- 4423
-- -- 4392
-* -- 9691
-:= -- 14799
-add.period$ -- 150
-call.type$ -- 31
-change.case$ -- 1555
-chr.to.int$ -- 31
-cite$ -- 63
-duplicate$ -- 651
-empty$ -- 1186
-format.name$ -- 4429
-if$ -- 15545
+            984 strings with 78866 characters,
+and the built_in function-call counts, 212709 in all, are:
+= -- 13426
+> -- 35684
+< -- 13
++ -- 11900
+- -- 11856
+* -- 24947
+:= -- 37838
+add.period$ -- 207
+call.type$ -- 44
+change.case$ -- 4081
+chr.to.int$ -- 44
+cite$ -- 90
+duplicate$ -- 916
+empty$ -- 1662
+format.name$ -- 11908
+if$ -- 38865
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 34
-newline$ -- 220
-num.names$ -- 124
-pop$ -- 3018
+missing$ -- 48
+newline$ -- 303
+num.names$ -- 176
+pop$ -- 8041
 preamble$ -- 1
-purify$ -- 1526
+purify$ -- 4040
 quote$ -- 0
-skip$ -- 1826
+skip$ -- 4463
 stack$ -- 0
-substring$ -- 516
-swap$ -- 67
+substring$ -- 709
+swap$ -- 89
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 326
-warning$ -- 1
-while$ -- 117
+type$ -- 464
+warning$ -- 2
+while$ -- 167
 width$ -- 0
-write$ -- 520
-(There was 1 warning)
+write$ -- 722
+(There were 2 warnings)

@@ -5,7 +5,7 @@ Next, we will go through the GW theory, starting from the linearization of Einst
 Finally, we will understand the functioning of GW detectors, using the Michelson interferometer as example, and introducing LISA's characteristics.
 
 
-\section{Double White Dwarfs}
+\section{Double White Dwarfs \correzione{(DWDs)}}
 In this section, we will introduce the main astrophysical theory elements for the GW sources we want to simulate.
 First of all, we focus on white dwarfs, the compact remnants of low- and intermediate-mass stars, both as isolated objects or as components of binary systems.  
 We then shift our discussion to galaxies, the large-scale environments in which these compact binaries form and evolve. 
@@ -13,21 +13,21 @@ The properties of galaxies, including their morphology, stellar populations, and
 A clear understanding of both the compact objects themselves and their host galaxies is necessary for predicting the GW signals that can be observed.
 
 \subsection{White dwarfs}
-During its evolution, a star generates energy in its core through the nuclear fusion reactions, "burning" the elements in its core. 
+During its evolution, a star generates energy in its core through the nuclear fusion reactions, ``burning'' the elements in its core. 
 During this process, which represents most of the star's life, the \textit{radiation pressure} generated holds the star from the gravitational collapse. 
-For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will appear colder and larger, as a \textit{red giant}.
-If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages.  
-In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it.
+For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will appear colder and larger, as a \textit{red giant} (\correzione{\cite{on_red_giant_phase}}).
+If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages (\correzione{\cite{Hoyle:1954zz},~\cite{RevModPhys.29.547}}).  
+In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it (\correzione{\cite{Bradt},~\cite{Chandrasekhar}}).
 In such stars, when the helium starts burning the emitted radiation is not sufficient to push back against the enormous gravitational pressure.
 At this point a runaway process can be initialized, in which the core keeps compressing, and heating, and the fusion rate increases.
-This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage.
+This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage (\correzione{\cite{on_helium_flash}}).
 The cycle of contraction and fusion continues until the core is composed of an element that cannot be fused under the prevailing conditions, either because the temperatures are too low, or because the reactions would no longer be exothermic (as in the case of iron core white dwarfs).  
 Moreover, for low and intermediate-mass stars, intense winds and envelope ejections during late stages of the evolution can strip away the outer layers, leaving behind a naked, degenerate core.
-These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs}.
+These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs} (\correzione{\cite{Bradt}}).
 
 \subsubsection{Binary systems}
-A great fraction of the white dwarfs in the universe are found DWDs systems, that show a wide range of orbital separations and periods, depending on their formation and evolutionary history.  
-In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit GWs in the milliHertz band.  
+A great fraction of the white dwarfs in the universe are found DWDs systems, that show a wide range of orbital separations and periods, depending on their formation and evolutionary history (\correzione{\cite{evolution_compact_binary_wd_systems}}).  
+In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit GWs in the milliHertz band (\correzione{\cite{Nelemans_2001}}).  
 Among the most relevant parameters for DWDs, typical values are:
 \begin{itemize}
     \item \textbf{Masses:} typically between $0.2\,M_\odot$ and $1.2\,M_\odot$, with the most common systems having total masses $M_{\mathrm{tot}} \sim 0.6$--$1.0\,M_\odot$.
@@ -37,10 +37,10 @@ Among the most relevant parameters for DWDs, typical values are:
 \end{itemize}
 In some binaries, the DWDs are detached, and neither star fills its Roche lobe, while in \textbf{interacting systems} there might be mass transfers.
 In these cases, once one of the white dwarfs overflows its own Roche lobe, material flows through the inner Lagrangian point toward the companion.
-The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met\footnote{More on white dwarfs can be found in~\cite{Shen_2009} and~\cite{refId0}, and in~\cite{Shen_2018} while in~\cite{Das2025} are more details of the Supernova detonation from white dwarfs}.
+The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met (\correzione{\cite{Das2025},~\cite{Shen_2009},~\cite{refId0},~\cite{Shen_2018}}).
 
 
-\subsection{Galaxies}
+\subsection{\correzione{The host galaxies}}
 Galaxies are the fundamental building blocks of the large-scale structure of the Universe. 
 They host the vast majority of stars, stellar remnants, and interstellar matter, and therefore also the majority of DWDs, and represent the environment in which such objects are generated and evolve.  
 At the same time, their distribution in space and their physical properties affect the detectability of the gravitational-wave signals produced by these binaries.  
@@ -65,11 +65,13 @@ Note that the difference in the age of the stars populating the different morpho
 This metallicity fingerprint that distinguishes morphological types will be an important feature in the next chapters, where the stellar population properties will influence the compact binary formation and GW emission.
 
 \section{Gravitational Wave Theory}
-After considering, in 1905, the problem of the apparently \textit{instantaneous} propagation of light, with the theory of Special Relativity, in 1916 Albert Einstein considered the problem of the apparently \textit{instantaneous} propagation of gravity through \textit{long distances}, in his theory of General Relativity.
-Einstein showed that long-distance interaction arises from the deformation of spacetime caused by massive objects.
-Hence, the deviated motion apparently caused by the interaction between two distant masses really is, in fact, a manifestation of spacetime curvature nearby, generated by the presence of the two objects.
-The "static case" just depicted, though, treats the curvature as if it had always been there, and doesn't take into account of any variation in the masses, positions or velocities of the two objects, that would induce an evolution to the curvature itself.
-In truth, after a change in the mass-energy distribution, the corresponding curvature variation requires its time to reach far distances, and a fascinating prediction of General Relativity is that it propagates in the form of a wave, that travels at the speed of light.
+\correzione{The DWDs described in the previous section are massive rotating objects, and therefore they produce ripples in spacetime that propagate as waves (\cite{Einstein_1918}).
+The purpose of this thesis is to analyze the GW produced by such systems, and it is thus necessary now to make a summary of the GW theory as a whole, to derive the characteristic strain that we will use to simulate the total signal.}
+% After considering, in 1905, the problem of the apparently \textit{instantaneous} propagation of light, with the theory of Special Relativity, in 1916 Albert Einstein considered the problem of the apparently \textit{instantaneous} propagation of gravity through \textit{long distances}, in his theory of General Relativity.
+% Einstein showed that long-distance interaction arises from the deformation of spacetime caused by massive objects.
+% Hence, the deviated motion apparently caused by the interaction between two distant masses really is, in fact, a manifestation of spacetime curvature nearby, generated by the presence of the two objects.
+% The "static case" just depicted, though, treats the curvature as if it had always been there, and doesn't take into account of any variation in the masses, positions or velocities of the two objects, that would induce an evolution to the curvature itself.
+% In truth, after a change in the mass-energy distribution, the corresponding curvature variation requires its time to reach far distances, and a fascinating prediction of General Relativity is that it propagates in the form of a wave, that travels at the speed of light.
 The treatment that follows primarily relies on~\cite{ferrari2020general}, particularly Chapters 12, 13, and 14.
 We will not go into the full mathematical derivations here, but they are presented in detail in the book.
 
@@ -375,7 +377,7 @@ to than define the \textbf{transverse-traceless projector}
     P_{jkmn}\equiv P_{jm}P_{kn}-\frac{1}{2}P_{jk}P_{mn},
     \label{eq: transverse-traceless projector}
 \end{equation}
-which "extracts" the transverse-traceless part of a rank two tensor on the three-dimensional Euclidean space.
+which ``extracts'' the transverse-traceless part of a rank two tensor on the three-dimensional Euclidean space.
 This way we can, for example, define
 \[
     h_{jk}^{TT} = P_{jkmn}\bar{h}_{mn},
@@ -387,7 +389,7 @@ that, if applied to the~\eqref{eq: quadrupole formula}, gives
    \label{eq: TT part of quadrupole moment}
 \end{align}
 where $Q_{jk}^{TT} = P_{jkmn}q_{mn}$ is the \textbf{transverse-traceless part of the quadrupole moment}.
-As we will see, to compute the "luminosity" of a GW source, it is useful to define the \textbf{reduced quadrupole moment}
+As we will see, to compute the ``luminosity'' of a GW source, it is useful to define the \textbf{reduced quadrupole moment}
 \begin{equation}
     Q_{jk} \equiv q_{jk} - \frac{1}{3}\delta_{jk}q_m^m, 
     \label{eq: reduced quadrupole moment}
@@ -592,7 +594,7 @@ therefore the detector measures a value depending on the cosine, which in turn d
 
 \subsubsection{Gravitational waves and TT gauge}
 The TT gauge describes the position of \textit{free falling} objects, that does not change when a GW passes. 
-In order to replicate this condition the mirrors of the interferometers should also be "free falling", but instead their fall is halted by suspensions.
+In order to replicate this condition the mirrors of the interferometers should also be ``free falling'', but instead their fall is halted by suspensions.
 This apparent problem is solved when considering that the effects of GWs are perpendicular to their direction of motion, and therefore the mirrors need to be decoupled in the horizontal plane, rather than the vertical.
 For this reason, the mirrors are suspended, and as far as the motion in the horizontal plane is concerned they can be taken to be following the geodesics of the time-dependent part of the gravitational field.
 Thus, in the TT gauge the coordinates of the beam splitter (at the origin) and of the mirrors (at $(L_A,0)$ and $(0,L_B)$) are not affected by the passage of a wave, but the propagation of light in the arms is.
@@ -657,33 +659,33 @@ where
     \notag
 \end{equation}
 is a phase parameter that the experimenter can adjust.
-The strategy to build a "null instrument", which records zero signal when the GW is not passing, by setting $L_A = L_B \to \phi_0=0$, turns out to be failing, since it makes the instrument insensitive to calibration uncertainties.
+The strategy to build a ``null instrument'', which records zero signal when the GW is not passing, by setting $L_A = L_B \to \phi_0=0$, turns out to be failing, since it makes the instrument insensitive to calibration uncertainties.
 At the same time, setting the instrument to a phase where the variation is maximum, as for $\phi_0=\pi/4$, makes the instrument too sensible, so much that it will not be able to distinguish a signal from the laser power fluctuations.
 Therefore, depending on how this parameter is adjusted the instrument can be more or less sensible to signal variations, and the best value tends to be between these two extremes.
 
-\subsection{Laser Interferometer Space Antenna}
-Already existing detectors such as LIGO and Virgo have pioneered the technique we have just shown in the high-frequency band ($\gtrsim 10$~Hz).
-The purpose for future space-based interferometers such as LISA is to extend it to the low-frequency regime (within $0.1$mHz and $1$Hz), opening a new observational window on astrophysical and cosmological sources.
-Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes.  
+\subsection{\correzione{The} Laser Interferometer Space Antenna}
+Already existing detectors such as LIGO and Virgo (\correzione{\cite{PhysRevLett.116.061102},~\cite{Abbott_2019}}) have pioneered the technique we have just shown in the high-frequency band (\correzione{\cite{LISA_ref},~\cite{Virgo_cit}}).
+The purpose for future space-based interferometers such as LISA is to extend it to the low-frequency regime (\correzione{approximately} within $0.1$mHz and $1$Hz), opening a new observational window on astrophysical and cosmological sources.
+Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes (\correzione{\cite{baker2019laserinterferometerspaceantenna}}). 
 At the shortest periods, these binaries are in very tight orbits, with separations of only a few $10^{4}$–$10^{5}$~km, comparable to Earth's diameter.
-Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic GW sources over LISA's lifetime, which in this work is considered of $\sim4$yr.  
-Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries''\footnote{\cite{kupfer_2018},~\cite{Kupfer_2024}} for space-based detectors.
+Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic GW sources over LISA's lifetime, which in this work is considered of $\sim4$yr (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).  
+Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries'' \correzione{(\cite{kupfer_2018},~\cite{Kupfer_2024})} for space-based detectors.
 Given their abundance and GW luminosity, binary white dwarfs are expected to be the most numerous class of resolvable sources for LISA, and their unresolved population will form a significant component of the low-frequency GW foreground.
 
 \subsubsection{Instrument description}
 Basing new detectors in space allows to eliminate sources of noise such as seismic noise and gravity gradients from local movements, allowing to explore a frequency regime which contains precious information on many interesting astrophysical sources, such as DWDs, extreme mass-ratio inspirals and massive black hole mergers.
-In LISA's case, the arms are not going to be physical structures, but $2.5\times10^6$km separations between three identical spacecrafts at the vertices of an equilateral triangle.
+In LISA's case, the arms are not going to be physical structures, but $2.5\times10^6$km separations between three identical spacecrafts at the vertices of an equilateral triangle (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).
 Each one of the spacecraft will host two free-falling test masses, isolated from all non-gravitational interactions by a drag-free control system.
-The spacecrafts will trail by about $20^{\circ}$, with the triangular constellation inclined by $60^{\circ}$ to the ecliptic plane, following the earth around the sun.
+The spacecrafts will trail by about $20^{\circ}$, with the triangular constellation inclined by $60^{\circ}$ to the ecliptic plane, following the earth around the sun (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).
 With this configuration, it is possible to keep the long baseline stable, while having continuous source visibility, and a good localization (granted by the triangular shape).
 
 \subsubsection{Frequency}
-LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 1000 Hz), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of GW sources. 
+LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 10 kHz (\correzione{\cite{Martynov_2016}}), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of GW sources. 
 In this frequency range also reside most DWDs.  
-In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the "free" test masses are not completely isolated, but could be influenced by solar radiation and winds, and the "drag-free" micro-propellers that compensate these disturbances make noise under the $0.1mHz$. 
+In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the ``free'' test masses are not completely isolated, but could be influenced by solar radiation and winds, and the ``drag-free'' micro-propellers that compensate these disturbances make noise under the $0.1~\mathrm{mHz}$ (\correzione{\cite{baker2019laserinterferometerspaceantenna}}). 
 Also, in order to detect very slow wave, LISA needs to observe it for at least one complete cycle, and if the wave has a period of months, the signal could become indistinguishable from a slow relative position change between the three satellites.
-At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies.  
-LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic foreground and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}. 
+At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).  
+LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic foreground and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}} (\correzione{\cite{LISA_ref}}). 
 \begin{figure}
     \begin{center}
         \includegraphics[width=0.85\textwidth]{images/lisa_sensitivity_with_noises.png}
@@ -691,24 +693,35 @@ LISA’s sensitivity curve combines instrumental noise and the astrophysical for
     \caption{LISA sensitivity curve in the characteristic strain representation.
     The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the foreground contribution from unresolved Galactic binaries.
     Different astrophysical sources that emit GW signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
-The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}}}\label{fig: LISA sens curve with noises}
+The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}} (\correzione{\cite{LISA_ref}})}\label{fig: LISA sens curve with noises}
 \end{figure}
-As far as the frequency resolution of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
+As far as the frequency resolution\footnote{Not to be confused with the sensitivity of the instrument, which states how faint of a signal it can detect.} of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
 \begin{equation}
 \Delta f \approx \frac{1}{T_{\mathrm{obs}}}.
 \end{equation}
 For a nominal mission duration of $T_{\mathrm{obs}} \simeq 4$~years, $\Delta f \approx 8\times 10^{-9}$~Hz, allowing very fine separation of closely spaced monochromatic sources.
 
-\subsubsection{Why white dwarfs}
-As shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}}, we expect the Galactic binaries to generate a confusion foreground that is able to shape the LISA sensitivity curve, mostly due to their proximity and large number\footnote{\cite{osti_6282329}, \cite{Nelemans_2001}}.
-The purpose of this work, however, is to discover if the \textit{extra-galactic} binaries, despite their much grater distance, are sufficiently numerous to generate an overall detectable stochastic GW foreground in the LISA band.
-In particular, from a scientific perspective, DWDs offer a rich laboratory:  
-    \begin{itemize}
-        \item The DWDs binary systems typically are in compact orbits, and the corresponding frequencies fall in LISA's band; 
-        \item The DWDs are some of the most common compact systems in the universe, that represent a probable output for binary system evolutions. 
-        When the number of non-resolvable sources is big, their signals superpose stochastically, generating a foreground; 
-        \item We have found a simple and predictable shape for their signal in the circular orbit approximation, in~\eqref{eq: the strain we use}, which is possible to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
-        \item As discussed previously, we already expect Galactic binaries to affect LISA's curve, therefore extra/galactic ones are a realistic candidate to test;
-\end{itemize}
-The combination of abundance, signal strength, and astrophysical relevance makes them a target for LISA’s mission that is worth exploring further.
+\subsubsection{Why double white dwarfs}
+\correzione{From a scientific perspective, double white dwarfs (DWDs) provide an excellent laboratory for gravitational-wave studies:  
+\begin{itemize}
+    \item DWDs are typically found in compact orbits, with corresponding GW frequencies that lie within LISA's observational band;  
+    \item They are among the most common compact binary systems in the universe, often representing a typical outcome of stellar binary evolution. When a large number of such sources cannot be individually resolved, their signals overlap stochastically, producing a foreground;  
+    \item In the circular orbit approximation, their strain can be described by a simple and well-defined expression [Eq.~\eqref{eq: the strain we use}], which can be readily simulated and used to generate coherent synthetic populations within astrophysical models;  
+    \item As previously discussed, Galactic binaries are already expected to impact LISA’s sensitivity curve, making extra-galactic populations a realistic and relevant candidate to investigate.  
+\end{itemize}  
+Galactic binaries are therefore expected to generate a confusion foreground that significantly impacts the LISA sensitivity curve, primarily due to their proximity and large number (\cite{osti_6282329},~\cite{Nelemans_2001},~\cite{LISA_ref}).  
+The aim of this work, however, is to determine whether \textit{extra-galactic} DWDs, despite their much greater distances, can contribute significantly to an overall detectable stochastic GW foreground in the LISA band.  
+The combination of their abundance, characteristic signal strength, and astrophysical importance makes extra-galactic DWDs an optimal and compelling target for LISA’s mission.  
+}
+% From a scientific perspective, DWDs offer a rich laboratory:  
+%     \begin{itemize}
+%         \item The DWDs typically are in compact orbits, and the corresponding frequencies fall in LISA's band; 
+%         \item The DWDs are some of the most common compact systems in the universe, that often represent a output for binary system evolution. 
+%         When the number of non-resolvable sources is large, their signals superpose stochastically, generating a foreground; 
+%         \item We have found a simple and predictable impact for their signal in the circular orbit approximation, in~\eqref{eq: the strain we use}, which is possible to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
+%         \item As discussed previously, we already expect Galactic binaries to affect LISA's curve, therefore extra-galactic ones are a realistic candidate to test;
+% \end{itemize}
+% We expect the Galactic binaries to generate a confusion foreground that is able to impact the LISA sensitivity curve, mostly due to their proximity and large number \correzione{(\cite{osti_6282329},~\cite{Nelemans_2001},~\cite{LISA_ref}}.
+% The purpose of this work, however, is to discover if the \textit{extra-galactic} DWDs, despite their much larger distance, \correzione{contribute significantly} to generate an overall detectable stochastic GW foreground in the LISA band.
+% The combination of abundance, signal strength, and astrophysical relevance makes them an optimal target for LISA's mission.
 
