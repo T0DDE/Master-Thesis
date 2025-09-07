@@ -72,7 +72,7 @@ This is shown in a graphical representation of the distributions of distances, b
         \includegraphics[width=\textwidth]{images/distro_comparison.pdf}
     \end{center}
     \caption{Distributions of T-type, distance and B-band magnitude of the galaxies in the GWGC before and after compensating for the lack of galaxies due to the catalog's incompleteness and the ZOA. 
-    The three graphs \textit{above} show the mentioned distributions for the $20,246$ galaxies of the original GWGC after we dropped those missing the key parameters we needed; the three graphs \textit{below} show the same distributions for the $66,568$ galaxies we are left with after taking into account both the catalog's incompleteness and the ZOA using a sampling with replacement method.
+    The three graphs \textit{on the left} show the mentioned distributions for the $20,246$ galaxies of the original GWGC after we dropped those missing the key parameters we needed; the three graphs \textit{on the right} show the same distributions for the $66,568$ galaxies we are left with after taking into account both the catalog's incompleteness and the ZOA using a sampling with replacement method.
     The parameters distributions appear to be indistinguishable in shape: the scaling up in size left the properties of the catalog unchanged.
     }\label{fig: distro comparison}
 \end{figure}
@@ -98,7 +98,7 @@ Each one of the bins center values, shown in the $x$ label, is linked to a diffe
 The simulations were done generating the fixed populations "\textit{\href{https://cosmic-popsynth.github.io/docs/stable/pages/fixedpop.html}{the cosmic way}}", via terminal, specifying $Nstep = 5000$ and $Niter=1000000000$ and kstar values $10$, $11$ and $12$, corresponding to He, CO, and Ne white dwarfs\footnote{All the kstar values and the corresponding astrophysical objects are shown in \textbf{Table~\ref{tab: kstar values}}, in the \textbf{Appendix}.}, assuming the sun's metallicity to be $Z_\odot = 0.0134$ and leaving all the remaining COSMIC's specifiable parameters unchanged from the default values.
 
 
-\section{Th Signal Computation}
+\section{The Signal Computation}
 Generating the DWDs using COSMIC gives us the possibility to compute the GW contribution of each one of them, assuming their distance to be the same as the hosting galaxy's one, provided from the galaxy catalog, and with an extreme precision in frequency.
 Before scaling up the fixed population, and computing the GW signal of each binary, and confronting it with LISA's sensitivity curve, we \correzione{should} then consider LISA's limited \textit{frequency resolution}, and understand how to process the signals from indistinguishable sources.
 
