@@ -5,29 +5,29 @@ Next, we will go through the GW theory, starting from the linearization of Einst
 Finally, we will understand the functioning of GW detectors, using the Michelson interferometer as example, and introducing LISA's characteristics.
 
 
-\section{Double White Dwarfs \correzione{(DWDs)}}
+\section{Double White Dwarfs {(DWDs)}}
 In this section, we will introduce the main astrophysical theory elements for the GW sources we want to simulate.
-First of all, we focus on white dwarfs, the compact remnants of low- and intermediate-mass stars, both as isolated objects or as components of binary systems.  
+First of all, we focus on white dwarfs, the compact remnants of low- and intermediate-mass stars, both as isolated objects and as components of binary systems.  
 We then shift our discussion to galaxies, the large-scale environments in which these compact binaries form and evolve. 
 The properties of galaxies, including their morphology, stellar populations, and dynamical structure, strongly influence the formation rates, spatial distribution, and evolution of white dwarf binaries. 
 A clear understanding of both the compact objects themselves and their host galaxies is necessary for predicting the GW signals that can be observed.
 
 \subsection{White dwarfs}
-During its evolution, a star generates energy in its core through the nuclear fusion reactions, ``burning'' the elements in its core. 
+During its evolution, a star generates energy through the nuclear fusion reactions, ``burning'' the elements in its core. 
 During this process, which represents most of the star's life, the \textit{radiation pressure} generated holds the star from the gravitational collapse. 
-For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will appear colder and larger, as a \textit{red giant} (\correzione{\cite{on_red_giant_phase}}).
-If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages (\correzione{\cite{Hoyle:1954zz},~\cite{RevModPhys.29.547}}).  
-In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it (\correzione{\cite{Bradt},~\cite{Chandrasekhar}}).
+For most stars, this process begins with the fusion of hydrogen into helium, and when the core runs out of hydrogen, it contracts while the external layers expand: the luminosity is now spread in a larger surface, and since the \textit{black body energy density} is $\propto T^4$, where $T$ is the surface temperature, the star will appear colder and larger, as a \textit{red giant} ({\cite{on_red_giant_phase}}).
+If the star is sufficiently massive, core contraction raises the temperature enough to ignite helium fusion into heavier elements, leading to subsequent burning stages ({\cite{Hoyle:1954zz},~\cite{RevModPhys.29.547}}).  
+In contrast, for medium or low massive stars ($M_*\le 8M_\odot$), after the red giant phase the central pressure is initially insufficient to ignite heavier fusion, and the contraction continues until the \textit{electron degeneracy pressure} (a quantum mechanical effect arising from the Pauli exclusion principle) halts it ({\cite{Bradt},~\cite{Chandrasekhar}}).
 In such stars, when the helium starts burning the emitted radiation is not sufficient to push back against the enormous gravitational pressure.
 At this point a runaway process can be initialized, in which the core keeps compressing, and heating, and the fusion rate increases.
-This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage (\correzione{\cite{on_helium_flash}}).
+This positive feedback process induces a very fast helium burning called \textit{helium flash}, that lifts the star back out of the degeneracy stage ({\cite{on_helium_flash}}).
 The cycle of contraction and fusion continues until the core is composed of an element that cannot be fused under the prevailing conditions, either because the temperatures are too low, or because the reactions would no longer be exothermic (as in the case of iron core white dwarfs).  
 Moreover, for low and intermediate-mass stars, intense winds and envelope ejections during late stages of the evolution can strip away the outer layers, leaving behind a naked, degenerate core.
-These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs} (\correzione{\cite{Bradt}}).
+These types of medium-to-low massive star's remnant, supported entirely by electron degeneracy pressure and slowly cooling over time, are what we call \textbf{white dwarfs} ({\cite{Bradt}}).
 
 \subsubsection{Binary systems}
-A great fraction of the white dwarfs in the universe are found DWDs systems, that show a wide range of orbital separations and periods, depending on their formation and evolutionary history (\correzione{\cite{evolution_compact_binary_wd_systems}}).  
-In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit GWs in the milliHertz band (\correzione{\cite{Nelemans_2001}}).  
+A great fraction of the white dwarfs in the universe are found DWDs systems, that show a wide range of orbital separations and periods, depending on their formation and evolutionary history ({\cite{evolution_compact_binary_wd_systems}}).  
+In particular, in the Milky Way, DWDs are expected to be extremely common systems, many of which having orbital periods short enough to emit GWs in the milliHertz band ({\cite{Nelemans_2001}}).  
 Among the most relevant parameters for DWDs, typical values are:
 \begin{itemize}
     \item \textbf{Masses:} typically between $0.2\,M_\odot$ and $1.2\,M_\odot$, with the most common systems having total masses $M_{\mathrm{tot}} \sim 0.6$--$1.0\,M_\odot$.
@@ -37,10 +37,10 @@ Among the most relevant parameters for DWDs, typical values are:
 \end{itemize}
 In some binaries, the DWDs are detached, and neither star fills its Roche lobe, while in \textbf{interacting systems} there might be mass transfers.
 In these cases, once one of the white dwarfs overflows its own Roche lobe, material flows through the inner Lagrangian point toward the companion.
-The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met (\correzione{\cite{Das2025},~\cite{Shen_2009},~\cite{refId0},~\cite{Shen_2018}}).
+The nature of this transfer depends on the mass ratio: the transfer can be stable, leading to long-lived systems characterized by persistent mass accretion and bright electromagnetic counterparts, or it can become dynamically unstable, potentially resulting in the rapid merger of the two stars, which may produce a single more massive white dwarf, a neutron star, or even trigger a thermonuclear explosion if the critical conditions for a Type Ia supernova are met ({\cite{Das2025},~\cite{Shen_2009},~\cite{refId0},~\cite{Shen_2018}}).
 
 
-\subsection{\correzione{The host galaxies}}
+\subsection{{The host galaxies}}
 Galaxies are the fundamental building blocks of the large-scale structure of the Universe. 
 They host the vast majority of stars, stellar remnants, and interstellar matter, and therefore also the majority of DWDs, and represent the environment in which such objects are generated and evolve.  
 At the same time, their distribution in space and their physical properties affect the detectability of the gravitational-wave signals produced by these binaries.  
@@ -55,7 +55,7 @@ This classification broadly distinguishes between:
     They range from nearly spherical (E0) to highly elongated ellipses (E7), depending on the eccentricity. 
     \item \textbf{Lenticular galaxies (S0):} An intermediate class between elliptical and spiral galaxies, they present a central bulge and a disk but do not have prominent spiral arms.
     They also often contain older stars and have low gas content, but their flattened structure suggests a disk-like stellar kinematics.
-    \item \textbf{Spiral galaxies (Sa, Sb, Sc, Sd):} such as our own, they are disk galaxies with spiral arms rooted in a central bulge.
+    \item \textbf{Spiral galaxies (Sa, Sb, Sc, Sd):} Such as our own, they are disk galaxies with spiral arms rooted in a central bulge.
     Early-type spirals (Sa) have tightly wound arms and larger bulges, whereas late-type spirals (Sc, Sd) have more open arms, smaller bulges, and more gas and young stars.
     \item \textbf{Irregular galaxies (Irr):} They lack of a defined shape, and are often rich in gas and undergoing intense star formation, possibly as a result of interactions or mergers.
 \end{itemize}
@@ -65,7 +65,7 @@ Note that the difference in the age of the stars populating the different morpho
 This metallicity fingerprint that distinguishes morphological types will be an important feature in the next chapters, where the stellar population properties will influence the compact binary formation and GW emission.
 
 \section{Gravitational Wave Theory}
-\correzione{The DWDs described in the previous section are massive rotating objects, and therefore they produce ripples in spacetime that propagate as waves (\cite{Einstein_1918}).
+{The DWDs described in the previous section are massive rotating objects, and therefore they produce ripples in spacetime that propagate as waves (\cite{Einstein_1918}).
 The purpose of this thesis is to analyze the GW produced by such systems, and it is thus necessary now to make a summary of the GW theory as a whole, to derive the characteristic strain that we will use to simulate the total signal.}
 % After considering, in 1905, the problem of the apparently \textit{instantaneous} propagation of light, with the theory of Special Relativity, in 1916 Albert Einstein considered the problem of the apparently \textit{instantaneous} propagation of gravity through \textit{long distances}, in his theory of General Relativity.
 % Einstein showed that long-distance interaction arises from the deformation of spacetime caused by massive objects.
@@ -91,7 +91,7 @@ Thus, the perturbed spacetime can be written as:
 \[
     g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}, \hspace{5mm}  |h_{\mu\nu}|\ll|\eta_{\mu\nu}|.
 \] 
-With this metric, the equations \ref{eq: Einstein equations rewritten} becomes
+With this metric, the equations~\ref{eq: Einstein equations rewritten} becomes
 \[
     \{\square_F h_{\mu\nu} - \left[\frac{\partial^2}{\partial x^\lambda\partial x^\mu}h^\lambda_\nu + \frac{\partial^2}{\partial x^\lambda\partial x^\nu}h^\lambda_\mu + \frac{\partial^2}{\partial x^\nu\partial x^\mu}h^\lambda_\lambda\right]\} = -\frac{16\pi G}{c^4}\left(T_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}T\right).
 \]
@@ -140,10 +140,10 @@ provided that $\epsilon^\lambda$ satisfies the following equation:
     \square_F\epsilon_\rho = \frac{\partial h^\beta_\rho}{\partial x^\beta} - \frac{1}{2} \frac{\partial h}{\partial x^\rho} = 0\hspace{1mm}.
 \]
 This is an inhomogeneous wave equation that can be solved to find the components $\epsilon_\alpha$, which identify the coordinate system in which the harmonic gauge condition is satisfied.
-Notice though, that the harmonic condition in \eqref{eq: Harmonic gauge definition} does not determine the gauge uniquely, but instead leaves some more gauge freedom to be used.
+Notice though, that the harmonic condition in~\eqref{eq: Harmonic gauge definition} does not determine the gauge uniquely, but instead leaves some more gauge freedom to be used.
 
 \subsection{The physical wave}
-As we have seen, perturbations of flat spacetime satisfy a wave equation and a harmonic gauge condition, as in \eqref{eq: Einstein equations as wave equations}.
+As we have seen, perturbations of flat spacetime satisfy a wave equation and a harmonic gauge condition, as in~\eqref{eq: Einstein equations as wave equations}.
 The general solutions of these wave equation is a linear superposition of monochromatic plane waves, with a polarization tensor (or wave amplitude) $A_{\mu\nu}$ and a wave four-vector $\vec{k}$, such as
 \[
     \square_F \bar{h}{\mu\nu} = -A_{\mu\nu}\eta^{\alpha\beta} k_\alpha k_\beta e^{ik_\gamma x^\gamma} = 0.
@@ -157,7 +157,7 @@ If we also consider the harmonic gauge, we find a condition that imposes the ort
 \[
     k_\mu A^\mu_\nu = 0.
 \]
-The \textit{wavefronts}, i.e. the spatial surfaces where $\bar{h}_{\mu\nu}= const.$ are the planes where $k_ix^i=const.$
+The \textit{wavefronts}, i.e.\ the spatial surfaces where $\bar{h}_{\mu\nu}= const$.\ are the planes where $k_i x^i=const$.
 Conventionally, $k^0$ is referred to as $\frac{\omega}{c}$, where $\omega$ is the frequency, thus
 \[
     \vec{k}_0 = \left(\frac{\omega}{c},\mathbf{k}\right),
@@ -165,7 +165,7 @@ Conventionally, $k^0$ is referred to as $\frac{\omega}{c}$, where $\omega$ is th
 where $\mathbf{k}$ is the wave three-vector orthogonal to the wavefront, and is related to the \textit{wavelength} by $|\mathbf{k}| = 2\pi/\lambda$.
 Notice that, since the wave four-vector $\vec{k}$ is a null vector, it follows that
 \[
-    -(k^0)^2 + |\mathbf{k}|^2 = 0 \to \omega = ck_0 = c|\mathbf{k}|,
+    -{(k^0)}^2 + |\mathbf{k}|^2 = 0 \to \omega = ck_0 = c|\mathbf{k}|,
 \]
 which gives the dispersion relation for a wave moving at the speed of light.
 
@@ -191,7 +191,7 @@ and with the~\eqref{eq: first four conditions} follows
      \bar{h}^x_x = \bar{h}^x_y = \bar{h}^x_z = \bar{h}^t_t = 0.
 \]
 The only components which cannot be set to zero are $\bar{h}^z_y$ and $\bar{h}^y_y - \bar{h}^z_z$, because now we have completely used all the gauge freedom.
-It can be shown that, from all the above conditions, it follows that $\bar{h} \equiv h$, i.e. in this gauge the wave results to be \textit{traceless}.
+It can be shown that, from all the above conditions, it follows that $\bar{h} \equiv h$, i.e.\ in this gauge the wave results to be \textit{traceless}.
 Thus, a plane GW propagating along the $x$-axis is characterized by only two non-zero functions $h_{zy}$ and $h_{yy}=-h_{zz}$:
 \begin{equation}
     h^{TT}_{\mu\nu} =  
@@ -225,7 +225,7 @@ Although, as we have seen, the coordinates of the two particles (and thus their 
 This apparent contradiction arises from the fact that the coordinate difference is not a \textit{tensorial} quantity, and therefore is not suited to describe properly a physical process.
 This is the reason we consider the geodesic deviation, which provides a tensorial formulation of the relative acceleration between the two particles: 
 \begin{equation}
-    \frac{D^2\delta x^\alpha}{d\tau^2} \equiv (\Delta_{\vec{t}}(\Delta_{\vec{t}}\vec{\delta x}))^\alpha = R^\alpha_{\beta\mu\nu}t^\beta t^\mu \delta x^\nu,
+    \frac{D^2\delta x^\alpha}{d\tau^2} \equiv {(\Delta_{\vec{t}}(\Delta_{\vec{t}}\vec{\delta x}))}^\alpha = R^\alpha_{\beta\mu\nu}t^\beta t^\mu \delta x^\nu,
     \label{eq: geodesic deviation}
 \end{equation}
 where 
@@ -249,7 +249,7 @@ Assuming that the wave travels along the $\xi^1$ direction, the solutions for th
     \notag
 \end{equation}
 where $\delta\xi_0^j$ represent the initial, constant separation between the particles. 
-As previously discussed, the non-zero components of the strain tensor $h_{ik}^{TT}$ correspond to two possible polarizations of the GW. 
+As previously discussed, the non-zero components of the strain tensor $h_{ik}^{TT}$ correspond to two possible polarizations of the GW.\@
 Their distinct effects on a ring of close particles are visually represented in \textbf{Figure~\ref{fig:gw_polarizations}}.
 \begin{figure}[h]
     \centering
@@ -307,8 +307,7 @@ Their distinct effects on a ring of close particles are visually represented in 
     \end{scope}
 
     \end{tikzpicture}
-    \caption{Effect of the two GW polarizations on a ring of free-falling particles, caused by a wave moving in the direction perpendicular to the page: blue and red dots represent two opposite phases of the wave.}
-    \label{fig:gw_polarizations}
+    \caption{Effect of the two GW polarizations on a ring of free-falling particles, caused by a wave moving in the direction perpendicular to the page: blue and red dots represent two opposite phases of the wave.}\label{fig:gw_polarizations}
 \end{figure}
 
 \subsection{The quadrupole approximation}
@@ -344,18 +343,18 @@ a smart use of the Gauss' theorem (reminding that the stress-energy tensor is nu
 \]
 Secondly, we can use the \textbf{tensor-virial theorem}
 \begin{equation}
-    \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\int_V T^{00}x^kx^nd^3x = 2\int_V T^{kn}d^3x, \hspace{3mm} k,n=1,2,3,
+    \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\int_V T^{00}x^k x^n d^3x = 2\int_V T^{kn}d^3x, \hspace{3mm} k,n=1,2,3,
     \notag
 \end{equation}
 in the definition of the \textbf{quadrupole moment tensor}
 \begin{equation}
-    q^{kn}(t) = \frac{1}{c^2}\int_VT^{00}(t,\mathbf{x})x^kx^nd^3x,
+    q^{kn}(t) = \frac{1}{c^2}\int_V T^{00}(t,\mathbf{x})x^k x^n d^3x,
     \notag
 \end{equation}
 we finally find that~\eqref{eq: weak-field slow-motion solutions} can be re-written as
 \begin{align}
-   &\bar{h}^{\mu 0} =0,\notag\\
-   &\bar{h}^{ik}(t,r) = \frac{2G}{c^4r}\frac{d^2}{dt^2}q^{ik}(t-\frac{r}{c}),
+    &\bar{h}^{\mu 0} =0,\notag\\
+    &\bar{h}^{ik}(t,r) = \frac{2G}{c^4r}\frac{d^2}{dt^2}q^{ik}(t-\frac{r}{c}),
     \label{eq: quadrupole formula}
 \end{align}
 known as the \textbf{quadrupole formula}.
@@ -370,7 +369,7 @@ The solution in~\eqref{eq: quadrupole formula} represents a spherical wave far f
 It can also be expressed, after an infinitesimal coordinate transformation that preserves the harmonic gauge.
 This projection in the TT gauge is performed by defining symmetric and transverse \textit{projector operators} as
 \[
-    P_{jk}\equiv \delta_{jk} - n_jn_k,
+    P_{jk}\equiv \delta_{jk} - n_j n_k,
 \]
 to than define the \textbf{transverse-traceless projector} 
 \begin{equation}
@@ -427,8 +426,8 @@ where\footnote{This shows that a \textit{binary system in circular orbits emits 
     \vspace{2mm}
     &    A_{kl}(t) =  
     \begin{pmatrix}
-        \cos{2\omega_Kt} & \sin{2\omega_Kt} & 0 \\
-     \sin{2\omega_Kt} &  -\cos{2\omega_Kt}& 0 \\
+        \cos{2\omega_K t} & \sin{2\omega_K t} & 0 \\
+     \sin{2\omega_K t} &  -\cos{2\omega_K t}& 0 \\
      0 & 0 & 0 \\
     \end{pmatrix}.
     \label{eq: A definition}
@@ -458,7 +457,7 @@ But if a tensor field is null in one frame, than it must be in all the other too
 Since no tensor can represent the gravitational field itself, we are going to introduce a \textbf{stress-energy pseudo tensor}, where a pseudo-tensor is a mathematical object that behaves like a tensor only under linear coordinate transformations.
 It is possible to define procedures of \textit{integration} or \textit{averaging} involving it, which allow to construct well-defined gauge-invariant quantities.
 In particular, it is possible to define a \textit{local} notion of energy and momentum in the weak field approximation, on the assumption that the characteristic length-scale $\lambda$ of the perturbation is much smaller than the characteristic length-scale $L$ of the foreground: $\lambda/L\ll 1$.
-In this regime, it can be shown that if averaged over multiple wavelengths $\lambda$, the stress-energy pseudo-tensor transforms as a tensor for coordinate transformations linear in $h$ (i.e. of order $O(h)$),
+In this regime, it can be shown that if averaged over multiple wavelengths $\lambda$, the stress-energy pseudo-tensor transforms as a tensor for coordinate transformations linear in $h$ (i.e.\ of order $O(h)$),
 \[
     \langle t^{\mu\nu}\rangle,
 \]
@@ -469,12 +468,12 @@ and is therefore \textit{suitable to describe energy and momentum carried by the
 In general, it can be shown that the energy flowing across a unit surface orthogonal to the direction $x'$ per unit time is given by the $0x'$ component of the stress-energy tensor times the speed of light.
 Similarly, the energy flux of a GW propagating in the same direction is given by the same component of the stress-energy pseudo-tensor averaged over several wavelengths, and can be derived as
 \[
-    \frac{dE_{GW}}{dtdS} = c\langle t^{0x'}\rangle = \frac{c^3}{16\pi G}\langle (\dot{h}_+(t,x'))^2 + (\dot{h}_x(t,x'))^2 \rangle.
+    \frac{dE_{GW}}{dtdS} = c\langle t^{0x'}\rangle = \frac{c^3}{16\pi G}\langle {(\dot{h}_+(t,x'))}^2 + {(\dot{h}_x(t,x'))}^2 \rangle.
 \]
 where $h_+$ and $h_x$ are the analog of $h_{yy}$ and $h_{yz}$ in the~\eqref{eq: h as a matrix in x case}, and represent the metric perturbation polarizations.
 In the TT frame, by directly substituting what we have found in~\eqref{eq: TT part of quadrupole moment}, we find 
 \[
-\frac{dE_{GW}}{dtdS} = \frac{G}{8\pi c^5 r^2}\Big\langle \sum_{jk}\left( \dddot{Q}_{jk}^{TT}(t-\frac{r}{c} \right)^2 \Big\rangle,
+    \frac{dE_{GW}}{dtdS} = \frac{G}{8\pi c^5 r^2}\Big\langle \sum_{jk}{\left( \dddot{Q}_{jk}^{TT}(t-\frac{r}{c}) \right)}^2 \Big\rangle,
 \]
 and after defining the \textbf{gravitational wave luminosity} as
 \[
@@ -498,12 +497,12 @@ The energy emitted in GW comes from the total energy of the system, which is in 
 By requiring the time derivative of the two to be equal, we can find how the binary parameters must change accordingly. 
 For example, the distance between the two objects shortens with time as
 \begin{equation}
-    l_0(t) = l_0^{in}\left(1-\frac{t}{t_c}\right)^{1/4},\hspace{4mm} where\hspace{4mm}    t_c\equiv \frac{5}{256}\frac{c^5}{G^3}\frac{(l_0^{in})^4}{\mu M^2}.
+    l_0(t) = l_0^{in}{\left(1-\frac{t}{t_c}\right)}^{1/4},\hspace{4mm} where\hspace{4mm}    t_c\equiv \frac{5}{256}\frac{c^5}{G^3}\frac{{(l_0^{in})}^4}{\mu M^2}.
     \label{eq: l_0 time variation}
 \end{equation}
 Using Kepler's laws it is also possible to translate this in a time dependence on the frequency:
 \begin{equation}
-    \omega_K(t) = \omega_K^{in}\left(1-\frac{t}{t_c}\right)^{-3/8}, \hspace{4mm} where\hspace{4mm}\omega_K^{in} \equiv \frac{(GM)^{1/2}}{(l_0^{in})^{3/2}}.
+    \omega_K(t) = \omega_K^{in}{\left(1-\frac{t}{t_c}\right)}^{-3/8}, \hspace{4mm} where\hspace{4mm}\omega_K^{in} \equiv \frac{{(GM)}^{1/2}}{{(l_0^{in})}^{3/2}}.
     \label{eq: omega_K time variation}
 \end{equation}
 or the period
@@ -525,12 +524,12 @@ Moreover, $l_0$ can be written in terms of the angular frequency, using Kepler's
 \]
 where
 \begin{equation}
-    M_{ch} = \mu^{3/5}M^{2/5} = \frac{(m_1m_2)^{3/5}}{M^{1/5}},
+    M_{ch} = \mu^{3/5}M^{2/5} = \frac{{(m_1m_2)}^{3/5}}{M^{1/5}},
     \notag
 \end{equation}
 is the \textbf{chirp mass}, and 
 \begin{equation}
-    \nu_{GW}(t)=\frac{\nu_{GW}^{in}t_c^{3/8}}{(t_c-t)^{3/8}},
+    \nu_{GW}(t)=\frac{\nu_{GW}^{in}t_c^{3/8}}{{(t_c-t)}^{3/8}},
     \notag
 \end{equation}
 is the GW frequency.
@@ -541,15 +540,15 @@ By substituting $t_c$ as defined in~\eqref{eq: l_0 time variation}, we finally f
 \end{equation}
 where
 \begin{equation}
-    \boxed{h_0(t)= \frac{4\pi^{2/3}G^{5/3}}{c^4}\frac{M_{ch}}{r}(M_{ch}\nu_{GW}(t))^{2/3}}
+    \boxed{h_0(t)= \frac{4\pi^{2/3}G^{5/3}}{c^4}\frac{M_{ch}}{r}{(M_{ch}\nu_{GW}(t))}^{2/3}}
     \label{eq: the strain we use}
 \end{equation}
 is the wave amplitude that we are going to refer to in this thesis work, when we calculate the signal from the simulated binaries.
 
 \section{Gravitational Wave Interferometers}
 The typical GW amplitude for a binary system is very small, and this makes it quite a hard task to detect it.
-The most sensitive instrument capable of such measurements are the interferometric detectors, that are generally based on the same principle of the simple Michelson interferometer: by splitting a laser beam along two perpendicular arms and recombining it, they detect the small phase shifts induced by a passing GW.  
-In this section, which is mainly based on the chapter 9 of \cite{Maggiore}, we explain the general working principle of interferometers using the Michelson interferometer as an example.
+The most sensitive instruments capable of such measurements are the interferometric detectors, that are generally based on the same principle of the simple Michelson interferometer: by splitting a laser beam along two perpendicular arms and recombining it, they detect the small phase shifts induced by a passing GW.\@  
+In this section, which is mainly based on the chapter 9 of~\cite{Maggiore}, we explain the general working principle of interferometers using the Michelson interferometer as an example.
 After this, we will talk briefly about LISA's characteristics, and what makes it interesting for the purpose of this thesis.
 
 \subsection{Michelson interferometer}
@@ -562,8 +561,7 @@ It uses a \textit{beam splitter} to separate a single laser beam into two indepe
     \caption{Schematic representation of a Michelson interferometer. A laser beam is split by a half-transparent mirror into two orthogonal arms of length $L_A$ and $L_B$.
     The beams reflected from the mirrors are recombined at the detector (screen), where, if a GW has passed, they produce an interference pattern.
     Variations in the optical path length of one arm (through the movable mirror) shift the observed fringes.
-The source for this image can be found \underline{\textit{\href{https://www.britannica.com/technology/Michelson-interferometer}{here}}}.}
-    \label{fig: michaelson interferometer}
+The source for this image can be found \underline{\textit{\href{https://www.britannica.com/technology/Michelson-interferometer}{here}}}.}\label{fig: michaelson interferometer}
 \end{figure}
 The laser is used to have a monochromatic light source, with a frequency $\omega_L$, a wave-vector $k_L=\omega_L/c$ and a wavelength $\lambda_L = 2\pi/k_L$.
 Therefore, referring to \textbf{Figure~\ref{fig: michaelson interferometer}}, we label as A and B respectively the $x$ and $y$ arms of the interferometer, with lengths $L_A$ and $L_B$.
@@ -574,8 +572,8 @@ If the phase is conserved during the free propagation, there are some factors ac
 \begin{equation}
     \left\{
         \begin{aligned}
-            &E_1 = -\frac{1}{2}E_0e^{-i\omega_Lt + 2ik_LL_A} \\
-            &E_2 = -\frac{1}{2}E_0e^{-i\omega_Lt + 2ik_LL_B},
+            &E_1 = -\frac{1}{2}E_0e^{-i\omega_L t + 2ik_L L_A} \\
+            &E_2 = -\frac{1}{2}E_0e^{-i\omega_L t + 2ik_L L_B},
         \end{aligned}
     \right.
     \label{eq: fields in arms of michaelson}
@@ -623,12 +621,10 @@ where
 \]
 Therefore, when the period of the GW is large with respect to the time it takes the light to travel along the arm, the $\Delta t$ shift in the travel time $t_2 - t_0$, with respect to the unperturbed case is simply $h(t_1)L_A/c$.
 In the opposite case, when $\omega_{gw}L_A/c \gg 1$, $h(t)$ will change sign many times during the travel time, making its net contribute $\sim0$.
-Now, from~\eqref{eq: time interval for x-axis} and its $y$-axis counterpart, it is possible to find the two different starting times
-\footnote{Note that if $L_A=L_B=L$, and $\frac{\omega L}{c}\ll 1$, the difference between the two would be
+Now, from~\eqref{eq: time interval for x-axis} and its $y$-axis counterpart, it is possible to find the two different starting times\footnote{Note that if $L_A=L_B=L$, and $\frac{\omega L}{c}\ll 1$, the difference between the two would be
 \[
     t_0^{(y)} - t_0^{(x)} = \frac{2L}{c} h\left(t-\frac{L}{c}\right)sinc\hspace{1mm}(\omega L/c)\approx \frac{2L}{c}h\left(t-\frac{L}{c}\right).
-\]
-}
+\]}
 $t_0^{(x)}$ and $t_0^{(y)}$. 
 By substituting them in the electric field expressions in~\eqref{eq: fields in arms of michaelson} we can find
 \begin{equation}
@@ -663,29 +659,29 @@ The strategy to build a ``null instrument'', which records zero signal when the 
 At the same time, setting the instrument to a phase where the variation is maximum, as for $\phi_0=\pi/4$, makes the instrument too sensible, so much that it will not be able to distinguish a signal from the laser power fluctuations.
 Therefore, depending on how this parameter is adjusted the instrument can be more or less sensible to signal variations, and the best value tends to be between these two extremes.
 
-\subsection{\correzione{The} Laser Interferometer Space Antenna (\correzione{LISA})}
-\correzione{Currently operating} detectors such as LIGO and Virgo (\correzione{\cite{PhysRevLett.116.061102},~\cite{Abbott_2019}}) have pioneered the technique we have just shown in the high-frequency band (\correzione{\cite{LISA_ref},~\cite{Virgo_cit}}).
-The purpose for future space-based interferometers such as LISA is to extend it to the low-frequency regime (\correzione{approximately} within $0.1$mHz and $1$Hz), opening a new observational window on astrophysical and cosmological sources.
-Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes (\correzione{\cite{baker2019laserinterferometerspaceantenna}}). 
+\subsection{{The} Laser Interferometer Space Antenna ({LISA})}
+{Currently operating} detectors such as LIGO and Virgo ({\cite{PhysRevLett.116.061102},~\cite{Abbott_2019}}) have pioneered the technique we have just shown in the high-frequency band ({\cite{LISA_ref},~\cite{Virgo_cit}}).
+The purpose for future space-based interferometers such as LISA is to extend it to the low-frequency regime ({approximately} within $0.1$mHz and $1$Hz), opening a new observational window on astrophysical and cosmological sources.
+Indeed, space-based detectors such as LISA will be sensitive to DWDs with periods of a few hours down to a few minutes ({\cite{baker2019laserinterferometerspaceantenna}}). 
 At the shortest periods, these binaries are in very tight orbits, with separations of only a few $10^{4}$–$10^{5}$~km, comparable to Earth's diameter.
-Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic GW sources over LISA's lifetime, which in this work is considered of $\sim4$yr (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).  
-Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries'' \correzione{(\cite{kupfer_2018},~\cite{Kupfer_2024})} for space-based detectors.
+Between the binary systems, the interacting ones can have extremely short orbital periods ($\lesssim 10$ minutes) and are strong, nearly monochromatic GW sources over LISA's lifetime, which in this work is considered of $\sim4$yr ({\cite{baker2019laserinterferometerspaceantenna}}).  
+Detached systems with periods in the mHz range are also important, as they provide long-lived, stable signals that can serve as calibration sources or ``verification binaries'' {(\cite{kupfer_2018},~\cite{Kupfer_2024})} for space-based detectors.
 Given their abundance and GW luminosity, binary white dwarfs are expected to be the most numerous class of resolvable sources for LISA, and their unresolved population will form a significant component of the low-frequency GW foreground.
 
 \subsubsection{Instrument description}
 Basing new detectors in space allows to eliminate sources of noise such as seismic noise and gravity gradients from local movements, allowing to explore a frequency regime which contains precious information on many interesting astrophysical sources, such as DWDs, extreme mass-ratio inspirals and massive black hole mergers.
-In LISA's case, the arms are not going to be physical structures, but $2.5\times10^6$km separations between three identical spacecrafts at the vertices of an equilateral triangle (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).
+In LISA's case, the arms are not going to be physical structures, but $2.5\times10^6$km separations between three identical spacecrafts at the vertices of an equilateral triangle ({\cite{baker2019laserinterferometerspaceantenna}}).
 Each one of the spacecraft will host two free-falling test masses, isolated from all non-gravitational interactions by a drag-free control system.
-The spacecrafts will trail by about $20^{\circ}$, with the triangular constellation inclined by $60^{\circ}$ to the ecliptic plane, following the earth around the sun (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).
+The spacecrafts will trail by about $20^{\circ}$, with the triangular constellation inclined by $60^{\circ}$ to the ecliptic plane, following the earth around the sun ({\cite{baker2019laserinterferometerspaceantenna}}).
 With this configuration, it is possible to keep the long baseline stable, while having continuous source visibility, and a good localization (granted by the triangular shape).
 
 \subsubsection{Frequency}
-LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 10 kHz (\correzione{\cite{Martynov_2016}}), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of GW sources. 
+LISA's frequency band roughly covers the low range $0.1~\mathrm{mHz} \lesssim f \lesssim 1~\mathrm{Hz}$ (compared to LIGO's frequency of 10 Hz to 10 kHz, {\cite{Martynov_2016}}), corresponding to objects in much wider orbits and potentially much heavier than those that LIGO is searching for, opening up the to the detection of a wider range of GW sources. 
 In this frequency range also reside most DWDs.  
-In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the ``free'' test masses are not completely isolated, but could be influenced by solar radiation and winds, and the ``drag-free'' micro-propellers that compensate these disturbances make noise under the $0.1~\mathrm{mHz}$ (\correzione{\cite{baker2019laserinterferometerspaceantenna}}). 
+In the low frequencies, the range is limited by the acceleration noise on the test masses: even in space, the ``free'' test masses are not completely isolated, but could be influenced by solar radiation and winds, and the ``drag-free'' micro-propellers that compensate these disturbances make noise under the $0.1~\mathrm{mHz}$ ({\cite{baker2019laserinterferometerspaceantenna}}). 
 Also, in order to detect very slow wave, LISA needs to observe it for at least one complete cycle, and if the wave has a period of months, the signal could become indistinguishable from a slow relative position change between the three satellites.
-At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies (\correzione{\cite{baker2019laserinterferometerspaceantenna}}).  
-LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic foreground and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}} (\correzione{\cite{LISA_ref}}). 
+At the high frequencies, the main limits are due to the arms length, which make LISA unable to detect waves much shorter than that scale, and the power limits of the laser, which makes the photon count Poissonian noise more relevant at high frequencies ({\cite{baker2019laserinterferometerspaceantenna}}).  
+LISA’s sensitivity curve combines instrumental noise and the astrophysical foreground, including Galactic foreground and Galactic binary systems, as shown in \textbf{Figure~\ref{fig: LISA sens curve with noises}} ({\cite{LISA_ref}}). 
 \begin{figure}
     \begin{center}
         \includegraphics[width=0.85\textwidth]{images/lisa_sensitivity_with_noises.png}
@@ -693,7 +689,7 @@ LISA’s sensitivity curve combines instrumental noise and the astrophysical for
     \caption{LISA sensitivity curve in the characteristic strain representation.
     The solid green line shows the instrumental noise curve, while the dashed black line represents the LISA curve as shaped by the foreground contribution from unresolved Galactic binaries.
     Different astrophysical sources that emit GW signal in this band are indicated: massive black hole binaries (MBHBs), extreme mass-ratio inspiral (EMRI), stellar-mass black hole binaries, verification binaries, and Galactic binaries with signal-to-noise ratio larger than 7.
-The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}} (\correzione{\cite{LISA_ref}})}\label{fig: LISA sens curve with noises}
+The source for this image can be found \underline{\textit{\href{https://ar5iv.labs.arxiv.org/html/1803.01944}{here}}} ({\cite{LISA_ref}})}\label{fig: LISA sens curve with noises}
 \end{figure}
 As far as the frequency resolution\footnote{Not to be confused with the sensitivity of the instrument, which states how faint of a signal it can detect.} of a coherent observation is concerned, the limits are not due to hardware, but the actual total observational time: in a Fourier analysis, this is set by the inverse of the total observation time:  
 \begin{equation}
@@ -702,7 +698,7 @@ As far as the frequency resolution\footnote{Not to be confused with the sensitiv
 For a nominal mission duration of $T_{\mathrm{obs}} \simeq 4$~years, $\Delta f \approx 8\times 10^{-9}$~Hz, allowing very fine separation of closely spaced monochromatic sources.
 
 \subsubsection{Why double white dwarfs}
-\correzione{From a scientific perspective, double white dwarfs (DWDs) provide an excellent laboratory for gravitational-wave studies:  
+{From a scientific perspective, double white dwarfs (DWDs) provide an excellent laboratory for gravitational-wave studies:  
 \begin{itemize}
     \item DWDs are typically found in compact orbits, with corresponding GW frequencies that lie within LISA's observational band;  
     \item They are among the most common compact binary systems in the universe, often representing a typical outcome of stellar binary evolution. When a large number of such sources cannot be individually resolved, their signals overlap stochastically, producing a foreground;  
@@ -721,7 +717,7 @@ The combination of their abundance, characteristic signal strength, and astrophy
 %         \item We have found a simple and predictable impact for their signal in the circular orbit approximation, in~\eqref{eq: the strain we use}, which is possible to simulate, and allows to generate coherent synthetic populations with astrophysical models; 
 %         \item As discussed previously, we already expect Galactic binaries to affect LISA's curve, therefore extra-galactic ones are a realistic candidate to test;
 % \end{itemize}
-% We expect the Galactic binaries to generate a confusion foreground that is able to impact the LISA sensitivity curve, mostly due to their proximity and large number \correzione{(\cite{osti_6282329},~\cite{Nelemans_2001},~\cite{LISA_ref}}.
-% The purpose of this work, however, is to discover if the \textit{extra-galactic} DWDs, despite their much larger distance, \correzione{contribute significantly} to generate an overall detectable stochastic GW foreground in the LISA band.
+% We expect the Galactic binaries to generate a confusion foreground that is able to impact the LISA sensitivity curve, mostly due to their proximity and large number {(\cite{osti_6282329},~\cite{Nelemans_2001},~\cite{LISA_ref}}.
+% The purpose of this work, however, is to discover if the \textit{extra-galactic} DWDs, despite their much larger distance, {contribute significantly} to generate an overall detectable stochastic GW foreground in the LISA band.
 % The combination of abundance, signal strength, and astrophysical relevance makes them an optimal target for LISA's mission.
 

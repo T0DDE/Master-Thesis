@@ -2,10 +2,10 @@
 \contentsline {chapter}{Abstract}{1}{Doc-Start}%
 \contentsline {chapter}{Introduction}{5}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Theoretical Framework}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Double White Dwarfs \textcolor {red}{(DWDs)}}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Double White Dwarfs {(DWDs)}}{7}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}White dwarfs}{7}{subsection.1.1.1}%
 \contentsline {subsubsection}{Binary systems}{8}{section*.3}%
-\contentsline {subsection}{\numberline {1.1.2}\textcolor {red}{The host galaxies}}{9}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}{The host galaxies}}{9}{subsection.1.1.2}%
 \contentsline {subsubsection}{Morphological types}{9}{section*.4}%
 \contentsline {section}{\numberline {1.2}Gravitational Wave Theory}{10}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Gravitational waves as perturbations}{10}{subsection.1.2.1}%
@@ -27,22 +27,22 @@
 \contentsline {section}{\numberline {1.3}Gravitational Wave Interferometers}{20}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Michelson interferometer}{21}{subsection.1.3.1}%
 \contentsline {subsubsection}{Gravitational waves and TT gauge}{22}{section*.15}%
-\contentsline {subsection}{\numberline {1.3.2}\textcolor {red}{The} Laser Interferometer Space Antenna (\textcolor {red}{LISA})}{24}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.2}{The} Laser Interferometer Space Antenna ({LISA})}{24}{subsection.1.3.2}%
 \contentsline {subsubsection}{Instrument description}{24}{section*.16}%
 \contentsline {subsubsection}{Frequency}{24}{section*.17}%
 \contentsline {subsubsection}{Why double white dwarfs}{26}{section*.18}%
 \contentsline {chapter}{\numberline {2}Methods and Data}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Stellar Populations Synthesis Codes}{27}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Stellar Population Synthesis Codes}{27}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}The starting point}{27}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Single star evolution}{29}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Binary star evolution}{29}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}\textcolor {red}{The COSMIC Code}}{30}{section.2.2}%
+\contentsline {section}{\numberline {2.2}{The COSMIC Code}}{30}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Fixed population}{30}{subsection.2.2.1}%
 \contentsline {subsubsection}{Initialization}{31}{section*.19}%
 \contentsline {subsubsection}{Convergence}{31}{section*.20}%
 \contentsline {subsubsection}{The output}{31}{section*.21}%
 \contentsline {subsection}{\numberline {2.2.2}Astrophysical population}{32}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}\textcolor {red}{The} Gravitational Wave Galaxy Catalog (\textcolor {red}{GWGC})}{34}{section.2.3}%
+\contentsline {section}{\numberline {2.3}{The} Gravitational Wave Galaxy Catalog ({GWGC})}{34}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}What it has vs what we need}{34}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Mass-luminosity relation}{34}{subsection.2.3.2}%
 \contentsline {subsubsection}{Magnitude to luminosity}{35}{section*.22}%
@@ -56,12 +56,12 @@
 \contentsline {subsubsection}{Zone Of Avoidance}{40}{section*.26}%
 \contentsline {subsubsection}{Filling the gap}{40}{section*.27}%
 \contentsline {subsection}{\numberline {3.1.2}The final fixed populations}{42}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}\textcolor {red}{The} Signal Computation}{42}{section.3.2}%
+\contentsline {section}{\numberline {3.2}{The} Signal Computation}{42}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}LISA's frequency resolution}{44}{subsection.3.2.1}%
 \contentsline {subsubsection}{Signal accumulation}{45}{section*.28}%
 \contentsline {subsection}{\numberline {3.2.2}The final output}{45}{subsection.3.2.2}%
 \contentsline {subsubsection}{LISA's sensitivity curve}{46}{section*.29}%
-\contentsline {section}{\numberline {3.3}\textcolor {red}{Results and Discussion}}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.3}{Results and Discussion}}{46}{section.3.3}%
 \contentsline {paragraph}{Distribution of the sources}{46}{section*.30}%
 \contentsline {subsection}{\numberline {3.3.1}Robustness of the results}{47}{subsection.3.3.1}%
 \contentsline {subsubsection}{The sources}{48}{section*.31}%
