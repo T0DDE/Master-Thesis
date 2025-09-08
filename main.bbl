@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -1066,6 +1066,23 @@ Pau {Amaro-Seoane}, Jeff {Andrews}, Manuel {Arca Sedda}, Abbas {Askar}, Quentin
   December 2023.
 \newblock \doi{10.1007/s41114-022-00041-y}.
 
+\bibitem[{Andrews} et~al.(2024){Andrews}, {Bavera}, {Briel}, {Chattaraj},
+  {Dotter}, {Fragos}, {Gallegos-Garcia}, {Gossage}, {Kalogera}, {Kasdagli},
+  {Katsaggelos}, {Kimball}, {Kovlakas}, {Kruckow}, {Liotine}, {Misra}, {Rocha},
+  {Souropanis}, {Srivastava}, {Sun}, {Teng}, {Xing}, {Zapartas}, and
+  {Zevin}]{POSYDON_2}
+Jeff~J. {Andrews}, Simone~S. {Bavera}, Max {Briel}, Abhishek {Chattaraj}, Aaron
+  {Dotter}, Tassos {Fragos}, Monica {Gallegos-Garcia}, Seth {Gossage}, Vicky
+  {Kalogera}, Eirini {Kasdagli}, Aggelos {Katsaggelos}, Chase {Kimball},
+  Konstantinos {Kovlakas}, Matthias~U. {Kruckow}, Camille {Liotine}, Devina
+  {Misra}, Kyle~A. {Rocha}, Dimitris {Souropanis}, Philipp~M. {Srivastava},
+  Meng {Sun}, Elizabeth {Teng}, Zepei {Xing}, Emmanouil {Zapartas}, and Michael
+  {Zevin}.
+\newblock {POSYDON Version 2: Population Synthesis with Detailed
+  Binary-Evolution Simulations across a Cosmological Range of Metallicities}.
+\newblock \emph{arXiv e-prints}, art. arXiv:2411.02376, November 2024.
+\newblock \doi{10.48550/arXiv.2411.02376}.
+
 \bibitem[{Asplund} et~al.(2009){Asplund}, {Grevesse}, {Sauval}, and
   {Scott}]{Asplund}
 Martin {Asplund}, Nicolas {Grevesse}, A.~Jacques {Sauval}, and Pat {Scott}.
@@ -1142,6 +1159,22 @@ Katerina {Chatziioannou}, James~Alexander {Clark}, Andreas { Bauswein},
 \newblock \emph{\prd}, 96\penalty0 (12):\penalty0 124035, December 2017.
 \newblock \doi{10.1103/PhysRevD.96.124035}.
 
+\bibitem[COMPAS et~al.(2022)COMPAS, Riley, Agrawal, Barrett, Boyett,
+  Broekgaarden, Chattopadhyay, Gaebel, Gittins, Hirai, Howitt, Justham,
+  Khandelwal, Kummer, Lau, Mandel, de~Mink, Neijssel, Riley, van Son,
+  Stevenson, Vigna-Gómez, Vinciguerra, Wagg, and Willcox]{Riley_2022}
+Team COMPAS, Jeff Riley, Poojan Agrawal, Jim~W. Barrett, Kristan N.~K. Boyett,
+  Floor~S. Broekgaarden, Debatri Chattopadhyay, Sebastian~M. Gaebel, Fabian
+  Gittins, Ryosuke Hirai, George Howitt, Stephen Justham, Lokesh Khandelwal,
+  Floris Kummer, Mike Y.~M. Lau, Ilya Mandel, Selma~E. de~Mink, Coenraad
+  Neijssel, Tim Riley, Lieke van Son, Simon Stevenson, Alejandro Vigna-Gómez,
+  Serena Vinciguerra, Tom Wagg, and Reinhold Willcox.
+\newblock Rapid stellar and binary population synthesis with compas.
+\newblock \emph{The Astrophysical Journal Supplement Series}, 258\penalty0
+  (2):\penalty0 34, feb 2022.
+\newblock \doi{10.3847/1538-4365/ac416c}.
+\newblock URL \url{https://dx.doi.org/10.3847/1538-4365/ac416c}.
+
 \bibitem[Das et~al.(2025)Das, Seitenzahl, Ruiter, Röpke, Pakmor, Vogt,
   Collins, Ghavamian, Sim, Williams, Taubenberger, Laming, Suherli, Sutherland,
   and Rodríguez-Segovia]{Das2025}
@@ -1199,6 +1232,23 @@ V.~Ferrari, L.~Gualtieri, and P.~Pani.
 \newblock \emph{A\&A}, 514:\penalty0 A53, 2010.
 \newblock \doi{10.1051/0004-6361/200913892}.
 \newblock URL \url{https://doi.org/10.1051/0004-6361/200913892}.
+
+\bibitem[{Fragos} et~al.(2023){Fragos}, {Andrews}, {Bavera}, {Berry},
+  {Coughlin}, {Dotter}, {Giri}, {Kalogera}, {Katsaggelos}, {Kovlakas},
+  {Lalvani}, {Misra}, {Srivastava}, {Qin}, {Rocha}, {Rom{\'a}n-Garza}, {Serra},
+  {Stahle}, {Sun}, {Teng}, {Trajcevski}, {Tran}, {Xing}, {Zapartas}, and
+  {Zevin}]{POSYDON_1}
+Tassos {Fragos}, Jeff~J. {Andrews}, Simone~S. {Bavera}, Christopher P.~L.
+  {Berry}, Scott {Coughlin}, Aaron {Dotter}, Prabin {Giri}, Vicky {Kalogera},
+  Aggelos {Katsaggelos}, Konstantinos {Kovlakas}, Shamal {Lalvani}, Devina
+  {Misra}, Philipp~M. {Srivastava}, Ying {Qin}, Kyle~A. {Rocha}, Jaime
+  {Rom{\'a}n-Garza}, Juan~Gabriel {Serra}, Petter {Stahle}, Meng {Sun},
+  Xu~{Teng}, Goce {Trajcevski}, Nam~Hai {Tran}, Zepei {Xing}, Emmanouil
+  {Zapartas}, and Michael {Zevin}.
+\newblock {POSYDON: A General-purpose Population Synthesis Code with Detailed
+  Binary-evolution Simulations}.
+\newblock \emph{\apjs}, 264\penalty0 (2):\penalty0 45, February 2023.
+\newblock \doi{10.3847/1538-4365/ac90c1}.
 
 \bibitem[{Gokhale} et~al.(2007){Gokhale}, {Peng}, and
   {Frank}]{evolution_compact_binary_wd_systems}

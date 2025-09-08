@@ -14,45 +14,45 @@ Database file #1: chapters/Bibliografia.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--empty journal in baker2019laserinterferometerspaceantenna
 Warning--empty publisher in Vaculeurs
-You've used 44 entries,
+You've used 47 entries,
             2773 wiz_defined-function locations,
-            984 strings with 78866 characters,
-and the built_in function-call counts, 212709 in all, are:
-= -- 13426
-> -- 35684
-< -- 13
-+ -- 11900
-- -- 11856
-* -- 24947
-:= -- 37838
-add.period$ -- 207
-call.type$ -- 44
-change.case$ -- 4081
-chr.to.int$ -- 44
-cite$ -- 90
-duplicate$ -- 916
-empty$ -- 1662
-format.name$ -- 11908
-if$ -- 38865
+            1009 strings with 81035 characters,
+and the built_in function-call counts, 217324 in all, are:
+= -- 13740
+> -- 36359
+< -- 14
++ -- 12125
+- -- 12078
+* -- 25470
+:= -- 38642
+add.period$ -- 220
+call.type$ -- 47
+change.case$ -- 4164
+chr.to.int$ -- 47
+cite$ -- 96
+duplicate$ -- 980
+empty$ -- 1764
+format.name$ -- 12133
+if$ -- 39729
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 48
-newline$ -- 303
-num.names$ -- 176
-pop$ -- 8041
+missing$ -- 51
+newline$ -- 322
+num.names$ -- 188
+pop$ -- 8199
 preamble$ -- 1
-purify$ -- 4040
+purify$ -- 4120
 quote$ -- 0
-skip$ -- 4463
+skip$ -- 4569
 stack$ -- 0
-substring$ -- 709
-swap$ -- 89
-text.length$ -- 1
+substring$ -- 721
+swap$ -- 96
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 464
+type$ -- 497
 warning$ -- 2
-while$ -- 167
+while$ -- 177
 width$ -- 0
-write$ -- 722
+write$ -- 769
 (There were 2 warnings)

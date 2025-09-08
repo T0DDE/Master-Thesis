@@ -204,9 +204,9 @@ Therefore, the dots can get close to, or above the sensitivity curve either by c
 In principle, the results we presented could depend on the assumptions thath we made, and the methods that we used.
 
 \subsubsection{The sources}
-The results could be affected by the way we represented the sources, via GWGC.
-Indeed, this is the input we give our pipeline to produce, as an output, what {should} be the total GW confusion foreground from all the unresolved DWDs in the local universe.
-For example, if we only used the GWGC catalog after dropping the incomplete voices, and without considering the ZOA, the total GW signal produced by the remaining $20,246$ galaxies would be as represented in the orange dots in \textbf{Figure~\ref{fig: Final results plot}}.
+The results could be affected by the way we represented the sources, via GWGC: this is the input for our pipeline. 
+As an output, then, we expect what {should} be the total GW confusion foreground from all the unresolved DWDs in the local universe.
+For example, if we only used the GWGC catalog after dropping the incomplete entries, and without considering the ZOA, the total GW signal produced by the remaining $20,246$ galaxies would be as represented in the orange dots in \textbf{Figure~\ref{fig: Final results plot}}.
 % \begin{figure}
 %     \begin{center}
 %         \includegraphics[width=\textwidth]{images/Final_results__incomplete_GWGC_plot.pdf}
@@ -220,7 +220,8 @@ For example, if we only used the GWGC catalog after dropping the incomplete voic
 % \end{figure}
 Although a slight difference in height with the results obtained for all the $66,568$ galaxies, presented as blue dots in the same figure, is noticeable, it is important to note that it is caused by considering less then a third of the sources.
 Therefore, even if it is possible to consider different and more complete catalogs, and the ZOA could be estimated with better precision, the results we found do not depend significantly on this.
-In addition to this, the single DWDs were simulated using COSMIC, which represent and arbitrary choice between a number of different population synthesis codes: a different code might produce different sources parameter distributions, and could be an interesting extension of the present work.
+In addition to this, while COSMIC is the most suitable tool for the purpose of this study, we note that there are other available population synthesis software, which utilize different stellar evolutionary physic and sampling methods.
+A different code, such as, for example, \textit{Compact Object Mergers: Population Astrophysics and Statistics} (\underline{\href{https://compas.readthedocs.io/en/latest/}{\texttt{COMPAS}}},~\cite{Riley_2022}), or \texttt{\underline{\href{https://github.com/POSYDON-code/POSYDON}{POSYDON}}} (\cite{POSYDON_1},~\cite{POSYDON_2}), might produce different sources parameter distributions, and could be an interesting extension of the present work.
 
 \subsubsection{The GW signal}
 The main assumptions that we made to obtain the results are surely how we computed the GW characteristic strain, and the way we integrate the GW signal coming from unresolved sources within the same frequency bin.
