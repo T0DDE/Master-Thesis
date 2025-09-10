@@ -61,7 +61,7 @@
 \contentsline {subsubsection}{Signal accumulation}{45}{section*.28}%
 \contentsline {subsection}{\numberline {3.2.2}The final output}{45}{subsection.3.2.2}%
 \contentsline {subsubsection}{LISA's sensitivity curve}{46}{section*.29}%
-\contentsline {section}{\numberline {3.3}{Results and Discussion}}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Last Steps and Discussion}{46}{section.3.3}%
 \contentsline {paragraph}{Distribution of the sources}{46}{section*.30}%
 \contentsline {subsection}{\numberline {3.3.1}Robustness of the results}{47}{subsection.3.3.1}%
 \contentsline {subsubsection}{The sources}{48}{section*.31}%
